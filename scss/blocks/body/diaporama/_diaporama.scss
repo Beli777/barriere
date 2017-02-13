@@ -1,0 +1,19 @@
+.diaporama{
+
+    &__big{
+        position: relative;
+        img{
+            transition: all 0.5s ease;
+        }
+        &-sliderItem{
+
+            display: inline-block;
+            width:100%;
+        }
+    }
+}
+.js-slide{
+    position: absolute;
+    top: 0;
+    left: 100%;
+}

@@ -1,0 +1,126 @@
+.article{
+    &__popup{
+        position: absolute;
+        top: -17rem;
+        right: 24rem;
+        background: $colorWhite;
+        height: 20.5rem;
+        padding-top: 5.5rem;
+        text-align: center;
+
+        &First{
+            right: 15.142%;
+            left: 60.3%;
+        }
+        h2{
+            font-size: 2.1rem;
+            color: $colorGold;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 1.1rem;
+            margin-top: 1.1rem;
+            transition: .3s all linear;
+        }
+        span{
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            transition: .3s all linear;
+        }
+        button{
+            background: transparent;
+            border: 0;
+            display: block;
+            margin: 1rem auto;
+            color: $colorGold;
+            font-size: 4rem;
+            cursor: pointer;
+            outline: none;
+            position: relative;
+            transition: .3s all linear;
+        }
+        &--secondPosition{
+            top: 17rem;
+            right: 5%;
+            left: 70.5%;
+            height: auto;
+            bottom: 28.2%;
+            &Image{
+                width: 53%;
+                left: 7%;
+                position: absolute;
+                z-index: 3;
+                top: 8%;
+                opacity: 0;
+            }
+        }
+        &--thirdPosition{
+            top: 14rem;
+            left: 10rem;
+            z-index: -1;
+        }
+    }
+    &__medium{
+        position: relative;
+        &Item{
+            width: 50%;
+            margin: 0 auto;
+        }
+        &Image{
+            position: absolute;
+            width: 50%;
+        }
+    }
+    &__small{
+        position: relative;
+        height: 350px;
+        &Item{
+            width: 20%;
+            position: absolute;
+            top: 4rem;
+            left: 33rem;
+        }
+    }
+    &Popup{
+        padding-top: 4.5rem;
+        opacity: 0;
+        &-close{
+            position: absolute;
+            top: 2rem;
+            right: 2.5rem;
+            width: auto;
+            cursor: pointer;
+        }
+        &-points{
+            margin: 0 auto;
+            width: 150px;
+            margin-bottom: 4rem;
+        }
+        p{
+            font-size: 1.7rem;
+            line-height: 3rem;
+            max-width: 350px;
+            margin: 0 auto;
+            text-align: justify;
+            span{
+                color: $colorGold;
+                text-transform: none;
+            }
+        }
+        a{
+            color: $colorGold;
+            display: block;
+            width: 200px;
+            margin: 3rem auto;
+            font-size: 1.4rem;
+            &:before,
+            &:after{
+                display: block;
+                width: 100%;
+                height: 0.1rem;
+                background-color: $colorGold;
+                content: '';
+                margin: 2rem 0;
+            }
+        }
+    }
+}
