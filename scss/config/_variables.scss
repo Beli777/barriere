@@ -4,7 +4,7 @@
 
 //-----COLORS
 $colorWhite: #FFF;
-$colorBlack: #000;
+$colorBlack: #363636;
 $colorRed  : #F00;
 $colorGreen: #0F0;
 $colorBlue : #00F;
@@ -13,8 +13,7 @@ $colorMain : $colorWhite;
 
 
 //-----PATHS
-$fontBaseUrl   : "http://static1.webedia.fr/fonts/";
-$localFontBase : "/_common/fonts";
+$fontBaseUrl   : "../";
 $imgBaseUrl    : "/web/skins/default/";
 
 
@@ -38,8 +37,9 @@ $toDesktop--large: 1599px;
 
 //------FONTS
 $fontDefault     : Arial, Helvetica, Tahoma, sans-serif;
-$baseFont        : "Gotham", $fontDefault;
-$baseFont--bold  : "", $fontDefault;
+$baseFont        : "Lucien_Regular", $fontDefault;
+$baseFont--bold  : "Lucien_Bold", $fontDefault;
+$baseFont--year  : Georgia;
 $baseFont--italic: "", $fontDefault;
 
 

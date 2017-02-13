@@ -7,6 +7,8 @@ h1{
 .year{
     font-size: 5rem;
     text-align: center;
+    font-family: $baseFont--year;
+    font-weight: bold;
     &--left{
         margin-right: 16rem;
     }

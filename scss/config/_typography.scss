@@ -3,8 +3,14 @@
 //-------------------------
 
 //------FONT-FACE
-// @include fontFace (Gotham, gotham-light);
-
+@font-face {
+    font-family: "Lucien_Bold";
+    src: url("../fonts/Lucien_Bold.otf") format("opentype")
+}
+@font-face {
+    font-family: "Lucien_Regular";
+    src: url("../fonts/Lucien_Regular.otf") format("opentype")
+}
 //------FONT SIZES
 html {
     $fontSizePX: $baseFontSize + 'px';
@@ -40,12 +46,13 @@ u {
 //------STYLES
 h1 {
     font-size: 7.2rem;
+    font-family: $baseFont;
 }
 h2 {
 
 }
 h3 {
-
+    color: $colorBlack;
 }
 h4 {
 
