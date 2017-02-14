@@ -100,13 +100,55 @@ var WM = (function($) {
             tl.to(popupMedium , 0.5, {top: popupTop, bottom: popupBottom, ease:Strong.easeInOut})
               .to(popupMedium, 0.3, {left: left, ease:Strong.easeInOut});
               var time = new TimelineMax();
-              var time = new TimelineMax();
               var mediumImage = $this.closest($parent).find('.article__mediumItem img');
               time.to(mediumImage , 1, {top: top, width: width, ease:Strong.easeInOut})
         });
   }
 
-
+  var mixinSmallDiaporama = function(button, parent, right, top, imageLeft) {
+      var $parent = $(parent);
+      var $popup = $('.articlePopup');
+        $parent.find(button).on('click touch', function(){
+            var $this = $(this);
+            var popup = $('.show');
+            $(this).addClass('hideButton')
+            setTimeout(function(){$this.closest($parent).find(button).addClass('displayNone')},500);
+            $this.closest($parent).find('h2, .info').addClass('fadeOut');
+            setTimeout(function(){$this.closest($parent).find('h2, .info').addClass('displayNone')},500);
+            $this.parent().addClass('show');
+            setTimeout(function(){$this.closest($parent).find($popup).addClass('visible')}, 1000);
+            var tl = new TimelineMax();
+            var popup = $this.closest($parent).find('.article__popup');
+             tl.to(popup , 1, {right: right, top: top, ease:Strong.easeInOut});
+              var time = new TimelineMax();
+              var smallImage = $this.closest($parent).find('.article__smallItem');
+              time.to(smallImage , 1, {'margin-left': imageLeft, ease:Strong.easeInOut})
+        });
+    };
+  var mixinSmallDiaporamaClose = function(button, parent, right, top, imageLeft){
+      var $parent = $(parent);
+      var $popup = $('.articlePopup');
+      var openButton = $('.js-showArticle');
+      $parent.find(button).on('click touch', function(){
+          var $this = $(this);
+          setTimeout(function(){$this.closest($parent).find(openButton).removeClass('displayNone');},1000);
+          if ($this.closest($parent).find(openButton).removeClass('hideButton')) {
+            setTimeout(function(){$this.closest($parent).find($popup).removeClass('hideButton');},500);
+          };
+          $this.closest($parent).find('h2, .info').removeClass('displayNone');
+          setTimeout(function(){$this.closest($parent).find('h2, .info').removeClass('fadeOut');},1000);
+          $this.closest($parent).removeClass('show');
+          if ($this.closest($parent).find($popup).hasClass('visible')) {
+            $this.closest($parent).find($popup).removeClass('visible');
+          }
+          var tl = new TimelineMax();
+         var popup = $this.closest($parent).find('.article__popup');
+            tl.to(popup , 1, {right: right, top: top, ease:Strong.easeInOut});
+            var time = new TimelineMax();
+            var smallImage = $this.closest($parent).find('.article__smallItem');
+            time.to(smallImage , 1, {'margin-left': imageLeft, ease:Strong.easeInOut})
+      });
+  }
 
   // #####################################
 	// PARALLAX
@@ -154,7 +196,11 @@ var WM = (function($) {
     }
     var mediumDiaporama = function(){
         mixinMediumDiaporama('.js-showArticle','.article__medium', '-50%', '35%', '54.5%', '-18%', '3%');
-        mixinMediumDiaporamaClose('.articlePopup-close','.article__medium', '0%', '50%', '70.5%', '17rem', '28.2%');
+        mixinMediumDiaporamaClose('.articlePopup-close','.article__medium', '19%', '50%', '70.5%', '17rem', '28.2%');
+    }
+    var smallDiaporama = function(){
+        mixinSmallDiaporama('.js-showArticle','.article__small', '60%', '-3rem', '34%');
+        mixinSmallDiaporamaClose('.articlePopup-close','.article__small', '73%', '19rem', '20%');
     }
     var getHeight = function(mediumArticle){
         var $mediumArticle = $(mediumArticle);
@@ -170,6 +216,7 @@ var WM = (function($) {
       getHeight('.article__medium');
       bigDiaporama();
       mediumDiaporama();
+      smallDiaporama();
       parallax();
   };
 

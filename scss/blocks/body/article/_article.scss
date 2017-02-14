@@ -1,7 +1,7 @@
 .article{
     &__popup{
         position: absolute;
-        top: -17rem;
+        top: 0;
         right: 24rem;
         background: $colorWhite;
         height: 20.5rem;
@@ -54,9 +54,12 @@
             }
         }
         &--thirdPosition{
-            top: 14rem;
-            left: 10rem;
-            z-index: -1;
+            top: 19rem;
+            right: 73%;
+            left: 5%;
+            height: auto;
+            bottom: 23.2%;
+            z-index: 3;
         }
     }
     &__medium{
@@ -69,15 +72,26 @@
             position: absolute;
             width: 50%;
         }
+        .articlePopup p{
+            line-height: 2rem;
+            font-family: $baseFont--light;
+            max-width: 70%;
+        }
     }
     &__small{
         position: relative;
-        height: 350px;
         &Item{
             width: 20%;
-            position: absolute;
-            top: 4rem;
-            left: 33rem;
+            margin-left: 20%;
+            img{
+                position: relative;
+                z-index: 4;
+            }
+        }
+        .articlePopup p{
+            line-height: 2rem;
+            font-family: $baseFont--light;
+            max-width: 70%;
         }
     }
     &Popup{

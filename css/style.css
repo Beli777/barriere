@@ -7,10 +7,6 @@
 *        width: 40%;
 *    }
 */
-/* EXAMPLE
-*
-*    @include fontFace (FontName, fontFolder, 700, italic);
-*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -127,6 +123,9 @@ input[type="search"]::-webkit-search-cancel-button {
 @font-face {
   font-family: "Lucien_Regular";
   src: url("../fonts/Lucien_Regular.otf") format("opentype"); }
+@font-face {
+  font-family: "Lucien_Light";
+  src: url("../fonts/Lucien_Light.otf") format("opentype"); }
 html {
   font-size: 10px; }
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -241,7 +240,7 @@ h1 {
 
 .article__popup {
   position: absolute;
-  top: -17rem;
+  top: 0;
   right: 24rem;
   background: #FFF;
   height: 20.5rem;
@@ -287,9 +286,12 @@ h1 {
       top: 8%;
       opacity: 0; }
   .article__popup--thirdPosition {
-    top: 14rem;
-    left: 10rem;
-    z-index: -1; }
+    top: 19rem;
+    right: 73%;
+    left: 5%;
+    height: auto;
+    bottom: 23.2%;
+    z-index: 3; }
 .article__medium {
   position: relative; }
   .article__mediumItem {
@@ -298,14 +300,22 @@ h1 {
   .article__mediumImage {
     position: absolute;
     width: 50%; }
+  .article__medium .articlePopup p {
+    line-height: 2rem;
+    font-family: "Lucien_Light", Arial, Helvetica, Tahoma, sans-serif;
+    max-width: 70%; }
 .article__small {
-  position: relative;
-  height: 350px; }
+  position: relative; }
   .article__smallItem {
     width: 20%;
-    position: absolute;
-    top: 4rem;
-    left: 33rem; }
+    margin-left: 20%; }
+    .article__smallItem img {
+      position: relative;
+      z-index: 4; }
+  .article__small .articlePopup p {
+    line-height: 2rem;
+    font-family: "Lucien_Light", Arial, Helvetica, Tahoma, sans-serif;
+    max-width: 70%; }
 .articlePopup {
   padding-top: 4.5rem;
   opacity: 0; }
@@ -352,7 +362,7 @@ h1 {
 
 .js-slide {
   position: absolute;
-  top: 0;
+  top: 15rem;
   left: 100%; }
 
 .js-slideShow {

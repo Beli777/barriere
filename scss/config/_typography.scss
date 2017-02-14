@@ -11,6 +11,10 @@
     font-family: "Lucien_Regular";
     src: url("../fonts/Lucien_Regular.otf") format("opentype")
 }
+@font-face {
+    font-family: "Lucien_Light";
+    src: url("../fonts/Lucien_Light.otf") format("opentype")
+}
 //------FONT SIZES
 html {
     $fontSizePX: $baseFontSize + 'px';
