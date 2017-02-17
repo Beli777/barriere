@@ -55,7 +55,7 @@ var WM = (function($) {
             .to(popup , 0.5, {height: height,ease:Strong.easeInOut});
       });
   }
-  var mixinMediumDiaporama = function(button, parent, top, width, left, popupTop, popupBottom){
+  var mixinMediumDiaporama = function(button, parent, top, width, left, popupLeft, popupTop, popupBottom, popupRight){
         var $parent = $(parent);
         var $popup = $('.articlePopup');
         var $image = $('.article__popup--secondPositionImage');
@@ -70,14 +70,14 @@ var WM = (function($) {
             setTimeout(function(){$this.closest($parent).find(button).addClass('displayNone')},500);
             var time = new TimelineMax();
             var mediumImage = $this.closest($parent).find('.article__mediumItem img');
-            time.to(mediumImage , 1, {top: top, width: width, ease:Strong.easeInOut})
+            time.to(mediumImage , 1, {top: top, width: width, 'margin-left': left, ease:Strong.easeInOut})
             var tl = new TimelineMax();
             var popupMedium = $this.closest($parent).find('.article__popup');
-            tl.to(popupMedium , 0.3, {left: left, ease:Strong.easeInOut})
+            tl.to(popupMedium , 0.3, {left: popupLeft, right: popupRight, ease:Strong.easeInOut})
               .to(popupMedium , 0.5, {top: popupTop, bottom: popupBottom, ease:Strong.easeInOut});
         });
   }
-  var mixinMediumDiaporamaClose = function(button, parent, top, width, left, popupTop, popupBottom){
+  var mixinMediumDiaporamaClose = function(button, parent, top, width, left, popupLeft, popupTop, popupBottom, popupRight){
         var $parent = $(parent);
         var $popup = $('.articlePopup');
         var $image = $('.article__popup--secondPositionImage');
@@ -98,10 +98,10 @@ var WM = (function($) {
             var tl = new TimelineMax();
             var popupMedium = $this.closest($parent).find('.article__popup');
             tl.to(popupMedium , 0.5, {top: popupTop, bottom: popupBottom, ease:Strong.easeInOut})
-              .to(popupMedium, 0.3, {left: left, ease:Strong.easeInOut});
+              .to(popupMedium, 0.3, {left: popupLeft, right: popupRight, ease:Strong.easeInOut});
               var time = new TimelineMax();
               var mediumImage = $this.closest($parent).find('.article__mediumItem img');
-              time.to(mediumImage , 1, {top: top, width: width, ease:Strong.easeInOut})
+              time.to(mediumImage , 1, {top: top, width: width, 'margin-left': left, ease:Strong.easeInOut})
         });
   }
 
@@ -194,9 +194,14 @@ var WM = (function($) {
         mixinBigDiaporama('.js-showArticle','.diaporama__big','50.3%','5.5%','65rem');
         mixinBigDiaporamaClose('.articlePopup-close','.diaporama__big','60.3%','15.142%','20.5rem');
     }
+    //button, parent, top, width, left, popupLeft, popupTop, popupBottom, popupRight
     var mediumDiaporama = function(){
-        mixinMediumDiaporama('.js-showArticle','.article__medium', '-50%', '35%', '54.5%', '-18%', '3%');
-        mixinMediumDiaporamaClose('.articlePopup-close','.article__medium', '19%', '50%', '70.5%', '17rem', '28.2%');
+        mixinMediumDiaporama('.js-showArticle','.article__medium', '-50%', '35%', '', '54.5%', '-18%', '3%', '');
+        mixinMediumDiaporamaClose('.articlePopup-close','.article__medium', '19%', '50%', '', '70.5%', '17rem', '28.2%', '');
+    }
+    var mediumDiaporamaSecond = function(){
+        mixinMediumDiaporama('.js-showArticle','.hotelGulfDiaporama', '-40%', '49%', '28%', '54.5%', '-7rem', '12.2%', '0');
+        mixinMediumDiaporamaClose('.articlePopup-close','.hotelGulfDiaporama', '18.7%', '83%', '0%', '70.5%', '-7rem', '75.2%', '5%');
     }
     var smallDiaporama = function(){
         mixinSmallDiaporama('.js-showArticle','.article__small', '60%', '-3rem', '34%');
@@ -216,6 +221,7 @@ var WM = (function($) {
       getHeight('.article__medium');
       bigDiaporama();
       mediumDiaporama();
+      mediumDiaporamaSecond();
       smallDiaporama();
       parallax();
   };

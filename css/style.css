@@ -292,11 +292,22 @@ h1 {
     height: auto;
     bottom: 23.2%;
     z-index: 3; }
+  .article__popup--fourthPosition {
+    top: -7rem;
+    right: 5%;
+    left: 70.5%;
+    height: auto;
+    bottom: 75.2%; }
 .article__medium {
   position: relative; }
   .article__mediumItem {
     width: 50%;
     margin: 0 auto; }
+  .article__medium .hotelGulf {
+    width: 65%; }
+    .article__medium .hotelGulf img {
+      width: 83%;
+      transition: 0.00001s all ease-in; }
   .article__mediumImage {
     position: absolute;
     width: 50%; }

@@ -61,12 +61,27 @@
             bottom: 23.2%;
             z-index: 3;
         }
+        &--fourthPosition{
+        top: -7rem;
+        right: 5%;
+        left: 70.5%;
+        height: auto;
+        bottom: 75.2%;
+        }
     }
     &__medium{
         position: relative;
         &Item{
             width: 50%;
             margin: 0 auto;
+        }
+        .hotelGulf{
+          width: 65%;
+          img{
+            width: 83%;
+        
+            transition: 0.00001s all ease-in;
+          }
         }
         &Image{
             position: absolute;
