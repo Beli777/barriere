@@ -85,7 +85,7 @@ html {
 
 html, body {
   width: 100%;
-  background-color: #f9f9f9; }
+  background-color: lightgray; }
 
 body {
   padding-top: 8rem; }
@@ -115,7 +115,8 @@ input[type="search"]::-webkit-search-cancel-button {
 .innerWrapper {
   max-width: 1600px;
   margin: 0 auto;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 @font-face {
   font-family: "Lucien_Bold";
@@ -230,13 +231,65 @@ h1 {
     margin-top: 10rem;
     margin-bottom: 5rem; }
 
-#vertical-divider {
-  width: 1px;
-  height: 50px;
+.small-year {
   position: absolute;
-  left: 50%;
-  top: 12px;
-  border-left: 1px solid #F04948; }
+  top: 7rem;
+  left: 41%; }
+
+.modified-year {
+  top: -4rem; }
+
+.visible p {
+  font-family: "Lucien_Light", Arial, Helvetica, Tahoma, sans-serif; }
+
+.title-padding {
+  padding: 0 4.5rem; }
+
+.js-showArticle {
+  font-family: "Lucien_Light", Arial, Helvetica, Tahoma, sans-serif; }
+
+.divider {
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  left: 49.8%;
+  top: 11rem;
+  border-left: 3px solid #af8716;
+  z-index: 10; }
+
+.anchor {
+  position: fixed;
+  top: 0;
+  right: 0;
+  content: '';
+  width: 2.5rem;
+  z-index: 10; }
+  .anchor__mask {
+    background-color: #FFF;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .anchor__divider {
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: 49%;
+    top: 0rem;
+    border-left: 1px solid #5e5e5e;
+    z-index: 0; }
+  .anchor a {
+    display: block;
+    width: 7.5px;
+    height: 7.5px;
+    background-color: #5e5e5e;
+    border-radius: 10px;
+    content: '';
+    margin: 3rem auto;
+    z-index: 0;
+    position: relative; }
 
 .article__popup {
   position: absolute;
@@ -277,7 +330,7 @@ h1 {
     right: 5%;
     left: 70.5%;
     height: auto;
-    bottom: 28.2%; }
+    bottom: 36.2%; }
     .article__popup--secondPositionImage {
       width: 53%;
       left: 7%;
@@ -286,7 +339,7 @@ h1 {
       top: 8%;
       opacity: 0; }
   .article__popup--thirdPosition {
-    top: 19rem;
+    top: 12rem;
     right: 73%;
     left: 5%;
     height: auto;
@@ -298,6 +351,27 @@ h1 {
     left: 70.5%;
     height: auto;
     bottom: 75.2%; }
+  .article__popup--fifthPosition {
+    top: 2rem;
+    right: 0%;
+    left: 75%;
+    height: auto;
+    bottom: 40.2%;
+    z-index: 3;
+    transition: 0.00001s all ease-in; }
+  .article__popup--sixthPosition {
+    top: 28rem;
+    right: 68%;
+    left: 9%;
+    height: auto;
+    bottom: 28.2%;
+    z-index: 3; }
+  .article__popup--seventhPosition {
+    left: -27%;
+    right: 90%;
+    top: 29rem;
+    bottom: 0;
+    z-index: 4; }
 .article__medium {
   position: relative; }
   .article__mediumItem {
@@ -312,19 +386,22 @@ h1 {
     position: absolute;
     width: 50%; }
   .article__medium .articlePopup p {
-    line-height: 2rem;
+    line-height: 2.5rem;
     font-family: "Lucien_Light", Arial, Helvetica, Tahoma, sans-serif;
     max-width: 70%; }
 .article__small {
-  position: relative; }
+  position: relative;
+  margin-top: 20rem; }
   .article__smallItem {
     width: 20%;
     margin-left: 20%; }
     .article__smallItem img {
       position: relative;
       z-index: 4; }
+    .article__smallItem--right {
+      margin-left: 65%; }
   .article__small .articlePopup p {
-    line-height: 2rem;
+    line-height: 2.5rem;
     font-family: "Lucien_Light", Arial, Helvetica, Tahoma, sans-serif;
     max-width: 70%; }
 .articlePopup {
@@ -354,7 +431,8 @@ h1 {
     display: block;
     width: 200px;
     margin: 3rem auto;
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    font-family: Georgia; }
     .articlePopup a:before, .articlePopup a:after {
       display: block;
       width: 100%;
@@ -363,10 +441,17 @@ h1 {
       content: '';
       margin: 2rem 0; }
 
+.popupImage {
+  position: absolute;
+  right: -13%;
+  top: 16%;
+  width: 60%; }
+
 .diaporama__big {
   position: relative; }
   .diaporama__big img {
-    transition: all 0.5s ease; }
+    transition: all 0.5s ease;
+    -webkit-transition: 0.5s all ease; }
   .diaporama__big-sliderItem {
     display: inline-block;
     width: 100%; }
@@ -375,6 +460,282 @@ h1 {
   position: absolute;
   top: 15rem;
   left: 100%; }
+
+.hotelGulfDiaporama .article__popup--secondPositionImage {
+  top: -5%; }
+
+.cinemaFestival {
+  margin-top: -15rem; }
+  .cinemaFestival .article__smallItem {
+    width: 25%;
+    margin-left: 22%; }
+  .cinemaFestival__popup {
+    padding: 0 40% 0 0; }
+
+.societeHoteliare .article__mediumItem {
+  margin-left: 38.5%; }
+  .societeHoteliare .article__mediumItem img {
+    transition: 0.00001s all ease-in;
+    -webkit-transition: 0.00001s all ease-in; }
+.societeHoteliare--position {
+  top: 69%;
+  right: 57%;
+  left: 19%;
+  bottom: 28.2%;
+  z-index: 3;
+  height: initial;
+  bottom: 0; }
+.societeHoteliareImagePopup {
+  right: 0%;
+  left: auto;
+  top: -7%; }
+
+.slot-machine .article__smallItem {
+  width: 16%; }
+.slot-machine .article__smallItem--right {
+  margin-left: 58%; }
+.slot-machine--position {
+  top: 45%;
+  right: 11.5%;
+  left: 72%;
+  height: auto;
+  bottom: 25.2%;
+  z-index: 3;
+  transition: 0.00001s all ease-in;
+  -webkit-transition: 0.00001s all ease-in; }
+
+.diane {
+  margin-top: -10rem; }
+  .diane .article__smallItem {
+    margin-left: 27%;
+    width: 19%; }
+  .diane--position {
+    top: 40%;
+    right: 69%;
+    left: 5%;
+    height: auto;
+    bottom: 23.2%;
+    z-index: 3;
+    transition: 0.00001s all ease-in;
+    -webkit-transition: 0.00001s all ease-in; }
+  .diane .articlePopup-close {
+    top: 4rem;
+    right: 9rem; }
+  .diane .articlePopup p {
+    padding: 0 3rem; }
+  .diane .small-year {
+    top: 40%; }
+
+.dominique {
+  margin-top: -4rem; }
+  .dominique .article__smallItem {
+    width: 26.5%; }
+  .dominique .article__smallItem--right {
+    margin-left: 57%; }
+  .dominique--position {
+    top: 12%;
+    right: 5%;
+    left: 73%;
+    height: auto;
+    bottom: 50.2%;
+    z-index: 3;
+    transition: 0.00001s all ease-in;
+    -webkit-transition: 0.00001s all ease-in; }
+  .dominique .small-year {
+    top: 36%; }
+
+.fouqets--position {
+  left: 15%;
+  height: 18.5rem;
+  right: auto; }
+
+.fondation .article__mediumImage {
+  transition: 0.00001s all ease-in;
+  -webkit-transition: 0.00001s all ease-in;
+  margin-left: 7%; }
+.fondation--position {
+  top: 2%;
+  right: 5%;
+  left: 70.5%;
+  height: auto;
+  bottom: 65.2%;
+  z-index: 3; }
+
+.dominique-person .article__smallItem {
+  margin-left: 25%; }
+.dominique-person--position {
+  top: -6%;
+  right: 67%;
+  left: 5%;
+  height: auto;
+  bottom: 63.2%;
+  z-index: 3;
+  transition: 0.00001s all ease-in;
+  -webkit-transition: 0.00001s all ease-in; }
+
+.hotel-later .article__mediumItem img {
+  margin-left: -19%;
+  transition: 0.00001s all ease-in;
+  -webkit-transition: 0.00001s all ease-in; }
+.hotel-later--position {
+  top: 59%;
+  right: 29%;
+  left: 46.5%;
+  height: auto;
+  bottom: 8.2%;
+  z-index: 3;
+  transition: 0.00001s all ease-in; }
+.hotel-later .article__popup--secondPositionImage {
+  width: 47%; }
+
+.toulouse {
+  margin-top: 20rem; }
+  .toulouse .article__mediumImage {
+    margin-left: 0;
+    transition: 0.00001s all ease-in;
+    -webkit-transition: 0.00001s all ease-in; }
+  .toulouse--position {
+    top: 27%;
+    right: 5%;
+    left: 70.5%;
+    height: auto;
+    bottom: 41.2%; }
+
+.naoura {
+  margin-top: 20rem; }
+  .naoura--position {
+    top: -1%;
+    right: 70%;
+    left: 5%;
+    height: auto;
+    bottom: 67.2%;
+    z-index: 3;
+    transition: 0.00001s all ease-in;
+    -webkit-transition: 0.00001s all ease-in; }
+  .naoura .article__popup--secondPositionImage {
+    width: 49%;
+    left: 39%;
+    position: absolute;
+    z-index: 4;
+    top: 8%;
+    opacity: 0; }
+
+.lille {
+  margin-top: 20rem; }
+  .lille .article__mediumImage {
+    margin-left: 30%;
+    width: 40%;
+    transition: 0.00001s all ease-in;
+    -webkit-transition: 0.00001s all ease-in; }
+  .lille--position {
+    top: 80%;
+    right: 18%;
+    left: 58%;
+    height: auto;
+    bottom: -15%; }
+  .lille .modified-year {
+    top: 0;
+    left: 40%;
+    position: absolute; }
+  .lille .article__popup--secondPositionImage {
+    width: 53%;
+    left: 7%;
+    position: absolute;
+    z-index: 3;
+    top: 5%;
+    opacity: 0; }
+
+.resort {
+  margin-top: -4%; }
+  .resort .article__mediumImage {
+    margin-left: -20%;
+    width: 40%;
+    transition: 0.00001s all ease-in;
+    -webkit-transition: 0.00001s all ease-in; }
+  .resort--position {
+    top: -31%;
+    right: 53%;
+    left: 27%;
+    height: auto;
+    bottom: 90%;
+    z-index: 3; }
+  .resort .modified-year {
+    top: 33%;
+    left: 40%;
+    position: absolute; }
+  .resort .article__popup--secondPositionImage {
+    width: 46%;
+    left: 46%;
+    position: absolute;
+    z-index: 4;
+    top: -15%;
+    opacity: 0; }
+
+.pierre .article__smallItem {
+  width: 22%; }
+.pierre--position {
+  top: 7%;
+  right: 73%;
+  left: 5%;
+  height: auto;
+  bottom: 57.2%;
+  z-index: 3;
+  transition: 0.00001s all ease-in;
+  -webkit-transition: 0.00001s all ease-in; }
+.pierre .modified-year {
+  top: -12%; }
+
+.moma {
+  margin-top: 10rem; }
+  .moma--position {
+    top: 32%;
+    right: 5%;
+    left: 70.5%;
+    height: auto;
+    bottom: 32.2%; }
+  .moma .article__mediumImage {
+    margin-left: -20%; }
+  .momaImage img {
+    width: 74%; }
+  .moma .article__popup--secondPositionImage {
+    width: 58%;
+    left: 2.45%;
+    position: absolute;
+    z-index: 3;
+    top: -38%;
+    opacity: 0; }
+  .moma .modified-year {
+    top: -53%;
+    position: absolute;
+    left: 45%; }
+
+.westminster .article__mediumImage {
+  margin-left: 20%;
+  width: 40%;
+  transition: 0.00001s all ease-in;
+  -webkit-transition: 0.00001s all ease-in; }
+.westminster--position {
+  top: 25%;
+  right: 53%;
+  left: 25%;
+  height: auto;
+  bottom: 40%;
+  z-index: 3;
+  transition: 0.00001s all ease-in;
+  -webkit-transition: 0.00001s all ease-in; }
+.westminster .article__popup--secondPositionImage {
+  width: 50%;
+  left: 46%;
+  position: absolute;
+  z-index: 4;
+  top: 38%;
+  opacity: 0; }
+
+.courche--position {
+  left: 15%;
+  height: 18.5rem;
+  right: auto;
+  z-index: 5; }
 
 .js-slideShow {
   left: 0;

@@ -4,6 +4,7 @@
         position: relative;
         img{
             transition: all 0.5s ease;
+              -webkit-transition: 0.5s all ease;
         }
         &-sliderItem{
 
@@ -16,4 +17,345 @@
     position: absolute;
     top: 15rem;
     left: 100%;
+}
+.hotelGulfDiaporama{
+  .article__popup--secondPositionImage{
+    top: -5%;
+  }
+}
+.cinemaFestival{
+  margin-top: -15rem;
+  .article__smallItem{
+    width: 25%;
+    margin-left: 22%;
+  }
+  &__popup{
+    padding: 0 40% 0 0;
+  }
+}
+.societeHoteliare{
+  .article__mediumItem{
+        margin-left: 38.5%;
+        img{
+            transition: 0.00001s all ease-in;
+              -webkit-transition: 0.00001s all ease-in;
+        }
+  }
+  &--position{
+    top: 69%;
+    right: 57%;
+    left: 19%;
+    bottom: 28.2%;
+    z-index: 3;
+    height: initial;
+    bottom: 0;
+  }
+  &ImagePopup{
+    right: 0%;
+    left: auto;
+    top: -7%;
+  }
+}
+.slot-machine{
+  .article__smallItem{
+      width: 16%;
+  }
+  .article__smallItem--right{
+    margin-left: 58%;
+  }
+  &--position{
+    top: 45%;
+    right: 11.5%;
+    left: 72%;
+    height: auto;
+    bottom: 25.2%;
+    z-index: 3;
+    transition: 0.00001s all ease-in;
+      -webkit-transition: 0.00001s all ease-in;
+  }
+}
+.diane{
+  margin-top: -10rem;
+  .article__smallItem{
+    margin-left: 27%;
+    width: 19%;
+  }
+  &--position{
+    top: 40%;
+    right: 69%;
+    left: 5%;
+    height: auto;
+    bottom: 23.2%;
+    z-index: 3;
+    transition: 0.00001s all ease-in;
+      -webkit-transition: 0.00001s all ease-in;
+  }
+  .articlePopup-close{
+    top: 4rem;
+    right: 9rem;
+  }
+  .articlePopup p{
+    padding: 0 3rem;
+  }
+  .small-year{
+    top: 40%;
+  }
+}
+.dominique{
+  margin-top: -4rem;
+  .article__smallItem{
+      width: 26.5%;
+  }
+  .article__smallItem--right{
+    margin-left: 57%;
+  }
+  &--position{
+        top: 12%;
+        right: 5%;
+        left: 73%;
+        height: auto;
+        bottom: 50.2%;
+        z-index: 3;
+        transition: 0.00001s all ease-in;
+          -webkit-transition: 0.00001s all ease-in;
+  }
+  .small-year{
+    top: 36%;
+  }
+}
+.fouqets{
+  &--position{
+    left: 15%;
+    height: 18.5rem;
+    right: auto;
+  }
+}
+.fondation{
+  .article__mediumImage{
+    transition: 0.00001s all ease-in;
+      -webkit-transition: 0.00001s all ease-in;
+    margin-left: 7%;
+  }
+  &--position{
+    top: 2%;
+    right: 5%;
+    left: 70.5%;
+    height: auto;
+    bottom: 65.2%;
+    z-index: 3;
+  }
+}
+.dominique-person{
+  .article__smallItem{
+    margin-left: 25%;
+  }
+  &--position{
+    top: -6%;
+    right: 67%;
+    left: 5%;
+    height: auto;
+    bottom: 63.2%;
+    z-index: 3;
+    transition: 0.00001s all ease-in;
+      -webkit-transition: 0.00001s all ease-in;
+  }
+}
+.hotel-later{
+  .article__mediumItem{
+    img{
+      margin-left: -19%;
+        transition: 0.00001s all ease-in;
+          -webkit-transition: 0.00001s all ease-in;
+    }
+  }
+  &--position{
+    top: 59%;
+    right: 29%;
+    left: 46.5%;
+    height: auto;
+    bottom: 8.2%;
+    z-index: 3;
+      transition: 0.00001s all ease-in;
+  }
+  .article__popup--secondPositionImage{
+    width: 47%;
+  }
+}
+.toulouse{
+  margin-top: 20rem;
+  .article__mediumImage{
+    margin-left: 0;
+      transition: 0.00001s all ease-in;
+        -webkit-transition: 0.00001s all ease-in;
+  }
+  &--position{
+    top: 27%;
+    right: 5%;
+    left: 70.5%;
+    height: auto;
+    bottom: 41.2%;
+  }
+}
+.naoura{
+  margin-top: 20rem;
+  &--position{
+    top: -1%;
+    right: 70%;
+    left: 5%;
+    height: auto;
+    bottom: 67.2%;
+    z-index: 3;
+    transition: 0.00001s all ease-in;
+      -webkit-transition: 0.00001s all ease-in;
+  }
+  .article__popup--secondPositionImage {
+    width: 49%;
+    left: 39%;
+    position: absolute;
+    z-index: 4;
+    top: 8%;
+    opacity: 0;
+}
+}
+.lille{
+  margin-top: 20rem;
+  .article__mediumImage{
+    margin-left: 30%;
+    width: 40%;
+        transition: 0.00001s all ease-in;
+          -webkit-transition: 0.00001s all ease-in;
+  }
+  &--position{
+        top: 80%;
+        right: 18%;
+        left: 58%;
+        height: auto;
+        bottom: -15%;
+  }
+  .modified-year{
+    top: 0;
+    left: 40%;
+    position: absolute;
+  }
+  .article__popup--secondPositionImage {
+    width: 53%;
+    left: 7%;
+    position: absolute;
+    z-index: 3;
+    top: 5%;
+    opacity: 0;
+}
+}
+.resort{
+  margin-top: -4%;
+  .article__mediumImage{
+    margin-left: -20%;
+    width: 40%;
+        transition: 0.00001s all ease-in;
+          -webkit-transition: 0.00001s all ease-in;
+  }
+  &--position{
+    top: -31%;
+    right: 53%;
+    left: 27%;
+    height: auto;
+    bottom: 90%;
+    z-index: 3;
+  }
+  .modified-year{
+    top: 33%;
+    left: 40%;
+    position: absolute;
+  }
+  .article__popup--secondPositionImage {
+    width: 46%;
+    left: 46%;
+    position: absolute;
+    z-index: 4;
+    top: -15%;
+    opacity: 0;
+}
+}
+.pierre{
+  .article__smallItem{
+    width: 22%;
+  }
+  &--position{
+    top: 7%;
+    right: 73%;
+    left: 5%;
+    height: auto;
+    bottom: 57.2%;
+    z-index: 3;
+      transition: 0.00001s all ease-in;
+      -webkit-transition: 0.00001s all ease-in;
+  }
+  .modified-year{
+    top: -12%;
+  }
+}
+.moma{
+  margin-top: 10rem;
+  &--position{
+    top: 32%;
+    right: 5%;
+    left: 70.5%;
+    height: auto;
+    bottom: 32.2%;
+  }
+  .article__mediumImage {
+    margin-left: -20%;
+  }
+  &Image{
+    img{
+      width: 74%;
+    }
+  }
+  .article__popup--secondPositionImage {
+    width: 58%;
+    left: 2.45%;
+    position: absolute;
+    z-index: 3;
+    top: -38%;
+    opacity: 0;
+}
+.modified-year{
+  top: -53%;
+  position: absolute;
+  left: 45%;
+}
+}
+.westminster{
+  .article__mediumImage{
+    margin-left: 20%;
+    width: 40%;
+        transition: 0.00001s all ease-in;
+          -webkit-transition: 0.00001s all ease-in;
+  }
+  &--position{
+      top: 25%;
+      right: 53%;
+      left: 25%;
+      height: auto;
+      bottom: 40%;
+      z-index: 3;
+      transition: 0.00001s all ease-in;
+        -webkit-transition: 0.00001s all ease-in;
+  }
+  .article__popup--secondPositionImage {
+    width: 50%;
+    left: 46%;
+    position: absolute;
+    z-index: 4;
+    top: 38%;
+    opacity: 0;
+}
+}
+.courche{
+  &--position{
+    left: 15%;
+        height: 18.5rem;
+        right: auto;
+        z-index: 5;
+  }
 }

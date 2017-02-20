@@ -43,7 +43,7 @@
             right: 5%;
             left: 70.5%;
             height: auto;
-            bottom: 28.2%;
+            bottom: 36.2%;
             &Image{
                 width: 53%;
                 left: 7%;
@@ -54,7 +54,7 @@
             }
         }
         &--thirdPosition{
-            top: 19rem;
+            top: 12rem;
             right: 73%;
             left: 5%;
             height: auto;
@@ -68,6 +68,30 @@
         height: auto;
         bottom: 75.2%;
         }
+        &--fifthPosition{
+          top: 2rem;
+          right: 0%;
+          left: 75%;
+          height: auto;
+          bottom: 40.2%;
+          z-index: 3;
+          transition: 0.00001s all ease-in;
+        }
+        &--sixthPosition{
+          top: 28rem;
+          right: 68%;
+          left: 9%;
+          height: auto;
+          bottom: 28.2%;
+          z-index: 3;
+        }
+        &--seventhPosition{
+          left: -27%;
+          right: 90%;
+          top: 29rem;
+          bottom: 0;
+          z-index: 4;
+        }
     }
     &__medium{
         position: relative;
@@ -79,7 +103,7 @@
           width: 65%;
           img{
             width: 83%;
-        
+
             transition: 0.00001s all ease-in;
           }
         }
@@ -88,13 +112,14 @@
             width: 50%;
         }
         .articlePopup p{
-            line-height: 2rem;
+            line-height: 2.5rem;
             font-family: $baseFont--light;
             max-width: 70%;
         }
     }
     &__small{
         position: relative;
+        margin-top: 20rem;
         &Item{
             width: 20%;
             margin-left: 20%;
@@ -102,9 +127,12 @@
                 position: relative;
                 z-index: 4;
             }
+            &--right{
+              margin-left: 65%;
+            }
         }
         .articlePopup p{
-            line-height: 2rem;
+            line-height: 2.5rem;
             font-family: $baseFont--light;
             max-width: 70%;
         }
@@ -141,6 +169,7 @@
             width: 200px;
             margin: 3rem auto;
             font-size: 1.4rem;
+            font-family: Georgia;
             &:before,
             &:after{
                 display: block;
@@ -152,4 +181,10 @@
             }
         }
     }
+}
+.popupImage{
+  position: absolute;
+  right: -13%;
+  top: 16%;
+  width: 60%;
 }
