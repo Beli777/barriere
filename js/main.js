@@ -296,12 +296,14 @@ var WM = (function($) {
         });
     }
     var scrollHeight = function(){
-        var $divider = $('.divider');
+        setTimeout(function(){
+            var $divider = $('.divider');
         $(document).scroll(function() {
             var scrollSize = $(document).scrollTop();
             var scroll = new TimelineMax();
             scroll.to($divider , 0.3, {height: scrollSize + 400, ease:Strong.easeInOut})
         })
+    },1000);
     }
     var anchor = function(button, section){
         var $button = $(button);
