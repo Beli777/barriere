@@ -342,7 +342,7 @@ var WM = (function($) {
    * Fire events on document ready, and bind other events.
    */
   var ready = function() {
-      getHeight('.article__medium');
+      getHeight('.article');
       bigDiaporama();
       mediumDiaporama();
       mediumDiaporamaSecond();
