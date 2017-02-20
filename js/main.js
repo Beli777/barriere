@@ -288,6 +288,7 @@ var WM = (function($) {
       mixinSmallDiaporamaClose('.articlePopup-close','.pierre','5%', '73%', '7%','57.2%','3', '20%');
     }
     var getHeight = function(mediumArticle){
+
         var $mediumArticle = $(mediumArticle);
         var $year = $('.year').outerHeight();
         $mediumArticle.each(function() {
@@ -296,14 +297,12 @@ var WM = (function($) {
         });
     }
     var scrollHeight = function(){
-        setTimeout(function(){
-            var $divider = $('.divider');
+        var $divider = $('.divider');
         $(document).scroll(function() {
             var scrollSize = $(document).scrollTop();
             var scroll = new TimelineMax();
             scroll.to($divider , 0.3, {height: scrollSize + 400, ease:Strong.easeInOut})
         })
-    },1000);
     }
     var anchor = function(button, section){
         var $button = $(button);
@@ -340,6 +339,9 @@ var WM = (function($) {
         anchor('.menu23','.westminster');
         anchor('.menu24','.courche');
     }
+    $(window).on('load',function() {
+         getHeight('.article__medium');
+    });
   /**
    * Fire events on document ready, and bind other events.
    */
@@ -370,7 +372,7 @@ var WM = (function($) {
       scrollHeight();
       anchorFunction();
       parallax();
-      getHeight('.article__medium');
+      load();
   };
 
   // Only expose the ready function to the world
