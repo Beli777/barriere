@@ -161,18 +161,16 @@ var WM = (function($) {
             var lastScrollTop = 0;
     		$(window).scroll(function(){
                 var st = $(this).scrollTop();
+                var paralaxLayerOne = $('.prlx_layer_1');
+                var paralaxLayerSecond = $('.prlx_layer_2');
+                var paralaxLayerThird = $('.prlx_layer_3');
                 if (st > lastScrollTop){
-                   // downscroll code
-                    $('.prlx_layer_1').css({
-                    "transform" : "translate3d(0,  -" + st/10 + "px" + ",0"
-                    });
-                    $('.prlx_layer_2').css({
-                    "transform" : "translate3d(0,  -" + st/7.5 + "px" + ",0"
-                    });
-                    $('.prlx_layer_3').css({
-                    "transform" : "translate3d(0,  -" + st/5 + "px" + ",0"
-                    });
-
+                    var parallaxTime = new TimelineMax();
+                    parallaxTime.to(paralaxLayerOne , 0.5, {"transform" : "translate3d(0,  -" + st/10 + "px" + ",0", ease:Power1.easeOut})
+                    var parallaxTimeSecond = new TimelineMax();
+                    parallaxTimeSecond.to(paralaxLayerSecond , 0.5, {"transform" : "translate3d(0,  -" + st/7 + "px" + ",0", ease:Power1.easeOut})
+                    var parallaxTimeThird = new TimelineMax();
+                    parallaxTimeThird.to(paralaxLayerThird , 0.5, {"transform" : "translate3d(0,  -" + st/55 + "px" + ",0", ease:Power1.easeOut})
                 } else {
                   // upscroll code
                     $('.prlx_layer_1').css({
@@ -297,6 +295,49 @@ var WM = (function($) {
         $(this).css('height', $content + $year + 'px');
         });
     }
+    var scrollHeight = function(){
+        var $divider = $('.divider');
+        $(document).scroll(function() {
+            var scrollSize = $(document).scrollTop();
+            var scroll = new TimelineMax();
+            scroll.to($divider , 0.3, {height: scrollSize + 400, ease:Strong.easeInOut})
+        })
+    }
+    var anchor = function(button, section){
+        var $button = $(button);
+        var $tooltip = $('.tooltip');
+        $button.on('click touch', function(){
+          TweenLite.to(window, 2, {scrollTo:{y: section, autoKill: true, offsetY:70}, ease:Strong.easeInOut});
+          $tooltip.parent().find('.active').removeClass('active');
+          $(this).parent().find($tooltip).addClass('active');
+        });
+    }
+    var anchorFunction = function(){
+        anchor('.menu1','.diaporama__bigFirst');
+        anchor('.menu2','.francaise');
+        anchor('.menu3','.andre');
+        anchor('.menu4','.hotelGulfDiaporama');
+        anchor('.menu5','.lucien');
+        anchor('.menu6','.cinemaFestival');
+        anchor('.menu7','.societeHoteliare');
+        anchor('.menu8','.slot-machine');
+        anchor('.menu9','.diane');
+        anchor('.menu10','.dominique');
+        anchor('.menu11','.fouqets');
+        anchor('.menu12','.fondation');
+        anchor('.menu13','.dominique-person');
+        anchor('.menu14','.casinoHuge');
+        anchor('.menu15','.hotel-later');
+        anchor('.menu16','.toulouse');
+        anchor('.menu17','.naoura');
+        anchor('.menu18','.lille');
+        anchor('.menu19','.resort');
+        anchor('.menu20','.diaporama__bigSecond');
+        anchor('.menu21','.pierre');
+        anchor('.menu22','.moma');
+        anchor('.menu23','.westminster');
+        anchor('.menu24','.courche');
+    }
   /**
    * Fire events on document ready, and bind other events.
    */
@@ -325,6 +366,8 @@ var WM = (function($) {
       mediumDiaporamaMoma();
       mediumDiaporamaWestminster();
       bigDiaporamaCourche();
+      scrollHeight();
+      anchorFunction();
       parallax();
   };
 
@@ -332,7 +375,6 @@ var WM = (function($) {
   return {
       ready: ready
   };
-
 })(jQuery);
 
 jQuery(WM.ready);

@@ -62,11 +62,11 @@
             z-index: 3;
         }
         &--fourthPosition{
-        top: -7rem;
+        top: 6%;
         right: 5%;
         left: 70.5%;
         height: auto;
-        bottom: 75.2%;
+        bottom: 60.2%;
         }
         &--fifthPosition{
           top: 2rem;
@@ -75,7 +75,6 @@
           height: auto;
           bottom: 40.2%;
           z-index: 3;
-          transition: 0.00001s all ease-in;
         }
         &--sixthPosition{
           top: 28rem;
@@ -103,8 +102,6 @@
           width: 65%;
           img{
             width: 83%;
-
-            transition: 0.00001s all ease-in;
           }
         }
         &Image{
@@ -119,7 +116,7 @@
     }
     &__small{
         position: relative;
-        margin-top: 20rem;
+        margin-top: 13%;
         &Item{
             width: 20%;
             margin-left: 20%;

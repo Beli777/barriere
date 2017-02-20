@@ -7,6 +7,7 @@
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/TweenMax.min.js"></script>
+<script src='js/ScrollToPlugin.min.js'></script>
 <script src="js/main.js"></script>
 </head>
 <body>
@@ -16,34 +17,35 @@
       <div class="anchor__mask"></div>
       <div class="anchor__divider"></div>
       <ul>
-        <li>
-          <a href='#'></a>
-          <a href='#'></a>
-          <a href='#'></a>
-          <a href='#'></a>
-          <a href='#'></a>
-          <a href='#'></a>
-          <a href='#'></a>
-          <a href='#'></a>
-          <a href='#'></a>
-          <a href='#'></a>
-          <a href='#'></a>
-          <a href='#'></a>
-          <a href='#'></a>
-          <a href='#'></a>
-          <a href='#'></a>
-          <a href='#'></a>
-          <a href='#'></a>
-          <a href='#'></a>
-          <a href='#'></a>
-          <a href='#'></a>
-          <a href='#'></a>
-        </li>
+        <li><a   class='menu1'></a> <span class="tooltip">1912</span></li>
+        <li><a   class='menu2'></a> <span class="tooltip">1926</span></li>
+        <li><a   class='menu3'></a><span class="tooltip">1927</span></li>
+        <li><a   class='menu4'></a><span class="tooltip">1927</span></li>
+        <li><a   class='menu5'></a><span class="tooltip">1962</span></li>
+        <li><a   class='menu6'></a><span class="tooltip">1975</span></li>
+        <li><a   class='menu7'></a><span class="tooltip">1980</span></li>
+        <li><a   class='menu8'></a><span class="tooltip">1988</span></li>
+        <li><a   class='menu9'></a><span class="tooltip">1990</span></li>
+        <li><a   class='menu10'></a><span class="tooltip">1997</span></li>
+        <li><a   class='menu11'></a><span class="tooltip">1998</span></li>
+        <li><a   class='menu12'></a><span class="tooltip">1999</span></li>
+        <li><a   class='menu13'></a><span class="tooltip">2001</span></li>
+        <li><a   class='menu14'></a><span class="tooltip">2003</span></li>
+        <li><a   class='menu15'></a><span class="tooltip">2006</span></li>
+        <li><a   class='menu16'></a><span class="tooltip">2007</span></li>
+        <li><a   class='menu17'></a><span class="tooltip">2009</span></li>
+        <li><a   class='menu18'></a><span class="tooltip">2010</span></li>
+        <li><a   class='menu19'></a><span class="tooltip">2012</span></li>
+        <li><a   class='menu20'></a><span class="tooltip">2015</span></li>
+        <li><a   class='menu21'></a><span class="tooltip">2015</span></li>
+        <li><a   class='menu22'></a><span class="tooltip">2016</span></li>
+        <li><a   class='menu23'></a><span class="tooltip">2016</span></li>
+        <li><a   class='menu24'></a><span class="tooltip">2016</span></li>
       </ul>
     </div>
     <h1>notre histoire</h1>
-    <article class="article diaporama__big">
-        <h3 class="year year--left year__firstItem">1912</h3>
+    <article class="article diaporama__big diaporama__bigFirst">
+        <h3 class="year year--left year__firstItem leftGoldPointer">1912</h3>
         <div class="diaporama__big-slider">
             <div class="diaporama__big-sliderItem">
                 <img src="img/barriere-slider-image-1.jpg"/>
@@ -52,7 +54,7 @@
                 <img class="js-slide" src="img/barriere-slider-image-2.jpg"/>
             </div>
         </div>
-        <div class="article__popup article__popupFirst">
+        <div class="article__popup article__popupFirst animated fadeIn">
             <h2>Deauville,</h2>
             <span class='info'>Le berceau de groupe</span>
             <button class="js-showArticle">+</button>
@@ -64,8 +66,8 @@
             </div>
         </div>
     </article>
-    <article class="article article__medium">
-    <h3 class="year year--right year__secondItem">1926</h3>
+    <article class="article article__medium francaise">
+    <h3 class="year year--right year__secondItem rightGoldPointer">1926</h3>
         <div class="article__mediumItem">
             <img class="article__mediumImage" src="img/barriere-article-image-1.jpg"/>
         </div>
@@ -85,8 +87,8 @@
         </div>
     </article>
 
-    <article class="article article__small">
-    <h3 class="year year--left year__secondItem small-year">1927</h3>
+    <article class="article article__small andre">
+    <h3 class="year year--left year__secondItem small-year leftGoldPointerModifier">1927</h3>
         <div class="article__smallItem">
             <img src="img/barriere-francois-andre.png"/>
         </div>
@@ -103,7 +105,7 @@
     </article>
 
     <article class="article article__medium hotelGulfDiaporama">
-    <h3 class="year year--right year__secondItem">1926</h3>
+    <h3 class="year year--right year__secondItem rightGoldPointer">1926</h3>
         <div class="article__mediumItem hotelGulf">
             <img class="article__mediumImage" src="img/barriere-image-2.jpg"/>
         </div>
@@ -124,8 +126,8 @@
     </article>
 
 
-    <article class="article article__small article__small--right">
-    <h3 class="year year--right year__secondItem small-year modified-year">1962</h3>
+    <article class="article article__small article__small--right lucien">
+    <h3 class="year year--right year__secondItem small-year modified-year rightGoldPointerModifier">1962</h3>
         <div class="article__smallItem article__smallItem--right">
             <img src="img/francois-andre.png"/>
         </div>
@@ -144,7 +146,7 @@ Il modernise le Groupe avec le souci de maintenir la tradition et de conserver l
     </article>
 
     <article class="article article__small cinemaFestival">
-    <h3 class="year year--left year__secondItem small-year">1927</h3>
+    <h3 class="year year--left year__secondItem small-year leftGoldPointerModifier">1927</h3>
         <div class="article__smallItem">
             <img src="img/festival-du-cinema.png"/>
         </div>
@@ -164,7 +166,7 @@ Il modernise le Groupe avec le souci de maintenir la tradition et de conserver l
     </article>
 
     <article class="article article__medium societeHoteliare">
-    <h3 class="year year--right year__secondItem">1980</h3>
+    <h3 class="year year--right year__secondItem rightGoldPointer">1980</h3>
         <div class="article__mediumItem">
             <img class="article__mediumImage" src="img/societe-hoteliare.jpg"/>
         </div>
@@ -185,7 +187,7 @@ Il modernise le Groupe avec le souci de maintenir la tradition et de conserver l
     </article>
 
     <article class="article article__small article__small--right slot-machine">
-    <h3 class="year year--left year__secondItem small-year modified-year">1988</h3>
+    <h3 class="year year--left year__secondItem small-year modified-year leftGoldPointerModifier">1988</h3>
         <div class="article__smallItem article__smallItem--right">
             <img src="img/slot-machine.png"/>
         </div>
@@ -206,7 +208,7 @@ Lucien Barrière décède en septembre 1990 sans avoir eu le temps de connaître
     </article>
 
     <article class="article article__small diane title-padding">
-    <h3 class="year year--right year__secondItem small-year">1990</h3>
+    <h3 class="year year--right year__secondItem small-year rightGoldPointerModifier">1990</h3>
         <div class="article__smallItem">
             <img src="img/diane.png"/>
         </div>
@@ -223,7 +225,7 @@ Lucien Barrière décède en septembre 1990 sans avoir eu le temps de connaître
     </article>
 
     <article class="article article__small article__small--right dominique">
-    <h3 class="year year--left year__secondItem small-year">1997</h3>
+    <h3 class="year year--left year__secondItem small-year leftGoldPointerModifier">1997</h3>
         <div class="article__smallItem article__smallItem--right">
             <img src="img/dominique.png"/>
         </div>
@@ -242,7 +244,7 @@ Lucien Barrière décède en septembre 1990 sans avoir eu le temps de connaître
     </article>
 
     <article class="article diaporama__big fouqets">
-        <h3 class="year year--right year__firstItem">1912</h3>
+        <h3 class="year year--right year__firstItem rightGoldPointer">1912</h3>
         <div class="diaporama__big-slider">
             <div class="diaporama__big-sliderItem">
                 <img src="img/fouqets.jpg"/>
@@ -265,7 +267,7 @@ Lucien Barrière décède en septembre 1990 sans avoir eu le temps de connaître
     </article>
 
     <article class="article article__medium fondation">
-    <h3 class="year year--left year__secondItem">1999</h3>
+    <h3 class="year year--left year__secondItem leftGoldPointer">1999</h3>
         <div class="article__mediumItem">
             <img class="article__mediumImage" src="img/fondation.jpg"/>
         </div>
@@ -286,7 +288,7 @@ Lucien Barrière décède en septembre 1990 sans avoir eu le temps de connaître
     </article>
 
     <article class="article article__small dominique-person">
-    <h3 class="year year--right year__secondItem small-year">2001</h3>
+    <h3 class="year year--right year__secondItem small-year rightGoldPointerModifier">2001</h3>
         <div class="article__smallItem">
             <img src="img/dominique-person.png"/>
         </div>
@@ -304,7 +306,7 @@ Lucien Barrière décède en septembre 1990 sans avoir eu le temps de connaître
     </article>
 
     <article class="article diaporama__big casinoHuge">
-        <h3 class="year year--right year__firstItem">2003</h3>
+        <h3 class="year year--right year__firstItem rightGoldPointer">2003</h3>
         <div class="diaporama__big-slider">
             <div class="diaporama__big-sliderItem">
                 <img src="img/casino.jpg"/>
@@ -328,7 +330,7 @@ Lucien Barrière décède en septembre 1990 sans avoir eu le temps de connaître
     </article>
 
     <article class="article article__medium hotel-later">
-    <h3 class="year year--right year__secondItem">2006</h3>
+    <h3 class="year year--right year__secondItem rightGoldPointer">2006</h3>
         <div class="article__mediumItem">
             <img class="article__mediumImage" src="img/hotel-later.jpg"/>
         </div>
@@ -350,7 +352,7 @@ Lucien Barrière décède en septembre 1990 sans avoir eu le temps de connaître
     </article>
 
     <article class="article article__medium toulouse">
-    <h3 class="year year--left year__secondItem">2007</h3>
+    <h3 class="year year--left year__secondItem leftGoldPointer">2007</h3>
         <div class="article__mediumItem">
             <img class="article__mediumImage" src="img/toulouse-hotel.jpg"/>
         </div>
@@ -372,7 +374,7 @@ Lucien Barrière décède en septembre 1990 sans avoir eu le temps de connaître
 
 
     <article class="article article__medium naoura">
-    <h3 class="year year--right year__secondItem">2009</h3>
+    <h3 class="year year--right year__secondItem rightGoldPointer">2009</h3>
         <div class="article__mediumItem hotelGulf">
             <img class="article__mediumImage" src="img/naoura.jpg"/>
         </div>
@@ -393,7 +395,7 @@ Lucien Barrière décède en septembre 1990 sans avoir eu le temps de connaître
     </article>
 
     <article class="article article__medium lille">
-    <h3 class="year year--left year__secondItem modified-year">2010</h3>
+    <h3 class="year year--left year__secondItem modified-year leftGoldPointerModifier">2010</h3>
         <div class="article__mediumItem">
             <img class="article__mediumImage" src="img/lille.jpg"/>
         </div>
@@ -414,7 +416,7 @@ Lucien Barrière décède en septembre 1990 sans avoir eu le temps de connaître
     </article>
 
     <article class="article article__medium resort">
-    <h3 class="year year--right year__secondItem modified-year">2012</h3>
+    <h3 class="year year--right year__secondItem modified-year rightGoldPointerModifier">2012</h3>
         <div class="article__mediumItem">
             <img class="article__mediumImage" src="img/resort.jpg"/>
         </div>
@@ -434,8 +436,8 @@ Lucien Barrière décède en septembre 1990 sans avoir eu le temps de connaître
         </div>
     </article>
 
-    <article class="article diaporama__big">
-        <h3 class="year year--left year__firstItem">1912</h3>
+    <article class="article diaporama__big diaporama__bigSecond">
+        <h3 class="year year--left year__firstItem leftGoldPointer">1912</h3>
         <div class="diaporama__big-slider">
             <div class="diaporama__big-sliderItem">
                 <img src="img/barriere-video.jpg"/>
@@ -458,7 +460,7 @@ Lucien Barrière décède en septembre 1990 sans avoir eu le temps de connaître
     </article>
 
     <article class="article article__small pierre">
-    <h3 class="year year--right year__secondItem small-year modified-year">2015</h3>
+    <h3 class="year year--left year__secondItem small-year modified-year leftGoldPointerModifier">2015</h3>
         <div class="article__smallItem">
             <img src="img/pierre.png"/>
         </div>
@@ -476,7 +478,7 @@ Lucien Barrière décède en septembre 1990 sans avoir eu le temps de connaître
     </article>
 
     <article class="article article__medium moma">
-    <h3 class="year year--right year__secondItem modified-year">2016</h3>
+    <h3 class="year year--right year__secondItem modified-year rightGoldPointerModifier">2016</h3>
         <div class="article__mediumItem momaImage">
             <img class="article__mediumImage" src="img/moma.jpg"/>
         </div>
@@ -497,7 +499,7 @@ Lucien Barrière décède en septembre 1990 sans avoir eu le temps de connaître
     </article>
 
     <article class="article article__medium westminster">
-    <h3 class="year year--left year__secondItem">2016</h3>
+    <h3 class="year year--left year__secondItem leftGoldPointer">2016</h3>
         <div class="article__mediumItem">
             <img class="article__mediumImage" src="img/westminster.jpg"/>
         </div>
@@ -519,7 +521,7 @@ Lucien Barrière décède en septembre 1990 sans avoir eu le temps de connaître
 
 
     <article class="article diaporama__big courche">
-        <h3 class="year year--right year__firstItem">2016</h3>
+        <h3 class="year year--right year__firstItem rightGoldPointer">2016</h3>
         <div class="diaporama__big-slider">
             <div class="diaporama__big-sliderItem">
                 <img src="img/courch.jpg"/>
