@@ -342,7 +342,6 @@ var WM = (function($) {
    * Fire events on document ready, and bind other events.
    */
   var ready = function() {
-      getHeight('.article');
       bigDiaporama();
       mediumDiaporama();
       mediumDiaporamaSecond();
@@ -369,6 +368,7 @@ var WM = (function($) {
       scrollHeight();
       anchorFunction();
       parallax();
+      getHeight('.article');
   };
 
   // Only expose the ready function to the world
