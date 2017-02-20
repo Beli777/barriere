@@ -368,7 +368,7 @@ var WM = (function($) {
       scrollHeight();
       anchorFunction();
       parallax();
-      getHeight('.article');
+      getHeight('.article__medium');
   };
 
   // Only expose the ready function to the world
