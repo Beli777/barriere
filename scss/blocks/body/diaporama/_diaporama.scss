@@ -21,7 +21,18 @@
 .hotelGulfDiaporama{
     margin-top: 20rem;
   .article__popup--secondPositionImage{
-    top: -5%;
+      top: 69%;
+      z-index: 10;
+  }
+  .year__secondItem{
+      margin-bottom: -5rem;
+  }
+  .article__popup--fourthPosition{
+      top: -9%;
+    right: 5%;
+    left: 70.5%;
+    height: auto;
+    bottom: 74.2%;
   }
 }
 .cinemaFestival{
@@ -33,8 +44,20 @@
   &__popup{
     padding: 0 40% 0 0;
   }
+  .small-year {
+    top: 17rem;
+}
+.article__popup--sixthPosition {
+    top: 41rem;
+    right: 68%;
+    left: 9%;
+    height: auto;
+    bottom: 10.2%;
+    z-index: 3;
+}
 }
 .societeHoteliare{
+    margin-top: 20rem;
   .article__mediumItem{
         margin-left: 38.5%;
         img{
@@ -42,14 +65,23 @@
 
         }
   }
+  .article__popup--secondPositionImage{
+      top: 130%;
+      z-index: 5;
+  }
+  .modified-year{
+      position: absolute;
+      left: 41%;
+      top: -10rem;
+  }
   &--position{
-    top: 69%;
-    right: 57%;
-    left: 19%;
-    bottom: 28.2%;
-    z-index: 3;
-    height: initial;
-    bottom: 0;
+      top: 75%;
+      right: 57%;
+      left: 19%;
+      /* bottom: 27.2%; */
+      z-index: 3;
+      height: initial;
+      bottom: -13%;
   }
   &ImagePopup{
     right: 0%;
@@ -58,24 +90,26 @@
   }
 }
 .slot-machine{
+    margin-top: 10rem;
   .article__smallItem{
-      width: 16%;
+      width: 15%;
   }
   .article__smallItem--right{
-    margin-left: 58%;
+    margin-left: 55%;
   }
   &--position{
-    top: 45%;
-    right: 11.5%;
-    left: 72%;
-    height: auto;
-    bottom: 25.2%;
-    z-index: 3;
+      top: 80%;
+      right: 11.5%;
+      left: 67%;
+      height: auto;
+      bottom: -14%;
+      z-index: 3;
 
 
   }
   .small-year{
       left: 40.4%;
+    top: 18rem;
   }
 }
 .diane{
@@ -85,12 +119,12 @@
     width: 19%;
   }
   &--position{
-    top: 40%;
-    right: 69%;
-    left: 5%;
-    height: auto;
-    bottom: 23.2%;
-    z-index: 3;
+      top: 82%;
+      right: 69%;
+      left: 5%;
+      height: auto;
+      bottom: -20.8%;
+      z-index: 3;
 
 
   }
@@ -102,7 +136,7 @@
     padding: 0 3rem;
   }
   .small-year{
-    top: 40%;
+    top: 51rem;
   }
 }
 .dominique{
@@ -112,26 +146,32 @@
   }
   .article__smallItem--right{
     margin-left: 57%;
+    z-index: 7;
   }
   &--position{
-        top: 12%;
-        right: 5%;
-        left: 73%;
-        height: auto;
-        bottom: 50.2%;
-        z-index: 3;
-
-
+      top: 59%;
+      right: 5%;
+      left: 73%;
+      height: auto;
+      bottom: 0%;
+      z-index: 6;
   }
   .small-year{
-    top: 36%;
+        top: 40rem;
   }
 }
 .fouqets{
+    margin-top: 20rem;
   &--position{
     left: 15%;
     height: 18.5rem;
     right: auto;
+    top: 22rem;
+  }
+  .modified-year{
+      top: 4rem;
+      position: absolute;
+      right: 41%;
   }
 }
 .fondation{
@@ -363,4 +403,39 @@
         right: auto;
         z-index: 5;
   }
+}
+.francaise{
+.year__secondItem{
+    margin-bottom: 1rem;
+}
+
+}
+.andre{
+    .article__popup--thirdPosition {
+            top: 14rem;
+            right: 73%;
+            left: 5%;
+            height: auto;
+            bottom: 6.2%;
+            z-index: 3;
+            padding-left: 5rem;
+            padding-right: 5rem;
+}
+}
+.lucien{
+    margin-top: 5%;
+    .article__popup--fifthPosition {
+    top: 14rem;
+    right: 5%;
+    left: 75%;
+    height: auto;
+    bottom: 5.2%;
+    z-index: 3;
+}
+.modified-year {
+    top: 7rem;
+}
+.article__smallItem--right {
+    margin-left: 63%;
+}
 }

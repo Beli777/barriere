@@ -101,7 +101,9 @@ var WM = (function($) {
               .to(popupMedium, 0.3, {left: popupLeft, right: popupRight, ease:Strong.easeInOut});
               var time = new TimelineMax();
               var mediumImage = $this.closest($parent).find('.article__mediumItem img');
+              time.to(mediumImage , 0.001,  {transition: '0.001s all linear'});
               time.to(mediumImage , 1, {top: top, width: width, 'margin-left': left, ease:Strong.easeInOut})
+              time.to(mediumImage , 0.001,  {transition: 'none'});
         });
   }
 
@@ -144,8 +146,10 @@ var WM = (function($) {
           }
           var tl = new TimelineMax();
          var popup = $this.closest($parent).find('.article__popup');
-            tl.to(popup , 0.999, {left: left, right: right, top: top, bottom: bottom, 'z-index': index, ease:Strong.easeInOut});
             tl.to(popup , 0.001,{'z-index': index});
+            tl.to(popup , 0.001,  {transition: '0.001s all linear'});
+            tl.to(popup , 0.999,  {left: left, right: right, top: top, bottom: bottom, 'z-index': index, ease:Strong.easeInOut});
+            tl.to(popup , 0.001,  {transition: 'none'});
             var time = new TimelineMax();
             var smallImage = $this.closest($parent).find('.article__smallItem');
             time.to(smallImage , 1, {'margin-left': imageLeft, ease:Strong.easeInOut})
@@ -170,18 +174,15 @@ var WM = (function($) {
                     var parallaxTimeSecond = new TimelineMax();
                     parallaxTimeSecond.to(paralaxLayerSecond , 0.5, {"transform" : "translate3d(0,  -" + st/7 + "px" + ",0", ease:Power1.easeOut})
                     var parallaxTimeThird = new TimelineMax();
-                    parallaxTimeThird.to(paralaxLayerThird , 0.5, {"transform" : "translate3d(0,  -" + st/55 + "px" + ",0", ease:Power1.easeOut})
+                    parallaxTimeThird.to(paralaxLayerThird , 0.5, {"transform" : "translate3d(0,  -" + st/3 + "px" + ",0", ease:Power1.easeOut})
                 } else {
                   // upscroll code
-                    $('.prlx_layer_1').css({
-                    "transform" : "translate3d(0,  " + st/10 + "px" + ",0"
-                    });
-                    $('.prlx_layer_2').css({
-                    "transform" : "translate3d(0,  " + st/7.5 + "px" + ",0"
-                    });
-                    $('.prlx_layer_3').css({
-                    "transform" : "translate3d(0,  " + st/5 + "px" + ",0"
-                    });
+                  var parallaxTime = new TimelineMax();
+                  parallaxTime.to(paralaxLayerOne , 0.5, {"transform" : "translate3d(0,  -" + st/10 + "px" + ",0", ease:Power1.easeOut})
+                  var parallaxTimeSecond = new TimelineMax();
+                  parallaxTimeSecond.to(paralaxLayerSecond , 0.5, {"transform" : "translate3d(0,  -" + st/7 + "px" + ",0", ease:Power1.easeOut})
+                  var parallaxTimeThird = new TimelineMax();
+                  parallaxTimeThird.to(paralaxLayerThird , 0.5, {"transform" : "translate3d(0,  -" + st/3 + "px" + ",0", ease:Power1.easeOut})
 
                 }
                 // lastScrollTop = st;
@@ -209,16 +210,16 @@ var WM = (function($) {
     }
     //button, parent, top, width, left, popupLeft, popupTop, popupBottom, popupRight, popupIndex, popupHeight
     var mediumDiaporama = function(){
-        mixinMediumDiaporama('.js-showArticle','.article__medium', '-50%', '35%', '', '54.5%', '-18%', '3%', '', '', '');
-        mixinMediumDiaporamaClose('.articlePopup-close','.article__medium', '19%', '50%', '', '70.5%', '17rem', '36.2%', '', '', '');
+        mixinMediumDiaporama('.js-showArticle','.article__medium', '-60%', '35%', '', '54.5%', '-18%', '3%', '', '', '');
+        mixinMediumDiaporamaClose('.articlePopup-close','.article__medium', '19%', '50%', '', '70.5%', '31rem', '15.2%', '', '', '');
     }
     var mediumDiaporamaSecond = function(){
         mixinMediumDiaporama('.js-showArticle','.hotelGulfDiaporama', '-40%', '49%', '28%', '54.5%', '-7rem', '12.2%', '0', '', '');
-        mixinMediumDiaporamaClose('.articlePopup-close','.hotelGulfDiaporama', '18.7%', '83%', '0%', '70.5%', '-7rem', '75.2%', '5%', '', '');
+        mixinMediumDiaporamaClose('.articlePopup-close','.hotelGulfDiaporama', '0%', '83%', '0%', '70.5%', '-9%', '74.2%', '5%', '', '');
     }
     var mediumDiaporamaSociete = function(){
-        mixinMediumDiaporama('.js-showArticle','.societeHoteliare', '100%', '35%', '7%', '19%', '-18%', '3%', '46%', '2', '');
-        mixinMediumDiaporamaClose('.articlePopup-close','.societeHoteliare', '10rem', '50%', '0', '19%', '69%', '0', '57%', '3', '');
+        mixinMediumDiaporama('.js-showArticle','.societeHoteliare', '74%', '35%', '7%', '19%', '-5%', '-11%', '46%', '4', '');
+        mixinMediumDiaporamaClose('.articlePopup-close','.societeHoteliare', '0', '50%', '0', '19%', '75%', '-13%', '57%', '3', '');
     }
     var mediumDiaporamaFondation = function(){
         mixinMediumDiaporama('.js-showArticle','.fondation', '-50%', '35%', '10%', '54.5%', '-18%', '0%', '', '', '');
@@ -256,28 +257,28 @@ var WM = (function($) {
     //button, parent,left, right, top, bottom, index, imageLeft
     var smallDiaporama = function(){
         mixinSmallDiaporama('.js-showArticle','.article__small','', '60%', '-3rem','','', '34%');
-        mixinSmallDiaporamaClose('.articlePopup-close','.article__small','', '73%', '12rem','','', '20%');
+        mixinSmallDiaporamaClose('.articlePopup-close','.article__small','', '73%', '14rem','6.2%','', '20%');
     }
     var smallDiaporamaRight = function(){
-        mixinSmallDiaporama('.js-showArticle','.article__small--right', '61%', '0%', '-21rem','','', '50%');
-        mixinSmallDiaporamaClose('.articlePopup-close','.article__small--right', '75%', '0%', '2rem','','', '65%');
+        mixinSmallDiaporama('.js-showArticle','.article__small--right', '61%', '0%', '-10rem','5.2%','', '50%');
+        mixinSmallDiaporamaClose('.articlePopup-close','.article__small--right', '75%', '5%', '14rem','5.2%','', '63%');
     }
     var smallDiaporamaCinema = function(){
-        mixinSmallDiaporama('.js-showArticle','.cinemaFestival', '9%', '29%', '2rem','17.2%','4', '');
-        mixinSmallDiaporamaClose('.articlePopup-close','.cinemaFestival', '9%', '68%', '28rem','28.2%','3', '');
+        mixinSmallDiaporama('.js-showArticle','.cinemaFestival', '9%', '29%', '2rem','17.2%','11', '');
+        mixinSmallDiaporamaClose('.articlePopup-close','.cinemaFestival', '9%', '68%', '41rem','10.2%','3', '');
     }
     var smallDiaporamaSlot = function(){
-        mixinSmallDiaporama('.js-showArticle','.slot-machine', '56%', '11.5%', '11rem','3.2%','', '44%');
-        mixinSmallDiaporamaClose('.articlePopup-close','.slot-machine', '72%', '11.5%', '45%','25.2%','', '58%');
+        mixinSmallDiaporama('.js-showArticle','.slot-machine', '56%', '11.5%', '27rem','-25%','', '44%');
+        mixinSmallDiaporamaClose('.articlePopup-close','.slot-machine', '67%', '11.5%', '80%','-14%','', '55%');
     }
       //button, parent,left, right, top, bottom, index, imageLeft
     var smallDiaporamaDiane = function(){
-        mixinSmallDiaporama('.js-showArticle','.diane','', '56%', '3%','14.2%','3', '38%');
-        mixinSmallDiaporamaClose('.articlePopup-close','.diane','', '69%', '40%','23.2%','', '27%');
+        mixinSmallDiaporama('.js-showArticle','.diane','', '56%', '55%','-33.8%','', '38%');
+        mixinSmallDiaporamaClose('.articlePopup-close','.diane','', '69%', '82%','-20.8%','', '27%');
     }
     var smallDiaporamaDominique = function(){
-        mixinSmallDiaporama('.js-showArticle','.dominique', '60%', '5%', '-13%','13.2%','', '44%');
-        mixinSmallDiaporamaClose('.articlePopup-close','.dominique', '73%', '5%', '12%','50.2%','', '57%');
+        mixinSmallDiaporama('.js-showArticle','.dominique', '60%', '5%', '33%','-33%','', '44%');
+        mixinSmallDiaporamaClose('.articlePopup-close','.dominique', '73%', '5%', '59%','0%','', '57%');
     }
     var smallDiaporamaDominiquePerson = function(){
       mixinSmallDiaporama('.js-showArticle','.dominique-person','', '47%', '-46%','21.2%','', '47%');
@@ -309,35 +310,37 @@ var WM = (function($) {
         var $tooltip = $('.tooltip');
         $button.on('click touch', function(){
           TweenLite.to(window, 2, {scrollTo:{y: section, autoKill: true, offsetY:70}, ease:Strong.easeInOut});
+          $('.anchor a').parent().find('a').removeClass('activeButton');
+          $(this).addClass('activeButton');
           $tooltip.parent().find('.active').removeClass('active');
           $(this).parent().find($tooltip).addClass('active');
         });
     }
     var anchorFunction = function(){
-        anchor('.menu1','.diaporama__bigFirst');
-        anchor('.menu2','.francaise');
-        anchor('.menu3','.andre');
-        anchor('.menu4','.hotelGulfDiaporama');
-        anchor('.menu5','.lucien');
-        anchor('.menu6','.cinemaFestival');
-        anchor('.menu7','.societeHoteliare');
-        anchor('.menu8','.slot-machine');
-        anchor('.menu9','.diane');
-        anchor('.menu10','.dominique');
-        anchor('.menu11','.fouqets');
-        anchor('.menu12','.fondation');
-        anchor('.menu13','.dominique-person');
-        anchor('.menu14','.casinoHuge');
-        anchor('.menu15','.hotel-later');
-        anchor('.menu16','.toulouse');
-        anchor('.menu17','.naoura');
-        anchor('.menu18','.lille');
-        anchor('.menu19','.resort');
-        anchor('.menu20','.diaporama__bigSecond');
-        anchor('.menu21','.pierre');
-        anchor('.menu22','.moma');
-        anchor('.menu23','.westminster');
-        anchor('.menu24','.courche');
+        anchor('.menu1','.diaporama__bigFirst h3');
+        anchor('.menu2','.francaise h3');
+        anchor('.menu3','.andre h3');
+        anchor('.menu4','.hotelGulfDiaporama h3');
+        anchor('.menu5','.lucien h3');
+        anchor('.menu6','.cinemaFestival h3');
+        anchor('.menu7','.societeHoteliare h3' );
+        anchor('.menu8','.slot-machine h3');
+        anchor('.menu9','.diane h3');
+        anchor('.menu10','.dominique h3');
+        anchor('.menu11','.fouqets h3');
+        anchor('.menu12','.fondation h3');
+        anchor('.menu13','.dominique-person h3');
+        anchor('.menu14','.casinoHuge h3');
+        anchor('.menu15','.hotel-later h3');
+        anchor('.menu16','.toulouse h3');
+        anchor('.menu17','.naoura h3');
+        anchor('.menu18','.lille h3');
+        anchor('.menu19','.resort h3');
+        anchor('.menu20','.diaporama__bigSecond h3');
+        anchor('.menu21','.pierre h3');
+        anchor('.menu22','.moma h3');
+        anchor('.menu23','.westminster h3');
+        anchor('.menu24','.courche h3' );
     }
     $(window).on('load',function() {
          getHeight('.article__medium');
