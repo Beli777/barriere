@@ -170,19 +170,19 @@ var WM = (function($) {
                 var paralaxLayerThird = $('.prlx_layer_3');
                 if (st > lastScrollTop){
                     var parallaxTime = new TimelineMax();
-                    parallaxTime.to(paralaxLayerOne , 0.5, {"transform" : "translate3d(0,  -" + st/10 + "px" + ",0", ease:Power1.easeOut})
+                    parallaxTime.to(paralaxLayerOne , 0.5, {"transform" : "translate3d(0,  -" + st/10 + "px" + ",0", "-webkit-transform" : "translate3d(0,  -" + st/10 + "px" + ",0", ease:Power1.easeOut})
                     var parallaxTimeSecond = new TimelineMax();
-                    parallaxTimeSecond.to(paralaxLayerSecond , 0.5, {"transform" : "translate3d(0,  -" + st/7 + "px" + ",0", ease:Power1.easeOut})
+                    parallaxTimeSecond.to(paralaxLayerSecond , 0.5, {"transform" : "translate3d(0,  -" + st/7 + "px" + ",0", "-webkit-transform" : "translate3d(0,  -" + st/10 + "px" + ",0", ease:Power1.easeOut})
                     var parallaxTimeThird = new TimelineMax();
-                    parallaxTimeThird.to(paralaxLayerThird , 0.5, {"transform" : "translate3d(0,  -" + st/3 + "px" + ",0", ease:Power1.easeOut})
+                    parallaxTimeThird.to(paralaxLayerThird , 0.5, {"transform" : "translate3d(0,  -" + st/3 + "px" + ",0", "-webkit-transform" : "translate3d(0,  -" + st/10 + "px" + ",0", ease:Power1.easeOut})
                 } else {
                   // upscroll code
                   var parallaxTime = new TimelineMax();
-                  parallaxTime.to(paralaxLayerOne , 0.5, {"transform" : "translate3d(0,  -" + st/10 + "px" + ",0", ease:Power1.easeOut})
+                  parallaxTime.to(paralaxLayerOne , 0.5, {"transform" : "translate3d(0,  -" + st/10 + "px" + ",0", "-webkit-transform" : "translate3d(0,  -" + st/10 + "px" + ",0", ease:Power1.easeOut})
                   var parallaxTimeSecond = new TimelineMax();
-                  parallaxTimeSecond.to(paralaxLayerSecond , 0.5, {"transform" : "translate3d(0,  -" + st/7 + "px" + ",0", ease:Power1.easeOut})
+                  parallaxTimeSecond.to(paralaxLayerSecond , 0.5, {"transform" : "translate3d(0,  -" + st/7 + "px" + ",0", "-webkit-transform" : "translate3d(0,  -" + st/10 + "px" + ",0", ease:Power1.easeOut})
                   var parallaxTimeThird = new TimelineMax();
-                  parallaxTimeThird.to(paralaxLayerThird , 0.5, {"transform" : "translate3d(0,  -" + st/3 + "px" + ",0", ease:Power1.easeOut})
+                  parallaxTimeThird.to(paralaxLayerThird , 0.5, {"transform" : "translate3d(0,  -" + st/3 + "px" + ",0", "-webkit-transform" : "translate3d(0,  -" + st/10 + "px" + ",0", ease:Power1.easeOut})
 
                 }
                 // lastScrollTop = st;
@@ -222,8 +222,8 @@ var WM = (function($) {
         mixinMediumDiaporamaClose('.articlePopup-close','.societeHoteliare', '0', '50%', '0', '19%', '75%', '-13%', '57%', '3', '');
     }
     var mediumDiaporamaFondation = function(){
-        mixinMediumDiaporama('.js-showArticle','.fondation', '-50%', '35%', '10%', '54.5%', '-18%', '0%', '', '', '');
-        mixinMediumDiaporamaClose('.articlePopup-close','.fondation', '19%', '50%', '7%', '70.5%', '2%', '65.2%', '', '', '');
+        mixinMediumDiaporama('.js-showArticle','.fondation', '-42%', '35%', '10%', '54.5%', '35%', '-20.8%', '5%', '', '');
+        mixinMediumDiaporamaClose('.articlePopup-close','.fondation', '0', '50%', '7%', '70.5%', '35%', '33.2%', '5%', '', '');
     }
     var mediumDiaporamaHotelLater = function(){
         mixinMediumDiaporama('.js-showArticle','.hotel-later', '-50%', '35%', '10%', '46.5%', '15%', '0%', '8%', '', '');
@@ -281,8 +281,8 @@ var WM = (function($) {
         mixinSmallDiaporamaClose('.articlePopup-close','.dominique', '73%', '5%', '59%','0%','', '57%');
     }
     var smallDiaporamaDominiquePerson = function(){
-      mixinSmallDiaporama('.js-showArticle','.dominique-person','', '47%', '-46%','21.2%','', '47%');
-      mixinSmallDiaporamaClose('.articlePopup-close','.dominique-person','5%', '67%', '-6%','63.2%','', '25%');
+      mixinSmallDiaporama('.js-showArticle','.dominique-person','5%', '53%', '0','-40%','', '41%');
+      mixinSmallDiaporamaClose('.articlePopup-close','.dominique-person','5%', '67%', '30rem','-4%','', '25%');
     }
     var smallDiaporamaPierre = function(){
       mixinSmallDiaporama('.js-showArticle','.pierre','5%', '58%', '7%','25.2%','3', '41%');

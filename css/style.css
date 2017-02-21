@@ -628,25 +628,39 @@ h1 {
     position: absolute;
     right: 41%; }
 
-.fondation .article__mediumImage {
-  margin-left: 7%; }
-.fondation--position {
-  top: 2%;
-  right: 5%;
-  left: 70.5%;
-  height: auto;
-  bottom: 65.2%;
-  z-index: 3; }
+.fondation {
+  position: relative;
+  margin-top: 20rem; }
+  .fondation .article__mediumImage {
+    margin-left: 7%; }
+  .fondation .article__popup--secondPositionImage {
+    z-index: 5;
+    top: 270%;
+    width: 45%;
+    left: 17%; }
+  .fondation--position {
+    top: 35%;
+    right: 5%;
+    left: 70.5%;
+    height: auto;
+    bottom: 33.2%;
+    z-index: 3; }
+  .fondation .modified-year {
+    position: absolute;
+    top: 8rem;
+    left: 41%; }
 
 .dominique-person .article__smallItem {
   margin-left: 25%; }
 .dominique-person--position {
-  top: -6%;
+  top: 30rem;
   right: 67%;
   left: 5%;
   height: auto;
-  bottom: 63.2%;
+  bottom: -4%;
   z-index: 3; }
+.dominique-person .small-year {
+  top: 44rem; }
 
 .hotel-later .article__mediumItem img {
   margin-left: -19%; }

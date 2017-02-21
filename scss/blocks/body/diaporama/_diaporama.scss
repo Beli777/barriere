@@ -175,18 +175,30 @@
   }
 }
 .fondation{
+    position: relative;
+    margin-top: 20rem;
   .article__mediumImage{
-
-
     margin-left: 7%;
   }
+  .article__popup--secondPositionImage{
+    z-index: 5;
+    top: 270%;
+    width: 45%;
+    left: 17%;
+
+  }
   &--position{
-    top: 2%;
-    right: 5%;
-    left: 70.5%;
-    height: auto;
-    bottom: 65.2%;
-    z-index: 3;
+      top: 35%;
+      right: 5%;
+      left: 70.5%;
+      height: auto;
+      bottom: 33.2%;
+      z-index: 3;
+  }
+  .modified-year{
+      position: absolute;
+      top: 8rem;
+      left: 41%;
   }
 }
 .dominique-person{
@@ -194,14 +206,15 @@
     margin-left: 25%;
   }
   &--position{
-    top: -6%;
-    right: 67%;
-    left: 5%;
-    height: auto;
-    bottom: 63.2%;
-    z-index: 3;
-
-
+      top: 30rem;
+      right: 67%;
+      left: 5%;
+      height: auto;
+      bottom: -4%;
+      z-index: 3;
+  }
+  .small-year{
+     top: 44rem;
   }
 }
 .hotel-later{
