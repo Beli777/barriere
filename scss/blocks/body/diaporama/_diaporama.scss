@@ -221,18 +221,15 @@
   .article__mediumItem{
     img{
       margin-left: -19%;
-
-
     }
   }
   &--position{
-    top: 59%;
-    right: 29%;
-    left: 46.5%;
-    height: auto;
-    bottom: 8.2%;
-    z-index: 3;
-
+      top: 76rem;
+      right: 29%;
+      left: 46.5%;
+      height: auto;
+      bottom: -67.8%;
+      z-index: 3;
   }
   .article__popup--secondPositionImage{
     width: 47%;
@@ -451,4 +448,15 @@
 .article__smallItem--right {
     margin-left: 63%;
 }
+}
+.casinoHuge{
+    margin-top: 20rem;
+    .modified-year{
+        top: 12rem;
+        position: absolute;
+        left: 41%;
+    }
+    .article__popup{
+        top: 31rem;
+    }
 }

@@ -665,11 +665,11 @@ h1 {
 .hotel-later .article__mediumItem img {
   margin-left: -19%; }
 .hotel-later--position {
-  top: 59%;
+  top: 76rem;
   right: 29%;
   left: 46.5%;
   height: auto;
-  bottom: 8.2%;
+  bottom: -67.8%;
   z-index: 3; }
 .hotel-later .article__popup--secondPositionImage {
   width: 47%; }
@@ -836,6 +836,15 @@ h1 {
     top: 7rem; }
   .lucien .article__smallItem--right {
     margin-left: 63%; }
+
+.casinoHuge {
+  margin-top: 20rem; }
+  .casinoHuge .modified-year {
+    top: 12rem;
+    position: absolute;
+    left: 41%; }
+  .casinoHuge .article__popup {
+    top: 31rem; }
 
 .js-slideShow {
   left: 0;
