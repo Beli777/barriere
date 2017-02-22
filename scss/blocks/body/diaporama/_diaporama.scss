@@ -218,10 +218,16 @@
   }
 }
 .hotel-later{
+    margin-top: 20rem;
   .article__mediumItem{
     img{
       margin-left: -19%;
     }
+  }
+  .modified-year{
+      position: absolute;
+      top: 20rem;
+      left: 41%;
   }
   &--position{
       top: 76rem;
@@ -232,7 +238,8 @@
       z-index: 3;
   }
   .article__popup--secondPositionImage{
-    width: 47%;
+      width: 43%;
+  top: 230rem;
   }
 }
 .toulouse{
@@ -243,36 +250,47 @@
 
   }
   &--position{
-    top: 27%;
-    right: 5%;
-    left: 70.5%;
-    height: auto;
-    bottom: 41.2%;
+      top: 50%;
+      right: 5%;
+      left: 70.5%;
+      height: auto;
+      bottom: 16.2%;
+  }
+  .modified-year{
+      top: 25rem;
+      position: absolute;
+      left: 41%;
+  }
+  .article__popup--secondPositionImage{
+      top: 231rem;
   }
 }
 .naoura{
   margin-top: 20rem;
   &--position{
-    top: -1%;
-    right: 70%;
-    left: 5%;
-    height: auto;
-    bottom: 67.2%;
-    z-index: 3;
-
-
+      top: 56%;
+      right: 70%;
+      left: 5%;
+      height: auto;
+      bottom: 10.2%;
+      z-index: 3;
   }
   .article__popup--secondPositionImage {
     width: 49%;
     left: 39%;
     position: absolute;
     z-index: 4;
-    top: 8%;
+    top: 258rem;
     opacity: 0;
+}
+.modified-year{
+    position: absolute;
+    top: 28rem;
+    left: 41%;
 }
 }
 .lille{
-  margin-top: 20rem;
+  margin-top: 60rem;
   .article__mediumImage{
     margin-left: 30%;
     width: 40%;
@@ -296,7 +314,7 @@
     left: 7%;
     position: absolute;
     z-index: 3;
-    top: 5%;
+    top: 227rem;
     opacity: 0;
 }
 }
@@ -305,13 +323,12 @@
   .article__mediumImage{
     margin-left: -20%;
     width: 40%;
-
-
+    margin-top: -52rem;
   }
   &--position{
     top: -31%;
     right: 53%;
-    left: 27%;
+    left: 23%;
     height: auto;
     bottom: 90%;
     z-index: 3;
@@ -326,37 +343,51 @@
     left: 46%;
     position: absolute;
     z-index: 4;
-    top: -15%;
+    top: 222rem;
     opacity: 0;
 }
+}
+.barriere-video{
+    margin-top: -37rem;
+    .modified-year{
+        position: absolute;
+        top: 35rem;
+        left: 41%;
+    }
+    .article__popup{
+        top: 43rem;
+    }
+    .js-slideShow{
+        top: -127.5%;
+    }
 }
 .pierre{
   .article__smallItem{
     width: 22%;
   }
   &--position{
-    top: 7%;
-    right: 73%;
-    left: 5%;
-    height: auto;
-    bottom: 57.2%;
-    z-index: 3;
+      top: 61rem;
+          right: 73%;
+          left: 5%;
+          height: auto;
+          bottom: -25.8%;
+          z-index: 3;
 
 
   }
   .modified-year{
-    top: -12%;
+    top: 60rem;
     left: 40.67%;
   }
 }
 .moma{
   margin-top: 10rem;
   &--position{
-    top: 32%;
-    right: 5%;
-    left: 70.5%;
-    height: auto;
-    bottom: 32.2%;
+      top: 67rem;
+      right: 5%;
+      left: 70.5%;
+      height: auto;
+      bottom: -66.8%;
   }
   .article__mediumImage {
     margin-left: -20%;
@@ -371,47 +402,62 @@
     left: 2.45%;
     position: absolute;
     z-index: 3;
-    top: -38%;
+    top: 316rem;
     opacity: 0;
 }
 .modified-year{
-  top: -53%;
+  top: 40rem;
   position: absolute;
   left: 41%;
 }
 }
 .westminster{
+    margin-top: 20rem;
   .article__mediumImage{
     margin-left: 20%;
     width: 40%;
-
-
   }
   &--position{
-      top: 25%;
+      top: 65rem;
       right: 53%;
       left: 25%;
       height: auto;
-      bottom: 40%;
+      bottom: -68%;
       z-index: 3;
-
-
+  }
+  .modified-year{
+      position: absolute;
+      top: 40rem;
+      left: 41%;
   }
   .article__popup--secondPositionImage {
-    width: 50%;
-    left: 46%;
-    position: absolute;
-    z-index: 4;
-    top: 38%;
-    opacity: 0;
+      width: 50%;
+      left: 46%;
+      position: absolute;
+      z-index: 4;
+      top: 359rem;
+      opacity: 0;
 }
 }
 .courche{
+    margin-top: 20rem;
+    margin-bottom: -1%;
   &--position{
     left: 15%;
         height: 18.5rem;
         right: auto;
         z-index: 5;
+  }
+  .modified-year{
+      position: absolute;
+      top: 45rem;
+      left: 41%;
+  }
+  .article__popup{
+      top: 54rem;
+  }
+  .js-slideShow{
+    top: -157%;
   }
 }
 .francaise{

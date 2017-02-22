@@ -226,16 +226,16 @@ var WM = (function($) {
         mixinMediumDiaporamaClose('.articlePopup-close','.fondation', '0', '50%', '7%', '70.5%', '35%', '33.2%', '5%', '', '');
     }
     var mediumDiaporamaHotelLater = function(){
-        mixinMediumDiaporama('.js-showArticle','.hotel-later', '-50%', '35%', '10%', '46.5%', '15%', '0%', '8%', '', '');
-        mixinMediumDiaporamaClose('.articlePopup-close','.hotel-later', '19%', '50%', '-19%', '46.5%', '59%', '8.2%', '29%', '', '');
+        mixinMediumDiaporama('.js-showArticle','.hotel-later', '-50%', '35%', '10%', '46.5%', '48rem', '-67.8%', '8%', '3', '');
+        mixinMediumDiaporamaClose('.articlePopup-close','.hotel-later', '19%', '50%', '-19%', '46.5%', '76rem', '-67.8%', '29%', '', '');
     }
     var mediumDiaporamaToulouse = function(){
-        mixinMediumDiaporama('.js-showArticle','.toulouse', '92%', '25%', '10%', '54.5%', '15%', '0%', '5%', '', '');
-        mixinMediumDiaporamaClose('.articlePopup-close','.toulouse', '19%', '50%', '0%', '70.5%', '27%', '41.2%', '5%', '', '');
+        mixinMediumDiaporama('.js-showArticle','.toulouse', '65%', '25%', '20%', '54.5%', '53%', '-43.8%', '5%', '', '');
+        mixinMediumDiaporamaClose('.articlePopup-close','.toulouse', '0%', '50%', '0%', '70.5%', '50%', '16.2%', '5%', '', '');
     }
     var mediumDiaporamaNaoura = function(){
-        mixinMediumDiaporama('.js-showArticle','.naoura', '92%', '35%', '10%', '5%', '-1%', '0%', '57%', '', '');
-        mixinMediumDiaporamaClose('.articlePopup-close','.naoura', '19%', '83%', '0%', '5%', '-1%', '67.2%', '70%', '', '');
+        mixinMediumDiaporama('.js-showArticle','.naoura', '75%', '35%', '10%', '5%', '64%', '-68.8%', '57%', '', '');
+        mixinMediumDiaporamaClose('.articlePopup-close','.naoura', '0', '83%', '0%', '5%', '56%', '10.2%', '70%', '', '');
     }
     var mediumDiaporamaLille = function(){
         mixinMediumDiaporama('.js-showArticle','.lille', '-20%', '25%', '20%', '53%', '20%', '-15%', '5%', '', '');
@@ -244,15 +244,15 @@ var WM = (function($) {
     //button, parent, top, width, left, popupLeft, popupTop, popupBottom, popupRight, popupIndex, popupHeight
     var mediumDiaporamaResort = function(){
         mixinMediumDiaporama('.js-showArticle','.resort', '62%', '25%', '0%', '10%', '-31%', '33%', '47%', '', '');
-        mixinMediumDiaporamaClose('.articlePopup-close','.resort', '0%', '40%', '-20%', '27%', '-31%', '90%', '53%', '', '');
+        mixinMediumDiaporamaClose('.articlePopup-close','.resort', '0%', '40%', '-20%', '23%', '-31%', '90%', '53%', '', '');
     }
     var mediumDiaporamaMoma = function(){
-      mixinMediumDiaporama('.js-showArticle','.moma', '-12%', '74%', '-15%', '54.5%', '-3%', '3%', '5%', '', '');
-      mixinMediumDiaporamaClose('.articlePopup-close','.moma', '0', '74%', '-20%', '70.5%', '32%', '32.2%', '5%', '', '');
+      mixinMediumDiaporama('.js-showArticle','.moma', '0%', '74%', '-15%', '54.5%', '67rem', '-127.8%', '5%', '', '');
+      mixinMediumDiaporamaClose('.articlePopup-close','.moma', '-12%', '74%', '-20%', '70.5%', '67rem', '-66.8%', '5%', '', '');
     }
     var mediumDiaporamaWestminster = function(){
-      mixinMediumDiaporama('.js-showArticle','.westminster', '4%', '25%', '22.5%', '20%', '25%', '-5%', '48%', '', '');
-      mixinMediumDiaporamaClose('.articlePopup-close','.westminster', '20%', '40%', '20%', '25%', '25%', '40%', '53%', '', '');
+      mixinMediumDiaporama('.js-showArticle','.westminster', '-22%', '25%', '22.5%', '20%', '65rem', '-123%', '48%', '4', '');
+      mixinMediumDiaporamaClose('.articlePopup-close','.westminster', '20%', '40%', '20%', '25%', '65rem', '-68%', '53%', '3', '');
     }
     //button, parent,left, right, top, bottom, index, imageLeft
     var smallDiaporama = function(){
@@ -285,8 +285,8 @@ var WM = (function($) {
       mixinSmallDiaporamaClose('.articlePopup-close','.dominique-person','5%', '67%', '30rem','-4%','', '25%');
     }
     var smallDiaporamaPierre = function(){
-      mixinSmallDiaporama('.js-showArticle','.pierre','5%', '58%', '7%','25.2%','3', '41%');
-      mixinSmallDiaporamaClose('.articlePopup-close','.pierre','5%', '73%', '7%','57.2%','3', '20%');
+      mixinSmallDiaporama('.js-showArticle','.pierre','5%', '58%', '61rem','-70.8%','3', '41%');
+      mixinSmallDiaporamaClose('.articlePopup-close','.pierre','5%', '73%', '61rem','-25.8%','3', '20%');
     }
     var getHeight = function(mediumArticle){
 
