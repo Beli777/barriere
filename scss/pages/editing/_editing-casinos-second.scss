@@ -1,0 +1,124 @@
+//----- Editing Page / Casinos second block
+.editing-casinos-second {
+  background-color: $colorMain;
+  width: 50.5%;
+  float: left;
+  border-top: 1rem solid $colorBody;
+  border-right: 1rem solid $colorBody;
+  margin-top: -31.5rem;
+  padding: 10rem 0 3rem;
+  text-align: center;
+  @include breakpoint(tablet) {
+    width: 69.5%;
+    padding: 5.8rem 0 1rem;
+    margin-top: -6.5rem;
+    margin-bottom: 5rem;
+  }
+  @include breakpoint(phone) {
+    width: 85%;
+    padding: 9rem 0 3.5rem;
+    margin-top: -14rem;
+    margin-bottom: 5rem;
+  }
+  
+  &__body {}
+  &__info-head {
+    margin-bottom: 3.3rem;
+  }
+  &__title-top {
+    display: inline-block;
+    vertical-align: -3rem;
+    padding-left: 1%;
+  }
+  &__title-bottom {
+    // max-width: 50%;
+    // text-align: left;
+    margin: -0.5rem auto 0;
+    // padding-left: 6%;
+  }
+  &__info-body {}
+  &__info-body-top {
+    @include breakpoint(phone) {
+      // width: 60%;
+      margin: 0 auto;
+      display: inline-block;
+      margin-bottom: 6rem;
+    }
+  }
+  &__media {
+    &-first {
+      // margin-bottom: 1rem;
+      @include breakpoint(phone) {
+        width: 50%;
+        float: right;
+      }
+    }
+    &-second {
+      margin-bottom: 3.3rem;
+      @include breakpoint(phone) {
+        margin-bottom: 4.3rem;
+      }
+      img {
+        max-width: 40%;
+        @include breakpoint(tablet) {
+          max-width: 60%;
+        }
+        @include breakpoint(phone) {
+          max-width: 70%;
+        }
+      }
+    }
+    img {
+      margin: 0 auto;
+    }
+  }
+  &__text {
+    padding: 0 17%;
+    @include breakpoint(tablet) {
+      padding: 0 10%;
+    }
+    @include breakpoint(phone) {
+      padding: 0 5%;
+    }
+    .editing__p {
+      text-align: center;
+    }
+  }
+  &__ranking {
+    font-family: $baseFont--secondary;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #e3e3e3;
+    margin: -3rem 0 4.5rem -9%;
+    @include breakpoint(tablet) {
+      margin-bottom: 5rem;
+    }
+    @include breakpoint(phone) {
+      width: 50%;
+      float: left;
+      margin-top: -1rem;
+      margin-bottom: 0;
+    }
+  }
+  &__ranking-num {
+    font-size: 13.4rem;
+    display: inline-block;
+  }
+  &__ranking-num-text {
+    font-size: 2.5rem;
+    display: inline-block;
+    vertical-align: 5rem;
+    margin-left: -2%;
+  }
+  &__ranking-title {
+    font-size: 3.1rem;
+    font-family: $baseFont;
+    color: $colorBlack;
+    margin-top: -5rem;
+    margin-left: 11%;
+  }
+  
+  .editing__num {
+    font-size: 10rem;
+  }
+}

@@ -85,7 +85,7 @@ html {
 
 html, body {
   width: 100%;
-  background-color: lightgray; }
+  background-color: #f9f9f9; }
 
 body {
   padding-top: 8rem; }
@@ -129,12 +129,6 @@ input[type="search"]::-webkit-search-cancel-button {
   src: url("../fonts/Lucien_Light.otf") format("opentype"); }
 html {
   font-size: 10px; }
-  @media (min-width: 768px) and (max-width: 1024px) {
-    html {
-      font-size: 6.66667px; } }
-  @media (max-width: 767px) {
-    html {
-      font-size: 5px; } }
 
 body {
   font-size: 100%;
@@ -152,8 +146,32 @@ u {
   text-decoration: underline; }
 
 h1 {
-  font-size: 7.2rem;
-  font-family: "Lucien_Regular", Arial, Helvetica, Tahoma, sans-serif; }
+  color: #af8716;
+  font-family: "Lucien_Regular", Arial, Helvetica, Tahoma, sans-serif;
+  font-size: 5rem;
+  text-align: center;
+  text-transform: uppercase; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+      font-size: 2.8rem; } }
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 3.2rem; } }
+
+h2 {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 3.5rem;
+  text-align: center;
+  text-transform: uppercase; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    h2 {
+      font-size: 2rem;
+      line-height: 3rem; } }
+  @media (max-width: 767px) {
+    h2 {
+      font-size: 2.5rem;
+      line-height: 4rem; } }
 
 h3 {
   color: #363636; }
@@ -208,6 +226,20 @@ h3 {
 
 .capitalize {
   text-transform: capitalize; }
+
+.btn {
+  font-family: Georgia;
+  color: #af8716;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  font-size: 1.4rem;
+  padding: 2rem 2.5rem;
+  text-align: center;
+  display: inline-block; }
+  @media (max-width: 767px) {
+    .btn {
+      font-size: 2rem;
+      padding: 2.5rem; } }
 
 h1 {
   color: #af8716;
@@ -845,6 +877,1574 @@ h1 {
     left: 41%; }
   .casinoHuge .article__popup {
     top: 31rem; }
+
+.editing__head {
+  margin: 0 auto 7.5rem;
+  width: 50%;
+  clear: both; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing__head {
+      margin-bottom: 2rem; } }
+  @media (max-width: 767px) {
+    .editing__head {
+      margin-bottom: 4rem; } }
+.editing__title {
+  text-transform: uppercase;
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: #363636; }
+  @media (max-width: 767px) {
+    .editing__title {
+      font-size: 2.3rem;
+      line-height: 3rem; } }
+  .editing__title--colour {
+    color: #af8716; }
+  .editing__title--padding {
+    background-color: #FFF;
+    padding: 1.2rem 3rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing__title--padding {
+        padding: 1rem 2rem; } }
+    @media (max-width: 767px) {
+      .editing__title--padding {
+        padding: 2rem; } }
+.editing__point, .editing__point--smaller {
+  background-image: url("../img/point.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  height: 2.8rem;
+  width: 2.8rem;
+  vertical-align: middle; }
+  @media (min-width: 768px) {
+    .editing__point--smaller {
+      height: 1.8rem;
+      width: 1.8rem; } }
+.editing__points {
+  background-image: url("../img/points.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 2.5rem;
+  margin-bottom: 2.5rem; }
+  @media (max-width: 767px) {
+    .editing__points {
+      height: 3rem; } }
+.editing__num {
+  font-family: Georgia;
+  font-weight: bold;
+  color: #363636;
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: -0.5rem; }
+.editing__info-body {
+  text-align: center; }
+.editing__p {
+  font-family: "Lucien_Light", Arial, Helvetica, Tahoma, sans-serif;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  margin-bottom: 4.2rem;
+  text-align: justify; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing__p {
+      line-height: 3rem;
+      margin-bottom: 3.6rem; } }
+  @media (max-width: 767px) {
+    .editing__p {
+      font-size: 2.5rem;
+      line-height: 4.2rem;
+      margin-bottom: 4rem; } }
+  .editing__p--reg {
+    font-family: "Lucien_Regular", Arial, Helvetica, Tahoma, sans-serif; }
+.editing img {
+  width: auto;
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.editing-birth {
+  display: table;
+  position: relative;
+  background-color: #FFF;
+  padding: 8.5rem 5% 7rem 6.2%; }
+  @media (min-width: 1025px) {
+    .editing-birth {
+      width: 79%; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-birth {
+      padding: 9rem 2% 4.5rem; } }
+  @media (max-width: 767px) {
+    .editing-birth {
+      padding: 8rem 5.7% 8rem; } }
+  .editing-birth__top {
+    position: relative;
+    display: table;
+    width: 100%; }
+  .editing-birth__media {
+    display: table-cell;
+    vertical-align: middle;
+    width: 62.5%; }
+    @media (min-width: 1025px) {
+      .editing-birth__media {
+        width: 43%; } }
+  .editing-birth__info-head {
+    position: relative;
+    z-index: 1;
+    display: table-cell;
+    vertical-align: middle;
+    width: 37.5%;
+    padding-left: 3%; }
+    @media (min-width: 1025px) {
+      .editing-birth__info-head {
+        width: 57%; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-birth__info-head {
+        padding-left: 5%; } }
+    @media (max-width: 767px) {
+      .editing-birth__info-head {
+        padding-left: 3.5%; } }
+  .editing-birth__info-body {
+    float: right;
+    width: 35.5%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-birth__info-body {
+        width: 50.5%;
+        margin-top: 6.5rem;
+        margin-right: 6%; } }
+    @media (max-width: 767px) {
+      .editing-birth__info-body {
+        width: 75.5%;
+        margin-right: 12%;
+        margin-top: 7.5rem; } }
+  .editing-birth .editing__point, .editing-birth .editing__point--smaller {
+    vertical-align: -2.5rem; }
+  .editing-birth .editing__num {
+    font-size: 8rem; }
+    @media (min-width: 1025px) {
+      .editing-birth .editing__num {
+        font-size: 15rem; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-birth .editing__num {
+        padding-left: 10%; } }
+  .editing-birth .editing__title {
+    position: absolute;
+    left: 17%;
+    bottom: 2.3rem;
+    right: 0;
+    margin: 0 auto;
+    width: 60%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-birth .editing__title {
+        bottom: 1.5rem;
+        left: 35%; } }
+    @media (max-width: 767px) {
+      .editing-birth .editing__title {
+        left: 36%;
+        bottom: -5.5rem; } }
+
+.editing-staff {
+  overflow: hidden;
+  position: relative;
+  background-color: #FFF;
+  margin: 0 6% 5.5rem;
+  padding-top: 4rem;
+  padding-bottom: 7rem; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-staff {
+      margin: 0 13.5% 2rem 2%;
+      padding: 8.5rem 0 13rem 6%; } }
+  @media (max-width: 767px) {
+    .editing-staff {
+      margin-left: 0;
+      margin-bottom: 4.5rem;
+      padding: 12rem 0 17rem 5%; } }
+  .editing-staff:after {
+    content: '';
+    background-color: #f9f9f9;
+    width: 27.5%;
+    height: 16.5rem;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-staff:after {
+        width: 36%;
+        height: 8rem; } }
+    @media (max-width: 767px) {
+      .editing-staff:after {
+        width: 47%;
+        height: 10.5rem; } }
+  @media (min-width: 1025px) {
+    .editing-staff__body {
+      width: 56%;
+      margin: 0 auto; } }
+  @media (min-width: 1025px) {
+    .editing-staff__media-top {
+      float: right;
+      width: 22%;
+      margin-right: 12%;
+      margin-top: 6.5rem; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-staff__media-top {
+      width: 27%;
+      position: absolute;
+      right: 9%;
+      top: 6rem; } }
+  @media (max-width: 767px) {
+    .editing-staff__media-top {
+      width: 28%;
+      position: absolute;
+      right: 7%;
+      top: 5rem; } }
+  .editing-staff__media-middle {
+    width: 14%;
+    display: inline-block;
+    vertical-align: middle; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-staff__media-middle {
+        width: 18%; } }
+    @media (max-width: 767px) {
+      .editing-staff__media-middle {
+        width: 19.5%; } }
+  .editing-staff__media-bottom {
+    width: 17%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 16%;
+    margin-top: -1.5rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-staff__media-bottom {
+        width: 22%;
+        margin-left: 10%;
+        margin-top: 0; } }
+    @media (max-width: 767px) {
+      .editing-staff__media-bottom {
+        width: 100%;
+        margin-top: 6rem;
+        margin-left: 20%; } }
+  .editing-staff__info-head {
+    width: 46%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5%;
+    margin-top: 1rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-staff__info-head {
+        width: 70%;
+        margin-left: 7%; } }
+    @media (max-width: 767px) {
+      .editing-staff__info-head {
+        width: 63%;
+        margin-left: 14%;
+        margin-top: 3rem; } }
+  .editing-staff__title-top {
+    position: relative;
+    left: 1rem;
+    top: 1.5rem; }
+  .editing-staff__title-bottom {
+    position: relative;
+    left: -1.4rem;
+    top: -1.4rem; }
+    @media (max-width: 767px) {
+      .editing-staff__title-bottom {
+        left: 0;
+        top: 0; } }
+  .editing-staff__num-wrap {
+    position: relative;
+    left: -6.2rem;
+    top: -0.4rem; }
+  .editing-staff__info-body {
+    width: 37%;
+    display: inline-block;
+    margin-left: 5%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-staff__info-body {
+        width: 53%;
+        margin-top: 1rem;
+        margin-left: 5.5%; } }
+    @media (max-width: 767px) {
+      .editing-staff__info-body {
+        width: 88%;
+        margin-top: 4rem;
+        margin-left: 0; } }
+  .editing-staff .editing__num {
+    font-size: 8rem;
+    letter-spacing: 0; }
+  .editing-staff .editing__point--smaller {
+    vertical-align: -2.5rem; }
+
+.editing-persons {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding: 8rem 0 15rem 16%; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-persons {
+      padding: 6rem 0 0 18%; } }
+  @media (max-width: 767px) {
+    .editing-persons {
+      padding: 6rem 5% 0;
+      margin-bottom: 2.5rem; } }
+  .editing-persons:before {
+    content: '';
+    background-color: #FFF;
+    width: 11.2%;
+    height: 46.5rem;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-persons:before {
+        width: 8%;
+        height: 41rem; } }
+    @media (max-width: 767px) {
+      .editing-persons:before {
+        width: 6%;
+        height: 8rem; } }
+  @media (max-width: 767px) {
+    .editing-persons:after {
+      content: '';
+      background-color: #FFF;
+      width: 6%;
+      height: 8rem;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 0; } }
+  @media (min-width: 1025px) {
+    .editing-persons__persons {
+      width: 64%;
+      float: right; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-persons__persons {
+      margin-left: 8%; } }
+  .editing-persons__person {
+    display: table-cell;
+    position: relative;
+    z-index: 1; }
+    .editing-persons__person--1 {
+      top: -1rem;
+      left: 6%; }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .editing-persons__person--1 {
+          top: 2.5rem; } }
+      @media (max-width: 767px) {
+        .editing-persons__person--1 {
+          top: 5rem;
+          left: 18%; } }
+      .editing-persons__person--1 .editing-persons__person-title {
+        bottom: 4.5rem;
+        left: -45%; }
+        @media (min-width: 768px) and (max-width: 1024px) {
+          .editing-persons__person--1 .editing-persons__person-title {
+            bottom: 2rem;
+            left: -69%; } }
+        @media (max-width: 767px) {
+          .editing-persons__person--1 .editing-persons__person-title {
+            bottom: 1.5rem;
+            left: -61%; } }
+    .editing-persons__person--2 {
+      left: -1%; }
+      @media (max-width: 767px) {
+        .editing-persons__person--2 {
+          left: 13%; } }
+      .editing-persons__person--2 .editing-persons__person-title {
+        top: 9rem;
+        right: -7.5rem; }
+        @media (min-width: 768px) and (max-width: 1024px) {
+          .editing-persons__person--2 .editing-persons__person-title {
+            top: 6rem;
+            right: -8.5rem; } }
+        @media (max-width: 767px) {
+          .editing-persons__person--2 .editing-persons__person-title {
+            top: 9rem;
+            right: 32%;
+            width: 130%; } }
+    .editing-persons__person--3 {
+      top: 7rem;
+      left: -10%;
+      z-index: 2; }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .editing-persons__person--3 {
+          top: 9.5rem;
+          left: -12%; } }
+      @media (max-width: 767px) {
+        .editing-persons__person--3 {
+          top: 10rem;
+          left: -3%; } }
+      .editing-persons__person--3 .editing-persons__person-title {
+        right: -5rem;
+        bottom: 6.7rem; }
+        @media (min-width: 768px) and (max-width: 1024px) {
+          .editing-persons__person--3 .editing-persons__person-title {
+            right: -8rem;
+            bottom: 4rem; } }
+        @media (max-width: 767px) {
+          .editing-persons__person--3 .editing-persons__person-title {
+            right: -8.5rem;
+            bottom: 1.7rem; } }
+    .editing-persons__person--4 {
+      left: -23%; }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .editing-persons__person--4 {
+          left: -26%;
+          top: 3.5rem; } }
+      @media (max-width: 767px) {
+        .editing-persons__person--4 {
+          left: -18%;
+          top: 2rem; } }
+      .editing-persons__person--4 .editing-persons__person-title {
+        right: -48%;
+        bottom: 12.5rem; }
+        @media (min-width: 768px) and (max-width: 1024px) {
+          .editing-persons__person--4 .editing-persons__person-title {
+            right: -76%;
+            bottom: 8rem; } }
+        @media (max-width: 767px) {
+          .editing-persons__person--4 .editing-persons__person-title {
+            right: -7.5rem;
+            bottom: 4.5rem;
+            width: 100%; } }
+  .editing-persons__person-title {
+    opacity: 0;
+    font-size: 1.68em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    position: absolute; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-persons__person-title {
+        font-size: 1.4rem; } }
+    @media (max-width: 767px) {
+      .editing-persons__person-title {
+        font-size: 1.8rem; } }
+  .editing-persons__info {
+    margin-right: 7%;
+    margin-top: 5rem; }
+    @media (min-width: 1025px) {
+      .editing-persons__info {
+        width: 29%;
+        float: right; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-persons__info {
+        margin-top: 11rem; } }
+    @media (max-width: 767px) {
+      .editing-persons__info {
+        margin-top: 17rem;
+        margin-right: 0; } }
+  .editing-persons__info-head {
+    margin-left: 11%;
+    margin-bottom: 5rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-persons__info-head {
+        margin-left: -5.5%;
+        margin-bottom: 1.5rem; } }
+    @media (max-width: 767px) {
+      .editing-persons__info-head {
+        margin-bottom: 3.5rem; } }
+  .editing-persons__info-head--top .editing__title {
+    display: inline-block;
+    width: 60%;
+    vertical-align: middle;
+    margin-left: 2%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-persons__info-head--top .editing__title {
+        width: 40%; } }
+    @media (max-width: 767px) {
+      .editing-persons__info-head--top .editing__title {
+        width: 80%; } }
+  .editing-persons__info-head--bottom {
+    margin-left: 30%;
+    margin-top: -2rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-persons__info-head--bottom {
+        margin-left: 17%; } }
+    .editing-persons__info-head--bottom .editing__title {
+      display: inline-block;
+      vertical-align: -1rem; }
+      @media (max-width: 767px) {
+        .editing-persons__info-head--bottom .editing__title {
+          vertical-align: 0; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-persons__info-body {
+      margin-left: 10%;
+      margin-right: 3%; } }
+  .editing-persons .editing__num {
+    font-size: 8rem; }
+
+.editing-turnover {
+  overflow: hidden;
+  margin-bottom: 5rem;
+  padding-right: 13%; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-turnover {
+      padding-right: 8%;
+      margin-bottom: 4rem; } }
+  @media (max-width: 767px) {
+    .editing-turnover {
+      padding: 0 17%; } }
+  .editing-turnover__body {
+    float: right;
+    width: 40%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-turnover__body {
+        width: 72%; } }
+    @media (max-width: 767px) {
+      .editing-turnover__body {
+        width: 100%; } }
+  @media (max-width: 767px) {
+    .editing-turnover__info-head {
+      padding-left: 16%; } }
+  .editing-turnover__info-body {
+    padding-left: 10.8rem;
+    margin-top: 3.5rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-turnover__info-body {
+        padding-left: 9.5rem; } }
+    @media (max-width: 767px) {
+      .editing-turnover__info-body {
+        padding-left: 0; } }
+  .editing-turnover .editing__num {
+    font-size: 10rem;
+    letter-spacing: 0; }
+    @media (max-width: 767px) {
+      .editing-turnover .editing__num {
+        font-size: 8.2rem; } }
+    .editing-turnover .editing__num span {
+      font-size: 5rem;
+      margin-left: -1rem; }
+      @media (max-width: 767px) {
+        .editing-turnover .editing__num span {
+          font-size: 4.1rem; } }
+  .editing-turnover .editing__point--smaller {
+    vertical-align: -3rem; }
+  .editing-turnover .editing__title {
+    position: relative;
+    left: 10.8rem;
+    top: -1rem; }
+    @media (max-width: 767px) {
+      .editing-turnover .editing__title {
+        top: 0.5rem; } }
+
+.editing-casinos-first {
+  background-color: #FFF;
+  width: 60%;
+  float: right;
+  padding: 10rem 10.5% 14rem 10.5%; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-casinos-first {
+      width: 86%;
+      padding: 5rem 9.5% 11rem 7%; } }
+  @media (max-width: 767px) {
+    .editing-casinos-first {
+      width: 100%;
+      padding: 8rem 4% 21rem; } }
+  .editing-casinos-first__info-head {
+    margin-bottom: -8rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-casinos-first__info-head {
+        margin-bottom: -6rem; } }
+    @media (max-width: 767px) {
+      .editing-casinos-first__info-head {
+        margin-bottom: -6.5rem;
+        margin-left: 15%; } }
+  .editing-casinos-first__info-body {
+    float: right;
+    width: 80%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-casinos-first__info-body {
+        width: 68%; } }
+    @media (max-width: 767px) {
+      .editing-casinos-first__info-body {
+        width: 100%; } }
+  .editing-casinos-first__media {
+    margin-bottom: 2.7rem; }
+    @media (max-width: 1024px) {
+      .editing-casinos-first__media {
+        margin-bottom: 4rem; } }
+    @media (max-width: 767px) {
+      .editing-casinos-first__media {
+        max-width: 62%;
+        float: right; } }
+  .editing-casinos-first__text {
+    padding: 0 14% 0 4%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-casinos-first__text {
+        padding: 0 9% 0 2%; } }
+    @media (max-width: 767px) {
+      .editing-casinos-first__text {
+        padding: 0 2%;
+        width: 100%;
+        clear: both; } }
+  .editing-casinos-first .editing__point, .editing-casinos-first .editing__point--smaller {
+    vertical-align: -3rem; }
+  .editing-casinos-first .editing__num {
+    font-size: 15rem; }
+    @media (max-width: 1024px) {
+      .editing-casinos-first .editing__num {
+        font-size: 8rem; } }
+  .editing-casinos-first .editing__title {
+    display: inline-block;
+    vertical-align: -4.8rem;
+    margin-left: 1%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-casinos-first .editing__title {
+        vertical-align: -3rem; } }
+    @media (max-width: 767px) {
+      .editing-casinos-first .editing__title {
+        vertical-align: -2.5rem; } }
+
+.editing-casinos-second {
+  background-color: #FFF;
+  width: 50.5%;
+  float: left;
+  border-top: 1rem solid #f9f9f9;
+  border-right: 1rem solid #f9f9f9;
+  margin-top: -31.5rem;
+  padding: 10rem 0 3rem;
+  text-align: center; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-casinos-second {
+      width: 69.5%;
+      padding: 5.8rem 0 1rem;
+      margin-top: -6.5rem;
+      margin-bottom: 5rem; } }
+  @media (max-width: 767px) {
+    .editing-casinos-second {
+      width: 85%;
+      padding: 9rem 0 3.5rem;
+      margin-top: -14rem;
+      margin-bottom: 5rem; } }
+  .editing-casinos-second__info-head {
+    margin-bottom: 3.3rem; }
+  .editing-casinos-second__title-top {
+    display: inline-block;
+    vertical-align: -3rem;
+    padding-left: 1%; }
+  .editing-casinos-second__title-bottom {
+    margin: -0.5rem auto 0; }
+  @media (max-width: 767px) {
+    .editing-casinos-second__info-body-top {
+      margin: 0 auto;
+      display: inline-block;
+      margin-bottom: 6rem; } }
+  @media (max-width: 767px) {
+    .editing-casinos-second__media-first {
+      width: 50%;
+      float: right; } }
+  .editing-casinos-second__media-second {
+    margin-bottom: 3.3rem; }
+    @media (max-width: 767px) {
+      .editing-casinos-second__media-second {
+        margin-bottom: 4.3rem; } }
+    .editing-casinos-second__media-second img {
+      max-width: 40%; }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .editing-casinos-second__media-second img {
+          max-width: 60%; } }
+      @media (max-width: 767px) {
+        .editing-casinos-second__media-second img {
+          max-width: 70%; } }
+  .editing-casinos-second__media img {
+    margin: 0 auto; }
+  .editing-casinos-second__text {
+    padding: 0 17%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-casinos-second__text {
+        padding: 0 10%; } }
+    @media (max-width: 767px) {
+      .editing-casinos-second__text {
+        padding: 0 5%; } }
+    .editing-casinos-second__text .editing__p {
+      text-align: center; }
+  .editing-casinos-second__ranking {
+    font-family: Georgia;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #e3e3e3;
+    margin: -3rem 0 4.5rem -9%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-casinos-second__ranking {
+        margin-bottom: 5rem; } }
+    @media (max-width: 767px) {
+      .editing-casinos-second__ranking {
+        width: 50%;
+        float: left;
+        margin-top: -1rem;
+        margin-bottom: 0; } }
+  .editing-casinos-second__ranking-num {
+    font-size: 13.4rem;
+    display: inline-block; }
+  .editing-casinos-second__ranking-num-text {
+    font-size: 2.5rem;
+    display: inline-block;
+    vertical-align: 5rem;
+    margin-left: -2%; }
+  .editing-casinos-second__ranking-title {
+    font-size: 3.1rem;
+    font-family: "Lucien_Regular", Arial, Helvetica, Tahoma, sans-serif;
+    color: #363636;
+    margin-top: -5rem;
+    margin-left: 11%; }
+  .editing-casinos-second .editing__num {
+    font-size: 10rem; }
+
+.editing-hotels {
+  margin-bottom: 6rem; }
+  @media (max-width: 1024px) {
+    .editing-hotels {
+      display: inline-block;
+      margin-bottom: 8rem; } }
+  .editing-hotels__info {
+    width: 49.5%;
+    float: right;
+    padding: 10rem 3.5% 3.5rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-hotels__info {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 5rem; } }
+    @media (max-width: 767px) {
+      .editing-hotels__info {
+        width: 100%;
+        padding: 0 5%;
+        margin-bottom: 4.5rem; } }
+  .editing-hotels__info-head {
+    text-align: center;
+    margin-left: 23%;
+    margin-bottom: 8.5rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-hotels__info-head {
+        margin-left: 31%; } }
+    @media (max-width: 767px) {
+      .editing-hotels__info-head {
+        margin-left: 0;
+        float: right;
+        text-align: right; } }
+  @media (max-width: 767px) {
+    .editing-hotels__num-wrap {
+      width: 35%; } }
+  .editing-hotels__info-body {
+    width: 80%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-hotels__info-body {
+        width: 71%;
+        margin: 0 auto; } }
+    @media (max-width: 767px) {
+      .editing-hotels__info-body {
+        width: 100%;
+        overflow: hidden; } }
+  .editing-hotels__media {
+    display: inline-block;
+    width: 100%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-hotels__media {
+        padding: 0 2%; } }
+    .editing-hotels__media img {
+      margin: 0 auto; }
+  .editing-hotels .editing__num {
+    font-size: 10rem; }
+  .editing-hotels .editing__title {
+    display: inline-block;
+    vertical-align: bottom;
+    text-align: left;
+    max-width: 50%;
+    margin-bottom: -3rem; }
+    @media (max-width: 767px) {
+      .editing-hotels .editing__title {
+        max-width: 55%;
+        margin-bottom: -5.5rem; } }
+
+.editing-renovation {
+  background-color: #FFF;
+  margin: 0 6% 1.5rem;
+  padding: 8.5rem 5%; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-renovation {
+      margin: 0 0 6.5rem;
+      padding: 7rem 0 0; } }
+  @media (max-width: 767px) {
+    .editing-renovation {
+      margin: 0 0 8rem;
+      padding: 8rem 5% 2rem; } }
+  .editing-renovation__body {
+    width: 100%;
+    display: inline-block;
+    position: relative; }
+    @media (max-width: 767px) {
+      .editing-renovation__body {
+        padding-top: 10rem; } }
+  .editing-renovation__info-head {
+    position: absolute;
+    top: 14%;
+    left: 1%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-renovation__info-head {
+        top: 21%;
+        left: 0%; } }
+    @media (max-width: 767px) {
+      .editing-renovation__info-head {
+        left: 10%;
+        top: 0; } }
+  .editing-renovation__info-body {
+    width: 25%;
+    float: left;
+    margin-bottom: 2rem;
+    position: absolute;
+    top: 26rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-renovation__info-body {
+        position: relative;
+        width: 100%;
+        top: 0;
+        float: none;
+        display: inline-block;
+        margin-top: 5.5rem;
+        padding: 0 14%; } }
+    @media (max-width: 767px) {
+      .editing-renovation__info-body {
+        width: 100%;
+        position: relative;
+        top: 0;
+        margin-top: 5rem; } }
+  .editing-renovation__media {
+    float: right;
+    width: 62%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-renovation__media {
+        width: 56.5%; } }
+    @media (max-width: 767px) {
+      .editing-renovation__media {
+        width: 100%; } }
+  .editing-renovation .editing__point--smaller {
+    vertical-align: -2.5rem;
+    margin-right: 3%; }
+    @media (max-width: 767px) {
+      .editing-renovation .editing__point--smaller {
+        margin-right: 0; } }
+  .editing-renovation .editing__num {
+    width: 90%;
+    font-size: 10rem; }
+    @media (max-width: 1024px) {
+      .editing-renovation .editing__num {
+        font-size: 7rem; } }
+  .editing-renovation .editing__title {
+    position: relative;
+    right: -25%;
+    width: 56%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-renovation .editing__title {
+        right: -16%;
+        top: 1rem; } }
+    @media (max-width: 767px) {
+      .editing-renovation .editing__title {
+        width: 74%;
+        right: 0;
+        left: 14%;
+        top: 0.5rem;
+        padding: 0.5rem 2rem; } }
+
+.editing-venue {
+  background-color: #FFF;
+  width: 60%;
+  float: right;
+  padding: 10.5rem 7.5% 9.5rem; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-venue {
+      width: 86%;
+      padding: 7rem 13% 10rem 11%; } }
+  @media (max-width: 767px) {
+    .editing-venue {
+      width: 95%;
+      padding: 9.5rem 11% 14rem; } }
+  .editing-venue__info {
+    width: 63.5%;
+    margin-right: 3.5%;
+    display: inline-block;
+    vertical-align: middle; }
+    @media (max-width: 1024px) {
+      .editing-venue__info {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 4rem; } }
+  .editing-venue__info-head {
+    position: relative;
+    left: 37%;
+    margin-bottom: 4.5rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-venue__info-head {
+        left: 26%;
+        margin-bottom: 7rem; } }
+    @media (max-width: 767px) {
+      .editing-venue__info-head {
+        left: 11.5%;
+        margin-bottom: 2.5rem; } }
+  .editing-venue__title-top {
+    margin-bottom: -2.5rem;
+    margin-left: 4rem; }
+  .editing-venue__title-bottom {
+    width: 90%;
+    margin-left: -3rem; }
+    @media (max-width: 767px) {
+      .editing-venue__title-bottom {
+        margin-left: -2rem; } }
+  .editing-venue__media {
+    width: 31.5%;
+    display: inline-block;
+    vertical-align: middle; }
+    @media (max-width: 1024px) {
+      .editing-venue__media {
+        width: 100%; } }
+    @media (max-width: 1024px) {
+      .editing-venue__media img {
+        margin: 0 auto;
+        max-width: 37%; } }
+  .editing-venue .editing__num {
+    font-size: 8rem; }
+
+.editing-drink {
+  position: relative;
+  background-color: #FFF;
+  width: 44.5%;
+  float: left;
+  border-top: 1rem solid #f9f9f9;
+  border-right: 1rem solid #f9f9f9;
+  margin: -15.5rem 0 11rem 6.2%; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-drink {
+      margin: -4rem 0 9.5rem 0;
+      width: 63%; } }
+  @media (max-width: 767px) {
+    .editing-drink {
+      margin: -11rem 0 11.5rem 0;
+      width: 84.5%; } }
+  .editing-drink:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 11rem;
+    background-color: #f9f9f9; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-drink:after {
+        height: 9.5rem; } }
+    @media (max-width: 767px) {
+      .editing-drink:after {
+        height: 20.5rem; } }
+  .editing-drink__body {
+    position: relative;
+    z-index: 1; }
+  .editing-drink__info {
+    padding: 10.5rem 11% 0;
+    overflow: hidden; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-drink__info {
+        padding: 10.5rem 16% 0 4%; } }
+    @media (max-width: 767px) {
+      .editing-drink__info {
+        padding: 9.8rem 7% 0; } }
+  .editing-drink__info-head {
+    margin-bottom: 4.5rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-drink__info-head {
+        margin-bottom: 4rem; } }
+    @media (max-width: 767px) {
+      .editing-drink__info-head {
+        padding-left: 7%;
+        margin-bottom: 3.5rem; } }
+  .editing-drink__title-top {
+    margin-left: 7rem;
+    margin-bottom: -4rem; }
+  .editing-drink__title-middle {
+    font-size: 4rem;
+    font-family: Georgia;
+    letter-spacing: 0; }
+  .editing-drink__title-bottom {
+    margin-left: 7rem;
+    margin-top: -1rem;
+    width: 65%; }
+    @media (max-width: 1024px) {
+      .editing-drink__title-bottom {
+        width: 85%; } }
+  .editing-drink__info-body {
+    width: 57%;
+    float: right; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-drink__info-body {
+        width: 81%;
+        margin-bottom: .5rem; } }
+    @media (max-width: 767px) {
+      .editing-drink__info-body {
+        width: 100%;
+        margin-bottom: 2rem; } }
+  .editing-drink__media {
+    display: inline-block;
+    position: relative;
+    left: 33.5%; }
+    @media (min-width: 1025px) {
+      .editing-drink__media {
+        max-width: 80%; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-drink__media {
+        left: 51.5%; } }
+    @media (max-width: 767px) {
+      .editing-drink__media {
+        max-width: 87%; } }
+  .editing-drink__warning {
+    font-size: 1.4rem;
+    font-family: Georgia;
+    margin-top: 2rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-drink__warning {
+        font-size: 1.2rem; } }
+    @media (max-width: 767px) {
+      .editing-drink__warning {
+        font-size: 1.5rem;
+        line-height: 2.45rem; } }
+  .editing-drink .editing__num {
+    font-size: 8rem; }
+
+.editing-sport {
+  width: 100%;
+  display: inline-block;
+  padding: 0 12% 5.5rem; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-sport {
+      padding: 0 14% 6.7rem; } }
+  @media (max-width: 767px) {
+    .editing-sport {
+      padding: 0 5% 7.5rem; } }
+  .editing-sport--golf {
+    width: 42%;
+    float: left;
+    margin-right: 16%; }
+    @media (max-width: 767px) {
+      .editing-sport--golf {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 9rem; } }
+    .editing-sport--golf .editing__num {
+      position: absolute;
+      top: -2.5rem;
+      right: 0;
+      left: 0;
+      text-align: center; }
+    .editing-sport--golf .editing__title {
+      position: absolute;
+      bottom: -2rem;
+      text-align: center;
+      left: 0;
+      right: 0;
+      margin: 0 auto; }
+      @media (max-width: 767px) {
+        .editing-sport--golf .editing__title {
+          bottom: -4.5rem; } }
+  .editing-sport--golf__info-head {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12%; }
+    @media (min-width: 1025px) {
+      .editing-sport--golf__info-head {
+        width: 45%; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-sport--golf__info-head {
+        margin-bottom: 6rem; } }
+    @media (max-width: 767px) {
+      .editing-sport--golf__info-head {
+        width: 40%;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 8rem; } }
+  .editing-sport--golf__point-left {
+    position: absolute;
+    left: 13%;
+    top: 50%; }
+  .editing-sport--golf__point-right {
+    position: absolute;
+    right: 13%;
+    top: 50%; }
+  .editing-sport--golf__img1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; }
+  .editing-sport--golf__info-body {
+    display: inline-block;
+    vertical-align: middle; }
+    @media (min-width: 1025px) {
+      .editing-sport--golf__info-body {
+        width: 42%; } }
+    @media (max-width: 767px) {
+      .editing-sport--golf__info-body {
+        width: 63%;
+        margin: 0 auto;
+        display: block; } }
+  .editing-sport--tennis {
+    width: 42%;
+    float: left; }
+    @media (max-width: 767px) {
+      .editing-sport--tennis {
+        width: 100%; } }
+  .editing-sport--tennis__info-head {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 9%;
+    text-align: center;
+    margin-top: -1rem; }
+    @media (min-width: 1025px) {
+      .editing-sport--tennis__info-head {
+        width: 50%; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-sport--tennis__info-head {
+        margin-top: 0;
+        margin-bottom: 2rem; } }
+    @media (max-width: 767px) {
+      .editing-sport--tennis__info-head {
+        width: 49%;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 2.5rem; } }
+    .editing-sport--tennis__info-head .editing__num {
+      padding: 0 10%;
+      margin-top: -3rem; }
+    .editing-sport--tennis__info-head .editing__title {
+      width: 74%;
+      margin: .7rem auto 0; }
+  .editing-sport--tennis__media {
+    margin-top: -1.2rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-sport--tennis__media {
+        margin-top: 0;
+        margin-left: 4%; } }
+  .editing-sport--tennis__img1 {
+    margin-bottom: -3rem;
+    margin-left: 7%; }
+  .editing-sport--tennis__img2 {
+    margin-left: -7%; }
+  .editing-sport--tennis__info-body {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2rem; }
+    @media (min-width: 1025px) {
+      .editing-sport--tennis__info-body {
+        width: 40%; } }
+    @media (max-width: 767px) {
+      .editing-sport--tennis__info-body {
+        width: 63%;
+        margin: 0 auto;
+        display: block; } }
+  .editing-sport .editing__num {
+    font-size: 10rem; }
+  .editing-sport img {
+    margin-left: auto;
+    margin-right: auto; }
+
+.editing-spa {
+  background-color: #FFF;
+  overflow: hidden;
+  margin: 0 0 10rem 6.5%;
+  padding: 10rem 6% 9.5rem 4.5%; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-spa {
+      margin: 0 2% 9rem 0;
+      padding: 8.5rem 2% 7.5rem; } }
+  @media (max-width: 767px) {
+    .editing-spa {
+      margin: 0 0 8rem;
+      padding: 8rem 0 9.5rem; } }
+  .editing-spa__info-head {
+    float: right;
+    width: 47%;
+    padding-left: 2.5%;
+    padding-top: 2rem;
+    position: relative; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-spa__info-head {
+        width: 43%;
+        padding-top: 0;
+        padding-left: 0;
+        margin-top: -0.5rem;
+        text-align: center; } }
+    @media (max-width: 767px) {
+      .editing-spa__info-head {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 2rem; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-spa__info-head__row--top {
+        padding-left: 6%; } }
+    @media (max-width: 767px) {
+      .editing-spa__info-head__row--top {
+        margin-left: -9%; } }
+    .editing-spa__info-head__row--middle {
+      margin-top: -2rem;
+      padding-left: 27%; }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .editing-spa__info-head__row--middle {
+          margin-top: -1.3rem;
+          padding-left: 0%;
+          margin-left: -15%; } }
+      @media (max-width: 767px) {
+        .editing-spa__info-head__row--middle {
+          margin-top: 0;
+          padding-left: 0;
+          margin-left: -15%; } }
+    .editing-spa__info-head__row--bottom {
+      margin-top: -2.6rem;
+      margin-bottom: 2.5rem;
+      padding-left: 11.5%; }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .editing-spa__info-head__row--bottom {
+          margin-top: -1rem;
+          margin-bottom: 2rem;
+          padding-left: 4.5%; } }
+      @media (max-width: 767px) {
+        .editing-spa__info-head__row--bottom {
+          margin: -1.2rem 0 0 17%;
+          padding-left: 0; } }
+    .editing-spa__info-head__row .editing__title {
+      display: inline-block;
+      vertical-align: -2.5rem;
+      font-size: 2.5rem;
+      padding-left: 2%; }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .editing-spa__info-head__row .editing__title {
+          font-size: 1.7rem;
+          vertical-align: -1.5rem; } }
+      @media (max-width: 767px) {
+        .editing-spa__info-head__row .editing__title {
+          font-size: 2.3rem;
+          vertical-align: -1.5rem; } }
+    .editing-spa__info-head .editing__title--padding {
+      position: relative;
+      left: -26%;
+      display: inline-block;
+      padding-left: 5%;
+      padding-right: 5%; }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .editing-spa__info-head .editing__title--padding {
+          left: -44%; } }
+      @media (max-width: 767px) {
+        .editing-spa__info-head .editing__title--padding {
+          position: absolute;
+          right: 9%;
+          left: auto;
+          bottom: -10rem;
+          padding: 1.5rem; } }
+  .editing-spa__media {
+    float: left;
+    width: 53%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-spa__media {
+        width: 57%; } }
+    @media (max-width: 767px) {
+      .editing-spa__media {
+        width: 61%; } }
+  .editing-spa__info-body {
+    float: right;
+    width: 45.5%;
+    padding-left: 4.3%;
+    margin-top: 6rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-spa__info-body {
+        margin-top: 3.5rem;
+        width: 75%;
+        padding-left: 0;
+        padding-right: 10%; } }
+    @media (max-width: 767px) {
+      .editing-spa__info-body {
+        width: 100%;
+        padding: 0 16.5%;
+        margin-top: 4rem; } }
+  .editing-spa .editing__point, .editing-spa .editing__point--smaller {
+    vertical-align: -2.5rem; }
+  .editing-spa .editing__num {
+    font-size: 10rem; }
+    @media (max-width: 1024px) {
+      .editing-spa .editing__num {
+        font-size: 7.1rem; } }
+
+.editing-culture {
+  background-color: #dadada; }
+  .editing-culture .editing__num {
+    font-size: 10rem; }
+    @media (max-width: 1024px) {
+      .editing-culture .editing__num {
+        font-size: 6.5rem; } }
+
+.editing-foundation {
+  background-color: #FFF;
+  width: 74.2%;
+  float: right;
+  margin-bottom: 10rem;
+  padding: 12.4rem 6% 16.5rem 7.5%; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-foundation {
+      width: 92.5%;
+      padding: 5rem 5% 7.3rem 8.5%;
+      margin-bottom: 9rem; } }
+  @media (max-width: 767px) {
+    .editing-foundation {
+      width: 94.7%;
+      padding: 7rem 8% 16rem;
+      margin-bottom: 8rem; } }
+  .editing-foundation__info-head {
+    width: 52%;
+    display: inline-block;
+    margin-right: 7.5%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-foundation__info-head {
+        width: 67%;
+        margin-right: 0;
+        margin-bottom: 5rem; } }
+    @media (max-width: 767px) {
+      .editing-foundation__info-head {
+        width: 82%;
+        margin-left: 4%;
+        margin-bottom: 4rem; } }
+  .editing-foundation__num-wrap {
+    margin-left: -10%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-foundation__num-wrap {
+        margin-left: 6%; } }
+    @media (max-width: 767px) {
+      .editing-foundation__num-wrap {
+        margin-left: 7%; } }
+  .editing-foundation__media {
+    position: relative;
+    margin-top: -4rem; }
+    @media (max-width: 1024px) {
+      .editing-foundation__media {
+        margin-top: -2rem; } }
+    .editing-foundation__media .editing__title {
+      position: absolute;
+      right: -10%;
+      top: 35%; }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .editing-foundation__media .editing__title {
+          right: -21%;
+          top: 47%; } }
+      @media (max-width: 767px) {
+        .editing-foundation__media .editing__title {
+          right: -19%;
+          top: 47%;
+          padding: 1.2rem; } }
+  .editing-foundation__info-body {
+    width: 39%;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: -7rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-foundation__info-body {
+        width: 70%;
+        float: right;
+        margin-bottom: 0; } }
+    @media (max-width: 767px) {
+      .editing-foundation__info-body {
+        width: 100%; } }
+  .editing-foundation .editing__num {
+    font-size: 15rem; }
+    @media (max-width: 1024px) {
+      .editing-foundation .editing__num {
+        font-size: 8rem; } }
+
+.editing-planet {
+  background-color: #FFF;
+  overflow: hidden;
+  position: relative;
+  margin: 0 6.8% 0rem 20.3%;
+  padding: 5rem 5% 23rem; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-planet {
+      margin: 0 2% 0rem 0;
+      padding: 3rem 0 14rem 8%; } }
+  @media (max-width: 767px) {
+    .editing-planet {
+      margin: 0 0 1rem;
+      padding: 6rem 7% 32.5rem 5%; } }
+  @media (max-width: 1024px) {
+    .editing-planet:before {
+      content: '';
+      position: absolute;
+      background-color: #f9f9f9;
+      top: 0;
+      right: 0; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-planet:before {
+      height: 23rem;
+      width: 24%; } }
+  @media (max-width: 767px) {
+    .editing-planet:before {
+      height: 42rem;
+      width: 6%; } }
+  .editing-planet:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #f9f9f9;
+    width: 52.5%;
+    height: 21.5rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-planet:after {
+        width: 39%;
+        height: 7.5rem; } }
+    @media (max-width: 767px) {
+      .editing-planet:after {
+        width: 28%;
+        height: 18.5rem; } }
+  .editing-planet__body {
+    overflow: hidden; }
+  .editing-planet__info {
+    width: 53%;
+    float: right; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-planet__info {
+        width: 66%;
+        float: left;
+        position: relative;
+        z-index: 2; } }
+    @media (max-width: 767px) {
+      .editing-planet__info {
+        width: 89%;
+        float: left; } }
+  .editing-planet__info-head {
+    padding-left: 14%;
+    padding-top: 1rem;
+    margin-bottom: 11rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-planet__info-head {
+        padding-left: 19%;
+        margin-bottom: 7rem; } }
+    @media (max-width: 767px) {
+      .editing-planet__info-head {
+        padding-left: 17%;
+        margin-bottom: 2.5rem; } }
+  .editing-planet__title {
+    margin-top: 1.5rem;
+    width: 80%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-planet__title {
+        width: 100%; } }
+  .editing-planet__media {
+    width: 45%;
+    float: right;
+    margin-right: 2%;
+    position: relative;
+    top: 7.5rem;
+    left: -2rem; }
+    @media (max-width: 1024px) {
+      .editing-planet__media {
+        width: 49%;
+        position: absolute;
+        left: auto;
+        right: 0;
+        bottom: 0;
+        top: auto;
+        margin-right: 0;
+        z-index: 1; } }
+    @media (max-width: 767px) {
+      .editing-planet__media {
+        right: 12%;
+        bottom: 4rem; } }
+  .editing-planet .editing__num {
+    font-size: 10rem; }
+  .editing-planet .editing__point, .editing-planet .editing__point--smaller {
+    vertical-align: -2.8rem;
+    margin-left: 2%; }
+    @media (max-width: 767px) {
+      .editing-planet .editing__point, .editing-planet .editing__point--smaller {
+        margin-left: 6%; } }
+
+.editing-bees {
+  overflow: hidden;
+  margin-bottom: 12.5rem;
+  width: 100%;
+  margin-top: -9.7rem;
+  z-index: 2;
+  position: relative; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-bees {
+      margin-top: 0.8rem;
+      margin-bottom: 9rem; } }
+  @media (max-width: 767px) {
+    .editing-bees {
+      margin-top: 12rem;
+      margin-bottom: 6rem; } }
+  .editing-bees__body {
+    width: 68%;
+    padding-left: 11%;
+    overflow: hidden; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-bees__body {
+        width: 100%;
+        padding: 0 8%; } }
+    @media (max-width: 767px) {
+      .editing-bees__body {
+        width: 100%;
+        padding: 0 5%; } }
+  .editing-bees__info-head {
+    float: right;
+    margin-bottom: 5rem;
+    width: 66%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-bees__info-head {
+        float: left;
+        margin-bottom: 3.5rem; } }
+    @media (max-width: 767px) {
+      .editing-bees__info-head {
+        width: 100%;
+        margin-bottom: 3rem; } }
+  .editing-bees__title {
+    margin-left: 13%;
+    width: 53%;
+    margin-top: -0.5rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-bees__title {
+        margin-top: 0;
+        margin-left: 17%;
+        width: 65%; } }
+    @media (max-width: 767px) {
+      .editing-bees__title {
+        margin-top: 0;
+        margin-left: 15%;
+        width: 60%; } }
+  .editing-bees__info-body {
+    width: 42%;
+    float: right; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-bees__info-body {
+        width: 57%; } }
+    @media (max-width: 767px) {
+      .editing-bees__info-body {
+        width: 100%; } }
+  .editing-bees__media {
+    float: left;
+    width: 50%;
+    margin-right: 8%;
+    margin-top: -8.5rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-bees__media {
+        width: 60%;
+        margin-top: -7.5rem;
+        margin-left: 4%; } }
+    @media (max-width: 767px) {
+      .editing-bees__media {
+        width: 100%;
+        margin: 0 auto;
+        float: none;
+        margin-top: 7rem;
+        display: inline-block;
+        padding: 0 22%; } }
+  .editing-bees .editing__num {
+    font-size: 10rem; }
 
 .js-slideShow {
   left: 0;

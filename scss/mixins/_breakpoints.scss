@@ -21,6 +21,9 @@
     @else if $point == tablet {
         @media (min-width: $tablet) and (max-width: $toDesktop) { @content; }
     }
+    @else if $point == overPhone {
+        @media (min-width: $tablet)                             { @content; }
+    }
     @else if $point == phone {
         @media (max-width: $toTablet)                           { @content; }
     }

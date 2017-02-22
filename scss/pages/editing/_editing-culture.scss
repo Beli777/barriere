@@ -1,0 +1,12 @@
+//----- Editing Page / Culture block
+.editing-culture {
+  // background-color: $colorMain;
+  background-color: #dadada;
+  
+  .editing__num {
+    font-size: 10rem;
+    @include breakpoint(toDesktop) {
+      font-size: 6.5rem;
+    }
+  }
+}

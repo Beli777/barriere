@@ -8,6 +8,7 @@ $colorBlack: #363636;
 $colorRed  : #F00;
 $colorGreen: #0F0;
 $colorBlue : #00F;
+$colorBody : #f9f9f9;
 $colorGold : #af8716;
 $colorAnchorBullet: #5e5e5e;
 $colorMain : $colorWhite;
@@ -39,6 +40,7 @@ $baseFont--light : "Lucien_Light", $fontDefault;
 $baseFont--year  : Georgia;
 $baseFont--italic: "", $fontDefault;
 
+$baseFont--secondary  : Georgia;
 
 //------Z INDEX LEVELS
 $levelBottom: 1;

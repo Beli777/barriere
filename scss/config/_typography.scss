@@ -20,14 +20,14 @@ html {
     $fontSizePX: $baseFontSize + 'px';
     font-size  : #{$fontSizePX};
 
-    @include breakpoint (tablet) {
-        $fontSizePX: $baseFontSize / 1.5 + 'px';
-        font-size  : #{$fontSizePX};
-    }
-    @include breakpoint (phone) {
-        $fontSizePX: $baseFontSize / 2 + 'px';
-        font-size  : #{$fontSizePX};
-    }
+    // @include breakpoint (tablet) {
+    //     $fontSizePX: $baseFontSize / 1.5 + 'px';
+    //     font-size  : #{$fontSizePX};
+    // }
+    // @include breakpoint (phone) {
+    //     $fontSizePX: $baseFontSize / 2 + 'px';
+    //     font-size  : #{$fontSizePX};
+    // }
 }
 body {
     font-size: 100%;
@@ -49,11 +49,41 @@ u {
 
 //------STYLES
 h1 {
-    font-size: 7.2rem;
-    font-family: $baseFont;
+  // font-size: 7.2rem;
+  color: $colorGold;
+  font: {
+    family: $baseFont;
+    size: 5rem;
+  }
+  text: {
+    align: center;
+    transform: uppercase;
+  }
+  @include breakpoint(tablet) {
+    font-size: 2.8rem;
+  }
+  @include breakpoint(phone) {
+    font-size: 3.2rem;
+  }
 }
 h2 {
-
+  font: {
+    family: $baseFont--secondary;
+    weight: bold;
+    size: 3.5rem;
+  }
+  text: {
+    align: center;
+    transform: uppercase;
+  }
+  @include breakpoint(tablet) {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  @include breakpoint(phone) {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
 }
 h3 {
     color: $colorBlack;

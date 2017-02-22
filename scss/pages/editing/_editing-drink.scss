@@ -1,0 +1,117 @@
+//----- Editing Page / Drink block
+.editing-drink {
+  position: relative;
+  background-color: $colorMain;
+  width: 44.5%;
+  float: left;
+  border-top: 1rem solid $colorBody;
+  border-right: 1rem solid $colorBody;
+  margin: -15.5rem 0 11rem 6.2%;
+  @include breakpoint(tablet) {
+    margin: -4rem 0 9.5rem 0;
+    width: 63%;
+  }
+  @include breakpoint(phone) {
+    margin: -11rem 0 11.5rem 0;
+    width: 84.5%;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 11rem;
+    background-color: $colorBody;
+    @include breakpoint(tablet) {
+      height: 9.5rem;
+    }
+    @include breakpoint(phone) {
+      height: 20.5rem;
+    }
+  }
+  
+  &__body {
+    position: relative;
+    z-index: $levelBottom;
+  }
+  &__info {
+    padding: 10.5rem 11% 0;
+    overflow: hidden;
+    @include breakpoint(tablet) {
+      padding: 10.5rem 16% 0 4%;
+    }
+    @include breakpoint(phone) {
+      padding: 9.8rem 7% 0;
+    }
+  }
+  &__info-head {
+    margin-bottom: 4.5rem;
+    @include breakpoint(tablet) {
+      margin-bottom: 4rem;
+    }
+    @include breakpoint(phone) {
+      padding-left: 7%;
+      margin-bottom: 3.5rem;
+    }
+  }
+  &__title-top {
+    margin-left: 7rem;
+    margin-bottom: -4rem;
+  }
+  &__title-middle {
+    font-size: 4rem;
+    font-family: $baseFont--secondary;
+    letter-spacing: 0;
+  }
+  &__title-bottom {
+    margin-left: 7rem;
+    margin-top: -1rem;
+    width: 65%;
+    @include breakpoint(toDesktop) {
+      width: 85%;
+    }
+  }
+  &__info-body {
+    width: 57%;
+    float: right;
+    @include breakpoint(tablet) {
+      width: 81%;
+      margin-bottom: .5rem;
+    }
+    @include breakpoint(phone) {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+  &__media {
+    display: inline-block;
+    position: relative;
+    left: 33.5%;
+    @include breakpoint(desktop) {
+      max-width: 80%;
+    }
+    @include breakpoint(tablet) {
+      left: 51.5%;
+    }
+    @include breakpoint(phone) {
+      max-width: 87%;
+    }
+  }
+  &__warning {
+    font-size: 1.4rem;
+    font-family: $baseFont--secondary;
+    margin-top: 2rem;
+    @include breakpoint(tablet) {
+      font-size: 1.2rem;
+    }
+    @include breakpoint(phone) {
+      font-size: 1.5rem;
+      line-height: 2.45rem;
+    }
+  }
+  
+  .editing__num {
+    font-size: 8rem;
+  }
+}

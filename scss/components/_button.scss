@@ -1,0 +1,15 @@
+//----- Buttons
+.btn {
+  font-family: $baseFont--secondary;
+  color: $colorGold;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  font-size: 1.4rem;
+  padding: 2rem 2.5rem;
+  text-align: center;
+  display: inline-block;
+  @include breakpoint(phone) {
+    font-size: 2rem;
+    padding: 2.5rem;
+  }
+}

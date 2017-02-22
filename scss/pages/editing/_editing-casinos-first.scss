@@ -1,0 +1,79 @@
+//----- Editing Page / Casinos first block
+.editing-casinos-first {
+  background-color: $colorMain;
+  width: 60%;
+  float: right;
+  padding: 10rem 10.5% 14rem 10.5%;
+  @include breakpoint(tablet) {
+    width: 86%;
+    padding: 5rem 9.5% 11rem 7%;
+  }
+  @include breakpoint(phone) {
+    width: 100%;
+    padding: 8rem 4% 21rem;
+  }
+  
+  &__body {}
+  &__info-head {
+    margin-bottom: -8rem;
+    @include breakpoint(tablet) {
+      margin-bottom: -6rem;
+    }
+    @include breakpoint(phone) {
+      margin-bottom: -6.5rem;
+      margin-left: 15%;
+    }
+  }
+  &__info-body {
+    float: right;
+    width: 80%;
+    @include breakpoint(tablet) {
+      width: 68%;
+    }
+    @include breakpoint(phone) {
+      width: 100%;
+    }
+  }
+  &__media {
+    margin-bottom: 2.7rem;
+    @include breakpoint(toDesktop) {
+      margin-bottom: 4rem;
+    }
+    @include breakpoint(phone) {
+      max-width: 62%;
+      float: right;
+    }
+  }
+  &__text {
+    padding: 0 14% 0 4%;
+    @include breakpoint(tablet) {
+      padding: 0 9% 0 2%;
+    }
+    @include breakpoint(phone) {
+      padding: 0 2%;
+      width: 100%;
+      clear: both;
+    }
+  }
+  
+  .editing__point {
+    vertical-align: -3rem;
+  }
+  .editing__num {
+    font-size: 15rem;
+    @include breakpoint(toDesktop) {
+      font-size: 8rem;
+    }
+  }
+  .editing__title {
+    display: inline-block;
+    vertical-align: -4.8rem;
+    margin-left: 1%;
+    @include breakpoint(tablet) {
+      vertical-align: -3rem;
+    }
+    @include breakpoint(phone) {
+      vertical-align: -2.5rem;
+    }
+  }
+}

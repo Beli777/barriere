@@ -1,0 +1,143 @@
+//----- Editing Page / Spa block
+.editing-spa {
+  background-color: $colorMain;
+  overflow: hidden;
+  margin: 0 0 10rem 6.5%;
+  padding: 10rem 6% 9.5rem 4.5%;
+  @include breakpoint(tablet) {
+    margin: 0 2% 9rem 0;
+    padding: 8.5rem 2% 7.5rem;
+  }
+  @include breakpoint(phone) {
+    margin: 0 0 8rem;
+    padding: 8rem 0 9.5rem;
+  }
+  
+  &__body {}
+  &__info-head {
+    float: right;
+    width: 47%;
+    padding-left: 2.5%;
+    padding-top: 2rem;
+    position: relative;
+    @include breakpoint(tablet) {
+      width: 43%;
+      padding-top: 0;
+      padding-left: 0;
+      margin-top: -0.5rem;
+      text-align: center;
+    }
+    @include breakpoint(phone) {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 2rem;
+    }
+    &__row {
+      &--top {
+        @include breakpoint(tablet) {
+          padding-left: 6%;
+        }
+        @include breakpoint(phone) {
+          margin-left: -9%;
+        }
+      }
+      &--middle {
+        margin-top: -2rem;
+        padding-left: 27%;
+        @include breakpoint(tablet) {
+          margin-top: -1.3rem;
+          padding-left: 0%;
+          margin-left: -15%;
+        }
+        @include breakpoint(phone) {
+          margin-top: 0;
+          padding-left: 0;
+          margin-left: -15%;
+        }
+      }
+      &--bottom {
+        margin-top: -2.6rem;
+        margin-bottom: 2.5rem;
+        padding-left: 11.5%;
+        @include breakpoint(tablet) {
+          margin-top: -1rem;
+          margin-bottom: 2rem;
+          padding-left: 4.5%;
+        }
+        @include breakpoint(phone) {
+          margin: -1.2rem 0 0 17%;
+          padding-left: 0;
+        }
+      }
+      .editing__title {
+        display: inline-block;
+        vertical-align: -2.5rem;
+        font-size: 2.5rem;
+        padding-left: 2%;
+        @include breakpoint(tablet) {
+          font-size: 1.7rem;
+          vertical-align: -1.5rem;
+        }
+        @include breakpoint(phone) {
+          font-size: 2.3rem;
+          vertical-align: -1.5rem;
+        }
+      }
+    }
+    .editing__title--padding {
+      position: relative;
+      left: -26%;
+      display: inline-block;
+      padding-left: 5%;
+      padding-right: 5%;
+      @include breakpoint(tablet) {
+        left: -44%;
+      }
+      @include breakpoint(phone) {
+        position: absolute;
+        right: 9%;
+        left: auto;
+        bottom: -10rem;
+        padding: 1.5rem;
+      }
+    }
+  }
+  &__media {
+    float: left;
+    width: 53%;
+    @include breakpoint(tablet) {
+      width: 57%;
+    }
+    @include breakpoint(phone) {
+      width: 61%;
+    }
+  }
+  &__info-body {
+    float: right;
+    width: 45.5%;
+    padding-left: 4.3%;
+    margin-top: 6rem;
+    @include breakpoint(tablet) {
+      margin-top: 3.5rem;
+      width: 75%;
+      padding-left: 0;
+      padding-right: 10%;
+    }
+    @include breakpoint(phone) {
+      width: 100%;
+      padding: 0 16.5%;
+      margin-top: 4rem;
+    }
+  }
+  
+  .editing__point {
+    vertical-align: -2.5rem;
+  }
+  .editing__num {
+    font-size: 10rem;
+    @include breakpoint(toDesktop) {
+      font-size: 7.1rem;
+    }
+  }
+}

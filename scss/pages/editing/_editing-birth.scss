@@ -1,0 +1,89 @@
+//----- Editing Page / Birth block
+.editing-birth {
+  display: table;
+  position: relative;
+  background-color: $colorMain;
+  padding: 8.5rem 5% 7rem 6.2%;
+  @include breakpoint(desktop) {
+    width: 79%;
+  }
+  @include breakpoint(tablet) {
+    padding: 9rem 2% 4.5rem;
+  }
+  @include breakpoint(phone) {
+    padding: 8rem 5.7% 8rem;
+  }
+  &__top {
+    position: relative;
+    display: table;
+    width: 100%;
+  }
+  &__media {
+    display: table-cell;
+    vertical-align: middle;
+    width: 62.5%;
+    @include breakpoint(desktop) {
+      width: 43%;
+    }
+  }
+  &__info-head {
+    position: relative;
+    z-index: $levelBottom;
+    display: table-cell;
+    vertical-align: middle;
+    width: 37.5%;
+    padding-left: 3%;
+    @include breakpoint(desktop) {
+      width: 57%;
+    }
+    @include breakpoint(tablet) {
+      padding-left: 5%;
+    }
+    @include breakpoint(phone) {
+      padding-left: 3.5%;
+    }
+  }
+  &__info-body {
+    float: right;
+    width: 35.5%;
+    @include breakpoint(tablet) {
+      width: 50.5%;
+      margin-top: 6.5rem;
+      margin-right: 6%;
+    }
+    @include breakpoint(phone) {
+      width: 75.5%;
+      margin-right: 12%;
+      margin-top: 7.5rem;
+    }
+  }
+  
+  .editing__point {
+    vertical-align: -2.5rem;
+  }
+  .editing__num {
+    font-size: 8rem;
+    @include breakpoint(desktop) {
+      font-size: 15rem;
+    }
+    @include breakpoint(tablet) {
+      padding-left: 10%;
+    }
+  }
+  .editing__title {
+    position: absolute;
+    left: 17%;
+    bottom: 2.3rem;
+    right: 0;
+    margin: 0 auto;
+    width: 60%;
+    @include breakpoint(tablet) {
+      bottom: 1.5rem;
+      left: 35%;
+    }
+    @include breakpoint(phone) {
+      left: 36%;
+      bottom: -5.5rem;
+    }
+  }
+}

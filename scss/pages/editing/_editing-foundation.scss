@@ -1,0 +1,85 @@
+//----- Editing Page / Foundation block
+.editing-foundation {
+  background-color: $colorMain;
+  width: 74.2%;
+  float: right;
+  margin-bottom: 10rem;
+  padding: 12.4rem 6% 16.5rem 7.5%;
+  @include breakpoint(tablet) {
+    width: 92.5%;
+    padding: 5rem 5% 7.3rem 8.5%;
+    margin-bottom: 9rem;
+  }
+  @include breakpoint(phone) {
+    width: 94.7%;
+    padding: 7rem 8% 16rem;
+    margin-bottom: 8rem;
+  }
+  
+  &__info-head {
+    width: 52%;
+    display: inline-block;
+    margin-right: 7.5%;
+    @include breakpoint(tablet) {
+      width: 67%;
+      margin-right: 0;
+      margin-bottom: 5rem;
+    }
+    @include breakpoint(phone) {
+      width: 82%;
+      margin-left: 4%;
+      margin-bottom: 4rem;
+    }
+  }
+  &__num-wrap {
+    margin-left: -10%;
+    @include breakpoint(tablet) {
+      margin-left: 6%;
+    }
+    @include breakpoint(phone) {
+      margin-left: 7%;
+    }
+  }
+  &__media {
+    position: relative;
+    margin-top: -4rem;
+    @include breakpoint(toDesktop) {
+      margin-top: -2rem;
+    }
+    .editing__title {
+      position: absolute;
+      right: -10%;
+      top: 35%;
+      @include breakpoint(tablet) {
+        right: -21%;
+        top: 47%;
+      }
+      @include breakpoint(phone) {
+        right: -19%;
+        top: 47%;
+        padding: 1.2rem;
+      }
+    }
+  }
+  &__info-body {
+    width: 39%;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: -7rem;
+    @include breakpoint(tablet) {
+      width: 70%;
+      float: right;
+      margin-bottom: 0;
+    }
+    @include breakpoint(phone) {
+      width: 100%;
+    }
+  }
+  
+  .editing__num {
+    font-size: 15rem;
+    @include breakpoint(toDesktop) {
+      font-size: 8rem;
+    }
+  }
+}

@@ -15,8 +15,14 @@
 @import 'config/typography';
 @import 'config/helpers';
 
+//------COMPONENTS
+@import 'components/button';
+
 //------BLOCKS
 @import 'blocks/body/body.scss';
+
+//------Pages
+@import 'pages/editing/editing.scss';
 
 //------ANIMATIONS
 @import 'animations/animation-button';

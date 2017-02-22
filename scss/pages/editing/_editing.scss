@@ -1,0 +1,131 @@
+//----- Editing Page
+.editing {
+  &__head {
+    margin: 0 auto 7.5rem;
+    width: 50%;
+    clear: both;
+    @include breakpoint(tablet) {
+      margin-bottom: 2rem;
+    }
+    @include breakpoint(phone) {
+      margin-bottom: 4rem;
+    }
+  }
+  &__title {
+    text-transform: uppercase;
+    font: {
+      size: 2.1rem;
+      weight: bold;
+    }
+    color: $colorBlack;
+    @include breakpoint(phone) {
+      font-size: 2.3rem;
+      line-height: 3rem;
+    }
+    &--colour {
+      color: $colorGold;
+    }
+    &--padding {
+      background-color: $colorMain;
+      padding: 1.2rem 3rem;
+      @include breakpoint(tablet) {
+        padding: 1rem 2rem;
+      }
+      @include breakpoint(phone) {
+        padding: 2rem;
+      }
+    }
+  }
+  &__point {
+    background: {
+      image: url("../img/point.png");
+      repeat: no-repeat;
+      position: center;
+      size: contain;
+    }
+    display: inline-block;
+    height: 2.8rem;
+    width: 2.8rem;
+    vertical-align: middle;
+    // margin-right: 2%;
+    &--smaller {
+      @extend .editing__point;
+      @include breakpoint(overPhone) {
+        height: 1.8rem;
+        width: 1.8rem;
+      }
+    }
+  }
+  &__points {
+    background: {
+      image: url("../img/points.png");
+      repeat: no-repeat;
+      position: center;
+      size: contain;
+    }
+    height: 2.5rem;
+    margin-bottom: 2.5rem;
+    @include breakpoint(phone) {
+      height: 3rem;
+    }
+  }
+  &__num {
+    font: {
+      family: $baseFont--secondary;
+      weight: bold;
+    }
+    color: $colorBlack;
+    display: inline-block;
+    vertical-align: middle;
+    letter-spacing: -0.5rem;
+  }
+  &__info-body {
+    text-align: center;
+  }
+  &__p {
+    font-family: $baseFont--light;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    margin-bottom: 4.2rem;
+    text-align: justify;
+    @include breakpoint(tablet) {
+      line-height: 3rem;
+      margin-bottom: 3.6rem;
+    }
+    @include breakpoint(phone) {
+      font-size: 2.5rem;
+      line-height: 4.2rem;
+      margin-bottom: 4rem;
+    }
+    &--reg {
+      font-family: $baseFont;
+    }
+  }
+  // Reset img from baseConfig.scss
+  img {
+    width: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+// Editing blocks
+@import 'editing-birth';
+@import 'editing-staff';
+@import 'editing-persons';
+@import 'editing-turnover';
+
+@import 'editing-casinos-first';
+@import 'editing-casinos-second';
+@import 'editing-hotels';
+@import 'editing-renovation';
+@import 'editing-venue';
+@import 'editing-drink';
+@import 'editing-sport';
+@import 'editing-spa';
+
+@import 'editing-culture';
+@import 'editing-foundation';
+
+@import 'editing-planet';
+@import 'editing-bees';
