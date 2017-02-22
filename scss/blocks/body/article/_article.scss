@@ -14,8 +14,10 @@
         }
         h2{
             font-size: 2.1rem;
+            font-size: 1.3vw;
             color: $colorGold;
             font-weight: bold;
+            font-family: $baseFont--bold;
             text-transform: uppercase;
             margin-bottom: 1.1rem;
             margin-top: 1.1rem;
@@ -23,6 +25,7 @@
         }
         span{
             font-size: 1.6rem;
+            font-size: 1vw;
             text-transform: uppercase;
             transition: .3s all linear;
         }
@@ -39,11 +42,10 @@
             transition: .3s all linear;
         }
         &--secondPosition{
-            top: 31rem;
+            top: 35%;
             right: 5%;
             left: 70.5%;
-            height: auto;
-            bottom: 15.2%;
+            height: 17rem;
             &Image{
                 width: 53%;
                 left: 7%;
@@ -54,11 +56,10 @@
             }
         }
         &--thirdPosition{
-            top: 12rem;
+            top: 40%;
             right: 73%;
             left: 5%;
-            height: auto;
-            bottom: 23.2%;
+            height: 23rem;
             z-index: 3;
         }
         &--fourthPosition{
@@ -110,6 +111,7 @@
         }
         .articlePopup p{
             line-height: 2.5rem;
+            font-size: 1.0625vw;
             font-family: $baseFont--light;
             max-width: 70%;
         }
@@ -132,6 +134,7 @@
         }
         .articlePopup p{
             line-height: 2.5rem;
+            font-size: 1.0625vw;
             font-family: $baseFont--light;
             max-width: 70%;
         }
@@ -153,6 +156,7 @@
         }
         p{
             font-size: 1.7rem;
+            font-size: 1.0625vw;
             line-height: 3rem;
             max-width: 350px;
             margin: 0 auto;
@@ -168,6 +172,7 @@
             width: 200px;
             margin: 3rem auto;
             font-size: 1.4rem;
+            font-size: 0.875vw;
             font-family: Georgia;
             &:before,
             &:after{

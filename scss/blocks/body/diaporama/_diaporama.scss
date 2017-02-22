@@ -15,7 +15,7 @@
 }
 .js-slide{
     position: absolute;
-    top: 15rem;
+    top: 13.5%;
     left: 100%;
 }
 .hotelGulfDiaporama{
@@ -48,11 +48,10 @@
     top: 17rem;
 }
 .article__popup--sixthPosition {
-    top: 41rem;
+    top: 59%;
     right: 68%;
     left: 9%;
-    height: auto;
-    bottom: 10.2%;
+    height: 22rem;
     z-index: 3;
 }
 }
@@ -101,11 +100,8 @@
       top: 80%;
       right: 11.5%;
       left: 67%;
-      height: auto;
-      bottom: -14%;
+      height: 19rem;
       z-index: 3;
-
-
   }
   .small-year{
       left: 40.4%;
@@ -122,8 +118,7 @@
       top: 82%;
       right: 69%;
       left: 5%;
-      height: auto;
-      bottom: -20.8%;
+      height: 21rem;
       z-index: 3;
 
 
@@ -151,9 +146,8 @@
   &--position{
       top: 59%;
       right: 5%;
-      left: 73%;
-      height: auto;
-      bottom: 0%;
+      left: 74%;
+      height: 18rem;
       z-index: 6;
   }
   .small-year{
@@ -166,7 +160,12 @@
     left: 15%;
     height: 18.5rem;
     right: auto;
-    top: 22rem;
+    top: 19%;
+  }
+  .js-slide,
+  .js-slideShow,
+  .js-slideShowBack{
+      top: 0;
   }
   .modified-year{
       top: 4rem;
@@ -206,11 +205,10 @@
     margin-left: 25%;
   }
   &--position{
-      top: 30rem;
+        top: 59%;
       right: 67%;
       left: 5%;
-      height: auto;
-      bottom: -4%;
+      height: 21rem;
       z-index: 3;
   }
   .small-year{
@@ -230,7 +228,7 @@
       left: 41%;
   }
   &--position{
-      top: 76rem;
+top: 130%;
       right: 29%;
       left: 46.5%;
       height: auto;
@@ -257,7 +255,7 @@
       bottom: 16.2%;
   }
   .modified-year{
-      top: 25rem;
+      top: 36%;
       position: absolute;
       left: 41%;
   }
@@ -280,12 +278,12 @@
     left: 39%;
     position: absolute;
     z-index: 4;
-    top: 258rem;
+    top: 470%;
     opacity: 0;
 }
 .modified-year{
     position: absolute;
-    top: 28rem;
+    top: 41%;
     left: 41%;
 }
 }
@@ -297,12 +295,16 @@
 
 
   }
+  .fadeInUp{
+      z-index: 5 !important;
+  }
   &--position{
         top: 80%;
         right: 18%;
         left: 58%;
         height: auto;
         bottom: -15%;
+        z-index: 5;
   }
   .modified-year{
     top: 0;
@@ -314,7 +316,7 @@
     left: 7%;
     position: absolute;
     z-index: 3;
-    top: 227rem;
+    top: 483%;
     opacity: 0;
 }
 }
@@ -342,23 +344,28 @@
     width: 46%;
     left: 46%;
     position: absolute;
-    z-index: 4;
-    top: 222rem;
+    z-index: 3;
+    top: 440%;
     opacity: 0;
+}
+.fadeInUp{
+    z-index: 6 !important;
 }
 }
 .barriere-video{
     margin-top: -37rem;
     .modified-year{
         position: absolute;
-        top: 35rem;
+        top: 32%;
         left: 41%;
     }
     .article__popup{
         top: 43rem;
     }
-    .js-slideShow{
-        top: -127.5%;
+    .js-slide,
+    .js-slideShow,
+    .js-slideShowBack{
+        top: 0;
     }
 }
 .pierre{
@@ -366,14 +373,11 @@
     width: 22%;
   }
   &--position{
-      top: 61rem;
+      top: 96%;
           right: 73%;
           left: 5%;
-          height: auto;
-          bottom: -25.8%;
+          height: 20rem;
           z-index: 3;
-
-
   }
   .modified-year{
     top: 60rem;
@@ -383,11 +387,10 @@
 .moma{
   margin-top: 10rem;
   &--position{
-      top: 67rem;
+        top: 130%;
       right: 5%;
       left: 70.5%;
-      height: auto;
-      bottom: -66.8%;
+     height: 20.5rem;
   }
   .article__mediumImage {
     margin-left: -20%;
@@ -402,11 +405,11 @@
     left: 2.45%;
     position: absolute;
     z-index: 3;
-    top: 316rem;
+    top: 626%;
     opacity: 0;
 }
 .modified-year{
-  top: 40rem;
+  top: 72%;
   position: absolute;
   left: 41%;
 }
@@ -418,12 +421,12 @@
     width: 40%;
   }
   &--position{
-      top: 65rem;
-      right: 53%;
-      left: 25%;
-      height: auto;
-      bottom: -68%;
-      z-index: 3;
+          top: 135%;
+          right: 53%;
+          left: 25%;
+          height: 20rem;
+          /* bottom: -68%; */
+          z-index: 3;
   }
   .modified-year{
       position: absolute;
@@ -435,8 +438,14 @@
       left: 46%;
       position: absolute;
       z-index: 4;
-      top: 359rem;
+      top: 740%;
       opacity: 0;
+      @media screen and (min-width: 1400px){
+          top: 720%;
+      }
+}
+.fadeInUp{
+    z-index: 5;
 }
 }
 .courche{
@@ -454,10 +463,13 @@
       left: 41%;
   }
   .article__popup{
-      top: 54rem;
+      top: 61%;
+
   }
-  .js-slideShow{
-    top: -157%;
+  .js-slide,
+  .js-slideShow,
+  .js-slideShowBack{
+      top: 0;
   }
 }
 .francaise{
@@ -468,11 +480,10 @@
 }
 .andre{
     .article__popup--thirdPosition {
-            top: 14rem;
+            top: 23%;
             right: 73%;
             left: 5%;
-            height: auto;
-            bottom: 6.2%;
+            height: 25rem;
             z-index: 3;
             padding-left: 5rem;
             padding-right: 5rem;
@@ -481,11 +492,10 @@
 .lucien{
     margin-top: 5%;
     .article__popup--fifthPosition {
-    top: 14rem;
+    top: 49%;
     right: 5%;
     left: 75%;
-    height: auto;
-    bottom: 5.2%;
+    height: 19rem;
     z-index: 3;
 }
 .modified-year {
@@ -503,6 +513,6 @@
         left: 41%;
     }
     .article__popup{
-        top: 31rem;
+        top: 29%;
     }
 }

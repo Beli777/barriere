@@ -73,8 +73,8 @@ var WM = (function($) {
             time.to(mediumImage , 1, {top: top, width: width, 'margin-left': left, ease:Strong.easeInOut})
             var tl = new TimelineMax();
             var popupMedium = $this.closest($parent).find('.article__popup');
-            tl.to(popupMedium , 0.3, {left: popupLeft, right: popupRight, 'z-index': popupIndex, height: popupHeight, ease:Strong.easeInOut})
-              .to(popupMedium , 0.5, {top: popupTop, bottom: popupBottom, ease:Strong.easeInOut});
+            tl.to(popupMedium , 0.3, {left: popupLeft, right: popupRight, 'z-index': popupIndex, ease:Strong.easeInOut})
+              .to(popupMedium , 0.5, {top: popupTop, bottom: popupBottom, height: popupHeight, ease:Strong.easeInOut});
         });
   }
   var mixinMediumDiaporamaClose = function(button, parent, top, width, left, popupLeft, popupTop, popupBottom, popupRight, popupIndex, popupHeight){
@@ -107,7 +107,7 @@ var WM = (function($) {
         });
   }
 
-  var mixinSmallDiaporama = function(button, parent, left, right, top, bottom, index, imageLeft) {
+  var mixinSmallDiaporama = function(button, parent, left, right, top, bottom, index, height, imageLeft) {
       var $parent = $(parent);
       var $popup = $('.articlePopup');
         $parent.find(button).on('click touch', function(){
@@ -122,13 +122,13 @@ var WM = (function($) {
             var tl = new TimelineMax();
             var popup = $this.closest($parent).find('.article__popup');
              tl.to(popup , 0.001,{'z-index': index});
-             tl.to(popup , 0.999, {left: left, right: right, top: top, bottom: bottom, ease:Strong.easeInOut});
+             tl.to(popup , 0.999, {left: left, right: right, top: top, bottom: bottom, height: height, ease:Strong.easeInOut});
               var time = new TimelineMax();
               var smallImage = $this.closest($parent).find('.article__smallItem');
               time.to(smallImage , 1, {'margin-left': imageLeft, ease:Strong.easeInOut})
         });
     };
-  var mixinSmallDiaporamaClose = function(button, parent,left, right, top, bottom, index, imageLeft){
+  var mixinSmallDiaporamaClose = function(button, parent,left, right, top, bottom, index, height, imageLeft){
       var $parent = $(parent);
       var $popup = $('.articlePopup');
       var openButton = $('.js-showArticle');
@@ -148,7 +148,7 @@ var WM = (function($) {
          var popup = $this.closest($parent).find('.article__popup');
             tl.to(popup , 0.001,{'z-index': index});
             tl.to(popup , 0.001,  {transition: '0.001s all linear'});
-            tl.to(popup , 0.999,  {left: left, right: right, top: top, bottom: bottom, 'z-index': index, ease:Strong.easeInOut});
+            tl.to(popup , 0.999,  {left: left, right: right, top: top, bottom: bottom, height: height, 'z-index': index, ease:Strong.easeInOut});
             tl.to(popup , 0.001,  {transition: 'none'});
             var time = new TimelineMax();
             var smallImage = $this.closest($parent).find('.article__smallItem');
@@ -210,8 +210,8 @@ var WM = (function($) {
     }
     //button, parent, top, width, left, popupLeft, popupTop, popupBottom, popupRight, popupIndex, popupHeight
     var mediumDiaporama = function(){
-        mixinMediumDiaporama('.js-showArticle','.article__medium', '-60%', '35%', '', '54.5%', '-18%', '3%', '', '', '');
-        mixinMediumDiaporamaClose('.articlePopup-close','.article__medium', '19%', '50%', '', '70.5%', '31rem', '15.2%', '', '', '');
+        mixinMediumDiaporama('.js-showArticle','.article__medium', '-60%', '35%', '', '54.5%', '-18%', '3%', '', '', '50rem');
+        mixinMediumDiaporamaClose('.articlePopup-close','.article__medium', '0%', '50%', '', '70.5%', '35%', '15.2%', '', '', '');
     }
     var mediumDiaporamaSecond = function(){
         mixinMediumDiaporama('.js-showArticle','.hotelGulfDiaporama', '-40%', '49%', '28%', '54.5%', '-7rem', '12.2%', '0', '', '');
@@ -227,7 +227,7 @@ var WM = (function($) {
     }
     var mediumDiaporamaHotelLater = function(){
         mixinMediumDiaporama('.js-showArticle','.hotel-later', '-50%', '35%', '10%', '46.5%', '48rem', '-67.8%', '8%', '3', '');
-        mixinMediumDiaporamaClose('.articlePopup-close','.hotel-later', '19%', '50%', '-19%', '46.5%', '76rem', '-67.8%', '29%', '', '');
+        mixinMediumDiaporamaClose('.articlePopup-close','.hotel-later', '19%', '50%', '-19%', '46.5%', '130%', '-67.8%', '29%', '', '');
     }
     var mediumDiaporamaToulouse = function(){
         mixinMediumDiaporama('.js-showArticle','.toulouse', '65%', '25%', '20%', '54.5%', '53%', '-43.8%', '5%', '', '');
@@ -247,46 +247,50 @@ var WM = (function($) {
         mixinMediumDiaporamaClose('.articlePopup-close','.resort', '0%', '40%', '-20%', '23%', '-31%', '90%', '53%', '', '');
     }
     var mediumDiaporamaMoma = function(){
-      mixinMediumDiaporama('.js-showArticle','.moma', '0%', '74%', '-15%', '54.5%', '67rem', '-127.8%', '5%', '', '');
-      mixinMediumDiaporamaClose('.articlePopup-close','.moma', '-12%', '74%', '-20%', '70.5%', '67rem', '-66.8%', '5%', '', '');
+      mixinMediumDiaporama('.js-showArticle','.moma', '0%', '74%', '-15%', '54.5%', '130%', '', '5%', '', '47.5rem');
+      mixinMediumDiaporamaClose('.articlePopup-close','.moma', '-12%', '74%', '-20%', '70.5%', '130%', '', '5%', '', '20.5rem');
     }
     var mediumDiaporamaWestminster = function(){
-      mixinMediumDiaporama('.js-showArticle','.westminster', '-22%', '25%', '22.5%', '20%', '65rem', '-123%', '48%', '4', '');
-      mixinMediumDiaporamaClose('.articlePopup-close','.westminster', '20%', '40%', '20%', '25%', '65rem', '-68%', '53%', '3', '');
+      mixinMediumDiaporama('.js-showArticle','.westminster', '-22%', '25%', '22.5%', '20%', '135%', '', '48%', '4', '49rem');
+      mixinMediumDiaporamaClose('.articlePopup-close','.westminster', '20%', '40%', '20%', '25%', '135%', '', '53%', '3', '20rem');
     }
-    //button, parent,left, right, top, bottom, index, imageLeft
+    //button, parent,left, right, top, bottom, index, height, imageLeft
     var smallDiaporama = function(){
-        mixinSmallDiaporama('.js-showArticle','.article__small','', '60%', '-3rem','','', '34%');
-        mixinSmallDiaporamaClose('.articlePopup-close','.article__small','', '73%', '14rem','6.2%','', '20%');
+        mixinSmallDiaporama('.js-showArticle','.article__small','', '60%', '-9%','0','', '35rem', '34%');
+        mixinSmallDiaporamaClose('.articlePopup-close','.article__small','', '73%', '23%','6.2%','', '25rem', '20%');
     }
     var smallDiaporamaRight = function(){
-        mixinSmallDiaporama('.js-showArticle','.article__small--right', '61%', '0%', '-10rem','5.2%','', '50%');
-        mixinSmallDiaporamaClose('.articlePopup-close','.article__small--right', '75%', '5%', '14rem','5.2%','', '63%');
+        mixinSmallDiaporama('.js-showArticle','.article__small--right', '61%', '0%', '-20%','','', '44rem', '50%');
+        mixinSmallDiaporamaClose('.articlePopup-close','.article__small--right', '75%', '5%', '23%','5.2%','', '63%');
+    }
+    var smallDiaporamaLucien = function(){
+        mixinSmallDiaporama('.js-showArticle','.lucien', '61%', '0%', '-20%','','', '44rem', '50%');
+        mixinSmallDiaporamaClose('.articlePopup-close','.lucien', '75%', '5%', '49%','','','19rem', '63%');
     }
     var smallDiaporamaCinema = function(){
-        mixinSmallDiaporama('.js-showArticle','.cinemaFestival', '9%', '29%', '2rem','17.2%','11', '');
-        mixinSmallDiaporamaClose('.articlePopup-close','.cinemaFestival', '9%', '68%', '41rem','10.2%','3', '');
+        mixinSmallDiaporama('.js-showArticle','.cinemaFestival', '9%', '29%', '3%','','11', '55.5rem','');
+        mixinSmallDiaporamaClose('.articlePopup-close','.cinemaFestival', '9%', '68%', '59%','','3','22rem', '');
     }
     var smallDiaporamaSlot = function(){
-        mixinSmallDiaporama('.js-showArticle','.slot-machine', '56%', '11.5%', '27rem','-25%','', '44%');
-        mixinSmallDiaporamaClose('.articlePopup-close','.slot-machine', '67%', '11.5%', '80%','-14%','', '55%');
+        mixinSmallDiaporama('.js-showArticle','.slot-machine', '56%', '11.5%', '27rem','-25%','', '45rem', '44%');
+        mixinSmallDiaporamaClose('.articlePopup-close','.slot-machine', '67%', '11.5%', '80%','-14%','', '19rem', '55%');
     }
-      //button, parent,left, right, top, bottom, index, imageLeft
+      //button, parent,left, right, top, bottom, index, height, imageLeft
     var smallDiaporamaDiane = function(){
-        mixinSmallDiaporama('.js-showArticle','.diane','', '56%', '55%','-33.8%','', '38%');
-        mixinSmallDiaporamaClose('.articlePopup-close','.diane','', '69%', '82%','-20.8%','', '27%');
+        mixinSmallDiaporama('.js-showArticle','.diane','', '56%', '55%','','','45rem', '38%');
+        mixinSmallDiaporamaClose('.articlePopup-close','.diane','', '69%', '82%','-20.8%','', '21rem' ,'27%');
     }
     var smallDiaporamaDominique = function(){
-        mixinSmallDiaporama('.js-showArticle','.dominique', '60%', '5%', '33%','-33%','', '44%');
-        mixinSmallDiaporamaClose('.articlePopup-close','.dominique', '73%', '5%', '59%','0%','', '57%');
+        mixinSmallDiaporama('.js-showArticle','.dominique', '60%', '5%', '33%','','', '46rem','44%');
+        mixinSmallDiaporamaClose('.articlePopup-close','.dominique', '74%', '5%', '59%','','','18rem', '57%');
     }
     var smallDiaporamaDominiquePerson = function(){
-      mixinSmallDiaporama('.js-showArticle','.dominique-person','5%', '53%', '0','-40%','', '41%');
-      mixinSmallDiaporamaClose('.articlePopup-close','.dominique-person','5%', '67%', '30rem','-4%','', '25%');
+      mixinSmallDiaporama('.js-showArticle','.dominique-person','5%', '53%', '0','','','54rem', '41%');
+      mixinSmallDiaporamaClose('.articlePopup-close','.dominique-person','5%', '67%', '30rem','','','21rem', '25%');
     }
     var smallDiaporamaPierre = function(){
-      mixinSmallDiaporama('.js-showArticle','.pierre','5%', '58%', '61rem','-70.8%','3', '41%');
-      mixinSmallDiaporamaClose('.articlePopup-close','.pierre','5%', '73%', '61rem','-25.8%','3', '20%');
+      mixinSmallDiaporama('.js-showArticle','.pierre','5%', '58%', '96%','-70.8%','3', '45rem', '41%');
+      mixinSmallDiaporamaClose('.articlePopup-close','.pierre','5%', '73%', '96%','-25.8%','3', '20rem', '20%');
     }
     var getHeight = function(mediumArticle){
 
@@ -309,7 +313,7 @@ var WM = (function($) {
         var $button = $(button);
         var $tooltip = $('.tooltip');
         $button.on('click touch', function(){
-          TweenLite.to(window, 2, {scrollTo:{y: section, autoKill: true, offsetY:70}, ease:Strong.easeInOut});
+          TweenLite.to(window, 2, {scrollTo:{y: section, offsetY:7}, ease:Strong.easeInOut});
           $('.anchor a').parent().find('a').removeClass('activeButton');
           $(this).addClass('activeButton');
           $tooltip.parent().find('.active').removeClass('active');
@@ -353,7 +357,8 @@ var WM = (function($) {
       mediumDiaporama();
       mediumDiaporamaSecond();
       smallDiaporama();
-      smallDiaporamaRight();
+    //   smallDiaporamaRight();
+      smallDiaporamaLucien();
       smallDiaporamaCinema();
       mediumDiaporamaSociete();
       smallDiaporamaSlot();

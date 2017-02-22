@@ -3,12 +3,17 @@ h1{
     text-transform: uppercase;
     text-align: center;
     font-size: 5rem;
+    font-size: 3.125vw;
 }
 .year{
     font-size: 5rem;
+    font-size: 3.125vw;
     text-align: center;
     font-family: $baseFont--year;
     font-weight: bold;
+    @media screen and (min-width: 1650px){
+        font-size: 5rem;
+    }
     &--left{
         margin-right: 16rem;
     }
@@ -68,7 +73,10 @@ h1{
         top: 34rem;
     }
     &__2009{
-        top: 43rem;
+        top: 73%;
+    }
+    &__2009Second{
+        top: 50%;
     }
     &__2010{
         top: 14rem;
@@ -78,6 +86,9 @@ h1{
     }
     &__2016{
         top: 60rem;
+    }
+    &__2016Second{
+            top: 103%;
     }
 }
 .small-year{
@@ -166,6 +177,9 @@ h1{
     margin: 3rem auto;
     z-index: 0;
     position: relative;
+    @media screen and (min-width: 1025px) and (max-width: 1500px){
+        margin: 2rem auto;
+    }
   }
 }
 //Body parts
