@@ -9,6 +9,7 @@
   }
   @include breakpoint(phone) {
     padding: 0 17%;
+    margin-bottom: 2.5rem;
   }
   &__body {
     float: right;

@@ -11,7 +11,7 @@
     margin-bottom: 9rem;
   }
   @include breakpoint(phone) {
-    margin-top: 12rem;
+    margin-top: 7.5rem;
     margin-bottom: 6rem;
   }
   &__body {
@@ -29,7 +29,7 @@
   }
   &__info-head {
     float: right;
-    margin-bottom: 5rem;
+    margin-bottom: 4.5rem;
     width: 66%;
     @include breakpoint(tablet) {
       float: left;
@@ -41,8 +41,8 @@
     }
   }
   &__title {
-    margin-left: 13%;
-    width: 53%;
+    margin-left: 14%;
+    width: 45%;
     margin-top: -0.5rem;
     @include breakpoint(tablet) {
       margin-top: 0;
@@ -79,7 +79,7 @@
       width: 100%;
       margin: 0 auto;
       float: none;
-      margin-top: 7rem;
+      margin-top: 8rem;
       display: inline-block;
       padding: 0 22%;
     }

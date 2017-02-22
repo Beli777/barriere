@@ -1,5 +1,7 @@
 //----- Editing Page / Foundation block
 .editing-foundation {
+  z-index: $levelBottom;
+  position: relative;
   background-color: $colorMain;
   width: 74.2%;
   float: right;

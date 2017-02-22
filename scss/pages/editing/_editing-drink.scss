@@ -8,7 +8,7 @@
   border-right: 1rem solid $colorBody;
   margin: -15.5rem 0 11rem 6.2%;
   @include breakpoint(tablet) {
-    margin: -4rem 0 9.5rem 0;
+    margin: -4rem 0 10rem 0;
     width: 63%;
   }
   @include breakpoint(phone) {

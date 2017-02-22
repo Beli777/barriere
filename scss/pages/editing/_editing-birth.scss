@@ -1,9 +1,9 @@
 //----- Editing Page / Birth block
 .editing-birth {
-  display: table;
+  display: inline-block;
   position: relative;
   background-color: $colorMain;
-  padding: 8.5rem 5% 7rem 6.2%;
+  padding: 8.5rem 5% 7.5rem 6.2%;
   @include breakpoint(desktop) {
     width: 79%;
   }
@@ -19,7 +19,7 @@
     width: 100%;
   }
   &__media {
-    display: table-cell;
+    display: inline-block;
     vertical-align: middle;
     width: 62.5%;
     @include breakpoint(desktop) {
@@ -29,15 +29,15 @@
   &__info-head {
     position: relative;
     z-index: $levelBottom;
-    display: table-cell;
+    display: inline-block;
     vertical-align: middle;
     width: 37.5%;
     padding-left: 3%;
     @include breakpoint(desktop) {
-      width: 57%;
+      width: 56.5%;
     }
     @include breakpoint(tablet) {
-      padding-left: 5%;
+      padding-left: 4.5%;
     }
     @include breakpoint(phone) {
       padding-left: 3.5%;
@@ -83,7 +83,7 @@
     }
     @include breakpoint(phone) {
       left: 36%;
-      bottom: -5.5rem;
+      bottom: -6.5rem;
     }
   }
 }
