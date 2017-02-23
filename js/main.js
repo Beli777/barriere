@@ -155,38 +155,37 @@ var WM = (function($) {
             time.to(smallImage , 1, {'margin-left': imageLeft, ease:Strong.easeInOut})
       });
   }
-
   // #####################################
 	// PARALLAX
 	// #####################################
-
 	var parallax = function () {
         if ($(window).width() > 1024) {
             var lastScrollTop = 0;
-    		$(window).scroll(function(){
+    		$(window).scroll( $.throttle (200, function(){
                 var st = $(this).scrollTop();
                 var paralaxLayerOne = $('.prlx_layer_1');
                 var paralaxLayerSecond = $('.prlx_layer_2');
                 var paralaxLayerThird = $('.prlx_layer_3');
                 if (st > lastScrollTop){
                     var parallaxTime = new TimelineMax();
-                    parallaxTime.to(paralaxLayerOne , 0.5, {"transform" : "translate3d(0,  -" + st/10 + "px" + ",0", "-webkit-transform" : "translate3d(0,  -" + st/10 + "px" + ",0", ease:Power1.easeOut})
+                    parallaxTime.to(paralaxLayerOne , 1, {"transform" : "translate3d(0,  -" + st/10 + "px" + ",0", ease:Power1.easeOut})
                     var parallaxTimeSecond = new TimelineMax();
-                    parallaxTimeSecond.to(paralaxLayerSecond , 0.5, {"transform" : "translate3d(0,  -" + st/7 + "px" + ",0", "-webkit-transform" : "translate3d(0,  -" + st/10 + "px" + ",0", ease:Power1.easeOut})
+                    parallaxTimeSecond.to(paralaxLayerSecond , 1, {"transform" : "translate3d(0,  -" + st/7 + "px" + ",0", ease:Power1.easeOut})
                     var parallaxTimeThird = new TimelineMax();
-                    parallaxTimeThird.to(paralaxLayerThird , 0.5, {"transform" : "translate3d(0,  -" + st/3 + "px" + ",0", "-webkit-transform" : "translate3d(0,  -" + st/10 + "px" + ",0", ease:Power1.easeOut})
+                    parallaxTimeThird.to(paralaxLayerThird , 1, {"transform" : "translate3d(0,  -" + st/5 + "px" + ",0", ease:Power1.easeOut})
+
                 } else {
                   // upscroll code
                   var parallaxTime = new TimelineMax();
-                  parallaxTime.to(paralaxLayerOne , 0.5, {"transform" : "translate3d(0,  -" + st/10 + "px" + ",0", "-webkit-transform" : "translate3d(0,  -" + st/10 + "px" + ",0", ease:Power1.easeOut})
+                  parallaxTime.to(paralaxLayerOne , 1, {"transform" : "translate3d(0,  -" + st/10 + "px" + ",0", ease:Power1.easeOut})
                   var parallaxTimeSecond = new TimelineMax();
-                  parallaxTimeSecond.to(paralaxLayerSecond , 0.5, {"transform" : "translate3d(0,  -" + st/7 + "px" + ",0", "-webkit-transform" : "translate3d(0,  -" + st/10 + "px" + ",0", ease:Power1.easeOut})
+                  parallaxTimeSecond.to(paralaxLayerSecond , 1, {"transform" : "translate3d(0,  -" + st/7 + "px" + ",0", ease:Power1.easeOut})
                   var parallaxTimeThird = new TimelineMax();
-                  parallaxTimeThird.to(paralaxLayerThird , 0.5, {"transform" : "translate3d(0,  -" + st/3 + "px" + ",0", "-webkit-transform" : "translate3d(0,  -" + st/10 + "px" + ",0", ease:Power1.easeOut})
+                  parallaxTimeThird.to(paralaxLayerThird , 1, {"transform" : "translate3d(0,  -" + st/5 + "px" + ",0", ease:Power1.easeOut})
 
                 }
                 // lastScrollTop = st;
-    		});
+    		}));
         }
 	};
 
@@ -306,7 +305,7 @@ var WM = (function($) {
         $(document).scroll(function() {
             var scrollSize = $(document).scrollTop();
             var scroll = new TimelineMax();
-            scroll.to($divider , 0.3, {height: scrollSize + 400, ease:Strong.easeInOut})
+            scroll.to($divider , 0.1, {height: scrollSize + 400, ease:Strong.easeInOut})
         })
     }
     var anchor = function(button, section){
@@ -357,7 +356,6 @@ var WM = (function($) {
       mediumDiaporama();
       mediumDiaporamaSecond();
       smallDiaporama();
-    //   smallDiaporamaRight();
       smallDiaporamaLucien();
       smallDiaporamaCinema();
       mediumDiaporamaSociete();
@@ -380,7 +378,6 @@ var WM = (function($) {
       scrollHeight();
       anchorFunction();
       parallax();
-      load();
   };
 
   // Only expose the ready function to the world
