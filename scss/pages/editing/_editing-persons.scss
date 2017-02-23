@@ -3,7 +3,7 @@
   display: inline-block;
   position: relative;
   width: 100%;
-  padding: 8rem 0 15rem 16%;
+  padding: 8rem 0 3rem 16%;
   @include breakpoint(tablet) {
     padding: 6rem 0 0 18%;
   }
@@ -41,7 +41,6 @@
       right: 0;
     }
   }
-  &__body {}
   &__persons {
     @include breakpoint(desktop) {
       width: 64%;
@@ -56,7 +55,7 @@
     position: relative;
     z-index: $levelBottom;
     &--1 {
-      top: -1rem;
+      top: -1.5rem;
       left: 6%;
       @include breakpoint(tablet) {
         top: 2.5rem;
@@ -66,7 +65,7 @@
         left: 18%;
       }
       .editing-persons__person-title {
-        bottom: 4.5rem;
+        bottom: 4rem;
         left: -45%;
         @include breakpoint(tablet) {
           bottom: 2rem;
@@ -85,7 +84,7 @@
       }
       .editing-persons__person-title {
         top: 9rem;
-        right: -7.5rem;
+        right: -6.5rem;
         @include breakpoint(tablet) {
           top: 6rem;
           right: -8.5rem;
@@ -99,7 +98,7 @@
     }
     &--3 {
       top: 7rem;
-      left: -10%;
+      left: -11%;
       z-index: $levelMiddle;
       @include breakpoint(tablet) {
         top: 9.5rem;
@@ -123,7 +122,7 @@
       }
     }
     &--4 {
-      left: -23%;
+      left: -23.5%;
       @include breakpoint(tablet) {
         left: -26%;
         top: 3.5rem;
@@ -173,12 +172,12 @@
       margin-top: 11rem;
     }
     @include breakpoint(phone) {
-      margin-top: 17rem;
+      margin-top: 16.5rem;
       margin-right: 0;
     }
   }
   &__info-head {
-    margin-left: 11%;
+    margin-left: 9.5%;
     margin-bottom: 5rem;
     @include breakpoint(tablet) {
       margin-left: -5.5%;
@@ -203,10 +202,17 @@
     }
   }
   &__info-head--bottom {
-    margin-left: 30%;
+    text-align: right;
+    margin-right: 6%;
     margin-top: -2rem;
     @include breakpoint(tablet) {
       margin-left: 17%;
+      text-align: left;
+    }
+    @include breakpoint(phone) {
+      text-align: center;
+      margin-right: 0%;
+      margin-left: 8%;
     }
     .editing__title {
       display: inline-block;

@@ -4,16 +4,16 @@
   position: relative;
   background-color: $colorMain;
   margin: 0 6% 5.5rem;
-  padding-top: 4rem;
+  padding-top: 8.5rem;
   padding-bottom: 7rem;
   @include breakpoint(tablet) {
-    margin: 0 13.5% 2rem 2%;
+    margin: 0 13.5% 4rem 2%;
     padding: 8.5rem 0 13rem 6%; 
   }
   @include breakpoint(phone) {
     margin-left: 0;
     margin-bottom: 4.5rem;
-    padding: 12rem 0 17rem 5%;
+    padding: 13rem 0 17rem 5%;
   }
   &:after {
     content: '';
@@ -69,6 +69,7 @@
     }
     @include breakpoint(phone) {
       width: 19.5%;
+      vertical-align: top;
     }
   }
   &__media-bottom {
@@ -84,7 +85,7 @@
     }
     @include breakpoint(phone) {
       width: 100%;
-      margin-top: 6rem;
+      margin-top: 2.5rem;
       margin-left: 20%;
     }
   }

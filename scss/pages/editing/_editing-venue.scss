@@ -6,7 +6,7 @@
   padding: 10.5rem 7.5% 9.5rem;
   @include breakpoint(tablet) {
     width: 86%;
-    padding: 7rem 13% 10rem 11%;
+    padding: 6.5rem 13% 10rem 11%;
   }
   @include breakpoint(phone) {
     width: 95%;
@@ -43,6 +43,10 @@
   &__title-bottom {
     width: 90%;
     margin-left: -3rem;
+    @include breakpoint(tablet) {
+      width: 80%;
+      margin-left: -5%;
+    }
     @include breakpoint(phone) {
       margin-left: -2rem;
     }
