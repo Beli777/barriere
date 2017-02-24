@@ -176,6 +176,14 @@ h2 {
 h3 {
   color: #363636; }
 
+.editing-section {
+  *zoom: 1; }
+  .editing-section:before, .editing-section:after {
+    content: "";
+    display: table; }
+  .editing-section:after {
+    clear: both; }
+
 .clear {
   clear: both; }
 
@@ -279,7 +287,7 @@ h1 {
   left: 49.2%;
   top: 0%; }
   .goldPoint__1927 {
-    top: 21rem; }
+    top: 39rem; }
     .goldPoint__1927Second {
       top: 4rem; }
   .goldPoint__1962 {
@@ -416,6 +424,9 @@ h1 {
     margin-bottom: 1.1rem;
     margin-top: 1.1rem;
     transition: .3s all linear; }
+    @media screen and (min-width: 1600px) {
+      .article__popup h2 {
+        font-size: 2.1rem; } }
   .article__popup span {
     font-size: 1.6rem;
     font-size: 1vw;
@@ -433,7 +444,7 @@ h1 {
     position: relative;
     transition: .3s all linear; }
   .article__popup--secondPosition {
-    top: 35%;
+    top: 51%;
     right: 5%;
     left: 70.5%;
     height: 17rem; }
@@ -578,11 +589,11 @@ h1 {
   .hotelGulfDiaporama .year__secondItem {
     margin-bottom: -5rem; }
   .hotelGulfDiaporama .article__popup--fourthPosition {
-    top: -9%;
+    top: 12%;
     right: 5%;
     left: 70.5%;
     height: auto;
-    bottom: 74.2%; }
+    bottom: 55.2%; }
 
 .cinemaFestival {
   margin-top: -15rem; }
@@ -930,17 +941,25 @@ h1 {
   .courche .js-slideShowBack {
     top: 0; }
 
-.francaise .year__secondItem {
-  margin-bottom: 1rem; }
+.francaise {
+  margin-top: 20rem; }
+  .francaise .year__secondItem {
+    top: -10rem;
+    position: absolute;
+    left: 41%; }
 
-.andre .article__popup--thirdPosition {
-  top: 23%;
-  right: 73%;
-  left: 5%;
-  height: 25rem;
-  z-index: 3;
-  padding-left: 5rem;
-  padding-right: 5rem; }
+.andre {
+  margin-top: 3%; }
+  .andre .article__popup--thirdPosition {
+    top: 70%;
+    right: 73%;
+    left: 5%;
+    height: 25rem;
+    z-index: 3;
+    padding-left: 5rem;
+    padding-right: 5rem; }
+  .andre .year {
+    top: 24rem; }
 
 .lucien {
   margin-top: 5%; }
@@ -964,6 +983,8 @@ h1 {
   .casinoHuge .article__popup {
     top: 29%; }
 
+.editing h1 {
+  margin-bottom: 4rem; }
 .editing__head {
   margin: 0 auto 7.5rem;
   width: 50%;
@@ -973,7 +994,8 @@ h1 {
       margin-bottom: 2rem; } }
   @media (max-width: 767px) {
     .editing__head {
-      margin-bottom: 4rem; } }
+      margin-bottom: 4rem;
+      width: 70%; } }
 .editing__title {
   text-transform: uppercase;
   font-size: 2.1rem;
@@ -1014,6 +1036,9 @@ h1 {
   background-size: contain;
   height: 2.5rem;
   margin-bottom: 2.5rem; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing__points {
+      margin-bottom: 3rem; } }
   @media (max-width: 767px) {
     .editing__points {
       height: 3rem; } }
@@ -1050,10 +1075,10 @@ h1 {
   height: auto; }
 
 .editing-birth {
-  display: table;
+  display: inline-block;
   position: relative;
   background-color: #FFF;
-  padding: 8.5rem 5% 7rem 6.2%; }
+  padding: 8.5rem 5% 7.5rem 6.2%; }
   @media (min-width: 1025px) {
     .editing-birth {
       width: 79%; } }
@@ -1068,7 +1093,7 @@ h1 {
     display: table;
     width: 100%; }
   .editing-birth__media {
-    display: table-cell;
+    display: inline-block;
     vertical-align: middle;
     width: 62.5%; }
     @media (min-width: 1025px) {
@@ -1077,16 +1102,16 @@ h1 {
   .editing-birth__info-head {
     position: relative;
     z-index: 1;
-    display: table-cell;
+    display: inline-block;
     vertical-align: middle;
     width: 37.5%;
     padding-left: 3%; }
     @media (min-width: 1025px) {
       .editing-birth__info-head {
-        width: 57%; } }
+        width: 56.5%; } }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-birth__info-head {
-        padding-left: 5%; } }
+        padding-left: 4.5%; } }
     @media (max-width: 767px) {
       .editing-birth__info-head {
         padding-left: 3.5%; } }
@@ -1127,24 +1152,24 @@ h1 {
     @media (max-width: 767px) {
       .editing-birth .editing__title {
         left: 36%;
-        bottom: -5.5rem; } }
+        bottom: -6.5rem; } }
 
 .editing-staff {
   overflow: hidden;
   position: relative;
   background-color: #FFF;
   margin: 0 6% 5.5rem;
-  padding-top: 4rem;
+  padding-top: 8.5rem;
   padding-bottom: 7rem; }
   @media (min-width: 768px) and (max-width: 1024px) {
     .editing-staff {
-      margin: 0 13.5% 2rem 2%;
+      margin: 0 13.5% 4rem 2%;
       padding: 8.5rem 0 13rem 6%; } }
   @media (max-width: 767px) {
     .editing-staff {
       margin-left: 0;
       margin-bottom: 4.5rem;
-      padding: 12rem 0 17rem 5%; } }
+      padding: 13rem 0 17rem 5%; } }
   .editing-staff:after {
     content: '';
     background-color: #f9f9f9;
@@ -1193,7 +1218,8 @@ h1 {
         width: 18%; } }
     @media (max-width: 767px) {
       .editing-staff__media-middle {
-        width: 19.5%; } }
+        width: 19.5%;
+        vertical-align: top; } }
   .editing-staff__media-bottom {
     width: 17%;
     display: inline-block;
@@ -1208,7 +1234,7 @@ h1 {
     @media (max-width: 767px) {
       .editing-staff__media-bottom {
         width: 100%;
-        margin-top: 6rem;
+        margin-top: 2.5rem;
         margin-left: 20%; } }
   .editing-staff__info-head {
     width: 46%;
@@ -1265,7 +1291,7 @@ h1 {
   display: inline-block;
   position: relative;
   width: 100%;
-  padding: 8rem 0 15rem 16%; }
+  padding: 8rem 0 3rem 16%; }
   @media (min-width: 768px) and (max-width: 1024px) {
     .editing-persons {
       padding: 6rem 0 0 18%; } }
@@ -1312,7 +1338,7 @@ h1 {
     position: relative;
     z-index: 1; }
     .editing-persons__person--1 {
-      top: -1rem;
+      top: -1.5rem;
       left: 6%; }
       @media (min-width: 768px) and (max-width: 1024px) {
         .editing-persons__person--1 {
@@ -1322,7 +1348,7 @@ h1 {
           top: 5rem;
           left: 18%; } }
       .editing-persons__person--1 .editing-persons__person-title {
-        bottom: 4.5rem;
+        bottom: 4rem;
         left: -45%; }
         @media (min-width: 768px) and (max-width: 1024px) {
           .editing-persons__person--1 .editing-persons__person-title {
@@ -1339,7 +1365,7 @@ h1 {
           left: 13%; } }
       .editing-persons__person--2 .editing-persons__person-title {
         top: 9rem;
-        right: -7.5rem; }
+        right: -6.5rem; }
         @media (min-width: 768px) and (max-width: 1024px) {
           .editing-persons__person--2 .editing-persons__person-title {
             top: 6rem;
@@ -1351,7 +1377,7 @@ h1 {
             width: 130%; } }
     .editing-persons__person--3 {
       top: 7rem;
-      left: -10%;
+      left: -11%;
       z-index: 2; }
       @media (min-width: 768px) and (max-width: 1024px) {
         .editing-persons__person--3 {
@@ -1373,7 +1399,7 @@ h1 {
             right: -8.5rem;
             bottom: 1.7rem; } }
     .editing-persons__person--4 {
-      left: -23%; }
+      left: -23.5%; }
       @media (min-width: 768px) and (max-width: 1024px) {
         .editing-persons__person--4 {
           left: -26%;
@@ -1420,10 +1446,10 @@ h1 {
         margin-top: 11rem; } }
     @media (max-width: 767px) {
       .editing-persons__info {
-        margin-top: 17rem;
+        margin-top: 16.5rem;
         margin-right: 0; } }
   .editing-persons__info-head {
-    margin-left: 11%;
+    margin-left: 9.5%;
     margin-bottom: 5rem; }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-persons__info-head {
@@ -1444,11 +1470,18 @@ h1 {
       .editing-persons__info-head--top .editing__title {
         width: 80%; } }
   .editing-persons__info-head--bottom {
-    margin-left: 30%;
+    text-align: right;
+    margin-right: 6%;
     margin-top: -2rem; }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-persons__info-head--bottom {
-        margin-left: 17%; } }
+        margin-left: 17%;
+        text-align: left; } }
+    @media (max-width: 767px) {
+      .editing-persons__info-head--bottom {
+        text-align: center;
+        margin-right: 0%;
+        margin-left: 8%; } }
     .editing-persons__info-head--bottom .editing__title {
       display: inline-block;
       vertical-align: -1rem; }
@@ -1472,7 +1505,8 @@ h1 {
       margin-bottom: 4rem; } }
   @media (max-width: 767px) {
     .editing-turnover {
-      padding: 0 17%; } }
+      padding: 0 17%;
+      margin-bottom: 2.5rem; } }
   .editing-turnover__body {
     float: right;
     width: 40%; }
@@ -1590,7 +1624,7 @@ h1 {
   float: left;
   border-top: 1rem solid #f9f9f9;
   border-right: 1rem solid #f9f9f9;
-  margin-top: -31.5rem;
+  margin-top: -33.5rem;
   padding: 10rem 0 3rem;
   text-align: center; }
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -1647,6 +1681,9 @@ h1 {
         padding: 0 5%; } }
     .editing-casinos-second__text .editing__p {
       text-align: center; }
+      @media (max-width: 767px) {
+        .editing-casinos-second__text .editing__p {
+          text-align: left; } }
   .editing-casinos-second__ranking {
     font-family: Georgia;
     text-transform: uppercase;
@@ -1824,7 +1861,7 @@ h1 {
     width: 56%; }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-renovation .editing__title {
-        right: -16%;
+        right: -19%;
         top: 1rem; } }
     @media (max-width: 767px) {
       .editing-renovation .editing__title {
@@ -1842,7 +1879,7 @@ h1 {
   @media (min-width: 768px) and (max-width: 1024px) {
     .editing-venue {
       width: 86%;
-      padding: 7rem 13% 10rem 11%; } }
+      padding: 6.5rem 13% 10rem 11%; } }
   @media (max-width: 767px) {
     .editing-venue {
       width: 95%;
@@ -1875,6 +1912,10 @@ h1 {
   .editing-venue__title-bottom {
     width: 90%;
     margin-left: -3rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-venue__title-bottom {
+        width: 80%;
+        margin-left: -5%; } }
     @media (max-width: 767px) {
       .editing-venue__title-bottom {
         margin-left: -2rem; } }
@@ -1902,7 +1943,7 @@ h1 {
   margin: -15.5rem 0 11rem 6.2%; }
   @media (min-width: 768px) and (max-width: 1024px) {
     .editing-drink {
-      margin: -4rem 0 9.5rem 0;
+      margin: -4rem 0 10rem 0;
       width: 63%; } }
   @media (max-width: 767px) {
     .editing-drink {
@@ -1998,10 +2039,10 @@ h1 {
 .editing-sport {
   width: 100%;
   display: inline-block;
-  padding: 0 12% 5.5rem; }
+  padding: 0 12% 7.5rem; }
   @media (min-width: 768px) and (max-width: 1024px) {
     .editing-sport {
-      padding: 0 14% 6.7rem; } }
+      padding: 0 13% 6.7rem 14%; } }
   @media (max-width: 767px) {
     .editing-sport {
       padding: 0 5% 7.5rem; } }
@@ -2022,14 +2063,14 @@ h1 {
       text-align: center; }
     .editing-sport--golf .editing__title {
       position: absolute;
-      bottom: -2rem;
+      bottom: 0;
       text-align: center;
       left: 0;
       right: 0;
       margin: 0 auto; }
       @media (max-width: 767px) {
         .editing-sport--golf .editing__title {
-          bottom: -4.5rem; } }
+          bottom: -1.5rem; } }
   .editing-sport--golf__info-head {
     position: relative;
     display: inline-block;
@@ -2040,7 +2081,10 @@ h1 {
         width: 45%; } }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-sport--golf__info-head {
-        margin-bottom: 6rem; } }
+        margin-bottom: 5rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: block; } }
     @media (max-width: 767px) {
       .editing-sport--golf__info-head {
         width: 40%;
@@ -2080,16 +2124,19 @@ h1 {
   .editing-sport--tennis__info-head {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 9%;
     text-align: center;
     margin-top: -1rem; }
     @media (min-width: 1025px) {
       .editing-sport--tennis__info-head {
-        width: 50%; } }
+        width: 50%;
+        margin-right: 9%; } }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-sport--tennis__info-head {
         margin-top: 0;
-        margin-bottom: 2rem; } }
+        margin-bottom: 5.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: block; } }
     @media (max-width: 767px) {
       .editing-sport--tennis__info-head {
         width: 49%;
@@ -2102,11 +2149,13 @@ h1 {
     .editing-sport--tennis__info-head .editing__title {
       width: 74%;
       margin: .7rem auto 0; }
+      @media (max-width: 767px) {
+        .editing-sport--tennis__info-head .editing__title {
+          margin-top: 0; } }
   .editing-sport--tennis__media {
     margin-top: -1.2rem; }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-sport--tennis__media {
-        margin-top: 0;
         margin-left: 4%; } }
   .editing-sport--tennis__img1 {
     margin-bottom: -3rem;
@@ -2120,6 +2169,9 @@ h1 {
     @media (min-width: 1025px) {
       .editing-sport--tennis__info-body {
         width: 40%; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-sport--tennis__info-body {
+        margin-top: 0; } }
     @media (max-width: 767px) {
       .editing-sport--tennis__info-body {
         width: 63%;
@@ -2127,6 +2179,8 @@ h1 {
         display: block; } }
   .editing-sport .editing__num {
     font-size: 10rem; }
+  .editing-sport .editing__p {
+    text-align: center; }
   .editing-sport img {
     margin-left: auto;
     margin-right: auto; }
@@ -2258,7 +2312,156 @@ h1 {
         font-size: 7.1rem; } }
 
 .editing-culture {
-  background-color: #dadada; }
+  background-color: #FFF;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 11rem 0 0 6%;
+  margin-bottom: -12rem; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-culture {
+      padding: 7.7rem 2% 34rem 7.5%;
+      margin-bottom: 0.5rem; } }
+  @media (max-width: 767px) {
+    .editing-culture {
+      padding: 4rem 5% 0 5%;
+      margin-bottom: 7.5rem; } }
+  .editing-culture:before, .editing-culture:after {
+    content: '';
+    position: absolute;
+    background-color: #f9f9f9; }
+  .editing-culture:before {
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 16%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-culture:before {
+        width: 26%; } }
+  .editing-culture:after {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 13rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-culture:after {
+        display: none; } }
+    @media (max-width: 767px) {
+      .editing-culture:after {
+        height: 35rem; } }
+  .editing-culture__info {
+    float: left;
+    width: 42%;
+    margin-right: 5%;
+    margin-top: 5.5rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-culture__info {
+        width: 67%;
+        position: absolute;
+        bottom: 11%;
+        left: 8%;
+        margin-top: 0;
+        margin-right: 0; } }
+    @media (max-width: 767px) {
+      .editing-culture__info {
+        width: 80%;
+        margin-right: 0; } }
+  .editing-culture__info-head {
+    padding-left: 25%;
+    overflow: hidden;
+    margin-bottom: 4rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-culture__info-head {
+        width: 67%;
+        padding-left: 3%; } }
+    @media (max-width: 767px) {
+      .editing-culture__info-head {
+        padding-left: 0;
+        margin-bottom: 3.5rem; } }
+    .editing-culture__info-head .editing__point, .editing-culture__info-head .editing__point--smaller {
+      vertical-align: -3rem; }
+  .editing-culture__title-top {
+    text-align: center;
+    margin-right: 20%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-culture__title-top {
+        margin-right: 15%; } }
+    @media (max-width: 767px) {
+      .editing-culture__title-top {
+        margin-right: 33%; } }
+  .editing-culture__num-wrap {
+    margin-top: -3rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-culture__num-wrap {
+        margin-top: -2rem; } }
+    @media (max-width: 767px) {
+      .editing-culture__num-wrap {
+        margin-top: -1.5rem; } }
+  .editing-culture__title-bottom {
+    width: 77%;
+    float: right;
+    margin-top: -0.5rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-culture__title-bottom {
+        width: 79%;
+        margin-top: 0; } }
+    @media (max-width: 767px) {
+      .editing-culture__title-bottom {
+        width: 83.5%;
+        margin-top: 0rem; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-culture__info-body {
+      width: 89%; } }
+  @media (max-width: 767px) {
+    .editing-culture__info-body {
+      padding-right: 7%; } }
+  .editing-culture__media {
+    position: relative;
+    float: right;
+    width: 53%; }
+    @media (max-width: 767px) {
+      .editing-culture__media {
+        width: 87%;
+        padding-top: 7rem;
+        z-index: 1; } }
+    .editing-culture__media .editing-culture__img-circle {
+      max-width: 25%;
+      position: absolute;
+      bottom: 23.5%;
+      left: -20%; }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .editing-culture__media .editing-culture__img-circle {
+          max-width: 37%;
+          top: 2.5%;
+          left: -50.5%; } }
+      @media (max-width: 767px) {
+        .editing-culture__media .editing-culture__img-circle {
+          max-width: 28%;
+          top: -12.5%;
+          right: 1%;
+          left: auto; } }
+    .editing-culture__media .editing-culture__img-top {
+      max-width: 78%; }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .editing-culture__media .editing-culture__img-top {
+          max-width: 75.5%; } }
+      @media (max-width: 767px) {
+        .editing-culture__media .editing-culture__img-top {
+          max-width: 71%; } }
+    .editing-culture__media .editing-culture__img-bottom {
+      float: right;
+      max-width: 90.5%;
+      margin-top: -4.5rem;
+      position: relative;
+      z-index: 2; }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .editing-culture__media .editing-culture__img-bottom {
+          max-width: 87.5%;
+          margin-top: -1.5rem; } }
+      @media (max-width: 767px) {
+        .editing-culture__media .editing-culture__img-bottom {
+          max-width: 86%;
+          margin-top: -2.5rem; } }
   .editing-culture .editing__num {
     font-size: 10rem; }
     @media (max-width: 1024px) {
@@ -2266,6 +2469,8 @@ h1 {
         font-size: 6.5rem; } }
 
 .editing-foundation {
+  z-index: 1;
+  position: relative;
   background-color: #FFF;
   width: 74.2%;
   float: right;
@@ -2462,7 +2667,7 @@ h1 {
       margin-bottom: 9rem; } }
   @media (max-width: 767px) {
     .editing-bees {
-      margin-top: 12rem;
+      margin-top: 7.5rem;
       margin-bottom: 6rem; } }
   .editing-bees__body {
     width: 68%;
@@ -2478,7 +2683,7 @@ h1 {
         padding: 0 5%; } }
   .editing-bees__info-head {
     float: right;
-    margin-bottom: 5rem;
+    margin-bottom: 4.5rem;
     width: 66%; }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-bees__info-head {
@@ -2489,8 +2694,8 @@ h1 {
         width: 100%;
         margin-bottom: 3rem; } }
   .editing-bees__title {
-    margin-left: 13%;
-    width: 53%;
+    margin-left: 14%;
+    width: 45%;
     margin-top: -0.5rem; }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-bees__title {
@@ -2526,7 +2731,7 @@ h1 {
         width: 100%;
         margin: 0 auto;
         float: none;
-        margin-top: 7rem;
+        margin-top: 8rem;
         display: inline-block;
         padding: 0 22%; } }
   .editing-bees .editing__num {

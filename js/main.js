@@ -166,26 +166,25 @@ var WM = (function($) {
                 var paralaxLayerOne = $('.prlx_layer_1');
                 var paralaxLayerSecond = $('.prlx_layer_2');
                 var paralaxLayerThird = $('.prlx_layer_3');
+                var layerOneMove = "translate3d(0,  -" + st/10 + "px" + ",0";
+                var layerTwoMove = "translate3d(0,  -" + st/5 + "px" + ",0";
+                var layerThreeMove = "translate3d(0,  -" + st/3 + "px" + ",0";
+                var parallaxTime = new TimelineMax();
+                var parallaxTimeSecond = new TimelineMax();
+                var parallaxTimeThird = new TimelineMax();
                 if (st > lastScrollTop){
-                    var parallaxTime = new TimelineMax();
-                    parallaxTime.to(paralaxLayerOne , 1, {"transform" : "translate3d(0,  -" + st/10 + "px" + ",0", ease:Power1.easeOut})
-                    var parallaxTimeSecond = new TimelineMax();
-                    parallaxTimeSecond.to(paralaxLayerSecond , 1, {"transform" : "translate3d(0,  -" + st/7 + "px" + ",0", ease:Power1.easeOut})
-                    var parallaxTimeThird = new TimelineMax();
-                    parallaxTimeThird.to(paralaxLayerThird , 1, {"transform" : "translate3d(0,  -" + st/5 + "px" + ",0", ease:Power1.easeOut})
-
+                    parallaxTime.to(paralaxLayerOne , 1, {transform : layerOneMove, ease:Power1.easeOut})
+                    parallaxTimeSecond.to(paralaxLayerSecond , 1, {transform : layerTwoMove, ease:Power1.easeOut})
+                    parallaxTimeThird.to(paralaxLayerThird , 1, {transform : layerThreeMove, ease:Power1.easeOut})
                 } else {
-                  // upscroll code
-                  var parallaxTime = new TimelineMax();
-                  parallaxTime.to(paralaxLayerOne , 1, {"transform" : "translate3d(0,  -" + st/10 + "px" + ",0", ease:Power1.easeOut})
-                  var parallaxTimeSecond = new TimelineMax();
-                  parallaxTimeSecond.to(paralaxLayerSecond , 1, {"transform" : "translate3d(0,  -" + st/7 + "px" + ",0", ease:Power1.easeOut})
-                  var parallaxTimeThird = new TimelineMax();
-                  parallaxTimeThird.to(paralaxLayerThird , 1, {"transform" : "translate3d(0,  -" + st/5 + "px" + ",0", ease:Power1.easeOut})
+                  parallaxTime.to(paralaxLayerOne , 1, {transform : layerOneMove, ease:Power1.easeOut})
+                  parallaxTimeSecond.to(paralaxLayerSecond , 1, {transform : layerTwoMove, ease:Power1.easeOut})
+                  parallaxTimeThird.to(paralaxLayerThird , 1, {transform : layerThreeMove, ease:Power1.easeOut})
 
                 }
-                // lastScrollTop = st;
-    		}));
+    		}
+        ));
+
         }
 	};
 
@@ -209,8 +208,8 @@ var WM = (function($) {
     }
     //button, parent, top, width, left, popupLeft, popupTop, popupBottom, popupRight, popupIndex, popupHeight
     var mediumDiaporama = function(){
-        mixinMediumDiaporama('.js-showArticle','.article__medium', '-60%', '35%', '', '54.5%', '-18%', '3%', '', '', '50rem');
-        mixinMediumDiaporamaClose('.articlePopup-close','.article__medium', '0%', '50%', '', '70.5%', '35%', '15.2%', '', '', '');
+        mixinMediumDiaporama('.js-showArticle','.article__medium', '-60%', '35%', '', '54.5%', '-2%', '3%', '', '', '50rem');
+        mixinMediumDiaporamaClose('.articlePopup-close','.article__medium', '0%', '50%', '', '70.5%', '51%', '15.2%', '', '', '');
     }
     var mediumDiaporamaSecond = function(){
         mixinMediumDiaporama('.js-showArticle','.hotelGulfDiaporama', '-40%', '49%', '28%', '54.5%', '-7rem', '12.2%', '0', '', '');
@@ -255,12 +254,12 @@ var WM = (function($) {
     }
     //button, parent,left, right, top, bottom, index, height, imageLeft
     var smallDiaporama = function(){
-        mixinSmallDiaporama('.js-showArticle','.article__small','', '60%', '-9%','0','', '35rem', '34%');
-        mixinSmallDiaporamaClose('.articlePopup-close','.article__small','', '73%', '23%','6.2%','', '25rem', '20%');
+        mixinSmallDiaporama('.js-showArticle','.article__small','', '60%', '15%','0','', '45rem', '34%');
+        mixinSmallDiaporamaClose('.articlePopup-close','.article__small','', '70%', '70%','6.2%','', '25rem', '20%');
     }
     var smallDiaporamaRight = function(){
-        mixinSmallDiaporama('.js-showArticle','.article__small--right', '61%', '0%', '-20%','','', '44rem', '50%');
-        mixinSmallDiaporamaClose('.articlePopup-close','.article__small--right', '75%', '5%', '23%','5.2%','', '63%');
+        mixinSmallDiaporama('.js-showArticle','.article__small--right', '61%', '0%', '0%','','', '44rem', '50%');
+        mixinSmallDiaporamaClose('.articlePopup-close','.article__small--right', '75%', '5%', '75%','5.2%','', '63%');
     }
     var smallDiaporamaLucien = function(){
         mixinSmallDiaporama('.js-showArticle','.lucien', '61%', '0%', '-20%','','', '44rem', '50%');
@@ -312,7 +311,7 @@ var WM = (function($) {
         var $button = $(button);
         var $tooltip = $('.tooltip');
         $button.on('click touch', function(){
-          TweenLite.to(window, 2, {scrollTo:{y: section, offsetY:7}, ease:Strong.easeInOut});
+          TweenLite.to(window, 2, {scrollTo:{y: section, offsetY:200}, ease:Strong.easeInOut});
           $('.anchor a').parent().find('a').removeClass('activeButton');
           $(this).addClass('activeButton');
           $tooltip.parent().find('.active').removeClass('active');

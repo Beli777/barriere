@@ -13,6 +13,7 @@
         }
     }
 }
+
 .js-slide{
     position: absolute;
     top: 13.5%;
@@ -28,11 +29,11 @@
       margin-bottom: -5rem;
   }
   .article__popup--fourthPosition{
-      top: -9%;
-    right: 5%;
-    left: 70.5%;
-    height: auto;
-    bottom: 74.2%;
+          top: 12%;
+          right: 5%;
+          left: 70.5%;
+          height: auto;
+          bottom: 55.2%;
   }
 }
 .cinemaFestival{
@@ -473,20 +474,26 @@ top: 130%;
   }
 }
 .francaise{
+    margin-top: 20rem;
 .year__secondItem{
-    margin-bottom: 1rem;
+    top: -10rem;
+    position: absolute;
+    left: 41%;
 }
-
 }
 .andre{
+    margin-top: 3%;
     .article__popup--thirdPosition {
-            top: 23%;
+            top: 70%;
             right: 73%;
             left: 5%;
             height: 25rem;
             z-index: 3;
             padding-left: 5rem;
             padding-right: 5rem;
+}
+.year{
+    top: 24rem;
 }
 }
 .lucien{
