@@ -28,6 +28,11 @@
   .year__secondItem{
       margin-bottom: -5rem;
   }
+  .modified-year{
+    top: 1rem;
+    position: absolute;
+    left: 41%;
+  }
   .article__popup--fourthPosition{
           top: 12%;
           right: 5%;
@@ -46,14 +51,14 @@
     padding: 0 40% 0 0;
   }
   .small-year {
-    top: 17rem;
+    top: 45rem;
 }
 .article__popup--sixthPosition {
-    top: 59%;
-    right: 68%;
-    left: 9%;
-    height: 22rem;
-    z-index: 3;
+  top: 83%;
+  right: 68%;
+  left: 9%;
+  height: 22rem;
+  z-index: 3;
 }
 }
 .societeHoteliare{
@@ -72,16 +77,16 @@
   .modified-year{
       position: absolute;
       left: 41%;
-      top: -10rem;
+        top: 17rem;
   }
   &--position{
-      top: 75%;
-      right: 57%;
-      left: 19%;
-      /* bottom: 27.2%; */
-      z-index: 3;
-      height: initial;
-      bottom: -13%;
+    top: 113%;
+    right: 57%;
+    left: 19%;
+    /* bottom: 27.2%; */
+    z-index: 3;
+    height: initial;
+    bottom: -48%;
   }
   &ImagePopup{
     right: 0%;
@@ -98,7 +103,7 @@
     margin-left: 55%;
   }
   &--position{
-      top: 80%;
+      top: 125%;
       right: 11.5%;
       left: 67%;
       height: 19rem;
@@ -106,7 +111,7 @@
   }
   .small-year{
       left: 40.4%;
-    top: 18rem;
+      top: 39rem;
   }
 }
 .diane{
@@ -116,7 +121,7 @@
     width: 19%;
   }
   &--position{
-      top: 82%;
+      top: 139%;
       right: 69%;
       left: 5%;
       height: 21rem;
@@ -132,7 +137,7 @@
     padding: 0 3rem;
   }
   .small-year{
-    top: 51rem;
+    top: 70rem;
   }
 }
 .dominique{
@@ -145,14 +150,14 @@
     z-index: 7;
   }
   &--position{
-      top: 59%;
-      right: 5%;
-      left: 74%;
-      height: 18rem;
-      z-index: 6;
+    top: 122%;
+    right: 5%;
+    left: 73%;
+    height: 20rem;
+    z-index: 6;
   }
   .small-year{
-        top: 40rem;
+        top: 69rem;
   }
 }
 .fouqets{
@@ -161,7 +166,7 @@
     left: 15%;
     height: 18.5rem;
     right: auto;
-    top: 19%;
+    top: 57%;
   }
   .js-slide,
   .js-slideShow,
@@ -169,7 +174,7 @@
       top: 0;
   }
   .modified-year{
-      top: 4rem;
+      top: 40rem;
       position: absolute;
       right: 41%;
   }
@@ -181,39 +186,40 @@
     margin-left: 7%;
   }
   .article__popup--secondPositionImage{
-    z-index: 5;
+    z-index: 3;
     top: 270%;
     width: 45%;
     left: 17%;
 
   }
   &--position{
-      top: 35%;
-      right: 5%;
-      left: 70.5%;
-      height: auto;
-      bottom: 33.2%;
-      z-index: 3;
+    top: 104%;
+    right: 5%;
+    left: 70.5%;
+    height: auto;
+    bottom: -37.8%;
+    z-index: 3;
   }
   .modified-year{
       position: absolute;
-      top: 8rem;
+      top: 50rem;
       left: 41%;
   }
 }
 .dominique-person{
+  margin-top: 10rem;
   .article__smallItem{
     margin-left: 25%;
   }
   &--position{
-        top: 59%;
+      top: 151%;
       right: 67%;
       left: 5%;
       height: 21rem;
       z-index: 3;
   }
   .small-year{
-     top: 44rem;
+     top: 93rem;
   }
 }
 .hotel-later{
@@ -225,20 +231,21 @@
   }
   .modified-year{
       position: absolute;
-      top: 20rem;
+      top: 130%;
       left: 41%;
   }
   &--position{
-top: 130%;
-      right: 29%;
-      left: 46.5%;
-      height: auto;
-      bottom: -67.8%;
-      z-index: 3;
+    top: 207%;
+    right: 29%;
+    left: 46.5%;
+    height: auto;
+    bottom: -146.8%;
+    z-index: 3;
   }
   .article__popup--secondPositionImage{
       width: 43%;
-  top: 230rem;
+top: 400%;
+  z-index: 3;
   }
 }
 .toulouse{
@@ -249,14 +256,14 @@ top: 130%;
 
   }
   &--position{
-      top: 50%;
-      right: 5%;
-      left: 70.5%;
-      height: auto;
-      bottom: 16.2%;
+    top: 146%;
+    right: 15%;
+    left: 60.5%;
+    height: auto;
+    bottom: -81.8%;
   }
   .modified-year{
-      top: 36%;
+      top: 137%;
       position: absolute;
       left: 41%;
   }
@@ -267,29 +274,29 @@ top: 130%;
 .naoura{
   margin-top: 20rem;
   &--position{
-      top: 56%;
-      right: 70%;
-      left: 5%;
-      height: auto;
-      bottom: 10.2%;
-      z-index: 3;
+    top: 169%;
+    right: 70%;
+    left: 5%;
+    height: auto;
+    bottom: -101.8%;
+    z-index: 3;
   }
   .article__popup--secondPositionImage {
     width: 49%;
     left: 39%;
     position: absolute;
     z-index: 4;
-    top: 470%;
+    top: 445%;
     opacity: 0;
 }
 .modified-year{
     position: absolute;
-    top: 41%;
+    top: 155%;
     left: 41%;
 }
 }
 .lille{
-  margin-top: 60rem;
+margin-top: 79%;
   .article__mediumImage{
     margin-left: 30%;
     width: 40%;
@@ -303,8 +310,7 @@ top: 130%;
         top: 80%;
         right: 18%;
         left: 58%;
-        height: auto;
-        bottom: -15%;
+        height: 20rem;
         z-index: 5;
   }
   .modified-year{
@@ -317,7 +323,7 @@ top: 130%;
     left: 7%;
     position: absolute;
     z-index: 3;
-    top: 483%;
+    top: 343%;
     opacity: 0;
 }
 }
@@ -326,7 +332,7 @@ top: 130%;
   .article__mediumImage{
     margin-left: -20%;
     width: 40%;
-    margin-top: -52rem;
+    margin-top: 0;
   }
   &--position{
     top: -31%;
@@ -346,7 +352,7 @@ top: 130%;
     left: 46%;
     position: absolute;
     z-index: 3;
-    top: 440%;
+    top: 298%;
     opacity: 0;
 }
 .fadeInUp{
@@ -354,14 +360,14 @@ top: 130%;
 }
 }
 .barriere-video{
-    margin-top: -37rem;
+    margin-top: -70%;
     .modified-year{
         position: absolute;
-        top: 32%;
+      top: 107%;
         left: 41%;
     }
     .article__popup{
-        top: 43rem;
+          top: 113%;
     }
     .js-slide,
     .js-slideShow,
@@ -374,21 +380,21 @@ top: 130%;
     width: 22%;
   }
   &--position{
-      top: 96%;
+    top: 226%;
           right: 73%;
           left: 5%;
           height: 20rem;
           z-index: 3;
   }
   .modified-year{
-    top: 60rem;
+    top: 213%;
     left: 40.67%;
   }
 }
 .moma{
   margin-top: 10rem;
   &--position{
-        top: 130%;
+      top: 296%;
       right: 5%;
       left: 70.5%;
      height: 20.5rem;
@@ -406,11 +412,11 @@ top: 130%;
     left: 2.45%;
     position: absolute;
     z-index: 3;
-    top: 626%;
+    top: 617%;
     opacity: 0;
 }
 .modified-year{
-  top: 72%;
+      top: 234%;
   position: absolute;
   left: 41%;
 }
@@ -422,16 +428,16 @@ top: 130%;
     width: 40%;
   }
   &--position{
-          top: 135%;
+            top: 298%;
           right: 53%;
           left: 25%;
           height: 20rem;
           /* bottom: -68%; */
-          z-index: 3;
+          z-index: 6;
   }
   .modified-year{
       position: absolute;
-      top: 40rem;
+      top: 255%;
       left: 41%;
   }
   .article__popup--secondPositionImage {
@@ -439,7 +445,7 @@ top: 130%;
       left: 46%;
       position: absolute;
       z-index: 4;
-      top: 740%;
+    top: 708%;
       opacity: 0;
       @media screen and (min-width: 1400px){
           top: 720%;
@@ -450,21 +456,21 @@ top: 130%;
 }
 }
 .courche{
-    margin-top: 20rem;
+    margin-top: 30rem;
     margin-bottom: -1%;
   &--position{
     left: 15%;
-        height: 18.5rem;
+        height: 20.5rem;
         right: auto;
         z-index: 5;
   }
   .modified-year{
       position: absolute;
-      top: 45rem;
+          top: 130%;
       left: 41%;
   }
   .article__popup{
-      top: 61%;
+      top: 141%;
 
   }
   .js-slide,
@@ -499,14 +505,14 @@ top: 130%;
 .lucien{
     margin-top: 5%;
     .article__popup--fifthPosition {
-    top: 49%;
-    right: 5%;
-    left: 75%;
-    height: 19rem;
-    z-index: 3;
+      top: 85%;
+          right: 5%;
+          left: 72%;
+          height: 19rem;
+          z-index: 3;
 }
 .modified-year {
-    top: 7rem;
+    top: 23rem;
 }
 .article__smallItem--right {
     margin-left: 63%;
@@ -515,11 +521,16 @@ top: 130%;
 .casinoHuge{
     margin-top: 20rem;
     .modified-year{
-        top: 12rem;
+        top: 58%;
         position: absolute;
         left: 41%;
     }
     .article__popup{
-        top: 29%;
+        top: 70%;
+    }
+    .js-slide,
+    .js-slideShow,
+    .js-slideShowBack{
+        top: 0;
     }
 }

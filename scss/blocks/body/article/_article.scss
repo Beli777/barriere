@@ -7,10 +7,17 @@
         height: 20.5rem;
         padding-top: 5.5rem;
         text-align: center;
-
+        @include breakpoint (tablet){
+          height: 16.5rem;
+          padding-top: 2.5rem;
+        }
         &First{
             right: 15.142%;
             left: 60.3%;
+            @include breakpoint (tablet){
+              right: 1.142%;
+              left: 55.3%;
+            }
         }
         h2{
             font-size: 2.1rem;
@@ -25,12 +32,18 @@
             @media screen and (min-width: 1600px){
                 font-size: 2.1rem;
             }
+            @include breakpoint (tablet){
+              font-size: 2rem;
+            }
         }
         span{
             font-size: 1.6rem;
             font-size: 1vw;
             text-transform: uppercase;
             transition: .3s all linear;
+            @include breakpoint (tablet){
+              font-size: 1.6rem;
+            }
         }
         button{
             background: transparent;
@@ -43,6 +56,10 @@
             outline: none;
             position: relative;
             transition: .3s all linear;
+            @include breakpoint(tablet){
+              margin: 2.5rem auto;
+              margin-bottom: 0;
+            }
         }
         &--secondPosition{
             top: 51%;
@@ -149,7 +166,7 @@
             position: absolute;
             top: 2rem;
             right: 2.5rem;
-            width: auto;
+            width: 0;
             cursor: pointer;
         }
         &-points{
@@ -194,4 +211,7 @@
   right: -13%;
   top: 16%;
   width: 60%;
+}
+.visible .articlePopup-close{
+  width: auto;
 }

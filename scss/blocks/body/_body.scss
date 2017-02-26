@@ -14,6 +14,9 @@ h1{
     @media screen and (min-width: 1650px){
         font-size: 5rem;
     }
+    @include breakpoint (tablet){
+      font-size: 36px;
+    }
     &--left{
         margin-right: 16rem;
     }
@@ -23,6 +26,11 @@ h1{
     &__firstItem{
         margin-top: 10rem;
         margin-bottom: 10rem;
+        @include breakpoint(tablet){
+          margin-top: 5rem;
+          margin-bottom: 5rem;
+          margin-right: 10rem;
+        }
     }
     &__secondItem{
         margin-top: 10rem;
@@ -39,56 +47,76 @@ h1{
     position: absolute;
     left: 49.2%;
     top: 0%;
+    @include breakpoint (toDesktop){
+      width: 10px;
+      height: 10px;
+      top: 4%;
+    }
     &__1927{
         top: 39rem;
         &Second{
-            top: 4rem;
+            top: 31rem;
+        }
+        &Third{
+          top: 15rem;
         }
     }
     &__1962{
-        top: 21rem;
+        top: 37rem;
     }
     &__1975{
-        top: 30rem;
+        top: 59rem;
     }
     &__1988{
-        top: 32rem;
+        top: 53rem;
+        &Second{
+          top: 64%;
+        }
     }
     &__1990{
-        top: 65rem;
+        top: 84rem;
     }
     &__1997{
-        top: 55rem;
+        top: 84rem;
+        &Second{
+              top: 284%;
+        }
     }
     &__1998{
-        top: 18rem;
+        top: 54rem;
+        &Second{
+          top: 64rem;
+        }
     }
     &__2001{
-        top: 56rem;
+        top: 108rem;
     }
     &__2003{
-        top: 26rem;
+        top: 77rem;
     }
     &__2006{
-        top: 34rem;
+      top: 95rem;
+        &Second{
+          top: 90rem;
+        }
     }
     &__2009{
-        top: 73%;
+        top: 180%;
     }
     &__2009Second{
-        top: 50%;
+        top: 116%;
     }
     &__2010{
         top: 14rem;
     }
     &__2015{
-        top: 77rem;
+        top: 238%;
     }
     &__2016{
-        top: 60rem;
+          top: 146%;
     }
     &__2016Second{
-            top: 103%;
+          top: 263%;
     }
 }
 .small-year{
@@ -115,6 +143,9 @@ h1{
 	top: 11rem;
 	border-left: 3px solid $colorGold;
   z-index: 3;
+  @include breakpoint (tablet){
+    top: 5rem;
+  }
 }
 .anchor{
   position: fixed;
@@ -123,6 +154,9 @@ h1{
   content:'';
   width: 2.5rem;
   z-index: 10;
+  @include breakpoint(toDesktop){
+    display: none;
+  }
   li{
       position: relative;
       .tooltip{

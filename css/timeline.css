@@ -265,6 +265,9 @@ h1 {
   @media screen and (min-width: 1650px) {
     .year {
       font-size: 5rem; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .year {
+      font-size: 36px; } }
   .year--left {
     margin-right: 16rem; }
   .year--right {
@@ -272,6 +275,11 @@ h1 {
   .year__firstItem {
     margin-top: 10rem;
     margin-bottom: 10rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .year__firstItem {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        margin-right: 10rem; } }
   .year__secondItem {
     margin-top: 10rem;
     margin-bottom: 5rem; }
@@ -286,40 +294,55 @@ h1 {
   position: absolute;
   left: 49.2%;
   top: 0%; }
+  @media (max-width: 1024px) {
+    .goldPoint {
+      width: 10px;
+      height: 10px;
+      top: 4%; } }
   .goldPoint__1927 {
     top: 39rem; }
     .goldPoint__1927Second {
-      top: 4rem; }
+      top: 31rem; }
+    .goldPoint__1927Third {
+      top: 15rem; }
   .goldPoint__1962 {
-    top: 21rem; }
+    top: 37rem; }
   .goldPoint__1975 {
-    top: 30rem; }
+    top: 59rem; }
   .goldPoint__1988 {
-    top: 32rem; }
+    top: 53rem; }
+    .goldPoint__1988Second {
+      top: 64%; }
   .goldPoint__1990 {
-    top: 65rem; }
+    top: 84rem; }
   .goldPoint__1997 {
-    top: 55rem; }
+    top: 84rem; }
+    .goldPoint__1997Second {
+      top: 284%; }
   .goldPoint__1998 {
-    top: 18rem; }
+    top: 54rem; }
+    .goldPoint__1998Second {
+      top: 64rem; }
   .goldPoint__2001 {
-    top: 56rem; }
+    top: 108rem; }
   .goldPoint__2003 {
-    top: 26rem; }
+    top: 77rem; }
   .goldPoint__2006 {
-    top: 34rem; }
+    top: 95rem; }
+    .goldPoint__2006Second {
+      top: 90rem; }
   .goldPoint__2009 {
-    top: 73%; }
+    top: 180%; }
   .goldPoint__2009Second {
-    top: 50%; }
+    top: 116%; }
   .goldPoint__2010 {
     top: 14rem; }
   .goldPoint__2015 {
-    top: 77rem; }
+    top: 238%; }
   .goldPoint__2016 {
-    top: 60rem; }
+    top: 146%; }
   .goldPoint__2016Second {
-    top: 103%; }
+    top: 263%; }
 
 .small-year {
   position: absolute;
@@ -345,6 +368,9 @@ h1 {
   top: 11rem;
   border-left: 3px solid #af8716;
   z-index: 3; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .divider {
+      top: 5rem; } }
 
 .anchor {
   position: fixed;
@@ -353,6 +379,9 @@ h1 {
   content: '';
   width: 2.5rem;
   z-index: 10; }
+  @media (max-width: 1024px) {
+    .anchor {
+      display: none; } }
   .anchor li {
     position: relative; }
     .anchor li .tooltip {
@@ -411,9 +440,17 @@ h1 {
   height: 20.5rem;
   padding-top: 5.5rem;
   text-align: center; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .article__popup {
+      height: 16.5rem;
+      padding-top: 2.5rem; } }
   .article__popupFirst {
     right: 15.142%;
     left: 60.3%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .article__popupFirst {
+        right: 1.142%;
+        left: 55.3%; } }
   .article__popup h2 {
     font-size: 2.1rem;
     font-size: 1.3vw;
@@ -427,11 +464,17 @@ h1 {
     @media screen and (min-width: 1600px) {
       .article__popup h2 {
         font-size: 2.1rem; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .article__popup h2 {
+        font-size: 2rem; } }
   .article__popup span {
     font-size: 1.6rem;
     font-size: 1vw;
     text-transform: uppercase;
     transition: .3s all linear; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .article__popup span {
+        font-size: 1.6rem; } }
   .article__popup button {
     background: transparent;
     border: 0;
@@ -443,6 +486,10 @@ h1 {
     outline: none;
     position: relative;
     transition: .3s all linear; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .article__popup button {
+        margin: 2.5rem auto;
+        margin-bottom: 0; } }
   .article__popup--secondPosition {
     top: 51%;
     right: 5%;
@@ -529,7 +576,7 @@ h1 {
     position: absolute;
     top: 2rem;
     right: 2.5rem;
-    width: auto;
+    width: 0;
     cursor: pointer; }
   .articlePopup-points {
     margin: 0 auto;
@@ -567,6 +614,9 @@ h1 {
   top: 16%;
   width: 60%; }
 
+.visible .articlePopup-close {
+  width: auto; }
+
 .diaporama__big {
   position: relative; }
   .diaporama__big img {
@@ -588,6 +638,10 @@ h1 {
     z-index: 10; }
   .hotelGulfDiaporama .year__secondItem {
     margin-bottom: -5rem; }
+  .hotelGulfDiaporama .modified-year {
+    top: 1rem;
+    position: absolute;
+    left: 41%; }
   .hotelGulfDiaporama .article__popup--fourthPosition {
     top: 12%;
     right: 5%;
@@ -603,9 +657,9 @@ h1 {
   .cinemaFestival__popup {
     padding: 0 40% 0 0; }
   .cinemaFestival .small-year {
-    top: 17rem; }
+    top: 45rem; }
   .cinemaFestival .article__popup--sixthPosition {
-    top: 59%;
+    top: 83%;
     right: 68%;
     left: 9%;
     height: 22rem;
@@ -621,15 +675,15 @@ h1 {
   .societeHoteliare .modified-year {
     position: absolute;
     left: 41%;
-    top: -10rem; }
+    top: 17rem; }
   .societeHoteliare--position {
-    top: 75%;
+    top: 113%;
     right: 57%;
     left: 19%;
     /* bottom: 27.2%; */
     z-index: 3;
     height: initial;
-    bottom: -13%; }
+    bottom: -48%; }
   .societeHoteliareImagePopup {
     right: 0%;
     left: auto;
@@ -642,14 +696,14 @@ h1 {
   .slot-machine .article__smallItem--right {
     margin-left: 55%; }
   .slot-machine--position {
-    top: 80%;
+    top: 125%;
     right: 11.5%;
     left: 67%;
     height: 19rem;
     z-index: 3; }
   .slot-machine .small-year {
     left: 40.4%;
-    top: 18rem; }
+    top: 39rem; }
 
 .diane {
   margin-top: -10rem; }
@@ -657,7 +711,7 @@ h1 {
     margin-left: 27%;
     width: 19%; }
   .diane--position {
-    top: 82%;
+    top: 139%;
     right: 69%;
     left: 5%;
     height: 21rem;
@@ -668,7 +722,7 @@ h1 {
   .diane .articlePopup p {
     padding: 0 3rem; }
   .diane .small-year {
-    top: 51rem; }
+    top: 70rem; }
 
 .dominique {
   margin-top: -4rem; }
@@ -678,13 +732,13 @@ h1 {
     margin-left: 57%;
     z-index: 7; }
   .dominique--position {
-    top: 59%;
+    top: 122%;
     right: 5%;
-    left: 74%;
-    height: 18rem;
+    left: 73%;
+    height: 20rem;
     z-index: 6; }
   .dominique .small-year {
-    top: 40rem; }
+    top: 69rem; }
 
 .fouqets {
   margin-top: 20rem; }
@@ -692,13 +746,13 @@ h1 {
     left: 15%;
     height: 18.5rem;
     right: auto;
-    top: 19%; }
+    top: 57%; }
   .fouqets .js-slide,
   .fouqets .js-slideShow,
   .fouqets .js-slideShowBack {
     top: 0; }
   .fouqets .modified-year {
-    top: 4rem;
+    top: 40rem;
     position: absolute;
     right: 41%; }
 
@@ -708,32 +762,34 @@ h1 {
   .fondation .article__mediumImage {
     margin-left: 7%; }
   .fondation .article__popup--secondPositionImage {
-    z-index: 5;
+    z-index: 3;
     top: 270%;
     width: 45%;
     left: 17%; }
   .fondation--position {
-    top: 35%;
+    top: 104%;
     right: 5%;
     left: 70.5%;
     height: auto;
-    bottom: 33.2%;
+    bottom: -37.8%;
     z-index: 3; }
   .fondation .modified-year {
     position: absolute;
-    top: 8rem;
+    top: 50rem;
     left: 41%; }
 
-.dominique-person .article__smallItem {
-  margin-left: 25%; }
-.dominique-person--position {
-  top: 59%;
-  right: 67%;
-  left: 5%;
-  height: 21rem;
-  z-index: 3; }
-.dominique-person .small-year {
-  top: 44rem; }
+.dominique-person {
+  margin-top: 10rem; }
+  .dominique-person .article__smallItem {
+    margin-left: 25%; }
+  .dominique-person--position {
+    top: 151%;
+    right: 67%;
+    left: 5%;
+    height: 21rem;
+    z-index: 3; }
+  .dominique-person .small-year {
+    top: 93rem; }
 
 .hotel-later {
   margin-top: 20rem; }
@@ -741,31 +797,32 @@ h1 {
     margin-left: -19%; }
   .hotel-later .modified-year {
     position: absolute;
-    top: 20rem;
+    top: 130%;
     left: 41%; }
   .hotel-later--position {
-    top: 130%;
+    top: 207%;
     right: 29%;
     left: 46.5%;
     height: auto;
-    bottom: -67.8%;
+    bottom: -146.8%;
     z-index: 3; }
   .hotel-later .article__popup--secondPositionImage {
     width: 43%;
-    top: 230rem; }
+    top: 400%;
+    z-index: 3; }
 
 .toulouse {
   margin-top: 20rem; }
   .toulouse .article__mediumImage {
     margin-left: 0; }
   .toulouse--position {
-    top: 50%;
-    right: 5%;
-    left: 70.5%;
+    top: 146%;
+    right: 15%;
+    left: 60.5%;
     height: auto;
-    bottom: 16.2%; }
+    bottom: -81.8%; }
   .toulouse .modified-year {
-    top: 36%;
+    top: 137%;
     position: absolute;
     left: 41%; }
   .toulouse .article__popup--secondPositionImage {
@@ -774,26 +831,26 @@ h1 {
 .naoura {
   margin-top: 20rem; }
   .naoura--position {
-    top: 56%;
+    top: 169%;
     right: 70%;
     left: 5%;
     height: auto;
-    bottom: 10.2%;
+    bottom: -101.8%;
     z-index: 3; }
   .naoura .article__popup--secondPositionImage {
     width: 49%;
     left: 39%;
     position: absolute;
     z-index: 4;
-    top: 470%;
+    top: 445%;
     opacity: 0; }
   .naoura .modified-year {
     position: absolute;
-    top: 41%;
+    top: 155%;
     left: 41%; }
 
 .lille {
-  margin-top: 60rem; }
+  margin-top: 79%; }
   .lille .article__mediumImage {
     margin-left: 30%;
     width: 40%; }
@@ -803,8 +860,7 @@ h1 {
     top: 80%;
     right: 18%;
     left: 58%;
-    height: auto;
-    bottom: -15%;
+    height: 20rem;
     z-index: 5; }
   .lille .modified-year {
     top: 0;
@@ -815,7 +871,7 @@ h1 {
     left: 7%;
     position: absolute;
     z-index: 3;
-    top: 483%;
+    top: 343%;
     opacity: 0; }
 
 .resort {
@@ -823,7 +879,7 @@ h1 {
   .resort .article__mediumImage {
     margin-left: -20%;
     width: 40%;
-    margin-top: -52rem; }
+    margin-top: 0; }
   .resort--position {
     top: -31%;
     right: 53%;
@@ -840,19 +896,19 @@ h1 {
     left: 46%;
     position: absolute;
     z-index: 3;
-    top: 440%;
+    top: 298%;
     opacity: 0; }
   .resort .fadeInUp {
     z-index: 6 !important; }
 
 .barriere-video {
-  margin-top: -37rem; }
+  margin-top: -70%; }
   .barriere-video .modified-year {
     position: absolute;
-    top: 32%;
+    top: 107%;
     left: 41%; }
   .barriere-video .article__popup {
-    top: 43rem; }
+    top: 113%; }
   .barriere-video .js-slide,
   .barriere-video .js-slideShow,
   .barriere-video .js-slideShowBack {
@@ -861,19 +917,19 @@ h1 {
 .pierre .article__smallItem {
   width: 22%; }
 .pierre--position {
-  top: 96%;
+  top: 226%;
   right: 73%;
   left: 5%;
   height: 20rem;
   z-index: 3; }
 .pierre .modified-year {
-  top: 60rem;
+  top: 213%;
   left: 40.67%; }
 
 .moma {
   margin-top: 10rem; }
   .moma--position {
-    top: 130%;
+    top: 296%;
     right: 5%;
     left: 70.5%;
     height: 20.5rem; }
@@ -886,10 +942,10 @@ h1 {
     left: 2.45%;
     position: absolute;
     z-index: 3;
-    top: 626%;
+    top: 617%;
     opacity: 0; }
   .moma .modified-year {
-    top: 72%;
+    top: 234%;
     position: absolute;
     left: 41%; }
 
@@ -899,22 +955,22 @@ h1 {
     margin-left: 20%;
     width: 40%; }
   .westminster--position {
-    top: 135%;
+    top: 298%;
     right: 53%;
     left: 25%;
     height: 20rem;
     /* bottom: -68%; */
-    z-index: 3; }
+    z-index: 6; }
   .westminster .modified-year {
     position: absolute;
-    top: 40rem;
+    top: 255%;
     left: 41%; }
   .westminster .article__popup--secondPositionImage {
     width: 50%;
     left: 46%;
     position: absolute;
     z-index: 4;
-    top: 740%;
+    top: 708%;
     opacity: 0; }
     @media screen and (min-width: 1400px) {
       .westminster .article__popup--secondPositionImage {
@@ -923,19 +979,19 @@ h1 {
     z-index: 5; }
 
 .courche {
-  margin-top: 20rem;
+  margin-top: 30rem;
   margin-bottom: -1%; }
   .courche--position {
     left: 15%;
-    height: 18.5rem;
+    height: 20.5rem;
     right: auto;
     z-index: 5; }
   .courche .modified-year {
     position: absolute;
-    top: 45rem;
+    top: 130%;
     left: 41%; }
   .courche .article__popup {
-    top: 61%; }
+    top: 141%; }
   .courche .js-slide,
   .courche .js-slideShow,
   .courche .js-slideShowBack {
@@ -964,24 +1020,28 @@ h1 {
 .lucien {
   margin-top: 5%; }
   .lucien .article__popup--fifthPosition {
-    top: 49%;
+    top: 85%;
     right: 5%;
-    left: 75%;
+    left: 72%;
     height: 19rem;
     z-index: 3; }
   .lucien .modified-year {
-    top: 7rem; }
+    top: 23rem; }
   .lucien .article__smallItem--right {
     margin-left: 63%; }
 
 .casinoHuge {
   margin-top: 20rem; }
   .casinoHuge .modified-year {
-    top: 12rem;
+    top: 58%;
     position: absolute;
     left: 41%; }
   .casinoHuge .article__popup {
-    top: 29%; }
+    top: 70%; }
+  .casinoHuge .js-slide,
+  .casinoHuge .js-slideShow,
+  .casinoHuge .js-slideShowBack {
+    top: 0; }
 
 .editing h1 {
   margin-bottom: 4rem; }
