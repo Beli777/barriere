@@ -95,6 +95,8 @@
     line-height: 2.4rem;
     margin-bottom: 4.2rem;
     text-align: justify;
+    opacity: .2;
+    @include vendor-prefixes(transition, all 1.7s ease);
     @include breakpoint(tablet) {
       line-height: 3rem;
       margin-bottom: 3.6rem;
@@ -103,9 +105,13 @@
       font-size: 2.5rem;
       line-height: 4.2rem;
       margin-bottom: 4rem;
+      opacity: 1;
     }
     &--reg {
       font-family: $baseFont;
+    }
+    &.InView {
+      opacity: 1;
     }
   }
   // Reset img from baseConfig.scss

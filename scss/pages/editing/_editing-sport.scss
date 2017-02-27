@@ -9,7 +9,11 @@
   @include breakpoint(phone) {
     padding: 0 5% 7.5rem;
   }
-  &__body {}
+  &__body {
+    @include breakpoint(overPhone) {
+      opacity: 0;
+    }
+  }
   
   // GOLF
   &--golf {
