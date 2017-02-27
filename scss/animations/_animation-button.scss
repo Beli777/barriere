@@ -4,6 +4,9 @@
    -moz-transition: all .6s cubic-bezier(0.550, 0.055, 0.675, 0.190);
      -o-transition: all .6s cubic-bezier(0.550, 0.055, 0.675, 0.190);
         transition: all .6s cubic-bezier(0.550, 0.055, 0.675, 0.190); /* easeInCubic */
+        @include breakpoint (tablet){
+            z-index: 2;
+        }
 }
 .js-slideShowBack{
     left: 100%;

@@ -29,7 +29,7 @@ h1{
         @include breakpoint(tablet){
           margin-top: 5rem;
           margin-bottom: 5rem;
-          margin-right: 10rem;
+          margin-right: 12rem;
         }
     }
     &__secondItem{
@@ -48,48 +48,85 @@ h1{
     left: 49.2%;
     top: 0%;
     @include breakpoint (toDesktop){
-      width: 10px;
-      height: 10px;
+      width: 15px;
+      height: 15px;
       top: 4%;
+      left: 49%;
+    }
+    &__1926{
+        top: -25%;
     }
     &__1927{
         top: 39rem;
+        @include breakpoint (toDesktop){
+            top: -5rem;
+        }
         &Second{
             top: 31rem;
+            @include breakpoint (toDesktop){
+                top: -5rem;
+            }
         }
         &Third{
           top: 15rem;
+          @include breakpoint(tablet){
+                 top: -10rem;
+          }
         }
     }
     &__1962{
         top: 37rem;
+        @include breakpoint (toDesktop){
+            top: -4rem;
+        }
     }
     &__1975{
         top: 59rem;
+        @include breakpoint (toDesktop){
+            top: 7rem;
+        }
     }
     &__1988{
         top: 53rem;
+        @include breakpoint (toDesktop){
+            top: 5rem;
+        }
         &Second{
           top: 64%;
         }
     }
     &__1990{
         top: 84rem;
+        @include breakpoint (toDesktop){
+                top: -7rem;
+        }
     }
     &__1997{
         top: 84rem;
+        @include breakpoint (toDesktop){
+            top: -3rem;
+        }
         &Second{
               top: 284%;
         }
     }
     &__1998{
         top: 54rem;
+        @include breakpoint (toDesktop){
+            top: -8rem;
+        }
         &Second{
           top: 64rem;
+          @include breakpoint (toDesktop){
+              top: -5rem;
+          }
         }
     }
     &__2001{
         top: 108rem;
+        @include breakpoint (toDesktop){
+            top: -8.7rem;
+        }
     }
     &__2003{
         top: 77rem;
@@ -145,6 +182,8 @@ h1{
   z-index: 3;
   @include breakpoint (tablet){
     top: 5rem;
+    z-index: 0;
+    border-left: 2px solid $colorGold;
   }
 }
 .anchor{

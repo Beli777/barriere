@@ -9,7 +9,7 @@
         text-align: center;
         @include breakpoint (tablet){
           height: 16.5rem;
-          padding-top: 2.5rem;
+          padding-top: 5rem;
         }
         &First{
             right: 15.142%;
@@ -34,6 +34,8 @@
             }
             @include breakpoint (tablet){
               font-size: 2rem;
+              margin-top: 0;
+              margin-bottom: 0;
             }
         }
         span{
@@ -57,7 +59,7 @@
             position: relative;
             transition: .3s all linear;
             @include breakpoint(tablet){
-              margin: 2.5rem auto;
+              margin: 0rem auto;
               margin-bottom: 0;
             }
         }
@@ -66,6 +68,12 @@
             right: 5%;
             left: 70.5%;
             height: 17rem;
+            @include breakpoint (toDesktop){
+                top: 31%;
+                right: 2%;
+                left: 54.5%;
+                height: 17rem;
+            }
             &Image{
                 width: 53%;
                 left: 7%;
@@ -73,6 +81,14 @@
                 z-index: 3;
                 top: 8%;
                 opacity: 0;
+                @include breakpoint (tablet){
+                    width: 69%;
+                    left: -1%;
+                    position: absolute;
+                    z-index: 3;
+                    top: -99%;
+                    opacity: 0;
+                }
             }
         }
         &--thirdPosition{
@@ -123,17 +139,27 @@
           width: 65%;
           img{
             width: 83%;
+            @include breakpoint (toDesktop){
+                width: 90%;
+            }
           }
         }
         &Image{
             position: absolute;
             width: 50%;
+            @include breakpoint(tablet){
+                width: 60%;
+                margin-left: -15rem;
+            }
         }
         .articlePopup p{
             line-height: 2.5rem;
             font-size: 1.0625vw;
             font-family: $baseFont--light;
             max-width: 70%;
+            @include breakpoint (tablet){
+                font-size: 1.7rem;
+            }
         }
     }
     &__small{
@@ -144,6 +170,10 @@
             margin-left: 20%;
             position: relative;
             z-index: 4;
+            @include breakpoint (toDesktop){
+                width: 23%;
+                margin-left: 43.5%;
+            }
             img{
                 position: relative;
                 z-index: 4;
@@ -157,6 +187,9 @@
             font-size: 1.0625vw;
             font-family: $baseFont--light;
             max-width: 70%;
+            @include breakpoint (toDesktop){
+                font-size: 1.7rem;
+            }
         }
     }
     &Popup{
@@ -173,6 +206,9 @@
             margin: 0 auto;
             width: 150px;
             margin-bottom: 4rem;
+            @include breakpoint (toDesktop){
+                width: 120px;
+            }
         }
         p{
             font-size: 1.7rem;
@@ -185,6 +221,10 @@
                 color: $colorGold;
                 text-transform: none;
             }
+            @include breakpoint (tablet){
+                font-size: 1.7rem;
+                max-width: 465px;
+            }
         }
         a{
             color: $colorGold;
@@ -194,6 +234,10 @@
             font-size: 1.4rem;
             font-size: 0.875vw;
             font-family: Georgia;
+            @include breakpoint (tablet){
+                font-size: 1.4rem;
+                margin-top: 7rem;
+            }
             &:before,
             &:after{
                 display: block;
@@ -211,6 +255,12 @@
   right: -13%;
   top: 16%;
   width: 60%;
+  @include breakpoint(toDesktop){
+      position: absolute;
+    right: 0;
+    top: 11%;
+    width: 44%;
+  }
 }
 .visible .articlePopup-close{
   width: auto;
