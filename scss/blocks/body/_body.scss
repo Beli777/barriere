@@ -93,6 +93,9 @@ h1{
         }
         &Second{
           top: 64%;
+          @include breakpoint (toDesktop){
+            top: -10rem;
+          }
         }
     }
     &__1990{
@@ -108,6 +111,9 @@ h1{
         }
         &Second{
               top: 284%;
+              @include breakpoint (toDesktop){
+                  top: -8rem;
+              }
         }
     }
     &__1998{
@@ -125,35 +131,62 @@ h1{
     &__2001{
         top: 108rem;
         @include breakpoint (toDesktop){
-            top: -8.7rem;
+            top: -13.7rem;
         }
     }
     &__2003{
         top: 77rem;
+        @include breakpoint (toDesktop){
+            top: -12rem;
+        }
     }
     &__2006{
       top: 95rem;
+      @include breakpoint(toDesktop){
+            top: -26%;
+      }
         &Second{
           top: 90rem;
+          @include breakpoint(toDesktop){
+              top: -6rem;
+          }
         }
     }
     &__2009{
         top: 180%;
+        @include breakpoint (toDesktop){
+            top: -26%;
+        }
     }
     &__2009Second{
         top: 116%;
+        @include breakpoint (toDesktop){
+            top: -10rem;
+        }
     }
     &__2010{
         top: 14rem;
+        @include breakpoint (toDesktop){
+            top: -8rem;
+        }
     }
     &__2015{
         top: 238%;
+        @include breakpoint(toDesktop){
+            top: -3rem;
+        }
     }
     &__2016{
           top: 146%;
+          @include breakpoint(toDesktop){
+                top: -10rem;
+          }
     }
     &__2016Second{
           top: 263%;
+          @include breakpoint(toDesktop){
+            top: -7rem;
+          }
     }
 }
 .small-year{
