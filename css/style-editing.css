@@ -120,12 +120,18 @@ input[type="search"]::-webkit-search-cancel-button {
 
 @font-face {
   font-family: "Lucien_Bold";
+  src: url("../fonts/eot/Lucien-Bold.eot");
+  /* IE Compat Modes */
   src: url("../fonts/Lucien_Bold.otf") format("opentype"); }
 @font-face {
   font-family: "Lucien_Regular";
+  src: url("../fonts/eot/Lucien-Regular.eot");
+  /* IE Compat Modes */
   src: url("../fonts/Lucien_Regular.otf") format("opentype"); }
 @font-face {
   font-family: "Lucien_Light";
+  src: url("../fonts/eot/Lucien-Light.eot");
+  /* IE Compat Modes */
   src: url("../fonts/Lucien_Light.otf") format("opentype"); }
 html {
   font-size: 10px; }
