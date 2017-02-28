@@ -52,7 +52,12 @@
     @include breakpoint(phone) {
       margin-top: 0;
       margin-left: 15%;
-      width: 60%;
+      width: 65%;
+    }
+    .mob-inline-block {
+      @include breakpoint(phone) {
+        display: inline-block;
+      }
     }
   }
   &__info-body {

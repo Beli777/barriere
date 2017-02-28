@@ -38,6 +38,7 @@
     }
     @include breakpoint(tablet) {
       padding-left: 4.5%;
+      vertical-align: 2rem;
     }
     @include breakpoint(phone) {
       padding-left: 3.5%;

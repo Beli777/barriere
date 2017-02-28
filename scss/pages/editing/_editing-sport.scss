@@ -4,7 +4,7 @@
   display: inline-block;
   padding: 0 12% 7.5rem;
   @include breakpoint(tablet) {
-    padding: 0 13% 6.7rem 14%;
+    padding: 0 13% 6.7rem 12%;
   }
   @include breakpoint(phone) {
     padding: 0 5% 7.5rem;
@@ -53,7 +53,7 @@
       width: 45%;
     }
     @include breakpoint(tablet) {
-      margin-bottom: 5rem;
+      margin-bottom: 3.3rem;
       margin-left: auto;
       margin-right: auto;
       display: block;
@@ -115,7 +115,7 @@
     }
     @include breakpoint(tablet) {
       margin-top: 0;
-      margin-bottom: 5.5rem;
+      margin-bottom: 3.5rem;
       margin-left: auto;
       margin-right: auto;
       display: block;
@@ -141,16 +141,13 @@
   &--tennis__media {
     margin-top: -1.2rem;
     @include breakpoint(tablet) {
-      // margin-top: 0;
-      margin-left: 4%;
+      margin-left: auto;
+      margin-right: auto;
+      display: inline-block;
     }
-  }
-  &--tennis__img1 {
-    margin-bottom: -3rem;
-    margin-left: 7%;
-  }
-  &--tennis__img2 {
-    margin-left: -7%;
+    @include breakpoint(phone) {
+      margin-bottom: 1.5rem;
+    }
   }
   &--tennis__info-body {
     display: inline-block;
@@ -172,12 +169,44 @@
   .editing__num {
     font-size: 10rem;
   }
+  .editing-sport--golf .editing__num {
+    @include breakpoint(tablet) {
+      font-size: 9rem;
+    }
+  }
   .editing__p {
     text-align: center;
   }
   img {
     margin-left: auto;
     margin-right: auto;
+    &.editing-sport--tennis__img1 {
+      margin-bottom: -3rem;
+      margin-left: 7%;
+      @include breakpoint(tablet) {
+        max-width: 95%;
+        padding-left: 4%;
+        margin-top: 0.5rem;
+      }
+      @include breakpoint(phone) {
+        max-width: 78%;
+        margin-left: 16%;
+        margin-top: 0.5rem;
+      }
+    }
+    &.editing-sport--tennis__img2 {
+      margin-left: -7%;
+      @include breakpoint(tablet) {
+        max-width: 96%;
+        padding-left: 6%;
+        margin-top: 0.4rem;
+      }
+      @include breakpoint(phone) {
+        max-width: 78%;
+        margin-left: 5%;
+        margin-top: -1rem;
+      }
+    }
   }
   // .editing__p {
   //   text-align: center;

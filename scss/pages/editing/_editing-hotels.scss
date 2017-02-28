@@ -1,8 +1,11 @@
 //----- Editing Page / Hotels block
 .editing-hotels {
   margin-bottom: 6rem;
+  display: inline-block;
+  @include breakpoint(desktop) {
+    margin-top: -48.5rem;
+  }
   @include breakpoint(toDesktop) {
-    display: inline-block;
     margin-bottom: 8rem;
   }
   

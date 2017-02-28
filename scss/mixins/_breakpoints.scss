@@ -18,6 +18,9 @@
     @else if $point == toDesktop {
         @media (max-width: $toDesktop)                          { @content; }
     }
+    @else if $point == toDesktopLarge {
+        @media (max-width: $toDesktop--large)                   { @content; }
+    }
     @else if $point == tablet {
         @media (min-width: $tablet) and (max-width: $toDesktop) { @content; }
     }
