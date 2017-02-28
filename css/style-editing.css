@@ -1725,6 +1725,7 @@ h1 {
       width: 70%; } }
 .editing__title {
   text-transform: uppercase;
+  font-family: "Lucien_Bold", Arial, Helvetica, Tahoma, sans-serif;
   font-size: 2.1rem;
   font-weight: bold;
   color: #363636; }
@@ -2161,6 +2162,7 @@ h1 {
             bottom: 4.5rem;
             width: 100%; } }
   .editing-persons__person-title {
+    font-family: "Lucien_Bold", Arial, Helvetica, Tahoma, sans-serif;
     opacity: 0;
     font-size: 1.68em;
     text-transform: uppercase;
