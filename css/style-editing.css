@@ -116,17 +116,36 @@ input[type="search"]::-webkit-search-cancel-button {
   max-width: 1600px;
   margin: 0 auto;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  height: auto; }
+  @media (min-width: 1025px) {
+    .innerWrapper {
+      height: 17100px; } }
+  @media screen and (min-width: 1025px) and (max-width: 1300px) {
+    .innerWrapper {
+      height: 14200px; } }
+  @media screen and (min-width: 1301px) and (max-width: 1599px) {
+    .innerWrapper {
+      height: 14700px; } }
 
 @font-face {
   font-family: "Lucien_Bold";
-  src: url("../fonts/Lucien_Bold.otf") format("opentype"); }
+  src: url("../fonts/eot/Lucien-Bold.eot");
+  /* IE */
+  src: url("../fonts/eot/Lucien-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/Lucien-Bold.woff") format("woff"), url("../fonts/ttf/Lucien-Bold.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
 @font-face {
   font-family: "Lucien_Regular";
-  src: url("../fonts/Lucien_Regular.otf") format("opentype"); }
+  src: url("../fonts/eot/Lucien-Regular.eot");
+  /* IE */
+  src: url("../fonts/eot/Lucien-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/Lucien-Regular.woff") format("woff"), url("../fonts/ttf/Lucien-Regular.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
 @font-face {
   font-family: "Lucien_Light";
-  src: url("../fonts/Lucien_Light.otf") format("opentype"); }
+  src: url("../fonts/eot/Lucien-Light.eot");
+  /* IE */
+  src: url("../fonts/eot/Lucien-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/Lucien-Light.woff") format("woff"), url("../fonts/ttf/Lucien-Light.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
 html {
   font-size: 10px; }
 
@@ -300,15 +319,20 @@ h1 {
       height: 15px;
       top: 4%;
       left: 49%; } }
+  .goldPoint__1912 {
+    top: 4%; }
   .goldPoint__1926 {
-    top: -25%; }
+    top: -5%; }
+    @media (max-width: 1024px) {
+      .goldPoint__1926 {
+        top: -25%; } }
   .goldPoint__1927 {
     top: 39rem; }
     @media (max-width: 1024px) {
       .goldPoint__1927 {
         top: -5rem; } }
     .goldPoint__1927Second {
-      top: 31rem; }
+      top: 58%; }
       @media (max-width: 1024px) {
         .goldPoint__1927Second {
           top: -5rem; } }
@@ -323,7 +347,7 @@ h1 {
       .goldPoint__1962 {
         top: -4rem; } }
   .goldPoint__1975 {
-    top: 59rem; }
+    top: 91%; }
     @media (max-width: 1024px) {
       .goldPoint__1975 {
         top: 7rem; } }
@@ -333,17 +357,17 @@ h1 {
       .goldPoint__1988 {
         top: 5rem; } }
     .goldPoint__1988Second {
-      top: 64%; }
+      top: 300%; }
       @media (max-width: 1024px) {
         .goldPoint__1988Second {
           top: -10rem; } }
   .goldPoint__1990 {
-    top: 84rem; }
+    top: 181%; }
     @media (max-width: 1024px) {
       .goldPoint__1990 {
         top: -7rem; } }
   .goldPoint__1997 {
-    top: 84rem; }
+    top: 158%; }
     @media (max-width: 1024px) {
       .goldPoint__1997 {
         top: -3rem; } }
@@ -353,32 +377,32 @@ h1 {
         .goldPoint__1997Second {
           top: -8rem; } }
   .goldPoint__1998 {
-    top: 54rem; }
+    top: 58%; }
     @media (max-width: 1024px) {
       .goldPoint__1998 {
         top: -8rem; } }
     .goldPoint__1998Second {
-      top: 64rem; }
+      top: 116%; }
       @media (max-width: 1024px) {
         .goldPoint__1998Second {
           top: -5rem; } }
   .goldPoint__2001 {
-    top: 108rem; }
+    top: 214%; }
     @media (max-width: 1024px) {
       .goldPoint__2001 {
         top: -13.7rem; } }
   .goldPoint__2003 {
-    top: 77rem; }
+    top: 73%; }
     @media (max-width: 1024px) {
       .goldPoint__2003 {
         top: -12rem; } }
   .goldPoint__2006 {
-    top: 95rem; }
+    top: 154%; }
     @media (max-width: 1024px) {
       .goldPoint__2006 {
         top: -26%; } }
     .goldPoint__2006Second {
-      top: 90rem; }
+      top: 158%; }
       @media (max-width: 1024px) {
         .goldPoint__2006Second {
           top: -6rem; } }
@@ -393,7 +417,7 @@ h1 {
       .goldPoint__2009Second {
         top: -10rem; } }
   .goldPoint__2010 {
-    top: 14rem; }
+    top: 280%; }
     @media (max-width: 1024px) {
       .goldPoint__2010 {
         top: -8rem; } }
@@ -505,7 +529,7 @@ h1 {
 
 .article__popup {
   position: absolute;
-  top: 0;
+  top: -1.9rem;
   right: 24rem;
   background: #FFF;
   height: 20.5rem;
@@ -517,7 +541,7 @@ h1 {
       padding-top: 5rem; } }
   .article__popupFirst {
     right: 15.142%;
-    left: 60.3%; }
+    left: 59.6%; }
     @media (min-width: 768px) and (max-width: 1024px) {
       .article__popupFirst {
         right: 1.142%;
@@ -566,8 +590,8 @@ h1 {
   .article__popup--secondPosition {
     top: 51%;
     right: 5%;
-    left: 70.5%;
-    height: 17rem; }
+    left: 69.8%;
+    height: 21rem; }
     @media (max-width: 1024px) {
       .article__popup--secondPosition {
         top: 31%;
@@ -635,7 +659,7 @@ h1 {
           width: 90%; } }
   .article__mediumImage {
     position: absolute;
-    width: 50%; }
+    width: 49.212%; }
     @media (min-width: 768px) and (max-width: 1024px) {
       .article__mediumImage {
         width: 60%;
@@ -698,7 +722,8 @@ h1 {
     text-align: justify; }
     .articlePopup p span {
       color: #af8716;
-      text-transform: none; }
+      text-transform: none;
+      font-family: "Lucien_Bold", Arial, Helvetica, Tahoma, sans-serif; }
     @media (min-width: 768px) and (max-width: 1024px) {
       .articlePopup p {
         font-size: 1.7rem;
@@ -727,16 +752,22 @@ h1 {
   position: absolute;
   right: -13%;
   top: 16%;
-  width: 60%; }
+  width: 0; }
   @media (max-width: 1024px) {
     .popupImage {
       position: absolute;
       right: 0;
       top: 11%;
-      width: 44%; } }
+      width: 0; } }
 
 .visible .articlePopup-close {
   width: auto; }
+
+.visible .popupImage {
+  width: 60%; }
+  @media (max-width: 1024px) {
+    .visible .popupImage {
+      width: 44%; } }
 
 .diaporama__big {
   position: relative; }
@@ -810,8 +841,11 @@ h1 {
         margin-left: 12%; } }
   .cinemaFestival__popup {
     padding: 0 40% 0 0; }
+    @media (min-width: 1025px) {
+      .cinemaFestival__popup {
+        padding-top: 4rem; } }
   .cinemaFestival .small-year {
-    top: 45rem; }
+    top: 68%; }
     @media (max-width: 1024px) {
       .cinemaFestival .small-year {
         left: 37%;
@@ -830,7 +864,9 @@ h1 {
     right: 68%;
     left: 9%;
     height: 22rem;
-    z-index: 3; }
+    z-index: 3;
+    padding-left: 5rem;
+    padding-right: 5rem; }
     @media (max-width: 1024px) {
       .cinemaFestival .article__popup--sixthPosition {
         top: 20%;
@@ -848,6 +884,8 @@ h1 {
     @media (max-width: 1024px) {
       .societeHoteliare .article__mediumItem {
         margin-left: 58%; } }
+  .societeHoteliare .fadeInUp {
+    z-index: 5; }
   @media (max-width: 1024px) {
     .societeHoteliare .article__popup h2 {
       line-height: 2rem; } }
@@ -862,7 +900,7 @@ h1 {
   .societeHoteliare .modified-year {
     position: absolute;
     left: 41%;
-    top: 17rem; }
+    top: 30%; }
     @media (max-width: 1024px) {
       .societeHoteliare .modified-year {
         left: 31%;
@@ -874,7 +912,8 @@ h1 {
     /* bottom: 27.2%; */
     z-index: 3;
     height: initial;
-    bottom: -48%; }
+    bottom: -48%;
+    height: 20rem; }
     @media (max-width: 1024px) {
       .societeHoteliare--position {
         top: 7%;
@@ -958,7 +997,7 @@ h1 {
       .diane .articlePopup p {
         padding: 0; } }
   .diane .small-year {
-    top: 70rem; }
+    top: 150%; }
     @media (max-width: 1024px) {
       .diane .small-year {
         left: 15%;
@@ -994,7 +1033,7 @@ h1 {
         height: 17rem;
         z-index: 6; } }
   .dominique .small-year {
-    top: 69rem; }
+    top: 127%; }
     @media (max-width: 1024px) {
       .dominique .small-year {
         left: 52%;
@@ -1018,7 +1057,7 @@ h1 {
   .fouqets .js-slideShowBack {
     top: 0; }
   .fouqets .modified-year {
-    top: 40rem;
+    top: 41%;
     position: absolute;
     right: 41%; }
     @media (max-width: 1024px) {
@@ -1031,8 +1070,13 @@ h1 {
   position: relative;
   margin-top: 20rem; }
   .fondation .article__mediumImage {
-    margin-left: -20%;
-    width: 60%; }
+    width: 50%;
+    top: 0px;
+    margin-left: 7%; }
+    @media (max-width: 1024px) {
+      .fondation .article__mediumImage {
+        margin-left: -20%;
+        width: 60%; } }
   .fondation .article__popup--secondPositionImage {
     z-index: 3;
     top: 270%;
@@ -1063,7 +1107,7 @@ h1 {
         z-index: 3; } }
   .fondation .modified-year {
     position: absolute;
-    top: 50rem;
+    top: 88%;
     left: 41%; }
     @media (max-width: 1024px) {
       .fondation .modified-year {
@@ -1099,7 +1143,7 @@ h1 {
         height: 19rem;
         z-index: 3; } }
   .dominique-person .small-year {
-    top: 93rem; }
+    top: 180%; }
     @media (max-width: 1024px) {
       .dominique-person .small-year {
         top: -25rem;
@@ -1239,7 +1283,7 @@ h1 {
         left: 12%; } }
 
 .lille {
-  margin-top: 79%; }
+  margin-top: 10%; }
   @media (max-width: 1024px) {
     .lille {
       margin-top: 15rem; } }
@@ -1256,7 +1300,7 @@ h1 {
       .lille .fadeInUp {
         z-index: 6 !important; } }
   .lille--position {
-    top: 80%;
+    top: 330%;
     right: 18%;
     left: 58%;
     height: 20rem;
@@ -1269,7 +1313,7 @@ h1 {
         height: 15rem;
         z-index: 5; } }
   .lille .modified-year {
-    top: 0;
+    top: 250%;
     left: 40.3%;
     position: absolute; }
     @media (max-width: 1024px) {
@@ -1282,7 +1326,7 @@ h1 {
     left: 7%;
     position: absolute;
     z-index: 3;
-    top: 343%;
+    top: 595%;
     opacity: 0; }
     @media (max-width: 1024px) {
       .lille .article__popup--secondPositionImage {
@@ -1308,12 +1352,14 @@ h1 {
         width: 60%;
         margin-top: 0; } }
   .resort--position {
-    top: -31%;
+    top: 210%;
     right: 53%;
     left: 23%;
-    height: auto;
+    height: 21rem;
     bottom: 90%;
-    z-index: 3; }
+    z-index: 3;
+    padding-left: 5rem;
+    padding-right: 5rem; }
     @media (max-width: 1024px) {
       .resort--position {
         top: -13%;
@@ -1322,7 +1368,7 @@ h1 {
         height: 20rem;
         z-index: 3; } }
   .resort .modified-year {
-    top: 33%;
+    top: 268%;
     left: 41%;
     position: absolute; }
     @media (max-width: 1024px) {
@@ -1334,8 +1380,8 @@ h1 {
     width: 46%;
     left: 46%;
     position: absolute;
-    z-index: 3;
-    top: 298%;
+    z-index: 5;
+    top: 543%;
     opacity: 0; }
     @media (max-width: 1024px) {
       .resort .article__popup--secondPositionImage {
@@ -1349,7 +1395,7 @@ h1 {
     z-index: 6 !important; }
 
 .barriere-video {
-  margin-top: -70%; }
+  margin-top: 10%; }
   @media (max-width: 1024px) {
     .barriere-video {
       margin-top: 20rem; } }
@@ -1469,7 +1515,9 @@ h1 {
     left: 25%;
     height: 20rem;
     /* bottom: -68%; */
-    z-index: 6; }
+    z-index: 6;
+    padding-left: 5rem;
+    padding-right: 5rem; }
     @media (max-width: 1024px) {
       .westminster--position {
         top: 10%;
@@ -1550,9 +1598,14 @@ h1 {
 .francaise {
   margin-top: 20rem; }
   .francaise .year__secondItem {
-    top: -18rem;
+    top: -12rem;
     position: absolute;
-    left: 31%; }
+    left: 42%; }
+    @media (max-width: 1024px) {
+      .francaise .year__secondItem {
+        top: -18rem;
+        position: absolute;
+        left: 31%; } }
   @media (max-width: 1024px) {
     .francaise .articlePopup a {
       margin-top: 2rem; } }
@@ -1566,13 +1619,22 @@ h1 {
     .andre {
       margin-top: 15%; } }
   .andre .article__popup--thirdPosition {
-    top: 9%;
-    right: 45%;
+    top: 69%;
+    right: 73%;
     left: 5%;
-    height: 19rem;
+    height: 25rem;
     z-index: 3;
     padding-left: 5rem;
     padding-right: 5rem; }
+    @media (max-width: 1024px) {
+      .andre .article__popup--thirdPosition {
+        top: 9%;
+        right: 45%;
+        left: 5%;
+        height: 19rem;
+        z-index: 3;
+        padding-left: 5rem;
+        padding-right: 5rem; } }
   .andre .year {
     top: 24rem; }
     @media (max-width: 1024px) {
@@ -1607,7 +1669,8 @@ h1 {
         left: 31%;
         top: -18rem; } }
   .lucien .article__smallItem--right {
-    margin-left: 63%; }
+    margin-left: 60%;
+    width: 23%; }
     @media (max-width: 1024px) {
       .lucien .article__smallItem--right {
         margin-left: 58%;
@@ -1625,7 +1688,9 @@ h1 {
         position: absolute;
         left: 12%; } }
   .casinoHuge .article__popup {
-    top: 70%; }
+    top: 70%;
+    right: 5%;
+    left: 70%; }
     @media (max-width: 1024px) {
       .casinoHuge .article__popup {
         top: -21%; } }
