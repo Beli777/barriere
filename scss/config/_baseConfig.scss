@@ -51,6 +51,8 @@ input[type="search"]::-webkit-search-cancel-button { display: none; }
     overflow: hidden;
     position: relative;
     height: auto;
+}
+.timelineWrapper{
     @include breakpoint (desktop){
         height: 17100px;
     }
