@@ -5,7 +5,9 @@
   display: inline-block;
   width: 100%;
   padding: 11rem 0 0 6%;
-  margin-bottom: -12rem;
+  z-index: 3;
+  margin-bottom: .7rem;
+  // margin-bottom: -12rem;
   @include breakpoint(tablet) {
     padding: 7.7rem 2% 34rem 7.5%;
     margin-bottom: 0.5rem;
@@ -34,7 +36,7 @@
     left: 0;
     width: 100%;
     height: 13rem;
-    @include breakpoint(tablet) {
+    @include breakpoint(overPhone) {
       display: none;
     }
     @include breakpoint(phone) {
@@ -67,6 +69,7 @@
     @include breakpoint(tablet) {
       width: 67%;
       padding-left: 3%;
+      margin-bottom: 3.5rem;
     }
     @include breakpoint(phone) {
       padding-left: 0;
@@ -120,6 +123,9 @@
     position: relative;
     float: right;
     width: 53%;
+    @include breakpoint(desktop) {
+      padding-bottom: 19%;
+    }
     @include breakpoint(phone) {
       width: 87%;
       padding-top: 7rem;
@@ -128,7 +134,7 @@
     .editing-culture__img-circle {
       max-width: 25%;
       position: absolute;
-      bottom: 23.5%;
+      bottom: 8.5%;
       left: -20%;
       @include breakpoint(tablet) {
         max-width: 37%;
@@ -157,6 +163,10 @@
       margin-top: -4.5rem;
       position: relative;
       z-index: $levelMiddle;
+      @include breakpoint(desktop) {
+        position: absolute;
+        right: 0;
+      }
       @include breakpoint(tablet) {
         max-width: 87.5%;
         margin-top: -1.5rem;

@@ -60,7 +60,12 @@
     left: 10.8rem;
     top: -1rem;
     @include breakpoint(phone) {
-      top: 0.5rem;
+      top: 0;
+    }
+    .mob-inline {
+      @include breakpoint(phone) {
+        display: inline;
+      }
     }
   }
 }

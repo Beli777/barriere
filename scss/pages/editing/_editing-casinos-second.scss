@@ -8,6 +8,8 @@
   margin-top: -33.5rem;
   padding: 10rem 0 3rem;
   text-align: center;
+  position: relative;
+  z-index: $levelBottom;
   @include breakpoint(tablet) {
     width: 69.5%;
     padding: 5.8rem 0 1rem;
@@ -55,6 +57,9 @@
     }
     &-second {
       margin-bottom: 3.3rem;
+      @include breakpoint(tablet) {
+        margin-bottom: 2.5rem;
+      }
       @include breakpoint(phone) {
         margin-bottom: 4.3rem;
       }
