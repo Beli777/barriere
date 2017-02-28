@@ -18,7 +18,7 @@ var WM = (function($) {
         $parent.find(button).on('click touch', function(){
             var $this = $(this);
             var popup = $('.show');
-            $(this).addClass('hideButton')
+            $(this).addClass('hideButton');
             setTimeout(function(){$this.closest($parent).find(button).addClass('displayNone')},500);
             setTimeout(function(){$this.closest($parent).find($slide).removeClass('js-slideShowBack').addClass('js-slideShow')},2000);
             $this.closest($parent).find('h2, .info').addClass('fadeOut');
@@ -97,7 +97,9 @@ var WM = (function($) {
             }
             var tl = new TimelineMax();
             var popupMedium = $this.closest($parent).find('.article__popup');
-            tl.to(popupMedium , 0.5, {top: popupTop, bottom: popupBottom, 'z-index': popupIndex, height: popupHeight, ease:Strong.easeInOut})
+            tl.to(popupMedium , 0.001,  {transition: '0.001s all linear'})
+            .to(popupMedium , 0.5, {top: popupTop, bottom: popupBottom, 'z-index': popupIndex, height: popupHeight, ease:Strong.easeInOut})
+            .to(popupMedium , 0.001,  {transition: 'none'})
               .to(popupMedium, 0.3, {left: popupLeft, right: popupRight, ease:Strong.easeInOut});
               var time = new TimelineMax();
               var mediumImage = $this.closest($parent).find('.article__mediumItem img');
@@ -243,8 +245,8 @@ var WM = (function($) {
     }
     var mediumDiaporamaSecond = function(){
         if ($(window).width() > 1024) {
-            mixinMediumDiaporama('.js-showArticle','.hotelGulfDiaporama', '-40%', '49%', '28%', '54.5%', '-7rem', '12.2%', '0', '', '');
-            mixinMediumDiaporamaClose('.articlePopup-close','.hotelGulfDiaporama', '0%', '83%', '0%', '70.5%', '-9%', '74.2%', '5%', '', '');
+            mixinMediumDiaporama('.js-showArticle','.hotelGulfDiaporama', '-40%', '49%', '28%', '54.5%', '16%', '-14rem', '0', '', '');
+            mixinMediumDiaporamaClose('.articlePopup-close','.hotelGulfDiaporama', '0%', '77%', '-2%', '65.5%', '16%', '26rem', '10%', '', '');
         }
         if ($(window).width() < 1023) {
             mixinMediumDiaporama('.js-showArticle','.hotelGulfDiaporama', '', '', '', '26.5%', '-74%', '17.2%', '2%', '4', '');
@@ -325,7 +327,7 @@ var WM = (function($) {
     var mediumDiaporamaMoma = function(){
         if ($(window).width() > 1024) {
           mixinMediumDiaporama('.js-showArticle','.moma', '0%', '74%', '-15%', '54.5%', '296%', '', '5%', '', '47.5rem');
-          mixinMediumDiaporamaClose('.articlePopup-close','.moma', '-12%', '74%', '-20%', '70.5%', '296%', '', '5%', '', '20.5rem');
+          mixinMediumDiaporamaClose('.articlePopup-close','.moma', '', '74%', '-20%', '70.5%', '296%', '', '5%', '', '20.5rem');
         }
         if ($(window).width() < 1023) {
           mixinMediumDiaporama('.js-showArticle','.moma', '', '', '', '24.5%', '-64%', '', '2%', '10', '40.5rem');
@@ -445,42 +447,43 @@ var WM = (function($) {
             scroll.to($divider , 0.1, {height: scrollSize + 400, ease:Strong.easeInOut})
         })
     }
-    var anchor = function(button, section){
+    var anchor = function(button, section, offsetY){
         var $button = $(button);
         var $tooltip = $('.tooltip');
         $button.on('click touch', function(){
-          TweenLite.to(window, 2, {scrollTo:{y: section, offsetY:200}, ease:Strong.easeInOut});
+          TweenLite.to(window, 2, {scrollTo:{y: section, offsetY: offsetY}, ease:Strong.easeInOut});
           $('.anchor a').parent().find('a').removeClass('activeButton');
           $(this).addClass('activeButton');
           $tooltip.parent().find('.active').removeClass('active');
           $(this).parent().find($tooltip).addClass('active');
+          setTimeout(function(){ $tooltip.parent().find('.active').removeClass('active');},4000);
         });
     }
     var anchorFunction = function(){
-        anchor('.menu1','.diaporama__bigFirst h3');
-        anchor('.menu2','.francaise h3');
-        anchor('.menu3','.andre h3');
-        anchor('.menu4','.hotelGulfDiaporama h3');
-        anchor('.menu5','.lucien h3');
-        anchor('.menu6','.cinemaFestival h3');
-        anchor('.menu7','.societeHoteliare h3' );
-        anchor('.menu8','.slot-machine h3');
-        anchor('.menu9','.diane h3');
-        anchor('.menu10','.dominique h3');
-        anchor('.menu11','.fouqets h3');
-        anchor('.menu12','.fondation h3');
-        anchor('.menu13','.dominique-person h3');
-        anchor('.menu14','.casinoHuge h3');
-        anchor('.menu15','.hotel-later h3');
-        anchor('.menu16','.toulouse h3');
-        anchor('.menu17','.naoura h3');
-        anchor('.menu18','.lille h3');
-        anchor('.menu19','.resort h3');
-        anchor('.menu20','.diaporama__bigSecond h3');
-        anchor('.menu21','.pierre h3');
-        anchor('.menu22','.moma h3');
-        anchor('.menu23','.westminster h3');
-        anchor('.menu24','.courche h3' );
+        anchor('.menu1','.diaporama__bigFirst h3', '');
+        anchor('.menu2','.francaise h3', '400');
+        anchor('.menu3','.andre h3', '600');
+        anchor('.menu4','.hotelGulfDiaporama h3', '500');
+        anchor('.menu5','.lucien h3', '900');
+        anchor('.menu6','.cinemaFestival h3', '1000');
+        anchor('.menu7','.societeHoteliare h3', '900' );
+        anchor('.menu8','.slot-machine h3', '1000');
+        anchor('.menu9','.diane h3', '1400');
+        anchor('.menu10','.dominique h3', '1400');
+        anchor('.menu11','.fouqets h3', '1500');
+        anchor('.menu12','.fondation .article__mediumItem', '1000');
+        anchor('.menu13','.dominique-person h3', '1800');
+        anchor('.menu14','.casinoHuge h3', '1800');
+        anchor('.menu15','.hotel-later h3', '2000');
+        anchor('.menu16','.toulouse h3', '2200');
+        anchor('.menu17','.naoura h3', '2400');
+        anchor('.menu18','.lille h3', '2600');
+        anchor('.menu19','.resort h3', '2800');
+        anchor('.menu20','.diaporama__bigSecond h3', '3000');
+        anchor('.menu21','.pierre h3', '2400');
+        anchor('.menu22','.moma h3', '1700');
+        anchor('.menu23','.westminster h3', '1100');
+        anchor('.menu24','.courche h3', '400' );
     }
     $(window).on('load',function() {
          getHeight('.article__medium');

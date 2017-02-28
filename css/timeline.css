@@ -448,7 +448,7 @@ h1 {
 .divider {
   width: 1px;
   position: absolute;
-  left: 49.8%;
+  left: 49.7%;
   top: 11rem;
   border-left: 3px solid #af8716;
   z-index: 3; }
@@ -642,9 +642,9 @@ h1 {
     width: 50%;
     margin: 0 auto; }
   .article__medium .hotelGulf {
-    width: 65%; }
+    width: 60%; }
     .article__medium .hotelGulf img {
-      width: 83%; }
+      width: 77%; }
       @media (max-width: 1024px) {
         .article__medium .hotelGulf img {
           width: 90%; } }
@@ -762,9 +762,6 @@ h1 {
 
 .diaporama__big {
   position: relative; }
-  .diaporama__big img {
-    transition: all 0.5s ease;
-    transition: 0.5s all ease; }
   .diaporama__big-sliderItem {
     display: inline-block;
     width: 100%; }
@@ -802,11 +799,10 @@ h1 {
     .hotelGulfDiaporama .articlePopup a {
       margin-top: 5rem; } }
   .hotelGulfDiaporama .article__popup--fourthPosition {
-    top: 12%;
-    right: 5%;
-    left: 70.5%;
-    height: auto;
-    bottom: 55.2%; }
+    top: 16%;
+    right: 10%;
+    left: 65.5%;
+    bottom: 26rem; }
     @media (max-width: 1024px) {
       .hotelGulfDiaporama .article__popup--fourthPosition {
         top: -36%;
@@ -814,9 +810,11 @@ h1 {
         left: 55.5%;
         height: auto;
         bottom: 77.2%; } }
-  @media (max-width: 1024px) {
-    .hotelGulfDiaporama .article__mediumImage {
-      margin-left: -10rem; } }
+  .hotelGulfDiaporama .article__mediumImage {
+    margin-left: -2%; }
+    @media (max-width: 1024px) {
+      .hotelGulfDiaporama .article__mediumImage {
+        margin-left: -10rem; } }
 
 .cinemaFestival {
   margin-top: -15rem; }
@@ -1371,7 +1369,7 @@ h1 {
     width: 46%;
     left: 46%;
     position: absolute;
-    z-index: 5;
+    z-index: 3;
     top: 543%;
     opacity: 0; }
     @media (max-width: 1024px) {
@@ -1400,7 +1398,8 @@ h1 {
         top: -14rem;
         left: 35%; } }
   .barriere-video .article__popup {
-    top: 113%; }
+    top: 113%;
+    z-index: 7; }
     @media (max-width: 1024px) {
       .barriere-video .article__popup {
         top: -26%;
@@ -1449,7 +1448,8 @@ h1 {
     top: 296%;
     right: 5%;
     left: 70.5%;
-    height: 20.5rem; }
+    height: 20.5rem;
+    z-index: 5; }
     @media (max-width: 1024px) {
       .moma--position {
         top: -30%;
@@ -1690,6 +1690,17 @@ h1 {
   .casinoHuge .js-slideShowBack {
     top: 0; }
 
+.editing-page {
+  font-size: 10px; }
+  @media (max-width: 1599px) {
+    .editing-page {
+      font-size: 0.626vw; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-page {
+      font-size: 1.31vw; } }
+  @media (max-width: 767px) {
+    .editing-page {
+      font-size: 1.57vw; } }
 .editing h1 {
   margin-bottom: 4rem; }
 .editing__head {
@@ -1763,13 +1774,7 @@ h1 {
   font-size: 1.7rem;
   line-height: 2.4rem;
   margin-bottom: 4.2rem;
-  text-align: justify;
-  opacity: .2;
-  -webkit-transition: all 1.7s ease;
-  -moz-transition: all 1.7s ease;
-  -ms-transition: all 1.7s ease;
-  -o-transition: all 1.7s ease;
-  transition: all 1.7s ease; }
+  text-align: justify; }
   @media (min-width: 768px) and (max-width: 1024px) {
     .editing__p {
       line-height: 3rem;
@@ -1827,7 +1832,8 @@ h1 {
         width: 56.5%; } }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-birth__info-head {
-        padding-left: 4.5%; } }
+        padding-left: 4.5%;
+        vertical-align: 2rem; } }
     @media (max-width: 767px) {
       .editing-birth__info-head {
         padding-left: 3.5%; } }
@@ -1885,7 +1891,7 @@ h1 {
     .editing-staff {
       margin-left: 0;
       margin-bottom: 4.5rem;
-      padding: 13rem 0 17rem 5%; } }
+      padding: 12.3rem 0 17rem 5%; } }
   .editing-staff:after {
     content: '';
     background-color: #f9f9f9;
@@ -1918,7 +1924,7 @@ h1 {
       width: 27%;
       position: absolute;
       right: 9%;
-      top: 6rem; } }
+      top: 7rem; } }
   @media (max-width: 767px) {
     .editing-staff__media-top {
       width: 28%;
@@ -1946,7 +1952,7 @@ h1 {
       .editing-staff__media-bottom {
         width: 22%;
         margin-left: 10%;
-        margin-top: 0; } }
+        margin-top: .7rem; } }
     @media (max-width: 767px) {
       .editing-staff__media-bottom {
         width: 100%;
@@ -1966,11 +1972,17 @@ h1 {
       .editing-staff__info-head {
         width: 63%;
         margin-left: 14%;
-        margin-top: 3rem; } }
+        margin-top: 3.5rem; } }
   .editing-staff__title-top {
     position: relative;
     left: 1rem;
     top: 1.5rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-staff__title-top {
+        top: 2rem; } }
+    @media (max-width: 767px) {
+      .editing-staff__title-top {
+        left: 2.5rem; } }
   .editing-staff__title-bottom {
     position: relative;
     left: -1.4rem;
@@ -2040,7 +2052,7 @@ h1 {
       height: 8rem;
       display: inline-block;
       position: absolute;
-      top: 0;
+      top: -0.5rem;
       right: 0; } }
   @media (min-width: 768px) {
     .editing-persons__body {
@@ -2268,7 +2280,10 @@ h1 {
     top: -1rem; }
     @media (max-width: 767px) {
       .editing-turnover .editing__title {
-        top: 0.5rem; } }
+        top: 0; } }
+    @media (max-width: 767px) {
+      .editing-turnover .editing__title .mob-inline {
+        display: inline; } }
 
 .editing-casinos-first {
   background-color: #FFF;
@@ -2303,13 +2318,14 @@ h1 {
         width: 100%; } }
   .editing-casinos-first__media {
     margin-bottom: 2.7rem; }
-    @media (max-width: 1024px) {
+    @media (min-width: 768px) and (max-width: 1024px) {
       .editing-casinos-first__media {
-        margin-bottom: 4rem; } }
+        margin-bottom: 4.5rem; } }
     @media (max-width: 767px) {
       .editing-casinos-first__media {
         max-width: 62%;
-        float: right; } }
+        float: right;
+        margin-bottom: 4rem; } }
   .editing-casinos-first__text {
     padding: 0 14% 0 4%; }
     @media (min-width: 768px) and (max-width: 1024px) {
@@ -2346,7 +2362,9 @@ h1 {
   border-right: 1rem solid #f9f9f9;
   margin-top: -33.5rem;
   padding: 10rem 0 3rem;
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  z-index: 1; }
   @media (min-width: 768px) and (max-width: 1024px) {
     .editing-casinos-second {
       width: 69.5%;
@@ -2378,6 +2396,9 @@ h1 {
       float: right; } }
   .editing-casinos-second__media-second {
     margin-bottom: 3.3rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-casinos-second__media-second {
+        margin-bottom: 2.5rem; } }
     @media (max-width: 767px) {
       .editing-casinos-second__media-second {
         margin-bottom: 4.3rem; } }
@@ -2437,10 +2458,13 @@ h1 {
     font-size: 10rem; }
 
 .editing-hotels {
-  margin-bottom: 6rem; }
+  margin-bottom: 6rem;
+  display: inline-block; }
+  @media (min-width: 1025px) {
+    .editing-hotels {
+      margin-top: -48.5rem; } }
   @media (max-width: 1024px) {
     .editing-hotels {
-      display: inline-block;
       margin-bottom: 8rem; } }
   .editing-hotels__info {
     width: 49.5%;
@@ -2762,7 +2786,7 @@ h1 {
   padding: 0 12% 7.5rem; }
   @media (min-width: 768px) and (max-width: 1024px) {
     .editing-sport {
-      padding: 0 13% 6.7rem 14%; } }
+      padding: 0 13% 6.7rem 12%; } }
   @media (max-width: 767px) {
     .editing-sport {
       padding: 0 5% 7.5rem; } }
@@ -2804,7 +2828,7 @@ h1 {
         width: 45%; } }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-sport--golf__info-head {
-        margin-bottom: 5rem;
+        margin-bottom: 3.3rem;
         margin-left: auto;
         margin-right: auto;
         display: block; } }
@@ -2856,7 +2880,7 @@ h1 {
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-sport--tennis__info-head {
         margin-top: 0;
-        margin-bottom: 5.5rem;
+        margin-bottom: 3.5rem;
         margin-left: auto;
         margin-right: auto;
         display: block; } }
@@ -2879,12 +2903,12 @@ h1 {
     margin-top: -1.2rem; }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-sport--tennis__media {
-        margin-left: 4%; } }
-  .editing-sport--tennis__img1 {
-    margin-bottom: -3rem;
-    margin-left: 7%; }
-  .editing-sport--tennis__img2 {
-    margin-left: -7%; }
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block; } }
+    @media (max-width: 767px) {
+      .editing-sport--tennis__media {
+        margin-bottom: 1.5rem; } }
   .editing-sport--tennis__info-body {
     display: inline-block;
     vertical-align: top;
@@ -2902,11 +2926,39 @@ h1 {
         display: block; } }
   .editing-sport .editing__num {
     font-size: 10rem; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-sport .editing-sport--golf .editing__num {
+      font-size: 9rem; } }
   .editing-sport .editing__p {
     text-align: center; }
   .editing-sport img {
     margin-left: auto;
     margin-right: auto; }
+    .editing-sport img.editing-sport--tennis__img1 {
+      margin-bottom: -3rem;
+      margin-left: 7%; }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .editing-sport img.editing-sport--tennis__img1 {
+          max-width: 95%;
+          padding-left: 4%;
+          margin-top: 0.5rem; } }
+      @media (max-width: 767px) {
+        .editing-sport img.editing-sport--tennis__img1 {
+          max-width: 78%;
+          margin-left: 16%;
+          margin-top: 0.5rem; } }
+    .editing-sport img.editing-sport--tennis__img2 {
+      margin-left: -7%; }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .editing-sport img.editing-sport--tennis__img2 {
+          max-width: 96%;
+          padding-left: 6%;
+          margin-top: 0.4rem; } }
+      @media (max-width: 767px) {
+        .editing-sport img.editing-sport--tennis__img2 {
+          max-width: 78%;
+          margin-left: 5%;
+          margin-top: -1rem; } }
 
 .editing-spa {
   background-color: #FFF;
@@ -2989,8 +3041,8 @@ h1 {
       position: relative;
       left: -26%;
       display: inline-block;
-      padding-left: 5%;
-      padding-right: 5%; }
+      padding-left: 3%;
+      padding-right: 3%; }
       @media (min-width: 768px) and (max-width: 1024px) {
         .editing-spa__info-head .editing__title--padding {
           left: -44%; } }
@@ -3040,7 +3092,8 @@ h1 {
   display: inline-block;
   width: 100%;
   padding: 11rem 0 0 6%;
-  margin-bottom: -12rem; }
+  z-index: 3;
+  margin-bottom: .7rem; }
   @media (min-width: 768px) and (max-width: 1024px) {
     .editing-culture {
       padding: 7.7rem 2% 34rem 7.5%;
@@ -3066,7 +3119,7 @@ h1 {
     left: 0;
     width: 100%;
     height: 13rem; }
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 768px) {
       .editing-culture:after {
         display: none; } }
     @media (max-width: 767px) {
@@ -3096,7 +3149,8 @@ h1 {
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-culture__info-head {
         width: 67%;
-        padding-left: 3%; } }
+        padding-left: 3%;
+        margin-bottom: 3.5rem; } }
     @media (max-width: 767px) {
       .editing-culture__info-head {
         padding-left: 0;
@@ -3142,6 +3196,9 @@ h1 {
     position: relative;
     float: right;
     width: 53%; }
+    @media (min-width: 1025px) {
+      .editing-culture__media {
+        padding-bottom: 19%; } }
     @media (max-width: 767px) {
       .editing-culture__media {
         width: 87%;
@@ -3150,7 +3207,7 @@ h1 {
     .editing-culture__media .editing-culture__img-circle {
       max-width: 25%;
       position: absolute;
-      bottom: 23.5%;
+      bottom: 8.5%;
       left: -20%; }
       @media (min-width: 768px) and (max-width: 1024px) {
         .editing-culture__media .editing-culture__img-circle {
@@ -3177,6 +3234,10 @@ h1 {
       margin-top: -4.5rem;
       position: relative;
       z-index: 2; }
+      @media (min-width: 1025px) {
+        .editing-culture__media .editing-culture__img-bottom {
+          position: absolute;
+          right: 0; } }
       @media (min-width: 768px) and (max-width: 1024px) {
         .editing-culture__media .editing-culture__img-bottom {
           max-width: 87.5%;
@@ -3429,7 +3490,10 @@ h1 {
       .editing-bees__title {
         margin-top: 0;
         margin-left: 15%;
-        width: 60%; } }
+        width: 65%; } }
+    @media (max-width: 767px) {
+      .editing-bees__title .mob-inline-block {
+        display: inline-block; } }
   .editing-bees__info-body {
     width: 42%;
     float: right; }
