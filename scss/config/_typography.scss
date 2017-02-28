@@ -10,7 +10,7 @@
          url('../fonts/LucienBold/Lucien-Bold.woff2') format('woff2'), /* Super Modern Browsers */
          url('../fonts/LucienBold/Lucien-Bold.woff') format('woff'), /* Pretty Modern Browsers */
          url('../fonts/LucienBold/Lucien-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/LucienBold/Lucien-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+         url('../fonts/LucienBold/Lucien-Bold.svg#svgLucien-Bold') format('svg'); /* Legacy iOS */
   }
 @font-face {
     font-family: "Lucien_Regular";
@@ -19,7 +19,7 @@
          url('../fonts/LucienRegular/Lucien-Regular.woff2') format('woff2'), /* Super Modern Browsers */
          url('../fonts/LucienRegular/Lucien-Regular.woff') format('woff'), /* Pretty Modern Browsers */
          url('../fonts/LucienRegular/Lucien-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/LucienRegular/Lucien-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+         url('../fonts/LucienRegular/Lucien-Regular.svg#svgLucien-Regular') format('svg'); /* Legacy iOS */
   }
 @font-face {
     font-family: "Lucien_Light";
@@ -28,7 +28,25 @@
          url('../fonts/LucienLight/Lucien-Light.woff2') format('woff2'), /* Super Modern Browsers */
          url('../fonts/LucienLight/Lucien-Light.woff') format('woff'), /* Pretty Modern Browsers */
          url('../fonts/LucienLight/Lucien-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/LucienLight/Lucien-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+         url('../fonts/LucienLight/Lucien-Light.svg#svgLucien-Light') format('svg'); /* Legacy iOS */
+  }
+@font-face {
+    font-family: "Georgia_Bold";
+    src: url('../fonts/Georgia-Bold/Georgia-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Georgia-Bold/Georgia-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Georgia-Bold/Georgia-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/Georgia-Bold/Georgia-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/Georgia-Bold/Georgia-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Georgia-Bold/Georgia-Bold.svg#svgGeorgia-Bold') format('svg'); /* Legacy iOS */
+  }
+@font-face {
+    font-family: "Georgia_Regular";
+    src: url('../fonts/Georgia-Regular/Georgia-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Georgia-Regular/Georgia-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Georgia-Regular/Georgia-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/Georgia-Regular/Georgia-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/Georgia-Regular/Georgia-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Georgia-Regular/Georgia-Regular.svg#svgGeorgia-Regular') format('svg'); /* Legacy iOS */
   }
 //------FONT SIZES
 html {
@@ -83,7 +101,7 @@ h1 {
 }
 h2 {
   font: {
-    family: $baseFont--secondary;
+    family: $baseFont--secondary-b;
     weight: bold;
     size: 3.5rem;
   }

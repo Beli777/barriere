@@ -37,10 +37,11 @@ $fontDefault     : Arial, Helvetica, Tahoma, sans-serif;
 $baseFont        : "Lucien_Regular", $fontDefault;
 $baseFont--bold  : "Lucien_Bold", $fontDefault;
 $baseFont--light : "Lucien_Light", $fontDefault;
-$baseFont--year  : Georgia;
+$baseFont--year  : "Georgia_Bold", $fontDefault;
 $baseFont--italic: "", $fontDefault;
 
-$baseFont--secondary  : Georgia;
+$baseFont--secondary-r  : "Georgia_Regular", $fontDefault;
+$baseFont--secondary-b  : "Georgia_Bold", $fontDefault;
 
 //------Z INDEX LEVELS
 $levelBottom: 1;

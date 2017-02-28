@@ -119,33 +119,46 @@ input[type="search"]::-webkit-search-cancel-button {
   overflow: hidden;
   position: relative;
   height: auto; }
-  @media (min-width: 1025px) {
-    .innerWrapper {
-      height: 17100px; } }
-  @media screen and (min-width: 1025px) and (max-width: 1300px) {
-    .innerWrapper {
-      height: 14200px; } }
-  @media screen and (min-width: 1301px) and (max-width: 1599px) {
-    .innerWrapper {
-      height: 14700px; } }
+
+@media (min-width: 1025px) {
+  .timelineWrapper {
+    height: 17100px; } }
+@media screen and (min-width: 1025px) and (max-width: 1300px) {
+  .timelineWrapper {
+    height: 14200px; } }
+@media screen and (min-width: 1301px) and (max-width: 1599px) {
+  .timelineWrapper {
+    height: 14700px; } }
 
 @font-face {
   font-family: "Lucien_Bold";
   src: url("../fonts/LucienBold/Lucien-Bold.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/LucienBold/Lucien-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/LucienBold/Lucien-Bold.woff2") format("woff2"), url("../fonts/LucienBold/Lucien-Bold.woff") format("woff"), url("../fonts/LucienBold/Lucien-Bold.ttf") format("truetype"), url("../fonts/LucienBold/Lucien-Bold.svg#svgFontName") format("svg");
+  src: url("../fonts/LucienBold/Lucien-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/LucienBold/Lucien-Bold.woff2") format("woff2"), url("../fonts/LucienBold/Lucien-Bold.woff") format("woff"), url("../fonts/LucienBold/Lucien-Bold.ttf") format("truetype"), url("../fonts/LucienBold/Lucien-Bold.svg#svgLucien-Bold") format("svg");
   /* Legacy iOS */ }
 @font-face {
   font-family: "Lucien_Regular";
   src: url("../fonts/LucienRegular/Lucien-Regular.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/LucienRegular/Lucien-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/LucienRegular/Lucien-Regular.woff2") format("woff2"), url("../fonts/LucienRegular/Lucien-Regular.woff") format("woff"), url("../fonts/LucienRegular/Lucien-Regular.ttf") format("truetype"), url("../fonts/LucienRegular/Lucien-Regular.svg#svgFontName") format("svg");
+  src: url("../fonts/LucienRegular/Lucien-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/LucienRegular/Lucien-Regular.woff2") format("woff2"), url("../fonts/LucienRegular/Lucien-Regular.woff") format("woff"), url("../fonts/LucienRegular/Lucien-Regular.ttf") format("truetype"), url("../fonts/LucienRegular/Lucien-Regular.svg#svgLucien-Regular") format("svg");
   /* Legacy iOS */ }
 @font-face {
   font-family: "Lucien_Light";
   src: url("../fonts/LucienLight/Lucien-Light.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/LucienLight/Lucien-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/LucienLight/Lucien-Light.woff2") format("woff2"), url("../fonts/LucienLight/Lucien-Light.woff") format("woff"), url("../fonts/LucienLight/Lucien-Light.ttf") format("truetype"), url("../fonts/LucienLight/Lucien-Light.svg#svgFontName") format("svg");
+  src: url("../fonts/LucienLight/Lucien-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/LucienLight/Lucien-Light.woff2") format("woff2"), url("../fonts/LucienLight/Lucien-Light.woff") format("woff"), url("../fonts/LucienLight/Lucien-Light.ttf") format("truetype"), url("../fonts/LucienLight/Lucien-Light.svg#svgLucien-Light") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: "Georgia_Bold";
+  src: url("../fonts/Georgia-Bold/Georgia-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Georgia-Bold/Georgia-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia-Bold/Georgia-Bold.woff2") format("woff2"), url("../fonts/Georgia-Bold/Georgia-Bold.woff") format("woff"), url("../fonts/Georgia-Bold/Georgia-Bold.ttf") format("truetype"), url("../fonts/Georgia-Bold/Georgia-Bold.svg#svgGeorgia-Bold") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: "Georgia_Regular";
+  src: url("../fonts/Georgia-Regular/Georgia-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Georgia-Regular/Georgia-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia-Regular/Georgia-Regular.woff2") format("woff2"), url("../fonts/Georgia-Regular/Georgia-Regular.woff") format("woff"), url("../fonts/Georgia-Regular/Georgia-Regular.ttf") format("truetype"), url("../fonts/Georgia-Regular/Georgia-Regular.svg#svgGeorgia-Regular") format("svg");
   /* Legacy iOS */ }
 html {
   font-size: 10px; }
@@ -179,7 +192,7 @@ h1 {
       font-size: 3.2rem; } }
 
 h2 {
-  font-family: Georgia;
+  font-family: "Georgia_Bold", Arial, Helvetica, Tahoma, sans-serif;
   font-weight: bold;
   font-size: 3.5rem;
   text-align: center;
@@ -256,7 +269,7 @@ h3 {
   text-transform: capitalize; }
 
 .btn {
-  font-family: Georgia;
+  font-family: "Georgia_Regular", Arial, Helvetica, Tahoma, sans-serif;
   color: #af8716;
   border-top: 1px solid;
   border-bottom: 1px solid;
@@ -280,7 +293,7 @@ h1 {
   font-size: 5rem;
   font-size: 3.125vw;
   text-align: center;
-  font-family: Georgia;
+  font-family: "Georgia_Bold", Arial, Helvetica, Tahoma, sans-serif;
   font-weight: bold;
   -webkit-font-smoothing: antialiased; }
   @media screen and (min-width: 1650px) {
@@ -1773,7 +1786,7 @@ h1 {
     .editing__points {
       height: 3rem; } }
 .editing__num {
-  font-family: Georgia;
+  font-family: "Georgia_Bold", Arial, Helvetica, Tahoma, sans-serif;
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
   color: #363636;
@@ -2440,7 +2453,7 @@ h1 {
         .editing-casinos-second__text .editing__p {
           text-align: left; } }
   .editing-casinos-second__ranking {
-    font-family: Georgia;
+    font-family: "Georgia_Bold", Arial, Helvetica, Tahoma, sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     color: #e3e3e3;
@@ -2747,7 +2760,7 @@ h1 {
     margin-bottom: -4rem; }
   .editing-drink__title-middle {
     font-size: 4rem;
-    font-family: Georgia;
+    font-family: "Georgia_Bold", Arial, Helvetica, Tahoma, sans-serif;
     letter-spacing: 0; }
   .editing-drink__title-bottom {
     margin-left: 7rem;
@@ -2782,7 +2795,7 @@ h1 {
         max-width: 87%; } }
   .editing-drink__warning {
     font-size: 1.4rem;
-    font-family: Georgia;
+    font-family: "Georgia_Regular", Arial, Helvetica, Tahoma, sans-serif;
     margin-top: 2rem; }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-drink__warning {
