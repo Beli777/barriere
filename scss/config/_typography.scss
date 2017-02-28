@@ -5,25 +5,31 @@
 //------FONT-FACE
 @font-face {
     font-family: "Lucien_Bold";
-    src: url('../fonts/eot/Lucien-Bold.eot'); /* IE */
-    src: url('../fonts/eot/Lucien-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/woff/Lucien-Bold.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../fonts/ttf/Lucien-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
-}
+    src: url('../fonts/LucienBold/Lucien-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/LucienBold/Lucien-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/LucienBold/Lucien-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/LucienBold/Lucien-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/LucienBold/Lucien-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/LucienBold/Lucien-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
 @font-face {
     font-family: "Lucien_Regular";
-    src: url('../fonts/eot/Lucien-Regular.eot'); /* IE */
-    src: url('../fonts/eot/Lucien-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/woff/Lucien-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../fonts/ttf/Lucien-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
-}
+    src: url('../fonts/LucienRegular/Lucien-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/LucienRegular/Lucien-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/LucienRegular/Lucien-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/LucienRegular/Lucien-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/LucienRegular/Lucien-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/LucienRegular/Lucien-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
 @font-face {
     font-family: "Lucien_Light";
-    src: url('../fonts/eot/Lucien-Light.eot'); /* IE */
-    src: url('../fonts/eot/Lucien-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/woff/Lucien-Light.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../fonts/ttf/Lucien-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
-}
+    src: url('../fonts/LucienLight/Lucien-Light.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/LucienLight/Lucien-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/LucienLight/Lucien-Light.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/LucienLight/Lucien-Light.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/LucienLight/Lucien-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/LucienLight/Lucien-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
 //------FONT SIZES
 html {
     $fontSizePX: $baseFontSize + 'px';

@@ -96,7 +96,8 @@ img {
 
 a {
   outline: none;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased; }
 
 html {
   -webkit-font-smoothing: antialiased; }
@@ -130,22 +131,22 @@ input[type="search"]::-webkit-search-cancel-button {
 
 @font-face {
   font-family: "Lucien_Bold";
-  src: url("../fonts/eot/Lucien-Bold.eot");
-  /* IE */
-  src: url("../fonts/eot/Lucien-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/Lucien-Bold.woff") format("woff"), url("../fonts/ttf/Lucien-Bold.ttf") format("truetype");
-  /* Safari, Android, iOS */ }
+  src: url("../fonts/LucienBold/Lucien-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/LucienBold/Lucien-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/LucienBold/Lucien-Bold.woff2") format("woff2"), url("../fonts/LucienBold/Lucien-Bold.woff") format("woff"), url("../fonts/LucienBold/Lucien-Bold.ttf") format("truetype"), url("../fonts/LucienBold/Lucien-Bold.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
 @font-face {
   font-family: "Lucien_Regular";
-  src: url("../fonts/eot/Lucien-Regular.eot");
-  /* IE */
-  src: url("../fonts/eot/Lucien-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/Lucien-Regular.woff") format("woff"), url("../fonts/ttf/Lucien-Regular.ttf") format("truetype");
-  /* Safari, Android, iOS */ }
+  src: url("../fonts/LucienRegular/Lucien-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/LucienRegular/Lucien-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/LucienRegular/Lucien-Regular.woff2") format("woff2"), url("../fonts/LucienRegular/Lucien-Regular.woff") format("woff"), url("../fonts/LucienRegular/Lucien-Regular.ttf") format("truetype"), url("../fonts/LucienRegular/Lucien-Regular.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
 @font-face {
   font-family: "Lucien_Light";
-  src: url("../fonts/eot/Lucien-Light.eot");
-  /* IE */
-  src: url("../fonts/eot/Lucien-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/Lucien-Light.woff") format("woff"), url("../fonts/ttf/Lucien-Light.ttf") format("truetype");
-  /* Safari, Android, iOS */ }
+  src: url("../fonts/LucienLight/Lucien-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/LucienLight/Lucien-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/LucienLight/Lucien-Light.woff2") format("woff2"), url("../fonts/LucienLight/Lucien-Light.woff") format("woff"), url("../fonts/LucienLight/Lucien-Light.ttf") format("truetype"), url("../fonts/LucienLight/Lucien-Light.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
 html {
   font-size: 10px; }
 
@@ -280,7 +281,8 @@ h1 {
   font-size: 3.125vw;
   text-align: center;
   font-family: Georgia;
-  font-weight: bold; }
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased; }
   @media screen and (min-width: 1650px) {
     .year {
       font-size: 5rem; } }
@@ -457,7 +459,7 @@ h1 {
 .divider {
   width: 1px;
   position: absolute;
-  left: 49.8%;
+  left: 49.7%;
   top: 11rem;
   border-left: 3px solid #af8716;
   z-index: 3; }
@@ -651,9 +653,9 @@ h1 {
     width: 50%;
     margin: 0 auto; }
   .article__medium .hotelGulf {
-    width: 65%; }
+    width: 60%; }
     .article__medium .hotelGulf img {
-      width: 83%; }
+      width: 77%; }
       @media (max-width: 1024px) {
         .article__medium .hotelGulf img {
           width: 90%; } }
@@ -771,9 +773,6 @@ h1 {
 
 .diaporama__big {
   position: relative; }
-  .diaporama__big img {
-    transition: all 0.5s ease;
-    transition: 0.5s all ease; }
   .diaporama__big-sliderItem {
     display: inline-block;
     width: 100%; }
@@ -811,11 +810,10 @@ h1 {
     .hotelGulfDiaporama .articlePopup a {
       margin-top: 5rem; } }
   .hotelGulfDiaporama .article__popup--fourthPosition {
-    top: 12%;
-    right: 5%;
-    left: 70.5%;
-    height: auto;
-    bottom: 55.2%; }
+    top: 16%;
+    right: 10%;
+    left: 65.5%;
+    bottom: 26rem; }
     @media (max-width: 1024px) {
       .hotelGulfDiaporama .article__popup--fourthPosition {
         top: -36%;
@@ -823,9 +821,11 @@ h1 {
         left: 55.5%;
         height: auto;
         bottom: 77.2%; } }
-  @media (max-width: 1024px) {
-    .hotelGulfDiaporama .article__mediumImage {
-      margin-left: -10rem; } }
+  .hotelGulfDiaporama .article__mediumImage {
+    margin-left: -2%; }
+    @media (max-width: 1024px) {
+      .hotelGulfDiaporama .article__mediumImage {
+        margin-left: -10rem; } }
 
 .cinemaFestival {
   margin-top: -15rem; }
@@ -1380,7 +1380,7 @@ h1 {
     width: 46%;
     left: 46%;
     position: absolute;
-    z-index: 5;
+    z-index: 3;
     top: 543%;
     opacity: 0; }
     @media (max-width: 1024px) {
@@ -1409,7 +1409,8 @@ h1 {
         top: -14rem;
         left: 35%; } }
   .barriere-video .article__popup {
-    top: 113%; }
+    top: 113%;
+    z-index: 7; }
     @media (max-width: 1024px) {
       .barriere-video .article__popup {
         top: -26%;
@@ -1458,7 +1459,8 @@ h1 {
     top: 296%;
     right: 5%;
     left: 70.5%;
-    height: 20.5rem; }
+    height: 20.5rem;
+    z-index: 5; }
     @media (max-width: 1024px) {
       .moma--position {
         top: -30%;
@@ -1773,6 +1775,7 @@ h1 {
 .editing__num {
   font-family: Georgia;
   font-weight: bold;
+  -webkit-font-smoothing: antialiased;
   color: #363636;
   display: inline-block;
   vertical-align: middle;
