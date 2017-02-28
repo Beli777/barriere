@@ -1,7 +1,7 @@
 .article{
     &__popup{
         position: absolute;
-        top: 0;
+        top: -1.9rem;
         right: 24rem;
         background: $colorWhite;
         height: 20.5rem;
@@ -13,7 +13,7 @@
         }
         &First{
             right: 15.142%;
-            left: 60.3%;
+            left: 59.6%;
             @include breakpoint (tablet){
               right: 1.142%;
               left: 55.3%;
@@ -66,8 +66,8 @@
         &--secondPosition{
             top: 51%;
             right: 5%;
-            left: 70.5%;
-            height: 17rem;
+            left: 69.8%;
+            height: 21rem;
             @include breakpoint (toDesktop){
                 top: 31%;
                 right: 2%;
@@ -146,7 +146,7 @@
         }
         &Image{
             position: absolute;
-            width: 50%;
+            width: 49.212%;
             @include breakpoint(tablet){
                 width: 60%;
                 margin-left: -15rem;
@@ -220,6 +220,7 @@
             span{
                 color: $colorGold;
                 text-transform: none;
+                font-family: $baseFont--bold;
             }
             @include breakpoint (tablet){
                 font-size: 1.7rem;
@@ -254,14 +255,20 @@
   position: absolute;
   right: -13%;
   top: 16%;
-  width: 60%;
+  width: 0;
   @include breakpoint(toDesktop){
       position: absolute;
     right: 0;
     top: 11%;
-    width: 44%;
+    width: 0;
   }
 }
 .visible .articlePopup-close{
   width: auto;
+}
+.visible .popupImage{
+    width: 60%;
+    @include breakpoint (toDesktop){
+        width: 44%;
+    }
 }

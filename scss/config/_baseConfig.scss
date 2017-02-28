@@ -50,4 +50,14 @@ input[type="search"]::-webkit-search-cancel-button { display: none; }
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+    height: auto;
+    @include breakpoint (desktop){
+        height: 17100px;
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1300px){
+            height: 14200px;
+    }
+    @media screen and (min-width: 1301px) and (max-width: 1599px){
+            height: 14700px;
+    }
 }

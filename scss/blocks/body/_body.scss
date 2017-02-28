@@ -53,8 +53,14 @@ h1{
       top: 4%;
       left: 49%;
     }
+    &__1912{
+        top: 4%;
+    }
     &__1926{
-        top: -25%;
+        top: -5%;
+        @include breakpoint(toDesktop){
+            top: -25%;
+        }
     }
     &__1927{
         top: 39rem;
@@ -62,7 +68,7 @@ h1{
             top: -5rem;
         }
         &Second{
-            top: 31rem;
+            top: 58%;
             @include breakpoint (toDesktop){
                 top: -5rem;
             }
@@ -81,7 +87,7 @@ h1{
         }
     }
     &__1975{
-        top: 59rem;
+        top: 91%;
         @include breakpoint (toDesktop){
             top: 7rem;
         }
@@ -92,20 +98,20 @@ h1{
             top: 5rem;
         }
         &Second{
-          top: 64%;
+          top: 300%;
           @include breakpoint (toDesktop){
             top: -10rem;
           }
         }
     }
     &__1990{
-        top: 84rem;
+        top: 181%;
         @include breakpoint (toDesktop){
                 top: -7rem;
         }
     }
     &__1997{
-        top: 84rem;
+        top: 158%;
         @include breakpoint (toDesktop){
             top: -3rem;
         }
@@ -117,36 +123,36 @@ h1{
         }
     }
     &__1998{
-        top: 54rem;
+        top: 58%;
         @include breakpoint (toDesktop){
             top: -8rem;
         }
         &Second{
-          top: 64rem;
+            top: 116%;
           @include breakpoint (toDesktop){
               top: -5rem;
           }
         }
     }
     &__2001{
-        top: 108rem;
+            top: 214%;
         @include breakpoint (toDesktop){
             top: -13.7rem;
         }
     }
     &__2003{
-        top: 77rem;
+            top: 73%;
         @include breakpoint (toDesktop){
             top: -12rem;
         }
     }
     &__2006{
-      top: 95rem;
+        top: 154%;
       @include breakpoint(toDesktop){
             top: -26%;
       }
         &Second{
-          top: 90rem;
+            top: 158%;
           @include breakpoint(toDesktop){
               top: -6rem;
           }
@@ -165,7 +171,7 @@ h1{
         }
     }
     &__2010{
-        top: 14rem;
+        top: 280%;
         @include breakpoint (toDesktop){
             top: -8rem;
         }

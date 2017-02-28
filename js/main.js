@@ -192,7 +192,7 @@ var WM = (function($) {
     //button, parent, left, right, height
     var bigDiaporama = function(){
         if ($(window).width() > 1024) {
-            mixinBigDiaporama('.js-showArticle','.diaporama__big','50.3%','5.5%','65rem');
+            mixinBigDiaporama('.js-showArticle','.diaporama__big','49.99%','5.5%','65rem');
             mixinBigDiaporamaClose('.articlePopup-close','.diaporama__big','60.3%','15.142%','20.5rem');
           }
           if ($(window).width() < 1023) {
@@ -212,8 +212,8 @@ var WM = (function($) {
     }
     var bigDiaporamaCasinoHuge = function(){
         if ($(window).width() > 1024) {
-            mixinBigDiaporama('.js-showArticle','.casinoHuge','50.3%','5.5%','51rem');
-            mixinBigDiaporamaClose('.articlePopup-close','.casinoHuge','60.3%','15.142%','20.5rem');
+            mixinBigDiaporama('.js-showArticle','.casinoHuge','53%','5%','70rem');
+            mixinBigDiaporamaClose('.articlePopup-close','.casinoHuge','70%','5%','20.5rem');
         }
         if ($(window).width() < 1023) {
             mixinBigDiaporama('.js-showArticle','.casinoHuge','0%','0%','65rem');
@@ -253,7 +253,7 @@ var WM = (function($) {
     }
     var mediumDiaporamaSociete = function(){
         if ($(window).width() > 1024) {
-            mixinMediumDiaporama('.js-showArticle','.societeHoteliare', '65%', '35%', '7%', '19%', '34%', '-48%', '46%', '4', '');
+            mixinMediumDiaporama('.js-showArticle','.societeHoteliare', '65%', '35%', '7%', '14%', '34%', '-48%', '46%', '3', '65rem');
             mixinMediumDiaporamaClose('.articlePopup-close','.societeHoteliare', '0', '50%', '0', '19%', '113%', '-48%', '57%', '3', '');
         }
         if ($(window).width() < 1023) {
@@ -303,8 +303,8 @@ var WM = (function($) {
     }
     var mediumDiaporamaLille = function(){
         if ($(window).width() > 1024) {
-            mixinMediumDiaporama('.js-showArticle','.lille', '-20%', '25%', '20%', '53%', '20%', '-15%', '5%', '', '52rem');
-            mixinMediumDiaporamaClose('.articlePopup-close','.lille', '0%', '40%', '30%', '58%', '80%', '-15%', '18%', '', '20rem');
+            mixinMediumDiaporama('.js-showArticle','.lille', '-20%', '25%', '20%', '53%', '277%', '-15%', '5%', '', '52rem');
+            mixinMediumDiaporamaClose('.articlePopup-close','.lille', '0%', '40%', '30%', '58%', '330%', '-15%', '18%', '', '20rem');
         }
         if ($(window).width() < 1023) {
             mixinMediumDiaporama('.js-showArticle','.lille', '', '', '', '20%', '20%', '-15%', '', '', '43rem');
@@ -314,8 +314,8 @@ var WM = (function($) {
     //button, parent, top, width, left, popupLeft, popupTop, popupBottom, popupRight, popupIndex, popupHeight
     var mediumDiaporamaResort = function(){
         if ($(window).width() > 1024) {
-            mixinMediumDiaporama('.js-showArticle','.resort', '62%', '25%', '0%', '10%', '-31%', '33%', '47%', '', '');
-            mixinMediumDiaporamaClose('.articlePopup-close','.resort', '0%', '40%', '-20%', '23%', '-31%', '90%', '53%', '', '');
+            mixinMediumDiaporama('.js-showArticle','.resort', '62%', '25%', '0%', '10%', '210%', '33%', '47%', '', '49rem');
+            mixinMediumDiaporamaClose('.articlePopup-close','.resort', '0%', '40%', '-20%', '23%', '210%', '90%', '53%', '', '');
         }
         if ($(window).width() < 1023) {
             mixinMediumDiaporama('.js-showArticle','.resort', '', '', '', '5%', '-59%', '', '27%', '5', '54.3rem');
@@ -360,7 +360,7 @@ var WM = (function($) {
     var smallDiaporamaLucien = function(){
         if ($(window).width() > 1024) {
             mixinSmallDiaporama('.js-showArticle','.lucien', '61%', '0%', '24%','','', '54rem', '50%');
-            mixinSmallDiaporamaClose('.articlePopup-close','.lucien', '73%', '5%', '85%','','','19rem', '63%');
+            mixinSmallDiaporamaClose('.articlePopup-close','.lucien', '72%', '5%', '85%','','','19rem', '60%');
         }
         if ($(window).width() < 1023) {
             mixinSmallDiaporama('.js-showArticle','.lucien', '7%', '29%', '-40%','','10', '35rem', '68%');
@@ -369,7 +369,7 @@ var WM = (function($) {
     }
     var smallDiaporamaCinema = function(){
         if ($(window).width() > 1024) {
-            mixinSmallDiaporama('.js-showArticle','.cinemaFestival', '9%', '29%', '46%','','11', '57.5rem','');
+            mixinSmallDiaporama('.js-showArticle','.cinemaFestival', '9%', '29%', '46%','','11', '48rem','');
             mixinSmallDiaporamaClose('.articlePopup-close','.cinemaFestival', '9%', '68%', '83%','','3','22rem', '');
         }
         if ($(window).width() < 1023) {
