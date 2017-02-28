@@ -2,7 +2,7 @@
 .editing-renovation {
   background-color: $colorMain;
   margin: 0 6% 1.5rem;
-  padding: 8.5rem 5%;
+  padding: 8rem 5%;
   @include breakpoint(tablet) {
     margin: 0 0 6.5rem;
     padding: 7rem 0 0;
@@ -23,7 +23,7 @@
   &__info-head {
     position: absolute;
     top: 14%;
-    left: 1%;
+    left: 1.5%;
     @include breakpoint(tablet) {
       top: 21%;
       left: 0%;
@@ -57,7 +57,7 @@
   }
   &__media {
     float: right;
-    width: 62%;
+    width: 62.5%;
     @include breakpoint(tablet) {
       width: 56.5%;
     }
@@ -68,7 +68,7 @@
   
   .editing__point--smaller {
     vertical-align: -2.5rem;
-    margin-right: 3%;
+    margin-right: 2%;
     @include breakpoint(phone) {
       margin-right: 0;
     }

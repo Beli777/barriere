@@ -1825,7 +1825,8 @@ h1 {
   display: inline-block;
   position: relative;
   background-color: #FFF;
-  padding: 8.5rem 5% 7.5rem 6.2%; }
+  padding: 8.5rem 5% 7.5rem 6.2%;
+  z-index: 1; }
   @media (min-width: 1025px) {
     .editing-birth {
       width: 79%; } }
@@ -2219,7 +2220,7 @@ h1 {
         margin-bottom: 3.5rem; } }
   .editing-persons__info-head--top .editing__title {
     display: inline-block;
-    width: 60%;
+    width: 70%;
     vertical-align: middle;
     margin-left: 2%; }
     @media (min-width: 768px) and (max-width: 1024px) {
@@ -2299,8 +2300,6 @@ h1 {
       @media (max-width: 767px) {
         .editing-turnover .editing__num span {
           font-size: 4.1rem; } }
-  .editing-turnover .editing__point--smaller {
-    vertical-align: -3rem; }
   .editing-turnover .editing__title {
     position: relative;
     left: 10.8rem;
@@ -2406,12 +2405,26 @@ h1 {
       margin-bottom: 5rem; } }
   .editing-casinos-second__info-head {
     margin-bottom: 3.3rem; }
+  .editing-casinos-second__num-wrap {
+    display: inline-block;
+    vertical-align: middle; }
   .editing-casinos-second__title-top {
     display: inline-block;
     vertical-align: -3rem;
     padding-left: 1%; }
   .editing-casinos-second__title-bottom {
-    margin: -0.5rem auto 0; }
+    margin: -0.5rem auto 0;
+    max-width: 55%;
+    text-align: left;
+    padding-left: 8.5%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-casinos-second__title-bottom {
+        max-width: 70%;
+        padding-left: 5.5%; } }
+    @media (max-width: 767px) {
+      .editing-casinos-second__title-bottom {
+        max-width: 80%;
+        padding-left: 5.5%; } }
   @media (max-width: 767px) {
     .editing-casinos-second__info-body-top {
       margin: 0 auto;
@@ -2430,7 +2443,7 @@ h1 {
       .editing-casinos-second__media-second {
         margin-bottom: 4.3rem; } }
     .editing-casinos-second__media-second img {
-      max-width: 40%; }
+      max-width: 39%; }
       @media (min-width: 768px) and (max-width: 1024px) {
         .editing-casinos-second__media-second img {
           max-width: 60%; } }
@@ -2457,10 +2470,7 @@ h1 {
     text-transform: uppercase;
     font-weight: bold;
     color: #e3e3e3;
-    margin: -3rem 0 4.5rem -9%; }
-    @media (min-width: 768px) and (max-width: 1024px) {
-      .editing-casinos-second__ranking {
-        margin-bottom: 5rem; } }
+    margin: -3rem 0 5rem -9%; }
     @media (max-width: 767px) {
       .editing-casinos-second__ranking {
         width: 50%;
@@ -2489,7 +2499,7 @@ h1 {
   display: inline-block; }
   @media (min-width: 1025px) {
     .editing-hotels {
-      margin-top: -48.5rem; } }
+      margin-top: -46rem; } }
   @media (max-width: 1024px) {
     .editing-hotels {
       margin-bottom: 8rem; } }
@@ -2556,7 +2566,7 @@ h1 {
 .editing-renovation {
   background-color: #FFF;
   margin: 0 6% 1.5rem;
-  padding: 8.5rem 5%; }
+  padding: 8rem 5%; }
   @media (min-width: 768px) and (max-width: 1024px) {
     .editing-renovation {
       margin: 0 0 6.5rem;
@@ -2575,7 +2585,7 @@ h1 {
   .editing-renovation__info-head {
     position: absolute;
     top: 14%;
-    left: 1%; }
+    left: 1.5%; }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-renovation__info-head {
         top: 21%;
@@ -2607,7 +2617,7 @@ h1 {
         margin-top: 5rem; } }
   .editing-renovation__media {
     float: right;
-    width: 62%; }
+    width: 62.5%; }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-renovation__media {
         width: 56.5%; } }
@@ -2616,7 +2626,7 @@ h1 {
         width: 100%; } }
   .editing-renovation .editing__point--smaller {
     vertical-align: -2.5rem;
-    margin-right: 3%; }
+    margin-right: 2%; }
     @media (max-width: 767px) {
       .editing-renovation .editing__point--smaller {
         margin-right: 0; } }
@@ -3351,6 +3361,8 @@ h1 {
     @media (max-width: 767px) {
       .editing-foundation__info-body {
         width: 100%; } }
+  .editing-foundation .editing__point, .editing-foundation .editing__point--smaller {
+    margin-top: 2.5rem; }
   .editing-foundation .editing__num {
     font-size: 15rem; }
     @media (max-width: 1024px) {

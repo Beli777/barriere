@@ -78,6 +78,9 @@
     }
   }
   
+  .editing__point {
+    margin-top: 2.5rem;
+  }
   .editing__num {
     font-size: 15rem;
     @include breakpoint(toDesktop) {

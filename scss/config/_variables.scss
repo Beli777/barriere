@@ -40,8 +40,8 @@ $baseFont--light : "Lucien_Light", $fontDefault;
 $baseFont--year  : "Georgia_Bold", $fontDefault;
 $baseFont--italic: "", $fontDefault;
 
-$baseFont--secondary-r  : "Georgia_Regular", $fontDefault;
-$baseFont--secondary-b  : "Georgia_Bold", $fontDefault;
+$baseFont--secondary-r  : "Georgia_Regular", $fontDefault; // Regular
+$baseFont--secondary-b  : "Georgia_Bold", $fontDefault; // Bold
 
 //------Z INDEX LEVELS
 $levelBottom: 1;

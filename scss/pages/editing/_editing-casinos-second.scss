@@ -31,6 +31,10 @@
     //   margin-left: 5%;
     // }
   }
+  &__num-wrap {
+    display: inline-block;
+    vertical-align: middle;
+  }
   &__title-top {
     display: inline-block;
     vertical-align: -3rem;
@@ -38,6 +42,17 @@
   }
   &__title-bottom {
     margin: -0.5rem auto 0;
+    max-width: 55%;
+    text-align: left;
+    padding-left: 8.5%;
+    @include breakpoint(tablet) {
+      max-width: 70%;
+      padding-left: 5.5%;
+    }
+    @include breakpoint(phone) {
+      max-width: 80%;
+      padding-left: 5.5%;
+    }
   }
   &__info-body-top {
     @include breakpoint(phone) {
@@ -62,7 +77,7 @@
         margin-bottom: 4.3rem;
       }
       img {
-        max-width: 40%;
+        max-width: 39%;
         @include breakpoint(tablet) {
           max-width: 60%;
         }
@@ -95,10 +110,7 @@
     text-transform: uppercase;
     font-weight: bold;
     color: #e3e3e3;
-    margin: -3rem 0 4.5rem -9%;
-    @include breakpoint(tablet) {
-      margin-bottom: 5rem;
-    }
+    margin: -3rem 0 5rem -9%;
     @include breakpoint(phone) {
       width: 50%;
       float: left;
