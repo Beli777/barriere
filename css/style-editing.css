@@ -2897,7 +2897,8 @@ h1 {
         margin-bottom: 3.3rem;
         margin-left: auto;
         margin-right: auto;
-        display: block; } }
+        display: block;
+        max-height: 230px; } }
     @media (max-width: 767px) {
       .editing-sport--golf__info-head {
         width: 40%;
@@ -2946,7 +2947,8 @@ h1 {
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-sport--tennis__info-head {
         margin: 0 auto 3.5rem;
-        display: block; } }
+        display: block;
+        max-height: 230px; } }
     @media (max-width: 767px) {
       .editing-sport--tennis__info-head {
         width: 49%;

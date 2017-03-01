@@ -57,6 +57,7 @@
       margin-left: auto;
       margin-right: auto;
       display: block;
+      max-height: 230px;
     }
     @include breakpoint(phone) {
       width: 40%;
@@ -114,6 +115,7 @@
     @include breakpoint(tablet) {
       margin: 0 auto 3.5rem;
       display: block;
+      max-height: 230px;
     }
     @include breakpoint(phone) {
       width: 49%;

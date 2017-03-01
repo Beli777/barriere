@@ -258,11 +258,11 @@ $(document).ready(function(){
     if ($(window).width() > 767 && $(window).width() < 1025) {
       var infoGolf = $('.editing-sport--golf .editing__info-body');
       var infoTennis = $('.editing-sport--tennis .editing__info-body');
-      var mediaGolf = $('.editing-sport--golf__info-head');
-      var mediaTennis = $('.editing-sport--tennis__info-head');
+      // var mediaGolf = $('.editing-sport--golf__info-head');
+      // var mediaTennis = $('.editing-sport--tennis__info-head');
       
-      $(mediaTennis).css({'max-height':($(mediaGolf).outerHeight()+'px')});
       $(infoTennis).css({'height':($(infoGolf).outerHeight()+'px')});
+      // $(mediaTennis).css({'max-height':($(mediaGolf).outerHeight()+'px')});
     }
   }
   
