@@ -100,8 +100,7 @@ img {
 
 a {
   outline: none;
-  text-decoration: none;
-  -webkit-font-smoothing: antialiased; }
+  text-decoration: none; }
 
 html {
   -webkit-font-smoothing: antialiased; }
@@ -298,8 +297,7 @@ h1 {
   font-size: 3.125vw;
   text-align: center;
   font-family: "Georgia_Bold", Arial, Helvetica, Tahoma, sans-serif;
-  font-weight: bold;
-  -webkit-font-smoothing: antialiased; }
+  font-weight: bold; }
   @media screen and (min-width: 1650px) {
     .year {
       font-size: 5rem; } }
@@ -1754,7 +1752,6 @@ h1 {
   text-transform: uppercase;
   font-family: "Lucien_Bold", Arial, Helvetica, Tahoma, sans-serif;
   font-size: 2.1rem;
-  font-weight: bold;
   color: #363636; }
   @media (max-width: 767px) {
     .editing__title {
@@ -1799,8 +1796,6 @@ h1 {
       height: 3rem; } }
 .editing__num {
   font-family: "Georgia_Bold", Arial, Helvetica, Tahoma, sans-serif;
-  font-weight: bold;
-  -webkit-font-smoothing: antialiased;
   color: #363636;
   display: inline-block;
   vertical-align: middle;
@@ -2224,7 +2219,6 @@ h1 {
     opacity: 0;
     font-size: 1.68em;
     text-transform: uppercase;
-    font-weight: bold;
     padding: 1rem;
     background-color: #f9f9f9;
     position: absolute;
@@ -2538,7 +2532,6 @@ h1 {
   .editing-casinos-second__ranking {
     font-family: "Georgia_Bold", Arial, Helvetica, Tahoma, sans-serif;
     text-transform: uppercase;
-    font-weight: bold;
     color: #e3e3e3;
     margin: -3rem 0 5rem -9%; }
     @media (max-width: 767px) {
