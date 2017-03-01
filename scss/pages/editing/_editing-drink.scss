@@ -58,6 +58,9 @@
   &__title-top {
     margin-left: 7rem;
     margin-bottom: -4rem;
+    @include breakpoint(tablet) {
+      margin-bottom: -3.5rem;
+    }
   }
   &__title-middle {
     font-size: 4rem;
@@ -93,6 +96,7 @@
     }
     @include breakpoint(tablet) {
       left: 51.5%;
+      max-width: 98%; // qa :)
     }
     @include breakpoint(phone) {
       max-width: 87%;
@@ -111,6 +115,12 @@
     }
   }
   
+  .editing__point--smaller {
+    @include breakpoint(tablet) {
+      vertical-align: -1.7rem;
+      margin-left: -1%;
+    }
+  }
   .editing__num {
     font-size: 8rem;
   }

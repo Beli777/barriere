@@ -253,10 +253,25 @@ $(document).ready(function(){
     
   };
 
+  //----- Sport block / Only for tablet
+  function sportEqHeight() {
+    if ($(window).width() > 767 && $(window).width() < 1025) {
+      var infoGolf = $('.editing-sport--golf .editing__info-body');
+      var infoTennis = $('.editing-sport--tennis .editing__info-body');
+      var mediaGolf = $('.editing-sport--golf figure');
+      var mediaTennis = $('.editing-sport--tennis .editing-sport--tennis__info-head');
+      
+      $(infoTennis).css({'height':($(infoGolf).outerHeight()+'px')});
+      $(mediaTennis).css({'height':($(mediaGolf).outerHeight()+'px')});
+    }
+  }
+  
+
   //----- Run functions
   fadeText('.editing__p');
   personBlockAnimations();
   sportBlockAnimations();
   blockSlide();
+  sportEqHeight()
   
 });

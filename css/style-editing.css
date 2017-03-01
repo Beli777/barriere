@@ -1727,6 +1727,13 @@ h1 {
       font-size: 1.57vw; } }
 .editing h1 {
   margin-bottom: 4rem; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing h1 {
+      font-size: 2.8rem;
+      margin-bottom: 3rem; } }
+  @media (max-width: 767px) {
+    .editing h1 {
+      font-size: 3.2rem; } }
 .editing__head {
   margin: 0 auto 7.5rem;
   width: 50%;
@@ -2118,6 +2125,9 @@ h1 {
             left: -61%; } }
     .editing-persons__person--2 {
       left: -1%; }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .editing-persons__person--2 {
+          left: 0; } }
       @media (max-width: 767px) {
         .editing-persons__person--2 {
           left: 13%; } }
@@ -2189,7 +2199,8 @@ h1 {
     position: absolute; }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-persons__person-title {
-        font-size: 1.4rem; } }
+        font-size: 1.4rem;
+        padding: 0.7rem 1.2rem; } }
     @media (max-width: 767px) {
       .editing-persons__person-title {
         font-size: 1.8rem;
@@ -2364,6 +2375,9 @@ h1 {
         clear: both; } }
   .editing-casinos-first .editing__point, .editing-casinos-first .editing__point--smaller {
     vertical-align: -3rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-casinos-first .editing__point, .editing-casinos-first .editing__point--smaller {
+        vertical-align: -2.3rem; } }
   .editing-casinos-first .editing__num {
     font-size: 15rem; }
     @media (max-width: 1024px) {
@@ -2375,7 +2389,7 @@ h1 {
     margin-left: 1%; }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-casinos-first .editing__title {
-        vertical-align: -3rem; } }
+        vertical-align: -2.7rem; } }
     @media (max-width: 767px) {
       .editing-casinos-first .editing__title {
         vertical-align: -2.5rem; } }
@@ -2588,8 +2602,8 @@ h1 {
     left: 1.5%; }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-renovation__info-head {
-        top: 21%;
-        left: 0%; } }
+        top: 20.3%;
+        left: 1.8%; } }
     @media (max-width: 767px) {
       .editing-renovation__info-head {
         left: 10%;
@@ -2627,6 +2641,10 @@ h1 {
   .editing-renovation .editing__point--smaller {
     vertical-align: -2.5rem;
     margin-right: 2%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-renovation .editing__point--smaller {
+        vertical-align: -1.8rem;
+        margin-right: 0.8%; } }
     @media (max-width: 767px) {
       .editing-renovation .editing__point--smaller {
         margin-right: 0; } }
@@ -2642,7 +2660,7 @@ h1 {
     width: 56%; }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-renovation .editing__title {
-        right: -19%;
+        right: -16.5%;
         top: 1rem; } }
     @media (max-width: 767px) {
       .editing-renovation .editing__title {
@@ -2711,6 +2729,9 @@ h1 {
       .editing-venue__media img {
         margin: 0 auto;
         max-width: 37%; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-venue .editing__point--smaller {
+      vertical-align: -1.8rem; } }
   .editing-venue .editing__num {
     font-size: 8rem; }
 
@@ -2768,6 +2789,9 @@ h1 {
   .editing-drink__title-top {
     margin-left: 7rem;
     margin-bottom: -4rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-drink__title-top {
+        margin-bottom: -3.5rem; } }
   .editing-drink__title-middle {
     font-size: 4rem;
     font-family: "Georgia_Bold", Arial, Helvetica, Tahoma, sans-serif;
@@ -2799,7 +2823,8 @@ h1 {
         max-width: 80%; } }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-drink__media {
-        left: 51.5%; } }
+        left: 51.5%;
+        max-width: 98%; } }
     @media (max-width: 767px) {
       .editing-drink__media {
         max-width: 87%; } }
@@ -2814,6 +2839,10 @@ h1 {
       .editing-drink__warning {
         font-size: 1.5rem;
         line-height: 2.45rem; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-drink .editing__point--smaller {
+      vertical-align: -1.7rem;
+      margin-left: -1%; } }
   .editing-drink .editing__num {
     font-size: 8rem; }
 
@@ -2966,6 +2995,16 @@ h1 {
   @media (min-width: 768px) and (max-width: 1024px) {
     .editing-sport .editing-sport--golf .editing__num {
       font-size: 9rem; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-sport .editing__info-body {
+      padding-bottom: 5.5rem; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-sport .editing__info-body .btn {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto; } }
   .editing-sport .editing__p {
     text-align: center; }
   .editing-sport img {
@@ -2976,7 +3015,7 @@ h1 {
       margin-left: 7%; }
       @media (min-width: 768px) and (max-width: 1024px) {
         .editing-sport img.editing-sport--tennis__img1 {
-          max-width: 95%;
+          max-width: 230px;
           padding-left: 4%;
           margin-top: 0.5rem; } }
       @media (max-width: 767px) {
@@ -2988,7 +3027,7 @@ h1 {
       margin-left: -7%; }
       @media (min-width: 768px) and (max-width: 1024px) {
         .editing-sport img.editing-sport--tennis__img2 {
-          max-width: 96%;
+          max-width: 230px;
           padding-left: 6%;
           margin-top: 0.4rem; } }
       @media (max-width: 767px) {
@@ -3082,7 +3121,8 @@ h1 {
       padding-right: 3%; }
       @media (min-width: 768px) and (max-width: 1024px) {
         .editing-spa__info-head .editing__title--padding {
-          left: -44%; } }
+          position: absolute;
+          left: -43%; } }
       @media (max-width: 767px) {
         .editing-spa__info-head .editing__title--padding {
           position: absolute;
@@ -3117,6 +3157,11 @@ h1 {
         margin-top: 4rem; } }
   .editing-spa .editing__point, .editing-spa .editing__point--smaller {
     vertical-align: -2.5rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-spa .editing__point, .editing-spa .editing__point--smaller {
+        max-width: 2.2rem;
+        vertical-align: -2.1rem;
+        margin-left: 1%; } }
   .editing-spa .editing__num {
     font-size: 10rem; }
     @media (max-width: 1024px) {
@@ -3194,6 +3239,9 @@ h1 {
         margin-bottom: 3.5rem; } }
     .editing-culture__info-head .editing__point, .editing-culture__info-head .editing__point--smaller {
       vertical-align: -3rem; }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .editing-culture__info-head .editing__point, .editing-culture__info-head .editing__point--smaller {
+          vertical-align: -2rem; } }
   .editing-culture__title-top {
     text-align: center;
     margin-right: 20%; }

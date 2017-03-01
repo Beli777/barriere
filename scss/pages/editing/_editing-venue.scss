@@ -66,6 +66,11 @@
     }
   }
   
+  .editing__point--smaller {
+    @include breakpoint(tablet) {
+      vertical-align: -1.8rem;
+    }
+  }
   .editing__num {
     font-size: 8rem;
   }

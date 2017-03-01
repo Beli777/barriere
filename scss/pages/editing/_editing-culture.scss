@@ -76,6 +76,9 @@
     }
     .editing__point {
       vertical-align: -3rem;
+      @include breakpoint(tablet) {
+        vertical-align: -2rem;
+      }
     }
   }
   &__title-top {

@@ -172,6 +172,20 @@
       font-size: 9rem;
     }
   }
+  .editing__info-body {
+    @include breakpoint(tablet) {
+      padding-bottom: 5.5rem;
+    }
+    .btn {
+      @include breakpoint(tablet) {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+    }
+  }
   .editing__p {
     text-align: center;
   }
@@ -182,7 +196,7 @@
       margin-bottom: -3rem;
       margin-left: 7%;
       @include breakpoint(tablet) {
-        max-width: 95%;
+        max-width: 230px; // eq height from 768-1024
         padding-left: 4%;
         margin-top: 0.5rem;
       }
@@ -195,7 +209,7 @@
     &.editing-sport--tennis__img2 {
       margin-left: -7%;
       @include breakpoint(tablet) {
-        max-width: 96%;
+        max-width: 230px; // eq height from 768-1024
         padding-left: 6%;
         margin-top: 0.4rem;
       }
