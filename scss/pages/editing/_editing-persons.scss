@@ -108,7 +108,7 @@
           top: 9rem;
           // right: 32%;
           right: 3.5rem;
-          width: 150%;
+          width: 130%;
         }
       }
     }
@@ -169,18 +169,18 @@
     opacity: 0;
     font-size: 1.68em;
     text-transform: uppercase;
-    padding: 1rem;
+    padding: 1rem 1rem 0.7rem;
     background-color: $colorBody;
     position: absolute;
-    text-align: center;
+    // text-align: center;
     @include breakpoint(tablet) {
       font-size: 1.4rem;
-      padding: 0.7rem 1.2rem;
+      padding: 0.7rem 1.2rem 0.5rem;
     }
     @include breakpoint(phone) {
       font-size: 1.8rem;
       opacity: 1;
-      padding: 7%;
+      padding: 7% 7% 6%;
     }
   }
   &__info {
