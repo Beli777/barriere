@@ -261,8 +261,8 @@ $(document).ready(function(){
       var mediaGolf = $('.editing-sport--golf__info-head');
       var mediaTennis = $('.editing-sport--tennis__info-head');
       
-      $(infoTennis).css({'height':($(infoGolf).outerHeight()+'px')});
       $(mediaTennis).css({'max-height':($(mediaGolf).outerHeight()+'px')});
+      $(infoTennis).css({'height':($(infoGolf).outerHeight()+'px')});
     }
   }
   
@@ -270,8 +270,8 @@ $(document).ready(function(){
   //----- Run functions
   fadeText('.editing__p');
   personBlockAnimations();
-  sportEqHeight()
   sportBlockAnimations();
+  sportEqHeight()
   blockSlide();
   
 });
