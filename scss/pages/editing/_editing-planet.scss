@@ -80,7 +80,7 @@
   &__title {
     margin-top: 1.5rem;
     width: 80%;
-    @include breakpoint(tablet) {
+    @include breakpoint(toDesktop) {
       width: 100%;
     }
   }

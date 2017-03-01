@@ -42,7 +42,11 @@
       vertical-align: 2rem;
     }
     @include breakpoint(phone) {
-      padding-left: 3.5%;
+      padding-left: 0;
+      position: absolute;
+      @include transform(translateY(-50%));
+      right: -4%;
+      top: 48%;
     }
   }
   &__info-body {
@@ -84,8 +88,9 @@
       left: 35%;
     }
     @include breakpoint(phone) {
-      left: 36%;
+      left: 38%;
       bottom: -6.5rem;
+      width: 72%;
     }
   }
 }

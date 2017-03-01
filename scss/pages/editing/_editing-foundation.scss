@@ -57,8 +57,8 @@
         top: 47%;
       }
       @include breakpoint(phone) {
-        right: -19%;
-        top: 47%;
+        right: -17%;
+        top: 46.5%;
         padding: 1.2rem;
       }
     }
@@ -80,6 +80,10 @@
   
   .editing__point {
     margin-top: 2.5rem;
+    @include breakpoint(phone) {
+      margin-top: 0;
+      vertical-align: -1.7rem;
+    }
   }
   .editing__num {
     font-size: 15rem;

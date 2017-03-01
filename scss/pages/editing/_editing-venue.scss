@@ -32,13 +32,16 @@
       margin-bottom: 7rem;
     }
     @include breakpoint(phone) {
-      left: 11.5%;
+      left: 10.5%;
       margin-bottom: 2.5rem;
     }
   }
   &__title-top {
     margin-bottom: -2.5rem;
     margin-left: 4rem;
+    @include breakpoint(phone) {
+      margin-left: 5rem;
+    }
   }
   &__title-bottom {
     width: 90%;
@@ -48,7 +51,8 @@
       margin-left: -5%;
     }
     @include breakpoint(phone) {
-      margin-left: -2rem;
+      margin-left: -1.5rem;
+      width: 91%;
     }
   }
   &__media {
@@ -66,7 +70,15 @@
     }
   }
   
+  .editing__point--smaller {
+    @include breakpoint(toDesktop) {
+      vertical-align: -1.8rem;
+    }
+  }
   .editing__num {
     font-size: 8rem;
+    @include breakpoint(phone) {
+      letter-spacing: 0;
+    }
   }
 }

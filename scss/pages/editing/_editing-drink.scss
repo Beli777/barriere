@@ -51,13 +51,25 @@
       margin-bottom: 4rem;
     }
     @include breakpoint(phone) {
-      padding-left: 7%;
+      padding-left: 5.2%;
       margin-bottom: 3.5rem;
+    }
+    .editing__point--smaller {
+      @include breakpoint(phone) {
+        vertical-align: -2rem;
+        margin-right: 1.5%;
+      }
     }
   }
   &__title-top {
     margin-left: 7rem;
     margin-bottom: -4rem;
+    @include breakpoint(tablet) {
+      margin-bottom: -3.5rem;
+    }
+    @include breakpoint(phone) {
+      margin-left: 8.9rem;
+    }
   }
   &__title-middle {
     font-size: 4rem;
@@ -70,6 +82,10 @@
     width: 65%;
     @include breakpoint(toDesktop) {
       width: 85%;
+    }
+    @include breakpoint(phone) {
+      margin-left: 8.8rem;
+      margin-top: -0.7rem;
     }
   }
   &__info-body {
@@ -93,6 +109,7 @@
     }
     @include breakpoint(tablet) {
       left: 51.5%;
+      max-width: 98%; // qa :)
     }
     @include breakpoint(phone) {
       max-width: 87%;
@@ -111,6 +128,12 @@
     }
   }
   
+  .editing__point--smaller {
+    @include breakpoint(tablet) {
+      vertical-align: -1.7rem;
+      margin-left: -1%;
+    }
+  }
   .editing__num {
     font-size: 8rem;
   }

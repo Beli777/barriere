@@ -91,7 +91,8 @@
       padding-left: 3%;
       padding-right: 3%;
       @include breakpoint(tablet) {
-        left: -44%;
+        position: absolute;
+        left: -43%;
       }
       @include breakpoint(phone) {
         position: absolute;
@@ -132,6 +133,11 @@
   
   .editing__point {
     vertical-align: -2.5rem;
+    @include breakpoint(tablet) {
+      max-width: 2.2rem;
+      vertical-align: -2.1rem;
+      margin-left: 1%;
+    }
   }
   .editing__num {
     font-size: 10rem;

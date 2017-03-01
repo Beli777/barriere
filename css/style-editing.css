@@ -7,6 +7,10 @@
 *        width: 40%;
 *    }
 */
+/* EXAMPLE
+*    @include transform (rotate(10deg));
+*    Default is 'translate(-50%, -50%)'
+*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -1727,6 +1731,14 @@ h1 {
       font-size: 1.57vw; } }
 .editing h1 {
   margin-bottom: 4rem; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing h1 {
+      font-size: 2.8rem;
+      margin-bottom: 3rem; } }
+  @media (max-width: 767px) {
+    .editing h1 {
+      font-size: 3.2rem;
+      margin-bottom: 7.5rem; } }
 .editing__head {
   margin: 0 auto 7.5rem;
   width: 50%;
@@ -1863,7 +1875,16 @@ h1 {
         vertical-align: 2rem; } }
     @media (max-width: 767px) {
       .editing-birth__info-head {
-        padding-left: 3.5%; } }
+        padding-left: 0;
+        position: absolute;
+        -webkit-transform: translateY(-50%);
+        -khtml-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        right: -4%;
+        top: 48%; } }
   .editing-birth__info-body {
     float: right;
     width: 35.5%; }
@@ -1900,8 +1921,9 @@ h1 {
         left: 35%; } }
     @media (max-width: 767px) {
       .editing-birth .editing__title {
-        left: 36%;
-        bottom: -6.5rem; } }
+        left: 38%;
+        bottom: -6.5rem;
+        width: 72%; } }
 
 .editing-staff {
   overflow: hidden;
@@ -1985,6 +2007,9 @@ h1 {
         width: 100%;
         margin-top: 2.5rem;
         margin-left: 20%; } }
+    @media (max-width: 767px) {
+      .editing-staff__media-bottom img {
+        max-width: 24%; } }
   .editing-staff__info-head {
     width: 46%;
     display: inline-block;
@@ -1997,9 +2022,14 @@ h1 {
         margin-left: 7%; } }
     @media (max-width: 767px) {
       .editing-staff__info-head {
-        width: 63%;
-        margin-left: 14%;
-        margin-top: 3.5rem; } }
+        width: 75%;
+        margin-left: 0;
+        margin-top: 3.5rem;
+        float: right;
+        padding-left: 9%; } }
+    @media (max-width: 767px) {
+      .editing-staff__info-head span {
+        padding-right: 5%; } }
   .editing-staff__title-top {
     position: relative;
     left: 1rem;
@@ -2052,7 +2082,7 @@ h1 {
       padding: 6rem 0 0 18%; } }
   @media (max-width: 767px) {
     .editing-persons {
-      padding: 6rem 5% 0;
+      padding: 6rem 0 0;
       margin-bottom: 2.5rem; } }
   .editing-persons:before {
     content: '';
@@ -2095,6 +2125,9 @@ h1 {
     display: table-cell;
     position: relative;
     z-index: 1; }
+    @media (max-width: 767px) {
+      .editing-persons__person {
+        display: inline-block; } }
     .editing-persons__person--1 {
       top: -1.5rem;
       left: 6%; }
@@ -2103,8 +2136,9 @@ h1 {
           top: 2.5rem; } }
       @media (max-width: 767px) {
         .editing-persons__person--1 {
-          top: 5rem;
-          left: 18%; } }
+          top: 4.2rem;
+          left: 20.3%;
+          width: 22%; } }
       .editing-persons__person--1 .editing-persons__person-title {
         bottom: 4rem;
         left: -45%; }
@@ -2114,13 +2148,18 @@ h1 {
             left: -69%; } }
         @media (max-width: 767px) {
           .editing-persons__person--1 .editing-persons__person-title {
-            bottom: 1.5rem;
-            left: -61%; } }
+            bottom: 2.1rem;
+            left: -8rem; } }
     .editing-persons__person--2 {
       left: -1%; }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .editing-persons__person--2 {
+          left: 0; } }
       @media (max-width: 767px) {
         .editing-persons__person--2 {
-          left: 13%; } }
+          left: 14.5%;
+          width: 22%;
+          top: -0.4rem; } }
       .editing-persons__person--2 .editing-persons__person-title {
         top: 9rem;
         right: -6.5rem; }
@@ -2131,8 +2170,8 @@ h1 {
         @media (max-width: 767px) {
           .editing-persons__person--2 .editing-persons__person-title {
             top: 9rem;
-            right: 32%;
-            width: 130%; } }
+            right: 3.5rem;
+            width: 150%; } }
     .editing-persons__person--3 {
       top: 7rem;
       left: -11%;
@@ -2143,8 +2182,9 @@ h1 {
           left: -12%; } }
       @media (max-width: 767px) {
         .editing-persons__person--3 {
-          top: 10rem;
-          left: -3%; } }
+          top: 8.7rem;
+          left: -0.5%;
+          width: 28%; } }
       .editing-persons__person--3 .editing-persons__person-title {
         right: -5rem;
         bottom: 6.7rem; }
@@ -2154,8 +2194,8 @@ h1 {
             bottom: 4rem; } }
         @media (max-width: 767px) {
           .editing-persons__person--3 .editing-persons__person-title {
-            right: -8.5rem;
-            bottom: 1.7rem; } }
+            right: -8.1rem;
+            bottom: 1.8rem; } }
     .editing-persons__person--4 {
       left: -23.5%; }
       @media (min-width: 768px) and (max-width: 1024px) {
@@ -2164,8 +2204,9 @@ h1 {
           top: 3.5rem; } }
       @media (max-width: 767px) {
         .editing-persons__person--4 {
-          left: -18%;
-          top: 2rem; } }
+          left: -16.8%;
+          top: 1.2rem;
+          width: 23%; } }
       .editing-persons__person--4 .editing-persons__person-title {
         right: -48%;
         bottom: 12.5rem; }
@@ -2175,8 +2216,8 @@ h1 {
             bottom: 8rem; } }
         @media (max-width: 767px) {
           .editing-persons__person--4 .editing-persons__person-title {
-            right: -7.5rem;
-            bottom: 4.5rem;
+            right: -8rem;
+            bottom: 5.3rem;
             width: 100%; } }
   .editing-persons__person-title {
     font-family: "Lucien_Bold", Arial, Helvetica, Tahoma, sans-serif;
@@ -2186,14 +2227,17 @@ h1 {
     font-weight: bold;
     padding: 1rem;
     background-color: #f9f9f9;
-    position: absolute; }
+    position: absolute;
+    text-align: center; }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-persons__person-title {
-        font-size: 1.4rem; } }
+        font-size: 1.4rem;
+        padding: 0.7rem 1.2rem; } }
     @media (max-width: 767px) {
       .editing-persons__person-title {
         font-size: 1.8rem;
-        opacity: 1; } }
+        opacity: 1;
+        padding: 7%; } }
   .editing-persons__info {
     margin-right: 7%;
     margin-top: 5rem; }
@@ -2206,7 +2250,7 @@ h1 {
         margin-top: 11rem; } }
     @media (max-width: 767px) {
       .editing-persons__info {
-        margin-top: 16.5rem;
+        margin-top: 15rem;
         margin-right: 0; } }
   .editing-persons__info-head {
     margin-left: 9.5%;
@@ -2217,7 +2261,9 @@ h1 {
         margin-bottom: 1.5rem; } }
     @media (max-width: 767px) {
       .editing-persons__info-head {
-        margin-bottom: 3.5rem; } }
+        margin-bottom: 3.5rem;
+        margin-left: 0;
+        text-align: center; } }
   .editing-persons__info-head--top .editing__title {
     display: inline-block;
     width: 70%;
@@ -2228,7 +2274,9 @@ h1 {
         width: 40%; } }
     @media (max-width: 767px) {
       .editing-persons__info-head--top .editing__title {
-        width: 80%; } }
+        width: auto;
+        text-align: left;
+        padding-right: 3%; } }
   .editing-persons__info-head--bottom {
     text-align: right;
     margin-right: 6%;
@@ -2241,17 +2289,21 @@ h1 {
       .editing-persons__info-head--bottom {
         text-align: center;
         margin-right: 0%;
-        margin-left: 8%; } }
+        margin-left: 15%;
+        margin-top: -2.4rem; } }
     .editing-persons__info-head--bottom .editing__title {
       display: inline-block;
       vertical-align: -1rem; }
       @media (max-width: 767px) {
         .editing-persons__info-head--bottom .editing__title {
-          vertical-align: 0; } }
+          vertical-align: -0.5rem; } }
   @media (min-width: 768px) and (max-width: 1024px) {
     .editing-persons__info-body {
       margin-left: 10%;
       margin-right: 3%; } }
+  @media (max-width: 767px) {
+    .editing-persons__info-body {
+      padding: 0 5.5%; } }
   .editing-persons .editing__num {
     font-size: 8rem; }
 
@@ -2300,6 +2352,10 @@ h1 {
       @media (max-width: 767px) {
         .editing-turnover .editing__num span {
           font-size: 4.1rem; } }
+  @media (max-width: 767px) {
+    .editing-turnover .editing__point--smaller {
+      margin-right: 4%;
+      vertical-align: -2.3rem; } }
   .editing-turnover .editing__title {
     position: relative;
     left: 10.8rem;
@@ -2309,6 +2365,11 @@ h1 {
         top: 0; } }
     @media (max-width: 767px) {
       .editing-turnover .editing__title .mob-inline {
+        display: inline; } }
+  .editing-turnover .editing__title-helper {
+    display: block; }
+    @media (max-width: 767px) {
+      .editing-turnover .editing__title-helper {
         display: inline; } }
 
 .editing-casinos-first {
@@ -2364,6 +2425,9 @@ h1 {
         clear: both; } }
   .editing-casinos-first .editing__point, .editing-casinos-first .editing__point--smaller {
     vertical-align: -3rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-casinos-first .editing__point, .editing-casinos-first .editing__point--smaller {
+        vertical-align: -2.3rem; } }
   .editing-casinos-first .editing__num {
     font-size: 15rem; }
     @media (max-width: 1024px) {
@@ -2375,7 +2439,7 @@ h1 {
     margin-left: 1%; }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-casinos-first .editing__title {
-        vertical-align: -3rem; } }
+        vertical-align: -2.7rem; } }
     @media (max-width: 767px) {
       .editing-casinos-first .editing__title {
         vertical-align: -2.5rem; } }
@@ -2405,6 +2469,9 @@ h1 {
       margin-bottom: 5rem; } }
   .editing-casinos-second__info-head {
     margin-bottom: 3.3rem; }
+    @media (max-width: 767px) {
+      .editing-casinos-second__info-head {
+        margin-bottom: 3.9rem; } }
   .editing-casinos-second__num-wrap {
     display: inline-block;
     vertical-align: middle; }
@@ -2429,11 +2496,14 @@ h1 {
     .editing-casinos-second__info-body-top {
       margin: 0 auto;
       display: inline-block;
-      margin-bottom: 6rem; } }
+      margin-bottom: 6rem;
+      width: 70%; } }
   @media (max-width: 767px) {
     .editing-casinos-second__media-first {
-      width: 50%;
-      float: right; } }
+      float: right;
+      display: table-cell;
+      max-width: 36%;
+      margin-right: 8%; } }
   .editing-casinos-second__media-second {
     margin-bottom: 3.3rem; }
     @media (min-width: 768px) and (max-width: 1024px) {
@@ -2473,10 +2543,10 @@ h1 {
     margin: -3rem 0 5rem -9%; }
     @media (max-width: 767px) {
       .editing-casinos-second__ranking {
-        width: 50%;
-        float: left;
         margin-top: -1rem;
-        margin-bottom: 0; } }
+        margin-bottom: 0;
+        display: table-cell;
+        line-height: 0.8; } }
   .editing-casinos-second__ranking-num {
     font-size: 13.4rem;
     display: inline-block; }
@@ -2491,6 +2561,10 @@ h1 {
     color: #363636;
     margin-top: -5rem;
     margin-left: 11%; }
+    @media (max-width: 767px) {
+      .editing-casinos-second__ranking-title {
+        margin-top: -3.5rem;
+        margin-left: 22%; } }
   .editing-casinos-second .editing__num {
     font-size: 10rem; }
 
@@ -2516,7 +2590,7 @@ h1 {
       .editing-hotels__info {
         width: 100%;
         padding: 0 5%;
-        margin-bottom: 4.5rem; } }
+        margin-bottom: 3.5rem; } }
   .editing-hotels__info-head {
     text-align: center;
     margin-left: 23%;
@@ -2548,6 +2622,9 @@ h1 {
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-hotels__media {
         padding: 0 2%; } }
+    @media (max-width: 767px) {
+      .editing-hotels__media {
+        width: 108.5%; } }
     .editing-hotels__media img {
       margin: 0 auto; }
   .editing-hotels .editing__num {
@@ -2588,8 +2665,8 @@ h1 {
     left: 1.5%; }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-renovation__info-head {
-        top: 21%;
-        left: 0%; } }
+        top: 20.3%;
+        left: 1.8%; } }
     @media (max-width: 767px) {
       .editing-renovation__info-head {
         left: 10%;
@@ -2627,6 +2704,10 @@ h1 {
   .editing-renovation .editing__point--smaller {
     vertical-align: -2.5rem;
     margin-right: 2%; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-renovation .editing__point--smaller {
+        vertical-align: -1.8rem;
+        margin-right: 0.8%; } }
     @media (max-width: 767px) {
       .editing-renovation .editing__point--smaller {
         margin-right: 0; } }
@@ -2642,7 +2723,7 @@ h1 {
     width: 56%; }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-renovation .editing__title {
-        right: -19%;
+        right: -16.5%;
         top: 1rem; } }
     @media (max-width: 767px) {
       .editing-renovation .editing__title {
@@ -2685,11 +2766,14 @@ h1 {
         margin-bottom: 7rem; } }
     @media (max-width: 767px) {
       .editing-venue__info-head {
-        left: 11.5%;
+        left: 10.5%;
         margin-bottom: 2.5rem; } }
   .editing-venue__title-top {
     margin-bottom: -2.5rem;
     margin-left: 4rem; }
+    @media (max-width: 767px) {
+      .editing-venue__title-top {
+        margin-left: 5rem; } }
   .editing-venue__title-bottom {
     width: 90%;
     margin-left: -3rem; }
@@ -2699,7 +2783,8 @@ h1 {
         margin-left: -5%; } }
     @media (max-width: 767px) {
       .editing-venue__title-bottom {
-        margin-left: -2rem; } }
+        margin-left: -1.5rem;
+        width: 91%; } }
   .editing-venue__media {
     width: 31.5%;
     display: inline-block;
@@ -2711,8 +2796,14 @@ h1 {
       .editing-venue__media img {
         margin: 0 auto;
         max-width: 37%; } }
+  @media (max-width: 1024px) {
+    .editing-venue .editing__point--smaller {
+      vertical-align: -1.8rem; } }
   .editing-venue .editing__num {
     font-size: 8rem; }
+    @media (max-width: 767px) {
+      .editing-venue .editing__num {
+        letter-spacing: 0; } }
 
 .editing-drink {
   position: relative;
@@ -2763,11 +2854,21 @@ h1 {
         margin-bottom: 4rem; } }
     @media (max-width: 767px) {
       .editing-drink__info-head {
-        padding-left: 7%;
+        padding-left: 5.2%;
         margin-bottom: 3.5rem; } }
+    @media (max-width: 767px) {
+      .editing-drink__info-head .editing__point--smaller {
+        vertical-align: -2rem;
+        margin-right: 1.5%; } }
   .editing-drink__title-top {
     margin-left: 7rem;
     margin-bottom: -4rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-drink__title-top {
+        margin-bottom: -3.5rem; } }
+    @media (max-width: 767px) {
+      .editing-drink__title-top {
+        margin-left: 8.9rem; } }
   .editing-drink__title-middle {
     font-size: 4rem;
     font-family: "Georgia_Bold", Arial, Helvetica, Tahoma, sans-serif;
@@ -2779,6 +2880,10 @@ h1 {
     @media (max-width: 1024px) {
       .editing-drink__title-bottom {
         width: 85%; } }
+    @media (max-width: 767px) {
+      .editing-drink__title-bottom {
+        margin-left: 8.8rem;
+        margin-top: -0.7rem; } }
   .editing-drink__info-body {
     width: 57%;
     float: right; }
@@ -2799,7 +2904,8 @@ h1 {
         max-width: 80%; } }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-drink__media {
-        left: 51.5%; } }
+        left: 51.5%;
+        max-width: 98%; } }
     @media (max-width: 767px) {
       .editing-drink__media {
         max-width: 87%; } }
@@ -2814,6 +2920,10 @@ h1 {
       .editing-drink__warning {
         font-size: 1.5rem;
         line-height: 2.45rem; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-drink .editing__point--smaller {
+      vertical-align: -1.7rem;
+      margin-left: -1%; } }
   .editing-drink .editing__num {
     font-size: 8rem; }
 
@@ -2865,16 +2975,17 @@ h1 {
         width: 45%; } }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-sport--golf__info-head {
-        margin-bottom: 3.3rem;
+        margin-bottom: 3.5rem;
         margin-left: auto;
         margin-right: auto;
-        display: block; } }
+        display: block;
+        max-height: 230px; } }
     @media (max-width: 767px) {
       .editing-sport--golf__info-head {
         width: 40%;
         margin: 0 auto;
         display: block;
-        margin-bottom: 8rem; } }
+        margin-bottom: 4.5rem; } }
   .editing-sport--golf__point-left {
     position: absolute;
     left: 13%;
@@ -2916,17 +3027,15 @@ h1 {
         margin-right: 9%; } }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-sport--tennis__info-head {
-        margin-top: 0;
-        margin-bottom: 3.5rem;
-        margin-left: auto;
-        margin-right: auto;
-        display: block; } }
+        margin: 0 auto 3.5rem;
+        display: block;
+        max-height: 230px; } }
     @media (max-width: 767px) {
       .editing-sport--tennis__info-head {
         width: 49%;
         margin: 0 auto;
         display: block;
-        margin-bottom: 2.5rem; } }
+        margin-bottom: 3rem; } }
     .editing-sport--tennis__info-head .editing__num {
       padding: 0 10%;
       margin-top: -3rem; }
@@ -2963,9 +3072,19 @@ h1 {
         display: block; } }
   .editing-sport .editing__num {
     font-size: 10rem; }
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (max-width: 1024px) {
     .editing-sport .editing-sport--golf .editing__num {
       font-size: 9rem; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-sport .editing__info-body {
+      padding-bottom: 5.5rem; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .editing-sport .editing__info-body .btn {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto; } }
   .editing-sport .editing__p {
     text-align: center; }
   .editing-sport img {
@@ -2976,7 +3095,7 @@ h1 {
       margin-left: 7%; }
       @media (min-width: 768px) and (max-width: 1024px) {
         .editing-sport img.editing-sport--tennis__img1 {
-          max-width: 95%;
+          max-width: 230px;
           padding-left: 4%;
           margin-top: 0.5rem; } }
       @media (max-width: 767px) {
@@ -2988,7 +3107,7 @@ h1 {
       margin-left: -7%; }
       @media (min-width: 768px) and (max-width: 1024px) {
         .editing-sport img.editing-sport--tennis__img2 {
-          max-width: 96%;
+          max-width: 230px;
           padding-left: 6%;
           margin-top: 0.4rem; } }
       @media (max-width: 767px) {
@@ -2996,6 +3115,9 @@ h1 {
           max-width: 78%;
           margin-left: 5%;
           margin-top: -1rem; } }
+  @media (max-width: 767px) {
+    .editing-sport .btn {
+      width: 80%; } }
 
 .editing-spa {
   background-color: #FFF;
@@ -3082,7 +3204,8 @@ h1 {
       padding-right: 3%; }
       @media (min-width: 768px) and (max-width: 1024px) {
         .editing-spa__info-head .editing__title--padding {
-          left: -44%; } }
+          position: absolute;
+          left: -43%; } }
       @media (max-width: 767px) {
         .editing-spa__info-head .editing__title--padding {
           position: absolute;
@@ -3117,6 +3240,11 @@ h1 {
         margin-top: 4rem; } }
   .editing-spa .editing__point, .editing-spa .editing__point--smaller {
     vertical-align: -2.5rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .editing-spa .editing__point, .editing-spa .editing__point--smaller {
+        max-width: 2.2rem;
+        vertical-align: -2.1rem;
+        margin-left: 1%; } }
   .editing-spa .editing__num {
     font-size: 10rem; }
     @media (max-width: 1024px) {
@@ -3177,7 +3305,7 @@ h1 {
         margin-right: 0; } }
     @media (max-width: 767px) {
       .editing-culture__info {
-        width: 80%;
+        width: 90%;
         margin-right: 0; } }
   .editing-culture__info-head {
     padding-left: 25%;
@@ -3194,6 +3322,12 @@ h1 {
         margin-bottom: 3.5rem; } }
     .editing-culture__info-head .editing__point, .editing-culture__info-head .editing__point--smaller {
       vertical-align: -3rem; }
+      @media (max-width: 1024px) {
+        .editing-culture__info-head .editing__point, .editing-culture__info-head .editing__point--smaller {
+          vertical-align: -2rem; } }
+      @media (max-width: 767px) {
+        .editing-culture__info-head .editing__point, .editing-culture__info-head .editing__point--smaller {
+          margin-right: 2%; } }
   .editing-culture__title-top {
     text-align: center;
     margin-right: 20%; }
@@ -3202,7 +3336,7 @@ h1 {
         margin-right: 15%; } }
     @media (max-width: 767px) {
       .editing-culture__title-top {
-        margin-right: 33%; } }
+        margin-right: 41%; } }
   .editing-culture__num-wrap {
     margin-top: -3rem; }
     @media (min-width: 768px) and (max-width: 1024px) {
@@ -3221,14 +3355,15 @@ h1 {
         margin-top: 0; } }
     @media (max-width: 767px) {
       .editing-culture__title-bottom {
-        width: 83.5%;
-        margin-top: 0rem; } }
+        width: 85.5%;
+        margin-top: 0rem;
+        padding-right: 4%; } }
   @media (min-width: 768px) and (max-width: 1024px) {
     .editing-culture__info-body {
       width: 89%; } }
   @media (max-width: 767px) {
     .editing-culture__info-body {
-      padding-right: 7%; } }
+      padding-right: 17%; } }
   .editing-culture__media {
     position: relative;
     float: right;
@@ -3345,8 +3480,8 @@ h1 {
           top: 47%; } }
       @media (max-width: 767px) {
         .editing-foundation__media .editing__title {
-          right: -19%;
-          top: 47%;
+          right: -17%;
+          top: 46.5%;
           padding: 1.2rem; } }
   .editing-foundation__info-body {
     width: 39%;
@@ -3363,6 +3498,10 @@ h1 {
         width: 100%; } }
   .editing-foundation .editing__point, .editing-foundation .editing__point--smaller {
     margin-top: 2.5rem; }
+    @media (max-width: 767px) {
+      .editing-foundation .editing__point, .editing-foundation .editing__point--smaller {
+        margin-top: 0;
+        vertical-align: -1.7rem; } }
   .editing-foundation .editing__num {
     font-size: 15rem; }
     @media (max-width: 1024px) {
@@ -3444,7 +3583,7 @@ h1 {
   .editing-planet__title {
     margin-top: 1.5rem;
     width: 80%; }
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (max-width: 1024px) {
       .editing-planet__title {
         width: 100%; } }
   .editing-planet__media {
@@ -3503,7 +3642,7 @@ h1 {
     @media (max-width: 767px) {
       .editing-bees__body {
         width: 100%;
-        padding: 0 5%; } }
+        padding: 0 7% 0 4%; } }
   .editing-bees__info-head {
     float: right;
     margin-bottom: 4.5rem;
@@ -3523,13 +3662,13 @@ h1 {
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-bees__title {
         margin-top: 0;
-        margin-left: 17%;
+        margin-left: 20%;
         width: 65%; } }
     @media (max-width: 767px) {
       .editing-bees__title {
-        margin-top: 0;
-        margin-left: 15%;
-        width: 65%; } }
+        margin-top: -0.6rem;
+        margin-left: 16%;
+        width: 100%; } }
     @media (max-width: 767px) {
       .editing-bees__title .mob-inline-block {
         display: inline-block; } }
@@ -3560,6 +3699,9 @@ h1 {
         margin-top: 8rem;
         display: inline-block;
         padding: 0 22%; } }
+  @media (max-width: 767px) {
+    .editing-bees .editing__point, .editing-bees .editing__point--smaller {
+      vertical-align: -1.8rem; } }
   .editing-bees .editing__num {
     font-size: 10rem; }
 
