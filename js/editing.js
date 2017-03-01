@@ -262,7 +262,7 @@ $(document).ready(function(){
       var mediaTennis = $('.editing-sport--tennis__info-head');
       
       $(infoTennis).css({'height':($(infoGolf).outerHeight()+'px')});
-      $(mediaTennis).css({'height':($(mediaGolf).outerHeight()+'px')});
+      $(mediaTennis).css({'max-height':($(mediaGolf).outerHeight()+'px')});
     }
   }
   
