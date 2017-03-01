@@ -4,6 +4,9 @@ h1{
     text-align: center;
     font-size: 5rem;
     font-size: 3.125vw;
+    @include breakpoint (phone){
+        font-size: 5vw;
+    }
 }
 .year{
     font-size: 5rem;
@@ -17,6 +20,10 @@ h1{
     }
     @include breakpoint (tablet){
       font-size: 36px;
+    }
+    @include breakpoint (phone){
+      font-size: 4rem;
+      font-size: 6.25vw;
     }
     &--left{
         margin-right: 16rem;
@@ -73,11 +80,17 @@ h1{
             @include breakpoint (toDesktop){
                 top: -5rem;
             }
+            @include breakpoint (phone){
+                top: -9rem;
+            }
         }
         &Third{
           top: 15rem;
           @include breakpoint(tablet){
                  top: -10rem;
+          }
+          @include breakpoint (phone){
+                 top: -8rem;
           }
         }
     }
@@ -86,11 +99,17 @@ h1{
         @include breakpoint (toDesktop){
             top: -4rem;
         }
+        @include breakpoint (phone){
+            top: -9rem;
+        }
     }
     &__1975{
         top: 91%;
         @include breakpoint (toDesktop){
             top: 7rem;
+        }
+        @include breakpoint (phone){
+            top: 2rem;
         }
     }
     &__1988{
@@ -98,10 +117,16 @@ h1{
         @include breakpoint (toDesktop){
             top: 5rem;
         }
+        @include breakpoint (phone){
+            top: 3rem;
+        }
         &Second{
           top: 300%;
           @include breakpoint (toDesktop){
             top: -10rem;
+          }
+          @include breakpoint (phone){
+              top: -8rem;
           }
         }
     }
@@ -110,11 +135,17 @@ h1{
         @include breakpoint (toDesktop){
                 top: -7rem;
         }
+        @include breakpoint (phone){
+                top: 9rem;
+        }
     }
     &__1997{
         top: 158%;
         @include breakpoint (toDesktop){
             top: -3rem;
+        }
+        @include breakpoint (phone){
+            top: -9rem;
         }
         &Second{
               top: 284%;
@@ -133,6 +164,9 @@ h1{
           @include breakpoint (toDesktop){
               top: -5rem;
           }
+          @include breakpoint (phone){
+            top: -8rem;
+          }
         }
     }
     &__2001{
@@ -140,11 +174,17 @@ h1{
         @include breakpoint (toDesktop){
             top: -13.7rem;
         }
+        @include breakpoint (phone){
+            top: -11.7rem;
+        }
     }
     &__2003{
             top: 73%;
         @include breakpoint (toDesktop){
             top: -12rem;
+        }
+        @include breakpoint (phone){
+            top: -8.5rem;
         }
     }
     &__2006{
@@ -152,10 +192,16 @@ h1{
       @include breakpoint(toDesktop){
             top: -26%;
       }
+      @include breakpoint (phone){
+             top: -23%;
+      }
         &Second{
             top: 158%;
           @include breakpoint(toDesktop){
               top: -6rem;
+          }
+          @include breakpoint (phone){
+                top: -8rem;
           }
         }
     }
@@ -224,6 +270,14 @@ h1{
     top: 5rem;
     z-index: 0;
     border-left: 2px solid $colorGold;
+  }
+  @include breakpoint (phone){
+      width: 1px;
+        position: absolute;
+        left: 50.1%;
+        top: 11rem;
+        border-left: 2px solid #af8716;
+        z-index: 0;
   }
 }
 .anchor{

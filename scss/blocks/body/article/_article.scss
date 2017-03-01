@@ -11,12 +11,21 @@
           height: 16.5rem;
           padding-top: 5rem;
         }
+        @include breakpoint (phone){
+            top: 81%;
+            height: 35%;
+            padding-top: 1rem;
+        }
         &First{
             right: 15.142%;
             left: 59.6%;
             @include breakpoint (tablet){
               right: 1.142%;
               left: 55.3%;
+            }
+            @include breakpoint (phone){
+                right: 20%;
+                left: 20%;
             }
         }
         h2{
@@ -37,6 +46,13 @@
               margin-top: 0;
               margin-bottom: 0;
             }
+            @include breakpoint (phone){
+                font-size: 2.4rem;
+                font-size: 3.7vw;
+                margin-top: 5%;
+                margin-bottom: 9%;
+                height: 2rem;
+            }
         }
         span{
             font-size: 1.6rem;
@@ -45,6 +61,11 @@
             transition: .3s all linear;
             @include breakpoint (tablet){
               font-size: 1.6rem;
+            }
+            @include breakpoint (phone){
+                font-size: 2.2rem;
+                font-size: 3.1vw;
+
             }
         }
         button{
@@ -73,6 +94,12 @@
                 right: 2%;
                 left: 54.5%;
                 height: 17rem;
+            }
+            @include breakpoint (phone){
+                top: 70%;
+                right: 5%;
+                left: 28%;
+                height: 19rem;
             }
             &Image{
                 width: 53%;
@@ -134,6 +161,9 @@
         &Item{
             width: 50%;
             margin: 0 auto;
+            @include breakpoint(phone){
+                margin: 0;
+            }
         }
         .hotelGulf{
           width: 60%;
@@ -141,6 +171,11 @@
             width: 77%;
             @include breakpoint (toDesktop){
                 width: 90%;
+            }
+            @include breakpoint (phone){
+                width: 100%;
+                /* margin: 0 5rem; */
+                padding: 0 5%;
             }
           }
         }
@@ -150,6 +185,9 @@
             @include breakpoint(tablet){
                 width: 60%;
                 margin-left: -15rem;
+            }
+            @include breakpoint(phone){
+                width: 74%;
             }
         }
         .articlePopup p{
@@ -173,6 +211,10 @@
             @include breakpoint (toDesktop){
                 width: 23%;
                 margin-left: 43.5%;
+            }
+            @include breakpoint (phone){
+                width: 32%;
+                margin-left: 62%;
             }
             img{
                 position: relative;
@@ -234,7 +276,7 @@
             margin: 3rem auto;
             font-size: 1.4rem;
             font-size: 0.875vw;
-            font-family: Georgia;
+            font-family: $baseFont--secondary-r;
             @include breakpoint (tablet){
                 font-size: 1.4rem;
                 margin-top: 7rem;
@@ -270,5 +312,90 @@
     width: 60%;
     @include breakpoint (toDesktop){
         width: 44%;
+    }
+}
+.floatText{
+    font-size: 1rem !important;
+/* margin-top: -17px; */
+/* display: inline-block; */
+vertical-align: top;
+/* position: absolute; */
+}
+.articlePopupMobile{
+    height: 0;
+    position: absolute;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    img,p,span,a{
+        opacity: 0;
+    }
+    .articlePopup-close{
+        width: 25px;
+        height: 25px;
+        top: 2.5rem;
+        right: 3.5rem;
+
+    }
+    .articlePopup-points{
+        margin-top: 4.5rem;
+    }
+    p{
+        font-size: 2.5rem;
+        font-size: 3.9063vw;
+        line-height: 140%;
+        font-family: $baseFont--light;
+        padding: 0 2rem;
+        text-align: justify;
+        letter-spacing: 1px;
+    }
+    span{
+        font-size: 2.5rem;
+        font-size: 3.9063vw;
+        font-family: $baseFont--bold;
+        transition: .3s all linear;
+        color: $colorGold;
+        letter-spacing: 1px;
+        text-transform: none;
+    }
+    .smallImagePopup{
+        width: 32%;
+        margin: 18% auto;
+    }
+    a{
+        color: $colorGold;
+        display: block;
+        width: 300px;
+        margin: 5% auto;
+        font-size: 1.4rem;
+        font-size: 3.125vw;
+        text-align: center;
+        font-family: $baseFont--secondary-r;
+        &:before,
+        &:after{
+            display: block;
+            width: 100%;
+            height: 0.1rem;
+            background-color: $colorGold;
+            content: '';
+            margin: 2rem 0;
+        }
+    }
+}
+.show{
+    @include breakpoint(phone){
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        transition: .3s all ease-in;
+        -webkit-transition: .3s all ease-in;
+        background-color: $colorWhite;
+    }
+}
+.prlx_layer_3{
+    @include breakpoint (phone){
+        display: none;
     }
 }
