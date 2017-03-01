@@ -115,7 +115,6 @@
   &__ranking {
     font-family: $baseFont--secondary-b;
     text-transform: uppercase;
-    font-weight: bold;
     color: #e3e3e3;
     margin: -3rem 0 5rem -9%;
     @include breakpoint(phone) {

@@ -40,7 +40,6 @@
     font: {
       family: $baseFont--bold;
       size: 2.1rem;
-      weight: bold;
     }
     color: $colorBlack;
     @include breakpoint(phone) {
@@ -97,10 +96,7 @@
     }
   }
   &__num {
-    font: {
-      family: $baseFont--secondary-b;
-      weight: bold;
-    }
+    font-family: $baseFont--secondary-b;
     color: $colorBlack;
     display: inline-block;
     vertical-align: middle;
