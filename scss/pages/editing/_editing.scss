@@ -20,6 +20,7 @@
     }
     @include breakpoint(phone) {
       font-size: 3.2rem;
+      margin-bottom: 7.5rem;
     }
   }
   &__head {

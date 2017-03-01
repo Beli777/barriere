@@ -52,9 +52,13 @@
       }
     }
   }
-  // .editing__point--smaller {
-  //   vertical-align: -3rem;
-  // }
+  .editing__point--smaller {
+    // vertical-align: -3rem;
+    @include breakpoint(phone) {
+      margin-right: 4%;
+      vertical-align: -2.3rem;
+    }
+  }
   .editing__title {
     position: relative;
     left: 10.8rem;
@@ -66,6 +70,13 @@
       @include breakpoint(phone) {
         display: inline;
       }
+    }
+  }
+  
+  .editing__title-helper {
+    display: block;
+    @include breakpoint(phone) {
+      display: inline;
     }
   }
 }

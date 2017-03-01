@@ -57,7 +57,7 @@
       margin-right: 0;
     }
     @include breakpoint(phone) {
-      width: 80%;
+      width: 90%;
       margin-right: 0;
     }
   }
@@ -76,8 +76,11 @@
     }
     .editing__point {
       vertical-align: -3rem;
-      @include breakpoint(tablet) {
+      @include breakpoint(toDesktop) {
         vertical-align: -2rem;
+      }
+      @include breakpoint(phone) {
+        margin-right: 2%;
       }
     }
   }
@@ -88,7 +91,7 @@
       margin-right: 15%;
     }
     @include breakpoint(phone) {
-      margin-right: 33%;
+      margin-right: 41%;
     }
   }
   &__num-wrap {
@@ -109,8 +112,9 @@
       margin-top: 0;
     }
     @include breakpoint(phone) {
-      width: 83.5%;
+      width: 85.5%;
       margin-top: 0rem;
+      padding-right: 4%;
     }
   }
   &__info-body {
@@ -118,7 +122,7 @@
       width: 89%;
     }
     @include breakpoint(phone) {
-      padding-right: 7%;
+      padding-right: 17%;
     }
   }
   &__media {
