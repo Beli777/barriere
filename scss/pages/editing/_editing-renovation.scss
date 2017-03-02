@@ -91,6 +91,7 @@
     @include breakpoint(tablet) {
       right: -16.5%;
       top: 1rem;
+      width: 58%;
     }
     @include breakpoint(phone) {
       width: 74%;
