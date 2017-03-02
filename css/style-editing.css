@@ -2949,8 +2949,8 @@ h1 {
         text-align: left;
         padding-right: 3%; } }
   .editing-persons__info-head--bottom {
-    text-align: right;
-    margin-right: 6%;
+    text-align: center;
+    margin-right: -24%;
     margin-top: -2rem; }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-persons__info-head--bottom {
@@ -2958,7 +2958,6 @@ h1 {
         text-align: left; } }
     @media (max-width: 767px) {
       .editing-persons__info-head--bottom {
-        text-align: center;
         margin-right: 0%;
         margin-left: 15%;
         margin-top: -2.4rem; } }

@@ -229,15 +229,14 @@
     }
   }
   &__info-head--bottom {
-    text-align: right;
-    margin-right: 6%;
+    text-align: center;
+    margin-right: -24%;
     margin-top: -2rem;
     @include breakpoint(tablet) {
       margin-left: 17%;
       text-align: left;
     }
     @include breakpoint(phone) {
-      text-align: center;
       margin-right: 0%;
       margin-left: 15%;
       margin-top: -2.4rem;
