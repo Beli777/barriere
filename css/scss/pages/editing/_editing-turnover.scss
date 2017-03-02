@@ -1,0 +1,87 @@
+//----- Editing Page / Turnover block
+.editing-turnover {
+  overflow: hidden;
+  margin-bottom: 5rem;
+  padding-right: 13%;
+  @include breakpoint(tablet) {
+    padding-right: 8%;
+    margin-bottom: 4rem;
+  }
+  @include breakpoint(phone) {
+    padding: 0 17%;
+    margin-bottom: 2.5rem;
+  }
+  &__body {
+    float: right;
+    width: 40%;
+    @include breakpoint(tablet) {
+      width: 72%;
+    }
+    @include breakpoint(phone) {
+      width: 100%;
+    }
+  }
+  &__info-head {
+    @include breakpoint(phone) {
+      // padding-left: 16%;
+      text-align: right;
+      padding-right: 11%;
+    }
+  }
+  &__info-body {
+    padding-left: 10.8rem;
+    margin-top: 3.5rem;
+    @include breakpoint(tablet) {
+      padding-left: 9.5rem;
+    }
+    @include breakpoint(phone) {
+      padding-left: 0;
+    }
+  }
+  
+  .editing__num {
+    font-size: 10rem;
+    letter-spacing: 0;
+    @include breakpoint(phone) {
+      font-size: 8.2rem;
+    }
+    
+    span {
+      font-size: 5rem;
+      margin-left: -1rem;
+      @include breakpoint(phone) {
+        font-size: 4.1rem;
+      }
+    }
+  }
+  .editing__point--smaller {
+    // vertical-align: -3rem;
+    @include breakpoint(phone) {
+      margin-right: 4%;
+      vertical-align: -2.3rem;
+    }
+  }
+  .editing__title {
+    position: relative;
+    left: 10.8rem;
+    top: -1rem;
+    @include breakpoint(phone) {
+      top: 0;
+      max-width: 90%;
+      text-align: left;
+      padding-left: 19%;
+    }
+    .mob-inline {
+      @include breakpoint(phone) {
+        display: inline;
+      }
+    }
+  }
+  
+  .editing__title-helper {
+    display: block;
+    @include breakpoint(phone) {
+      display: inline;
+    }
+  }
+}

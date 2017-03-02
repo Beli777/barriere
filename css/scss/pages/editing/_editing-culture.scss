@@ -1,0 +1,193 @@
+//----- Editing Page / Culture block
+.editing-culture {
+  background-color: $colorMain;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 11rem 0 0 6%;
+  z-index: 3;
+  margin-bottom: .7rem;
+  @include breakpoint(tablet) {
+    padding: 7.7rem 2% 34rem 7.5%;
+    margin-bottom: 0.5rem;
+  }
+  @include breakpoint(phone) {
+    padding: 4rem 5% 0 5%;
+    margin-bottom: 7.5rem;
+  }
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    background-color: $colorBody;
+  }
+  &:before {
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 16%;
+    @include breakpoint(tablet) {
+      width: 26%;
+    }
+  }
+  &:after {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 13rem;
+    @include breakpoint(overPhone) {
+      display: none;
+    }
+    @include breakpoint(phone) {
+      height: 35rem;
+    }
+  }
+  
+  &__info {
+    float: left;
+    width: 42%;
+    margin-right: 5%;
+    margin-top: 5.5rem;
+    @include breakpoint(tablet) {
+      width: 67%;
+      position: absolute;
+      bottom: 11%;
+      left: 8%;
+      margin-top: 0;
+      margin-right: 0;
+    }
+    @include breakpoint(phone) {
+      width: 90%;
+      margin-right: 0;
+    }
+  }
+  &__info-head {
+    padding-left: 25%;
+    overflow: hidden;
+    margin-bottom: 4rem;
+    @include breakpoint(tablet) {
+      width: 67%;
+      padding-left: 3%;
+      margin-bottom: 3.5rem;
+    }
+    @include breakpoint(phone) {
+      padding-left: 0;
+      margin-bottom: 3.5rem;
+    }
+    .editing__point {
+      vertical-align: -3rem;
+      @include breakpoint(toDesktop) {
+        vertical-align: -2rem;
+      }
+      @include breakpoint(phone) {
+        margin-right: 2%;
+      }
+    }
+  }
+  &__title-top {
+    text-align: center;
+    margin-right: 20%;
+    @include breakpoint(tablet) {
+      margin-right: 15%;
+    }
+    @include breakpoint(phone) {
+      margin-right: 41%;
+    }
+  }
+  &__num-wrap {
+    margin-top: -3rem;
+    @include breakpoint(tablet) {
+      margin-top: -2rem;
+    }
+    @include breakpoint(phone) {
+      margin-top: -1.5rem;
+    }
+  }
+  &__title-bottom {
+    width: 77%;
+    float: right;
+    margin-top: -0.5rem;
+    @include breakpoint(tablet) {
+      width: 79%;
+      margin-top: 0;
+    }
+    @include breakpoint(phone) {
+      width: 85.5%;
+      margin-top: 0rem;
+      padding-right: 4%;
+    }
+  }
+  &__info-body {
+    @include breakpoint(tablet) {
+      width: 89%;
+    }
+    @include breakpoint(phone) {
+      padding-right: 17%;
+    }
+  }
+  &__media {
+    position: relative;
+    float: right;
+    width: 53%;
+    @include breakpoint(desktop) {
+      padding-bottom: 19%;
+    }
+    @include breakpoint(phone) {
+      width: 87%;
+      padding-top: 7rem;
+      z-index: $levelBottom;
+    }
+    .editing-culture__img-circle {
+      max-width: 25%;
+      position: absolute;
+      bottom: 8.5%;
+      left: -20%;
+      @include breakpoint(tablet) {
+        max-width: 37%;
+        top: 2.5%;
+        left: -50.5%;
+      }
+      @include breakpoint(phone) {
+        max-width: 28%;
+        top: -12.5%;
+        right: 1%;
+        left: auto;
+      }
+    }
+    .editing-culture__img-top {
+      max-width: 78%;
+      @include breakpoint(tablet) {
+        max-width: 75.5%;
+      }
+      @include breakpoint(phone) {
+        max-width: 71%;
+      }
+    }
+    .editing-culture__img-bottom {
+      float: right;
+      max-width: 90.5%;
+      margin-top: -4.5rem;
+      position: relative;
+      z-index: $levelMiddle;
+      @include breakpoint(desktop) {
+        position: absolute;
+        right: 0;
+      }
+      @include breakpoint(tablet) {
+        max-width: 87.5%;
+        margin-top: -1.5rem;
+      }
+      @include breakpoint(phone) {
+        max-width: 86%;
+        margin-top: -2.5rem;
+      }
+    }
+  }
+  
+  .editing__num {
+    font-size: 10rem;
+    @include breakpoint(toDesktop) {
+      font-size: 6.5rem;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+//----- Editing Page / Venue block
+.editing-venue {
+  background-color: $colorMain;
+  width: 60%;
+  float: right;
+  padding: 10.5rem 7.5% 9.5rem;
+  @include breakpoint(tablet) {
+    width: 86%;
+    padding: 6.5rem 13% 10rem 11%;
+  }
+  @include breakpoint(phone) {
+    width: 95%;
+    padding: 9.5rem 11% 14rem;
+  }
+  &__info {
+    width: 63.5%;
+    margin-right: 3.5%;
+    display: inline-block;
+    vertical-align: middle;
+    @include breakpoint(toDesktop) {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 4rem;
+    }
+  }
+  &__info-head {
+    position: relative;
+    left: 37%;
+    margin-bottom: 4.5rem;
+    @include breakpoint(tablet) {
+      left: 26%;
+      margin-bottom: 7rem;
+    }
+    @include breakpoint(phone) {
+      left: 10.5%;
+      margin-bottom: 2.5rem;
+    }
+  }
+  &__title-top {
+    margin-bottom: -2.5rem;
+    margin-left: 4rem;
+    @include breakpoint(phone) {
+      margin-left: 5rem;
+    }
+  }
+  &__title-bottom {
+    width: 90%;
+    margin-left: -3rem;
+    @include breakpoint(tablet) {
+      width: 80%;
+      margin-left: -5%;
+    }
+    @include breakpoint(phone) {
+      margin-left: -1.5rem;
+      width: 91%;
+    }
+  }
+  &__media {
+    width: 31.5%;
+    display: inline-block;
+    vertical-align: middle;
+    @include breakpoint(toDesktop) {
+      width: 100%;
+    }
+    img {
+      @include breakpoint(toDesktop) {
+        margin: 0 auto;
+        max-width: 37%;
+      }
+    }
+  }
+  
+  .editing__point--smaller {
+    @include breakpoint(toDesktop) {
+      vertical-align: -1.8rem;
+    }
+  }
+  .editing__num {
+    font-size: 8rem;
+    @include breakpoint(phone) {
+      letter-spacing: 0;
+    }
+  }
+}

@@ -1,0 +1,265 @@
+//----- Editing Page / Persons block
+.editing-persons {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding: 8rem 0 3rem 16%;
+  @include breakpoint(tablet) {
+    padding: 6rem 0 0 18%;
+  }
+  @include breakpoint(phone) {
+    padding: 6rem 0 0;
+    margin-bottom: 2.5rem;
+  }
+  &:before {
+    content: '';
+    background-color: $colorMain;
+    width: 11.2%;
+    height: 46.5rem;
+    display: inline-block;
+    position: absolute;
+    top: -0.5rem;
+    left: 0;
+    @include breakpoint(tablet) {
+      width: 8%;
+      height: 41rem;
+    }
+    @include breakpoint(phone) {
+      width: 6%;
+      height: 8rem;
+    }
+  }
+  &:after {
+    @include breakpoint(phone) {
+      content: '';
+      background-color: $colorMain;
+      width: 6%;
+      height: 8rem;
+      display: inline-block;
+      position: absolute;
+      top: -0.5rem;
+      right: 0;
+    }
+  }
+  &__body {
+    @include breakpoint(overPhone) {
+      opacity: 0;
+    }
+  }
+  &__persons {
+    @include breakpoint(desktop) {
+      width: 64%;
+      float: right;
+    }
+    @include breakpoint(tablet) {
+      margin-left: 8%;
+    }
+  }
+  &__person {
+    display: table-cell;
+    position: relative;
+    z-index: $levelBottom;
+    @include breakpoint(phone) {
+      display: inline-block;
+    }
+    &--1 {
+      top: -1.5rem;
+      left: 6%;
+      @include breakpoint(tablet) {
+        top: 2.5rem;
+      }
+      @include breakpoint(phone) {
+        top: 4.2rem;
+        left: 20.3%;
+        width: 22%;
+      }
+      .editing-persons__person-title {
+        bottom: 4rem;
+        left: -45%;
+        @include breakpoint(tablet) {
+          bottom: 2rem;
+          left: -69%;
+        }
+        @include breakpoint(phone) {
+          bottom: 2.1rem;
+          // left: -58%;
+          left: -8rem;
+        }
+      }
+    }
+    &--2 {
+      left: -1%;
+      @include breakpoint(tablet) {
+        left: 0;
+      }
+      @include breakpoint(phone) {
+        left: 14.5%;
+        width: 22%;
+        top: -0.4rem;
+      }
+      .editing-persons__person-title {
+        top: 9rem;
+        right: -6.5rem;
+        @include breakpoint(tablet) {
+          top: 6rem;
+          right: -8.5rem;
+        }
+        @include breakpoint(phone) {
+          top: 9rem;
+          // right: 32%;
+          right: 3.5rem;
+          width: 130%;
+        }
+      }
+    }
+    &--3 {
+      top: 7rem;
+      left: -11%;
+      z-index: $levelMiddle;
+      @include breakpoint(tablet) {
+        top: 9.5rem;
+        left: -12%;
+      }
+      @include breakpoint(phone) {
+        top: 8.7rem;
+        left: -0.5%;
+        width: 28%;
+      }
+      .editing-persons__person-title {
+        right: -5rem;
+        bottom: 6.7rem;
+        @include breakpoint(tablet) {
+          right: -8rem;
+          bottom: 4rem;
+        }
+        @include breakpoint(phone) {
+          right: -8.1rem;
+          bottom: 1.8rem;
+        }
+      }
+    }
+    &--4 {
+      left: -23.5%;
+      @include breakpoint(tablet) {
+        left: -26%;
+        top: 3.5rem;
+      }
+      @include breakpoint(phone) {
+        left: -16.8%;
+        top: 1.2rem;
+        width: 23%;
+      }
+      .editing-persons__person-title {
+        right: -48%;
+        bottom: 12.5rem;
+        @include breakpoint(tablet) {
+          right: -76%;
+          bottom: 8rem;
+        }
+        @include breakpoint(phone) {
+          right: -8rem;
+          bottom: 5.3rem;
+          width: 100%;
+        }
+      }
+    }
+  }
+  &__person-title {
+    font-family: $baseFont--bold;
+    opacity: 0;
+    font-size: 1.68em;
+    text-transform: uppercase;
+    padding: 1rem 1rem 0.7rem;
+    background-color: $colorBody;
+    position: absolute;
+    // text-align: center;
+    @include breakpoint(tablet) {
+      font-size: 1.4rem;
+      padding: 0.7rem 1.2rem 0.5rem;
+    }
+    @include breakpoint(phone) {
+      font-size: 1.8rem;
+      opacity: 1;
+      padding: 7% 7% 6%;
+    }
+  }
+  &__info {
+    margin-right: 7%;
+    margin-top: 5rem;
+    @include breakpoint(desktop) {
+      width: 29%;
+      float: right;
+    }
+    @include breakpoint(tablet) {
+      margin-top: 11rem;
+    }
+    @include breakpoint(phone) {
+      margin-top: 15rem;
+      margin-right: 0;
+    }
+  }
+  &__info-head {
+    margin-left: 9.5%;
+    margin-bottom: 5rem;
+    @include breakpoint(tablet) {
+      margin-left: -5.5%;
+      margin-bottom: 1.5rem;
+    }
+    @include breakpoint(phone) {
+      margin-bottom: 3.5rem;
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  &__info-head--top {
+    .editing__title {
+      display: inline-block;
+      width: 70%;
+      vertical-align: middle;
+      margin-left: 2%;
+      @include breakpoint(tablet) {
+        width: 40%;
+      }
+      @include breakpoint(phone) {
+        // width: 80%;
+        width: auto;
+        text-align: left;
+        padding-right: 3%;
+      }
+    }
+  }
+  &__info-head--bottom {
+    text-align: center;
+    margin-right: -24%;
+    margin-top: -2rem;
+    @include breakpoint(tablet) {
+      margin-left: 17%;
+      text-align: left;
+    }
+    @include breakpoint(phone) {
+      margin-right: 0%;
+      margin-left: 15%;
+      margin-top: -2.4rem;
+    }
+    .editing__title {
+      display: inline-block;
+      vertical-align: -1rem;
+      @include breakpoint(phone) {
+        vertical-align: -0.5rem;
+      }
+    }
+  }
+  &__info-body {
+    @include breakpoint(tablet) {
+      margin-left: 10%;
+      margin-right: 3%;
+    }
+    @include breakpoint(phone) {
+      padding: 0 5.5%; 
+    }
+  }
+  
+  .editing__num {
+    font-size: 8rem;
+  }
+}

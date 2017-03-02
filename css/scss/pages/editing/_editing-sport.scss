@@ -1,0 +1,228 @@
+//----- Editing Page / Birth block
+.editing-sport {
+  width: 100%;
+  display: inline-block;
+  padding: 0 12% 7.5rem;
+  @include breakpoint(tablet) {
+    padding: 0 13% 6.7rem 12%;
+  }
+  @include breakpoint(phone) {
+    padding: 0 5% 7.5rem;
+  }
+  &__body {
+    @include breakpoint(overPhone) {
+      opacity: 0;
+    }
+  }
+  
+  // GOLF
+  &--golf {
+    width: 42%;
+    float: left;
+    margin-right: 16%;
+    @include breakpoint(phone) {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 9rem;
+    }
+    .editing__num {
+      position: absolute;
+      top: -2.5rem;
+      right: 0;
+      left: 0;
+      text-align: center;
+    }
+    .editing__title {
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      @include breakpoint(phone) {
+        bottom: -1.5rem;
+      }
+    }
+  }
+  &--golf__info-head {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12%;
+    @include breakpoint(desktop) {
+      width: 45%;
+    }
+    @include breakpoint(tablet) {
+      margin-bottom: 3.5rem;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      max-height: 230px;
+    }
+    @include breakpoint(phone) {
+      width: 40%;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 4.5rem;
+    }
+  }
+  &--golf__point-left {
+    position: absolute;
+    left: 13%;
+    top: 50%;
+  }
+  &--golf__point-right {
+    position: absolute;
+    right: 13%;
+    top: 50%;
+  }
+  &--golf__img1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  &--golf__info-body {
+   display: inline-block;
+   vertical-align: middle;
+   @include breakpoint(desktop) {
+     width: 42%;
+   }
+   @include breakpoint(phone) {
+     width: 63%;
+     margin: 0 auto;
+     display: block;
+   }
+  }
+  
+  // Tennis
+  &--tennis {
+    width: 42%;
+    float: left;
+    @include breakpoint(phone) {
+      width: 100%;
+    }
+  }
+  &--tennis__info-head {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: -1rem;
+    @include breakpoint(desktop) {
+      width: 50%;
+      margin-right: 9%;
+    }
+    @include breakpoint(tablet) {
+      margin: 0 auto 3.5rem;
+      display: block;
+      max-height: 230px;
+    }
+    @include breakpoint(phone) {
+      width: 49%;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 3rem;
+    }
+    .editing__num  {
+      padding: 0 10%;
+      margin-top: -3rem;
+    }
+    .editing__title  {
+      width: 74%;
+      margin: .7rem auto 0;
+      @include breakpoint(phone) {
+        margin-top: 0;
+      }
+    }
+  }
+  &--tennis__media {
+    margin-top: -1.2rem;
+    @include breakpoint(tablet) {
+      margin-left: auto;
+      margin-right: auto;
+      display: inline-block;
+    }
+    @include breakpoint(phone) {
+      margin-bottom: 1.5rem;
+    }
+  }
+  &--tennis__info-body {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2rem;
+    @include breakpoint(desktop) {
+      width: 40%;
+    }
+    @include breakpoint(tablet) {
+      margin-top: 0;
+    }
+    @include breakpoint(phone) {
+      width: 63%;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  
+  .editing__num {
+    font-size: 10rem;
+  }
+  .editing-sport--golf .editing__num {
+    @include breakpoint(toDesktop) {
+      font-size: 9rem;
+    }
+  }
+  .editing__info-body {
+    @include breakpoint(tablet) {
+      padding-bottom: 5.5rem;
+      position: relative;
+    }
+    .btn {
+      @include breakpoint(tablet) {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+    }
+  }
+  .editing__p {
+    text-align: center;
+  }
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    &.editing-sport--tennis__img1 {
+      margin-bottom: -3rem;
+      margin-left: 7%;
+      @include breakpoint(tablet) {
+        max-width: 230px; // eq height from 768-1024
+        padding-left: 4%;
+        margin-top: 0.5rem;
+      }
+      @include breakpoint(phone) {
+        max-width: 78%;
+        margin-left: 16%;
+        margin-top: 0.5rem;
+      }
+    }
+    &.editing-sport--tennis__img2 {
+      margin-left: -7%;
+      @include breakpoint(tablet) {
+        max-width: 230px; // eq height from 768-1024
+        padding-left: 6%;
+        margin-top: 0.4rem;
+      }
+      @include breakpoint(phone) {
+        max-width: 78%;
+        margin-left: 5%;
+        margin-top: -1rem;
+      }
+    }
+  }
+  .btn {
+    @include breakpoint(phone) {
+      width: 80%;
+    }
+  }
+}

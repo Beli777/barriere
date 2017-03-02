@@ -1,0 +1,84 @@
+//----- Editing Page / Hotels block
+.editing-hotels {
+  margin-bottom: 6rem;
+  display: inline-block;
+  @include breakpoint(desktop) {
+    margin-top: -46rem;
+  }
+  @include breakpoint(toDesktop) {
+    margin-bottom: 8rem;
+  }
+  
+  &__info {
+    width: 49.5%;
+    float: right;
+    padding: 10rem 3.5% 3.5rem;
+    @include breakpoint(tablet) {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 5rem;
+    }
+    @include breakpoint(phone) {
+      width: 100%;
+      padding: 0 5%;
+      margin-bottom: 3.5rem;
+    }
+  }
+  &__info-head {
+    text-align: center;
+    margin-left: 23%;
+    margin-bottom: 8.5rem;
+    @include breakpoint(tablet) {
+      margin-left: 31%;
+    }
+    @include breakpoint(phone) {
+      margin-left: 0;
+      float: right;
+      text-align: right;
+    }
+  }
+  &__num-wrap {
+    @include breakpoint(phone) {
+      width: 35%;
+    }
+  }
+  &__info-body {
+    width: 80%;
+    @include breakpoint(tablet) {
+      width: 71%;
+      margin: 0 auto;
+    }
+    @include breakpoint(phone) {
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+  &__media {
+    display: inline-block;
+    width: 100%;
+    @include breakpoint(tablet) {
+      padding: 0 2%;
+    }
+    @include breakpoint(phone) {
+      width: 108.5%;
+    }
+    img {
+      margin: 0 auto;
+    }
+  }
+  
+  .editing__num {
+    font-size: 10rem;
+  }
+  .editing__title {
+    display: inline-block;
+    vertical-align: bottom;
+    text-align: left;
+    max-width: 50%;
+    margin-bottom: -3rem;
+    @include breakpoint(phone) {
+      max-width: 55%;
+      margin-bottom: -5.5rem;
+    }
+  }
+}

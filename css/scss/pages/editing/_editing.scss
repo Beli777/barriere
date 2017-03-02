@@ -1,0 +1,161 @@
+//----- Editing Page
+.editing {
+  &-page { // HTML vw Font Size
+    font-size: 10px;
+    @include breakpoint(toDesktopLarge) {
+      font-size: 0.626vw;
+    }
+    @include breakpoint(tablet) {
+      font-size: 1.31vw;
+    }
+    @include breakpoint(phone) {
+      font-size: 1.57vw;
+    }
+  }
+  h1 {
+    margin-bottom: 4rem;
+    @include breakpoint(tablet) {
+      font-size: 2.8rem;
+      margin-bottom: 3rem;
+    }
+    @include breakpoint(phone) {
+      font-size: 3.2rem;
+      margin-bottom: 7.5rem;
+    }
+  }
+  &__head {
+    margin: 0 auto 7.5rem;
+    width: 50%;
+    clear: both;
+    @include breakpoint(tablet) {
+      margin-bottom: 2rem;
+    }
+    @include breakpoint(phone) {
+      margin-bottom: 4rem;
+      width: 70%;
+    }
+  }
+  &__title {
+    text-transform: uppercase;
+    font: {
+      family: $baseFont--bold;
+      size: 2.1rem;
+    }
+    color: $colorBlack;
+    @include breakpoint(phone) {
+      font-size: 2.3rem;
+      line-height: 3rem;
+    }
+    &--colour {
+      color: $colorGold;
+    }
+    &--padding {
+      background-color: $colorMain;
+      padding: 1.2rem 3rem;
+      @include breakpoint(tablet) {
+        padding: 1rem 2rem;
+      }
+      @include breakpoint(phone) {
+        padding: 2rem;
+      }
+    }
+  }
+  &__point {
+    background: {
+      image: url("../img/point.png");
+      repeat: no-repeat;
+      position: center;
+      size: contain;
+    }
+    display: inline-block;
+    height: 2.8rem;
+    width: 2.8rem;
+    vertical-align: middle;
+    &--smaller {
+      @extend .editing__point;
+      @include breakpoint(overPhone) {
+        height: 1.8rem;
+        width: 1.8rem;
+      }
+    }
+  }
+  &__points {
+    background: {
+      image: url("../img/points.png");
+      repeat: no-repeat;
+      position: center;
+      size: contain;
+    }
+    height: 2.5rem;
+    margin-bottom: 2.5rem;
+    @include breakpoint(tablet) {
+      margin-bottom: 3rem;
+    }
+    @include breakpoint(phone) {
+      height: 3rem;
+    }
+  }
+  &__num {
+    font-family: $baseFont--secondary-b;
+    color: $colorBlack;
+    display: inline-block;
+    vertical-align: middle;
+    letter-spacing: -0.5rem;
+  }
+  &__info-body {
+    text-align: center;
+  }
+  &__p {
+    font-family: $baseFont--light;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    margin-bottom: 4.2rem;
+    text-align: justify;
+    @include breakpoint(tablet) {
+      line-height: 3rem;
+      margin-bottom: 3.6rem;
+    }
+    @include breakpoint(phone) {
+      font-size: 2.5rem;
+      line-height: 4.2rem;
+      margin-bottom: 4rem;
+      opacity: 1;
+    }
+    &--reg {
+      font-family: $baseFont;
+    }
+    &.InView {
+      opacity: 1;
+    }
+  }
+  // Reset img from baseConfig.scss
+  img {
+    width: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+// Editing sections
+@import 'editing-section';
+
+// Editing blocks
+@import 'editing-birth';
+@import 'editing-staff';
+@import 'editing-persons';
+@import 'editing-turnover';
+
+@import 'editing-casinos-first';
+@import 'editing-casinos-second';
+@import 'editing-hotels';
+@import 'editing-renovation';
+@import 'editing-venue';
+@import 'editing-drink';
+@import 'editing-sport';
+@import 'editing-spa';
+
+@import 'editing-culture';
+@import 'editing-foundation';
+
+@import 'editing-planet';
+@import 'editing-bees';

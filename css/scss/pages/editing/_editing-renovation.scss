@@ -1,0 +1,104 @@
+//----- Editing Page / Renovation block
+.editing-renovation {
+  background-color: $colorMain;
+  margin: 0 6% 1.5rem;
+  padding: 8rem 5%;
+  @include breakpoint(tablet) {
+    margin: 0 0 6.5rem;
+    padding: 7rem 0 0;
+  }
+  @include breakpoint(phone) {
+    margin: 0 0 8rem;
+    padding: 8rem 5% 2rem;
+  }
+  
+  &__body {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    @include breakpoint(phone) {
+      padding-top: 10rem;
+    }
+  }
+  &__info-head {
+    position: absolute;
+    top: 14%;
+    left: 1.5%;
+    @include breakpoint(tablet) {
+      top: 20.3%;
+      left: 1.8%;
+    }
+    @include breakpoint(phone) {
+      left: 10%;
+      top: 0;
+    }
+  }
+  &__info-body {
+    width: 25%;
+    float: left;
+    margin-bottom: 2rem;
+    position: absolute;
+    top: 26rem;
+    @include breakpoint(tablet) {
+      position: relative;
+      width: 100%;
+      top: 0;
+      float: none;
+      display: inline-block;
+      margin-top: 5.5rem;
+      padding: 0 14%;
+    }
+    @include breakpoint(phone) {
+      width: 100%;
+      position: relative;
+      top: 0;
+      margin-top: 5rem;
+    }
+  }
+  &__media {
+    float: right;
+    width: 62.5%;
+    @include breakpoint(tablet) {
+      width: 56.5%;
+    }
+    @include breakpoint(phone) {
+      width: 100%;
+    }
+  }
+  
+  .editing__point--smaller {
+    vertical-align: -2.5rem;
+    margin-right: 2%;
+    @include breakpoint(tablet) {
+      vertical-align: -1.8rem;
+      margin-right: 0.8%;
+    }
+    @include breakpoint(phone) {
+      margin-right: 0;
+    }
+  }
+  .editing__num {
+    width: 90%;
+    font-size: 10rem;
+    @include breakpoint(toDesktop) {
+      font-size: 7rem;
+    }
+  }
+  .editing__title {
+    position: relative;
+    right: -25%;
+    width: 56%;
+    @include breakpoint(tablet) {
+      right: -16.5%;
+      top: 1rem;
+      width: 58%;
+    }
+    @include breakpoint(phone) {
+      width: 74%;
+      right: 0;
+      left: 14%;
+      top: 0.5rem;
+      padding: 0.5rem 2rem;
+    }
+  }
+}
