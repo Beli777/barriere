@@ -3123,7 +3123,7 @@ h1 {
           .editing-persons__person--2 .editing-persons__person-title {
             top: 9rem;
             right: 3.5rem;
-            width: 150%; } }
+            width: 130%; } }
     .editing-persons__person--3 {
       top: 7rem;
       left: -11%;
@@ -3176,19 +3176,18 @@ h1 {
     opacity: 0;
     font-size: 1.68em;
     text-transform: uppercase;
-    padding: 1rem;
+    padding: 1rem 1rem 0.7rem;
     background-color: #f9f9f9;
-    position: absolute;
-    text-align: center; }
+    position: absolute; }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-persons__person-title {
         font-size: 1.4rem;
-        padding: 0.7rem 1.2rem; } }
+        padding: 0.7rem 1.2rem 0.5rem; } }
     @media (max-width: 767px) {
       .editing-persons__person-title {
         font-size: 1.8rem;
         opacity: 1;
-        padding: 7%; } }
+        padding: 7% 7% 6%; } }
   .editing-persons__info {
     margin-right: 7%;
     margin-top: 5rem; }
@@ -3229,8 +3228,8 @@ h1 {
         text-align: left;
         padding-right: 3%; } }
   .editing-persons__info-head--bottom {
-    text-align: right;
-    margin-right: 6%;
+    text-align: center;
+    margin-right: -24%;
     margin-top: -2rem; }
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-persons__info-head--bottom {
@@ -3238,7 +3237,6 @@ h1 {
         text-align: left; } }
     @media (max-width: 767px) {
       .editing-persons__info-head--bottom {
-        text-align: center;
         margin-right: 0%;
         margin-left: 15%;
         margin-top: -2.4rem; } }
@@ -3281,7 +3279,8 @@ h1 {
         width: 100%; } }
   @media (max-width: 767px) {
     .editing-turnover__info-head {
-      padding-left: 16%; } }
+      text-align: right;
+      padding-right: 11%; } }
   .editing-turnover__info-body {
     padding-left: 10.8rem;
     margin-top: 3.5rem; }
@@ -3313,7 +3312,10 @@ h1 {
     top: -1rem; }
     @media (max-width: 767px) {
       .editing-turnover .editing__title {
-        top: 0; } }
+        top: 0;
+        max-width: 90%;
+        text-align: left;
+        padding-left: 19%; } }
     @media (max-width: 767px) {
       .editing-turnover .editing__title .mob-inline {
         display: inline; } }
@@ -3674,7 +3676,8 @@ h1 {
     @media (min-width: 768px) and (max-width: 1024px) {
       .editing-renovation .editing__title {
         right: -16.5%;
-        top: 1rem; } }
+        top: 1rem;
+        width: 58%; } }
     @media (max-width: 767px) {
       .editing-renovation .editing__title {
         width: 74%;
@@ -4027,7 +4030,8 @@ h1 {
       font-size: 9rem; } }
   @media (min-width: 768px) and (max-width: 1024px) {
     .editing-sport .editing__info-body {
-      padding-bottom: 5.5rem; } }
+      padding-bottom: 5.5rem;
+      position: relative; } }
   @media (min-width: 768px) and (max-width: 1024px) {
     .editing-sport .editing__info-body .btn {
       position: absolute;
